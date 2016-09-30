@@ -1,0 +1,4 @@
+<map id="mom_ocmip2_cfc::ocmip2_cfc_column_physics" name="mom_ocmip2_cfc::ocmip2_cfc_column_physics">
+<area shape="rect" id="node2" href="$df/dc8/namespacemom__tracer__diabatic.html#a1fd213439071bcb31be7de49e7a72039" title="mom_tracer_diabatic\l::applytracerboundaryfluxesinout" alt="" coords="199,5,375,47"/>
+<area shape="rect" id="node3" href="$df/dc8/namespacemom__tracer__diabatic.html#ac5d57973547cc4ed3a89808d3910943e" title="This subroutine solves a tridiagonal equation for the final tracer concentrations after the dual&#45;entr..." alt="" coords="225,71,348,112"/>
+</map>

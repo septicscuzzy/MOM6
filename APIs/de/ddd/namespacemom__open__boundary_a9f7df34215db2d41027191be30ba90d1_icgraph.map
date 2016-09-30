@@ -1,0 +1,4 @@
+<map id="mom_open_boundary::radiation_open_bdry_conds" name="mom_open_boundary::radiation_open_bdry_conds">
+<area shape="rect" id="node2" href="$db/dd4/namespacemom__dynamics__legacy__split.html#ae34fe0561f87dc05c2fad64bf6d5a1ee" title="mom_dynamics_legacy\l_split::step_mom_dyn\l_legacy_split" alt="" coords="225,5,357,61"/>
+<area shape="rect" id="node3" href="$d1/dc3/namespacemom__dynamics__split__rk2.html#a81cce65643a8cf94979d68354a9a1979" title="RK2 splitting for time stepping MOM adiabatic dynamics. " alt="" coords="208,85,375,126"/>
+</map>

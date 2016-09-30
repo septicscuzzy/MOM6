@@ -1,0 +1,8 @@
+<map id="mom_grid::adcroft_reciprocal" name="mom_grid::adcroft_reciprocal">
+<area shape="rect" id="node2" href="$dc/d7f/namespacemom__grid.html#ad5c6da36363b3908694605da62811a4b" title="set_derived_metrics calculates metric terms that are derived from other metrics. " alt="" coords="215,27,345,69"/>
+<area shape="rect" id="node3" href="$df/db8/namespacemom__transcribe__grid.html#aa794cd7c93cc632380b95fa142884288" title="Copies information from a dynamic (shared) horizontal grid type into an ocean_grid_type. " alt="" coords="393,27,553,69"/>
+<area shape="rect" id="node4" href="$da/d01/namespacemom.html#afebdc0103ad9cbe0ed4a54e522dc4104" title="This subroutine initializes MOM. " alt="" coords="609,5,728,32"/>
+<area shape="rect" id="node6" href="$df/da2/namespacemom__ice__shelf.html#ae315e8464ef8a20062e3bccb61886755" title="mom_ice_shelf::initialize\l_ice_shelf" alt="" coords="601,57,736,98"/>
+<area shape="rect" id="node5" href="$de/dbc/MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" title="mom_main" alt="" coords="784,9,859,36"/>
+<area shape="rect" id="node7" href="$d5/d6d/ice__shelf__driver_8F90.html#aec5bef92f0dad343f545cd8d62e378d8" title="shelf_main" alt="" coords="785,64,858,91"/>
+</map>

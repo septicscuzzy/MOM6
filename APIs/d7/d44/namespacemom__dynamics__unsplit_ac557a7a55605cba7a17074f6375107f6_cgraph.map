@@ -1,0 +1,32 @@
+<map id="mom_dynamics_unsplit::initialize_dyn_unsplit" name="mom_dynamics_unsplit::initialize_dyn_unsplit">
+<area shape="rect" id="node2" href="$dd/da4/namespacemom__continuity.html#aa08c4a80c95080ec4649e366f5bd3ae8" title="mom_continuity::continuity_init" alt="" coords="190,145,355,171"/>
+<area shape="rect" id="node5" href="$d0/de6/namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" title="mom_error_handler::\lmom_error" alt="" coords="960,413,1084,455"/>
+<area shape="rect" id="node8" href="$d8/dd2/namespacemom__coriolisadv.html#ad3ce07f23ce7b484a5a9e0c0abe8b1cd" title="mom_coriolisadv::coriolisadv_init" alt="" coords="185,273,360,299"/>
+<area shape="rect" id="node24" href="$d6/dad/namespacemom__verticalgrid.html#af027c312e660a932b3f430f4c7a9675d" title="Returns the model&#39;s thickness flux units, usually m^3/s or kg/s. " alt="" coords="211,1408,335,1449"/>
+<area shape="rect" id="node25" href="$df/d8e/namespacemom__hor__visc.html#a15121289da182e9ecb4561f10de335a5" title="mom_hor_visc::hor_visc_init" alt="" coords="583,35,737,62"/>
+<area shape="rect" id="node26" href="$d6/d5c/namespacemom__pressureforce.html#ab0d856d60f21ad22c3c99f65af8daa92" title="mom_pressureforce::\lpressureforce_init" alt="" coords="409,320,533,361"/>
+<area shape="rect" id="node29" href="$d5/daa/namespacemom__tidal__forcing.html#aee336a2affeebc78b75845bc6f78a320" title="mom_tidal_forcing::\ltidal_forcing_init" alt="" coords="603,1291,717,1332"/>
+<area shape="rect" id="node31" href="$d9/dcb/namespacemom__vert__friction.html#a02be81324ab60dcbcf3c1ecf3aa0da17" title="Initialise the vertical friction module. " alt="" coords="216,1473,329,1515"/>
+<area shape="rect" id="node3" href="$d9/def/namespacemom__file__parser.html#a17c0ef1bb1912f02faa0aaa1e0f64210" title="mom_file_parser::log\l_version" alt="" coords="787,189,910,231"/>
+<area shape="rect" id="node6" href="$d0/de6/namespacemom__error__handler.html#a1c462df7b61f1296407b4af51dfeceab" title="mom_error_handler::\lmom_mesg" alt="" coords="409,137,533,179"/>
+<area shape="rect" id="node7" href="$df/d46/namespacemom__string__functions.html#aca148baf726de2f028b7e7baad3c85d4" title="mom_string_functions\l::uppercase" alt="" coords="408,203,535,244"/>
+<area shape="rect" id="node4" href="$d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" title="mom_error_handler::\lis_root_pe" alt="" coords="1132,343,1256,384"/>
+<area shape="rect" id="node9" href="$d9/d06/namespacemom__diag__mediator.html#aab2007573b14ed73053282770d1b19a4" title="mom_diag_mediator::\lregister_diag_field" alt="" coords="408,820,535,861"/>
+<area shape="rect" id="node10" href="$d9/d06/namespacemom__diag__mediator.html#a1b0bed2113a0c268eafd1bafbb48bd4f" title="mom_diag_mediator::\lalloc_diag_with_id" alt="" coords="597,820,723,861"/>
+<area shape="rect" id="node11" href="$d9/d06/namespacemom__diag__mediator.html#a6e11afe7a97bf8e3333d33b0aebd6f6e" title="mom_diag_mediator::\lassert" alt="" coords="785,588,912,629"/>
+<area shape="rect" id="node12" href="$d9/d06/namespacemom__diag__mediator.html#a93abbf0b9659019bed9a2129ab292752" title="Attaches &quot;cell_methods&quot; attribute to a variable based on defaults for axes_grp or optional arguments..." alt="" coords="785,523,912,564"/>
+<area shape="rect" id="node13" href="$d9/d06/namespacemom__diag__mediator.html#a3f7442639213320f7429e2288a79fda2" title="Returns a new diagnostic id, it may be necessary to expand the diagnostics array. ..." alt="" coords="597,755,723,796"/>
+<area shape="rect" id="node15" href="$d9/d06/namespacemom__diag__mediator.html#a4b739f107cebe1ece8d29056c1144bff" title="mom_diag_mediator::\lis_b_axes" alt="" coords="597,885,723,927"/>
+<area shape="rect" id="node16" href="$d9/d06/namespacemom__diag__mediator.html#a84370fa96e03622edbfd5e343bcd9718" title="mom_diag_mediator::\lis_layer_axes" alt="" coords="597,951,723,992"/>
+<area shape="rect" id="node17" href="$d9/d06/namespacemom__diag__mediator.html#a27fa63c9ff62b660bf457adbb8645bdf" title="mom_diag_mediator::\lis_u_axes" alt="" coords="597,1016,723,1057"/>
+<area shape="rect" id="node18" href="$d9/d06/namespacemom__diag__mediator.html#a9a30d653d812713d6fcff94f6f1fc3e6" title="mom_diag_mediator::\lis_v_axes" alt="" coords="597,1081,723,1123"/>
+<area shape="rect" id="node19" href="$d9/d06/namespacemom__diag__mediator.html#a65fe8d329cf5dbfd08c98874a7a64407" title="Log a diagnostic to the available diagnostics file. " alt="" coords="597,1225,723,1267"/>
+<area shape="rect" id="node21" href="$d9/d06/namespacemom__diag__mediator.html#aca4a32fea8dade9f51e076a56b9bad2b" title="Returns ID from register_diag_field_fms (the diag_manager routine) after expanding axes (axes&#45;group) ..." alt="" coords="597,1146,723,1202"/>
+<area shape="rect" id="node22" href="$d9/d06/namespacemom__diag__mediator.html#a085f313357879a914af6450f2ab8ec79" title="mom_diag_mediator::\lset_diag_mask" alt="" coords="597,624,723,665"/>
+<area shape="rect" id="node23" href="$d9/d06/namespacemom__diag__mediator.html#a5d1e1aa53cdd6bb335a6f841eded4f46" title="mom_diag_mediator::\lset_diag_remap_axes" alt="" coords="597,689,723,731"/>
+<area shape="rect" id="node14" href="$d9/d06/namespacemom__diag__mediator.html#a883862f004e30bbc5211f38635511ba0" title="Initializes a diag_type (used after allocating new memory) " alt="" coords="785,755,912,796"/>
+<area shape="rect" id="node20" href="$d9/d06/namespacemom__diag__mediator.html#ae002ca447acba252bf7bdc042e75a01e" title="mom_diag_mediator::\ldescribe_option" alt="" coords="785,1173,912,1215"/>
+<area shape="rect" id="node27" href="$d3/d77/namespacemom__pressureforce__afv.html#a443f95a60b35b33a872264f6bacf4554" title="mom_pressureforce_afv\l::pressureforce_afv_init" alt="" coords="591,304,729,345"/>
+<area shape="rect" id="node28" href="$d9/dc4/namespacemom__pressureforce__mont.html#a560267f015d03452d92aca82f6a46b14" title="mom_pressureforce_mont\l::pressureforce_mont_init" alt="" coords="586,239,734,280"/>
+<area shape="rect" id="node30" href="$d5/daa/namespacemom__tidal__forcing.html#aba9bdb9c6510bac9f65e674bd5583f39" title="mom_tidal_forcing::\lfind_in_files" alt="" coords="791,1291,906,1332"/>
+</map>

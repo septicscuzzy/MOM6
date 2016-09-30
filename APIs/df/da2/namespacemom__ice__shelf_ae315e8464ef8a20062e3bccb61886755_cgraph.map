@@ -1,0 +1,82 @@
+<map id="mom_ice_shelf::initialize_ice_shelf" name="mom_ice_shelf::initialize_ice_shelf">
+<area shape="rect" id="node2" href="$dd/dc3/namespacemom__forcing__type.html#a765fdabc0bc35293aba97b957d579919" title="Conditionally allocate fields within the forcing type. " alt="" coords="192,37,344,78"/>
+<area shape="rect" id="node4" href="$df/db8/namespacemom__transcribe__grid.html#aa794cd7c93cc632380b95fa142884288" title="Copies information from a dynamic (shared) horizontal grid type into an ocean_grid_type. " alt="" coords="188,423,348,465"/>
+<area shape="rect" id="node5" href="$d0/de6/namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" title="mom_error_handler::\lmom_error" alt="" coords="824,517,948,558"/>
+<area shape="rect" id="node6" href="$d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" title="mom_error_handler::\lis_root_pe" alt="" coords="1327,1033,1451,1074"/>
+<area shape="rect" id="node9" href="$db/dc0/namespacemom__dyn__horgrid.html#a6dd89718602439a6bca59608e0f7e9f5" title="Allocate memory used by the dyn_horgrid_type and related structures. " alt="" coords="195,221,341,262"/>
+<area shape="rect" id="node10" href="$db/dc0/namespacemom__dyn__horgrid.html#a23c063bf0f2d5e5e96569a6bc5f8f382" title="Release memory used by the dyn_horgrid_type and related structures. " alt="" coords="193,287,343,329"/>
+<area shape="rect" id="node11" href="$d1/d01/namespacemom__eos.html#a6686ef94d0db1f1dcfb4284ebfc2be88" title="Initializes EOS_type by allocating and reading parameters. " alt="" coords="624,119,735,145"/>
+<area shape="rect" id="node13" href="$d9/def/namespacemom__file__parser.html#a17c0ef1bb1912f02faa0aaa1e0f64210" title="mom_file_parser::log\l_version" alt="" coords="1058,971,1181,1013"/>
+<area shape="rect" id="node14" href="$d0/de6/namespacemom__error__handler.html#a1c462df7b61f1296407b4af51dfeceab" title="mom_error_handler::\lmom_mesg" alt="" coords="824,1033,948,1074"/>
+<area shape="rect" id="node16" href="$d9/d7f/namespacemom__get__input.html#a299c5b9476662ef1a382e23a8d078143" title="mom_get_input::get\l_mom_input" alt="" coords="415,154,532,195"/>
+<area shape="rect" id="node27" href="$df/da2/namespacemom__ice__shelf.html#a5d64b696412c0bfd8ded2e2eacaa917c" title="mom_ice_shelf::ice\l_shelf_solve_outer" alt="" coords="212,2254,324,2295"/>
+<area shape="rect" id="node45" href="$d9/d5a/namespacemom__ice__shelf__initialize.html#ab040ec0f7f05b8b398ef9ae1cce704f9" title="mom_ice_shelf_initialize\l::initialize_ice_thickness" alt="" coords="201,926,335,967"/>
+<area shape="rect" id="node52" href="$df/da2/namespacemom__ice__shelf.html#a2ac08ec833782d98eeda1c91caf833d8" title="mom_ice_shelf::initialize\l_shelf_mass" alt="" coords="201,357,335,398"/>
+<area shape="rect" id="node53" href="$dc/d7f/namespacemom__grid.html#a06d585b4319f18d7d7fac2afceb08205" title="MOM_grid_init initializes the ocean grid array sizes and grid memory. " alt="" coords="608,1223,751,1249"/>
+<area shape="rect" id="node57" href="$d1/d85/namespacemom__restart.html#a0ad0a0207dceeb1d9e68c7af7fd39bdc" title="mom_restart::restart_init" alt="" coords="610,757,749,784"/>
+<area shape="rect" id="node58" href="$d1/d85/namespacemom__restart.html#aec60d8a437fc858db4a020f9985b449d" title="mom_restart::restore\l_state" alt="" coords="412,691,535,733"/>
+<area shape="rect" id="node61" href="$d5/daa/namespacemom__grid__initialize.html#a235a9712823e2f78e4958e8d681b6ba4" title="set_grid_metrics is used to set the primary values in the model&#39;s horizontal grid. The bathymetry, land&#45;sea mask and any restricted channel widths are not known yet, so these are set later. " alt="" coords="212,1639,324,1681"/>
+<area shape="rect" id="node80" href="$df/da2/namespacemom__ice__shelf.html#a1a323e884141c533e729dc44c6bbf91d" title="mom_ice_shelf::update\l_od_ffrac_uncoupled" alt="" coords="202,2319,334,2361"/>
+<area shape="rect" id="node81" href="$df/da2/namespacemom__ice__shelf.html#ae71447bb7b63b4313070abc27e0a7208" title="mom_ice_shelf::update\l_velocity_masks" alt="" coords="202,2385,334,2426"/>
+<area shape="rect" id="node3" href="$d5/ded/MOM__forcing__type_8F90.html#aede7c3d8c91ec3e8a8a3b68824a5e9e8" title="Allocates and zeroes&#45;out array. " alt="" coords="445,44,502,71"/>
+<area shape="rect" id="node7" href="$dc/d7f/namespacemom__grid.html#ad5c6da36363b3908694605da62811a4b" title="set_derived_metrics calculates metric terms that are derived from other metrics. " alt="" coords="408,423,539,465"/>
+<area shape="rect" id="node8" href="$dc/d7f/namespacemom__grid.html#a49cb0213b535091f3c12e9152fbbda03" title="Adcroft_reciprocal(x) = 1/x for |x|&gt;0 or 0 for x=0. " alt="" coords="599,423,760,449"/>
+<area shape="rect" id="node12" href="$d1/d01/namespacemom__eos.html#a1108fb5de7a69d01746df3995f7e3f0d" title="Allocates EOS_type. " alt="" coords="819,265,953,292"/>
+<area shape="rect" id="node15" href="$df/d46/namespacemom__string__functions.html#aca148baf726de2f028b7e7baad3c85d4" title="mom_string_functions\l::uppercase" alt="" coords="823,199,949,241"/>
+<area shape="rect" id="node17" href="$d9/def/namespacemom__file__parser.html#abecae1b9386aafa17aec927af1f8c448" title="mom_file_parser::open\l_param_file" alt="" coords="613,53,745,94"/>
+<area shape="rect" id="node18" href="$df/dfe/MOM__memory_8h.html#ae22791a326f7ecd05017238a41eea3a8" title="number" alt="" coords="857,148,915,175"/>
+<area shape="rect" id="node19" href="$d9/def/namespacemom__file__parser.html#a7abfd98d7f0831fc0d1f3747a68f1be9" title="mom_file_parser::populate\l_param_data" alt="" coords="811,82,961,123"/>
+<area shape="rect" id="node20" href="$d9/def/namespacemom__file__parser.html#a99c426fd23fc4df0c4d05e33039e0a66" title="mom_file_parser::closemultilinecomment" alt="" coords="1012,233,1227,260"/>
+<area shape="rect" id="node21" href="$d9/def/namespacemom__file__parser.html#ab4b89d9420e174185db1c6aa3feb948b" title="mom_file_parser::lastnoncommentnonblank" alt="" coords="1275,81,1504,108"/>
+<area shape="rect" id="node23" href="$d9/def/namespacemom__file__parser.html#a476a2649ce161e38088588e07f7df130" title="mom_file_parser::openmultilinecomment" alt="" coords="1282,5,1497,32"/>
+<area shape="rect" id="node24" href="$d9/def/namespacemom__file__parser.html#ae0b982cc161173a401291757a6677373" title="mom_file_parser::removecomments" alt="" coords="1023,132,1216,159"/>
+<area shape="rect" id="node25" href="$d9/def/namespacemom__file__parser.html#a9813087789e0924f363d7f67768c7f42" title="mom_file_parser::replacetabs" alt="" coords="1038,183,1201,209"/>
+<area shape="rect" id="node26" href="$d9/def/namespacemom__file__parser.html#a3ad322925f44e8cb48c4e652634f6f93" title="mom_file_parser::simplifywhitespace" alt="" coords="1022,504,1217,531"/>
+<area shape="rect" id="node22" href="$d9/def/namespacemom__file__parser.html#a000fd0a0681f9e73481ef2663154df78" title="mom_file_parser::lastnoncommentindex" alt="" coords="1552,44,1763,71"/>
+<area shape="rect" id="node28" href="$df/da2/namespacemom__ice__shelf.html#a5d534895698ad80a68be9a1b992c4d0b" title="mom_ice_shelf::apply\l_boundary_values_bilinear" alt="" coords="605,2441,754,2482"/>
+<area shape="rect" id="node29" href="$df/da2/namespacemom__ice__shelf.html#a9f77faf4c64078c8bce0546bb024f34e" title="mom_ice_shelf::bilinear\l_shape_functions" alt="" coords="819,2669,953,2710"/>
+<area shape="rect" id="node32" href="$df/da2/namespacemom__ice__shelf.html#a6d1174213d77aef09d2eaae2fd138edd" title="mom_ice_shelf::apply\l_boundary_values_triangle" alt="" coords="604,2506,755,2547"/>
+<area shape="rect" id="node33" href="$df/da2/namespacemom__ice__shelf.html#a4714299e786f7e62fa2c82916dac2316" title="mom_ice_shelf::bilinear\l_shape_functions_subgrid" alt="" coords="400,1989,547,2030"/>
+<area shape="rect" id="node34" href="$df/da2/namespacemom__ice__shelf.html#a9ccd473e87beaec693c8d90e7d68ed8f" title="mom_ice_shelf::calc\l_shelf_driving_stress" alt="" coords="413,2353,534,2394"/>
+<area shape="rect" id="node35" href="$df/da2/namespacemom__ice__shelf.html#a55464f46b7f452abe25f8dde166cee51" title="mom_ice_shelf::savearray2" alt="" coords="603,2389,755,2416"/>
+<area shape="rect" id="node36" href="$df/da2/namespacemom__ice__shelf.html#ac7bf50703bb671dbde1016061a04e3c9" title="mom_ice_shelf::calc\l_shelf_visc_bilinear" alt="" coords="415,2222,532,2263"/>
+<area shape="rect" id="node37" href="$df/da2/namespacemom__ice__shelf.html#a69286817781f164a0af096b050e3ccc4" title="mom_ice_shelf::calc\l_shelf_visc_triangular" alt="" coords="411,2287,535,2329"/>
+<area shape="rect" id="node38" href="$df/da2/namespacemom__ice__shelf.html#a08bef308dd58f20b81330c5706f71e1f" title="mom_ice_shelf::cg_action\l_bilinear" alt="" coords="607,2323,751,2365"/>
+<area shape="rect" id="node39" href="$df/da2/namespacemom__ice__shelf.html#a0ad3713e3c3ee71d987d6cd82c45181e" title="mom_ice_shelf::cg_action\l_triangular" alt="" coords="607,2702,751,2743"/>
+<area shape="rect" id="node40" href="$df/da2/namespacemom__ice__shelf.html#a95d21b019a635ad3a8ef060d765362e1" title="mom_ice_shelf::ice\l_shelf_solve_inner" alt="" coords="417,2571,529,2613"/>
+<area shape="rect" id="node44" href="$df/da2/namespacemom__ice__shelf.html#a8fc399c376152f2d639b506ff8a7ee24" title="mom_ice_shelf::interpolate\l_h_to_b" alt="" coords="399,2157,548,2198"/>
+<area shape="rect" id="node31" href="$df/da2/namespacemom__ice__shelf.html#a925d19b978b5368c3b0d5cae3b542bfe" title="mom_ice_shelf::cg_action\l_subgrid_basal_bilinear" alt="" coords="814,2382,958,2423"/>
+<area shape="rect" id="node30" href="$df/da2/namespacemom__ice__shelf.html#a43bcb4adfaabc54cd57ad8d96b71c224" title="mom_ice_shelf::quad_area" alt="" coords="1044,2676,1195,2703"/>
+<area shape="rect" id="node41" href="$df/da2/namespacemom__ice__shelf.html#a0fa0e5e0225816e5e5e87994371f11f1" title="mom_ice_shelf::matrix\l_diagonal_bilinear" alt="" coords="615,2637,743,2678"/>
+<area shape="rect" id="node43" href="$df/da2/namespacemom__ice__shelf.html#abc77d7c18a2919c9308c39aa26f916bf" title="mom_ice_shelf::matrix\l_diagonal_triangle" alt="" coords="615,2571,743,2613"/>
+<area shape="rect" id="node42" href="$df/da2/namespacemom__ice__shelf.html#af109d5577049ff4ded3b07d5ab25a771" title="mom_ice_shelf::cg_diagonal\l_subgrid_basal_bilinear" alt="" coords="808,2603,964,2645"/>
+<area shape="rect" id="node46" href="$d9/d5a/namespacemom__ice__shelf__initialize.html#a39c0a7ed253214d2c312bba2f366ef68" title="mom_ice_shelf_initialize\l::initialize_ice_thickness\l_channel" alt="" coords="406,1041,541,1097"/>
+<area shape="rect" id="node47" href="$d9/d5a/namespacemom__ice__shelf__initialize.html#aeecfae4afdadf83fcaf1cc582bdaeed7" title="mom_ice_shelf_initialize\l::initialize_ice_thickness\l_from_file" alt="" coords="612,925,747,981"/>
+<area shape="rect" id="node48" href="$d7/df8/namespaceuser__shelf__init.html#a489d62c2d76eef329b9e5b17c63ccc66" title="user_shelf_init::user\l_init_ice_thickness" alt="" coords="415,977,532,1018"/>
+<area shape="rect" id="node49" href="$d7/df8/namespaceuser__shelf__init.html#a160ee7639522c12c10408f853ff4d897" title="user_shelf_init::user\l_initialize_shelf_mass" alt="" coords="618,1005,741,1046"/>
+<area shape="rect" id="node50" href="$d7/df8/namespaceuser__shelf__init.html#a04dc4958214e8b07da385f8be785d706" title="user_shelf_init::write\l_user_log" alt="" coords="827,967,945,1009"/>
+<area shape="rect" id="node51" href="$d7/df8/namespaceuser__shelf__init.html#abd99438d24c4a57aa3fbab3b067a7c81" title="user_shelf_init::user\l_update_shelf_mass" alt="" coords="826,902,946,943"/>
+<area shape="rect" id="node54" href="$dc/d7f/namespacemom__grid.html#a4a0b721d65abedfe5208a1e0904cd327" title="Allocate memory used by the ocean_grid_type and related structures. " alt="" coords="830,1201,942,1242"/>
+<area shape="rect" id="node55" href="$d1/d95/namespacemom__domains.html#a1f1063ac5a049926d4ad00b43752aee6" title="mom_domains::get_domain\l_extent" alt="" coords="1042,1291,1197,1333"/>
+<area shape="rect" id="node56" href="$d4/d1d/namespacemom__hor__index.html#a8e3912351dbf2be2659f3561de341f49" title="Sets various index values in a hor_index_type. " alt="" coords="825,1266,947,1307"/>
+<area shape="rect" id="node59" href="$d1/d85/namespacemom__restart.html#a4b143fb18dab7c0825e426fbf9532623" title="mom_restart::restart\l_error" alt="" coords="619,626,739,667"/>
+<area shape="rect" id="node60" href="$df/d46/namespacemom__string__functions.html#a4d76e9e8c2cd53f210b02006924a9212" title="mom_string_functions\l::lowercase" alt="" coords="616,691,743,733"/>
+<area shape="rect" id="node62" href="$d0/de6/namespacemom__error__handler.html#a9cda07a87815f0e5594066162b4345c3" title="Writes a message about entering a subroutine if call tree reporting is active. " alt="" coords="617,1858,741,1899"/>
+<area shape="rect" id="node63" href="$d0/de6/namespacemom__error__handler.html#a88ea67781e2ed9b73ab7eac8ea5e8578" title="Writes a message about leaving a subroutine if call tree reporting is active. " alt="" coords="617,1923,741,1965"/>
+<area shape="rect" id="node64" href="$d5/daa/namespacemom__grid__initialize.html#aaa2e124bccd43d4f8735c4ef8e07f287" title="grid_metrics_chksum performs a set of checksums on metrics on the grid for debugging. " alt="" coords="409,1727,537,1769"/>
+<area shape="rect" id="node65" href="$db/dc0/namespacemom__dyn__horgrid.html#aefa448039e24b26fe06f9251848b6aac" title="set_derived_dyn_horgrid calculates metric terms that are derived from other metrics. " alt="" coords="409,1427,538,1469"/>
+<area shape="rect" id="node67" href="$d5/daa/namespacemom__grid__initialize.html#a4f9a9f748316e1edd893da9c44cb940e" title="mom_grid_initialize\l::set_grid_metrics_cartesian" alt="" coords="396,1793,551,1834"/>
+<area shape="rect" id="node68" href="$d5/daa/namespacemom__grid__initialize.html#a59e71c4235b01cf3ad4fb6252ef74248" title="set_grid_metrics_from_mosaic sets the grid metrics from a mosaic file. " alt="" coords="406,1857,541,1913"/>
+<area shape="rect" id="node70" href="$d5/daa/namespacemom__grid__initialize.html#ac37d98379b33a9e95d0bbffc1d7a730f" title="mom_grid_initialize\l::set_grid_metrics_mercator" alt="" coords="396,1545,551,1586"/>
+<area shape="rect" id="node79" href="$d5/daa/namespacemom__grid__initialize.html#a3ede1d607f09115204c0ea0fbde5e9f8" title="mom_grid_initialize\l::set_grid_metrics_spherical" alt="" coords="396,1610,551,1651"/>
+<area shape="rect" id="node66" href="$db/dc0/namespacemom__dyn__horgrid.html#aa6579f50769698067defbc3c676e0191" title="Adcroft_reciprocal(x) = 1/x for |x|&gt;0 or 0 for x=0. " alt="" coords="605,1375,753,1417"/>
+<area shape="rect" id="node69" href="$d5/daa/namespacemom__grid__initialize.html#ac78daa312636b0ef9a93694901b5c705" title="extrapolate_metric extrapolates missing metric data into all the halo regions. " alt="" coords="621,1989,737,2030"/>
+<area shape="rect" id="node71" href="$d5/daa/namespacemom__grid__initialize.html#aac9e8e21e95ba01e853569e3060ee8d3" title="mom_grid_initialize::dl" alt="" coords="616,1507,743,1533"/>
+<area shape="rect" id="node72" href="$d5/daa/namespacemom__grid__initialize.html#a5a50815c6d1d0948dfbae076da654b94" title="mom_grid_initialize\l::ds_di" alt="" coords="623,1558,735,1599"/>
+<area shape="rect" id="node73" href="$d5/daa/namespacemom__grid__initialize.html#afa76ec84052508b78fde53cd6ed70161" title="mom_grid_initialize\l::dx_di" alt="" coords="830,1601,942,1642"/>
+<area shape="rect" id="node74" href="$d5/daa/namespacemom__grid__initialize.html#aaa3a376606d5067107c3a43beb6f8032" title="mom_grid_initialize\l::ds_dj" alt="" coords="623,1675,735,1717"/>
+<area shape="rect" id="node75" href="$d5/daa/namespacemom__grid__initialize.html#aff493c70cca560bfefcdbfabdf778656" title="mom_grid_initialize\l::dy_dj" alt="" coords="830,1691,942,1733"/>
+<area shape="rect" id="node76" href="$d5/daa/namespacemom__grid__initialize.html#a25cb0001f061ef10b90e637f98ed9fcc" title="mom_grid_initialize\l::find_root" alt="" coords="623,809,735,850"/>
+<area shape="rect" id="node77" href="$d5/daa/namespacemom__grid__initialize.html#aee53e3cf4937fa86949aa376d5f3d82a" title="mom_grid_initialize\l::int_di_dx" alt="" coords="623,1793,735,1834"/>
+<area shape="rect" id="node78" href="$d5/daa/namespacemom__grid__initialize.html#a8ed056787130f21f4b9c1bc81bd60c50" title="mom_grid_initialize\l::int_dj_dy" alt="" coords="623,1441,735,1482"/>
+</map>

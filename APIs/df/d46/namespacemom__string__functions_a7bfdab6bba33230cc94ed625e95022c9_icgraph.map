@@ -1,0 +1,9 @@
+<map id="mom_string_functions::extractword" name="mom_string_functions::extractword">
+<area shape="rect" id="node2" href="$d7/d73/namespacemom__ale.html#acb67ef912ee001b72fa9ed5d6c79cabe" title="Initialize regridding module. " alt="" coords="180,16,333,43"/>
+<area shape="rect" id="node4" href="$df/d46/namespacemom__string__functions.html#a82a6737657a9ae78a53b30ab2a761d23" title="mom_string_functions\l::string_functions_unit_tests" alt="" coords="180,78,333,119"/>
+<area shape="rect" id="node3" href="$d7/d73/namespacemom__ale.html#a58d4b7c32f779beec0086caeb802d492" title="This routine is typically called (from initialize_MOM in file MOM.F90) before the main time integrati..." alt="" coords="381,5,487,32"/>
+<area shape="rect" id="node5" href="$da/d01/namespacemom.html#ae77cfd2e790f1266b31d93c58659d46c" title="Calls unit tests for other modules. These are NOT normally invoked and so we provide the module use s..." alt="" coords="385,56,483,83"/>
+<area shape="rect" id="node8" href="$df/ddf/MOM__string__functions_8F90.html#a420ee768ae38c8bb528f4ae573e310ab" title="localtest" alt="" coords="404,107,464,133"/>
+<area shape="rect" id="node6" href="$da/d01/namespacemom.html#afebdc0103ad9cbe0ed4a54e522dc4104" title="This subroutine initializes MOM. " alt="" coords="535,56,653,83"/>
+<area shape="rect" id="node7" href="$de/dbc/MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" title="mom_main" alt="" coords="701,56,776,83"/>
+</map>

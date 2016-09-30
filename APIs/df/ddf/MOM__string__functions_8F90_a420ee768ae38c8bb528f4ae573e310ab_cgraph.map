@@ -1,0 +1,10 @@
+<map id="localtest" name="localtest">
+<area shape="rect" id="node2" href="$df/d46/namespacemom__string__functions.html#a82a6737657a9ae78a53b30ab2a761d23" title="mom_string_functions\l::string_functions_unit_tests" alt="" coords="113,126,267,167"/>
+<area shape="rect" id="node3" href="$df/d46/namespacemom__string__functions.html#ae6b4260129cce257d834cc9b32e847f3" title="mom_string_functions\l::left_int" alt="" coords="489,31,616,72"/>
+<area shape="rect" id="node4" href="$df/d46/namespacemom__string__functions.html#a0db6538cb622d0f20a577b07cb545f2e" title="mom_string_functions\l::left_ints" alt="" coords="315,31,441,72"/>
+<area shape="rect" id="node5" href="$df/d46/namespacemom__string__functions.html#ab56b89fb51a387279afc68c85d30dca2" title="mom_string_functions\l::left_real" alt="" coords="489,139,616,180"/>
+<area shape="rect" id="node7" href="$df/d46/namespacemom__string__functions.html#a07fa1b92ce5c4c4336bb45c5a89fa548" title="mom_string_functions\l::left_reals" alt="" coords="315,96,441,138"/>
+<area shape="rect" id="node8" href="$df/d46/namespacemom__string__functions.html#a7bfdab6bba33230cc94ed625e95022c9" title="Returns the string corresponding to the nth word in the argument or &quot;&quot; if the string is not long enou..." alt="" coords="315,214,441,255"/>
+<area shape="rect" id="node9" href="$df/d46/namespacemom__string__functions.html#aad76dee92b69dab4488da049fe11cdb8" title="Returns the string corresponding to the nth word in the argument or &quot;&quot; if the string is not long enou..." alt="" coords="489,230,616,271"/>
+<area shape="rect" id="node6" href="$df/d46/namespacemom__string__functions.html#aec369a6ac0badc1dbd782a1668d2c7c3" title="mom_string_functions\l::isformattedfloatequalto" alt="" coords="664,139,800,180"/>
+</map>
