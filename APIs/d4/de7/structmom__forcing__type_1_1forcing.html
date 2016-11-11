@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('d4/de7/structmom__forcing__type_1_1for
 <div class="dynheader">
 Collaboration diagram for mom_forcing_type::forcing:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/db0/structmom__forcing__type_1_1forcing__coll__graph.svg" width="351" height="378"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/db0/structmom__forcing__type_1_1forcing__coll__graph.svg" width="531" height="378"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -232,6 +232,15 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:a2d2d7fd22b96e3e21e7ba68d43c6db11"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de7/structmom__forcing__type_1_1forcing.html#a2d2d7fd22b96e3e21e7ba68d43c6db11">ustar_tidal</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a2d2d7fd22b96e3e21e7ba68d43c6db11"><td class="mdescLeft">&#160;</td><td class="mdescRight">tidal contribution to bottom ustar (m/s)  <a href="#a2d2d7fd22b96e3e21e7ba68d43c6db11">More...</a><br /></td></tr>
 <tr class="separator:a2d2d7fd22b96e3e21e7ba68d43c6db11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce04dc5481813ef9c799583e15c3e67"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de7/structmom__forcing__type_1_1forcing.html#a9ce04dc5481813ef9c799583e15c3e67">ustar_berg</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:a9ce04dc5481813ef9c799583e15c3e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">iceberg contribution to top ustar (m/s)  <a href="#a9ce04dc5481813ef9c799583e15c3e67">More...</a><br /></td></tr>
+<tr class="separator:a9ce04dc5481813ef9c799583e15c3e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc5a1cf622c2cd750457272515e91e54"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de7/structmom__forcing__type_1_1forcing.html#acc5a1cf622c2cd750457272515e91e54">area_berg</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:acc5a1cf622c2cd750457272515e91e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">area of ocean surface covered by icebergs (m2/m2)  <a href="#acc5a1cf622c2cd750457272515e91e54">More...</a><br /></td></tr>
+<tr class="separator:acc5a1cf622c2cd750457272515e91e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bf316db4573bcc14790528bd41fc94a"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de7/structmom__forcing__type_1_1forcing.html#a6bf316db4573bcc14790528bd41fc94a">mass_berg</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:a6bf316db4573bcc14790528bd41fc94a"><td class="mdescLeft">&#160;</td><td class="mdescRight">mass of icebergs (kg/m2)  <a href="#a6bf316db4573bcc14790528bd41fc94a">More...</a><br /></td></tr>
+<tr class="separator:a6bf316db4573bcc14790528bd41fc94a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad59187b28a33fa3d64c203fe608270eb"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de7/structmom__forcing__type_1_1forcing.html#ad59187b28a33fa3d64c203fe608270eb">ustar_shelf</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:ad59187b28a33fa3d64c203fe608270eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">friction velocity under ice-shelves (m/s)  <a href="#ad59187b28a33fa3d64c203fe608270eb">More...</a><br /></td></tr>
 <tr class="separator:ad59187b28a33fa3d64c203fe608270eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -283,12 +292,36 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:aca507d9e36f38c78a4a1e4700a79870e"><td class="memItemLeft" align="right" valign="top">type(<a class="el" href="../../de/d6a/structcoupler__types__mod_1_1coupler__2d__bc__type.html">coupler_2d_bc_type</a>), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de7/structmom__forcing__type_1_1forcing.html#aca507d9e36f38c78a4a1e4700a79870e">tr_fluxes</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:aca507d9e36f38c78a4a1e4700a79870e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure may contain an array of named fields used for passive tracer fluxes. All arrays in tr_fluxes use the coupler indexing, which has no halos. This is not a convenient convention, but imposed on MOM6 by the coupler.  <a href="#aca507d9e36f38c78a4a1e4700a79870e">More...</a><br /></td></tr>
 <tr class="separator:aca507d9e36f38c78a4a1e4700a79870e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c5ba34fcbba835c7b4016ff8f1aff55"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de7/structmom__forcing__type_1_1forcing.html#a6c5ba34fcbba835c7b4016ff8f1aff55">num_msg</a> = 0</td></tr>
+<tr class="memdesc:a6c5ba34fcbba835c7b4016ff8f1aff55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of messages issues about excessive SW penetration.  <a href="#a6c5ba34fcbba835c7b4016ff8f1aff55">More...</a><br /></td></tr>
+<tr class="separator:a6c5ba34fcbba835c7b4016ff8f1aff55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b12886d62a5ee0bb810be55705b1813"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de7/structmom__forcing__type_1_1forcing.html#a2b12886d62a5ee0bb810be55705b1813">max_msg</a> = 2</td></tr>
+<tr class="memdesc:a2b12886d62a5ee0bb810be55705b1813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of messages to issue about excessive SW penetration.  <a href="#a2b12886d62a5ee0bb810be55705b1813">More...</a><br /></td></tr>
+<tr class="separator:a2b12886d62a5ee0bb810be55705b1813"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure that contains pointers to the boundary forcing used to drive the liquid ocean simulated by MOM. Data in this type is allocated in the module MOM_surface_forcing.F90, of which there are three: solo, coupled, and ice-shelf. Alternatively, they are allocated in <a class="el" href="../../da/d7f/MESO__surface__forcing_8F90.html">MESO_surface_forcing.F90</a>, which is a special case of solo_driver/MOM_surface_forcing.F90. </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00040">40</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00037">37</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 </div><h2 class="groupheader">Variables and constants</h2>
+<a id="acc5a1cf622c2cd750457272515e91e54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc5a1cf622c2cd750457272515e91e54">&sect;&nbsp;</a></span>area_berg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real, dimension(:,:), pointer mom_forcing_type::forcing::area_berg =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>area of ocean surface covered by icebergs (m2/m2) </p>
+
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00123">123</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+
+</div>
+</div>
 <a id="adc492b5def54fce0e32479e3259d229f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adc492b5def54fce0e32479e3259d229f">&sect;&nbsp;</a></span>buoy</h2>
 
@@ -303,8 +336,8 @@ Public variables and constants</h2></td></tr>
 
 <p>buoyancy flux (m^2/s^3) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00051">51</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  buoy          =&gt; null()  <span class="comment">!&lt; buoyancy flux (m^2/s^3)</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00048">48</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  buoy          =&gt; null()  <span class="comment">!&lt; buoyancy flux (m^2/s^3)</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a5d9055b2f9ae197ae1d3205dfdc0930e"></a>
@@ -321,8 +354,8 @@ Public variables and constants</h2></td></tr>
 
 <p>heat capacity of seawater ( J/(K kg) ). C_p is is the same value as in thermovar_ptrs_type. </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00152">152</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">real</span> :: c_p<span class="comment">                !&lt; heat capacity of seawater ( J/(K kg) ).</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00155">155</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordtype">real</span> :: c_p<span class="comment">                !&lt; heat capacity of seawater ( J/(K kg) ).</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a22dd48c83c23ee0858dc3e6da1bc2954"></a>
@@ -339,8 +372,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The amount of time over which the buoyancy fluxes should be applied, in s. If negative, this forcing type variable has not yet been inialized. </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00147">147</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordtype">real</span> :: dt_buoy_accum  = -1.0<span class="comment">   !&lt; The amount of time over which the buoyancy fluxes</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00150">150</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keywordtype">real</span> :: dt_buoy_accum  = -1.0<span class="comment">   !&lt; The amount of time over which the buoyancy fluxes</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ae1bd65751e43d3072d09822912728e25"></a>
@@ -357,8 +390,8 @@ Public variables and constants</h2></td></tr>
 
 <p>(-1)*fresh water flux evaporated out of the ocean ( kg/(m^2 s) ) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00076">76</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  evap          =&gt; null(), &amp; <span class="comment">!&lt; (-1)*fresh water flux evaporated out of the ocean ( kg/(m^2 s) )</span></div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  lprec         =&gt; null(), &amp; <span class="comment">!&lt; precipitating liquid water into the ocean ( kg/(m^2 s) )</span></div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  fprec         =&gt; null(), &amp; <span class="comment">!&lt; precipitating frozen water into the ocean ( kg/(m^2 s) )</span></div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  vprec         =&gt; null(), &amp; <span class="comment">!&lt; virtual liquid precip associated w/ SSS restoring ( kg/(m^2 s) )</span></div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  lrunoff       =&gt; null(), &amp; <span class="comment">!&lt; liquid river runoff entering ocean ( kg/(m^2 s) )</span></div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  frunoff       =&gt; null(), &amp; <span class="comment">!&lt; frozen river runoff (calving) entering ocean ( kg/(m^2 s) )</span></div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  seaice_melt   =&gt; null(), &amp; <span class="comment">!&lt; seaice melt (positive) or formation (negative) ( kg/(m^2 s) )</span></div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  netmassin     =&gt; null(), &amp; <span class="comment">!&lt; Sum of water mass flux out of the ocean ( kg/(m^2 s) )</span></div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  netmassout    =&gt; null(), &amp; <span class="comment">!&lt; Net water mass flux into of the ocean ( kg/(m^2 s) )</span></div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  netsalt       =&gt; null()    <span class="comment">!&lt; Net salt entering the ocean</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00073">73</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  evap          =&gt; null(), &amp; <span class="comment">!&lt; (-1)*fresh water flux evaporated out of the ocean ( kg/(m^2 s) )</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  lprec         =&gt; null(), &amp; <span class="comment">!&lt; precipitating liquid water into the ocean ( kg/(m^2 s) )</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  fprec         =&gt; null(), &amp; <span class="comment">!&lt; precipitating frozen water into the ocean ( kg/(m^2 s) )</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  vprec         =&gt; null(), &amp; <span class="comment">!&lt; virtual liquid precip associated w/ SSS restoring ( kg/(m^2 s) )</span></div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  lrunoff       =&gt; null(), &amp; <span class="comment">!&lt; liquid river runoff entering ocean ( kg/(m^2 s) )</span></div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  frunoff       =&gt; null(), &amp; <span class="comment">!&lt; frozen river runoff (calving) entering ocean ( kg/(m^2 s) )</span></div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  seaice_melt   =&gt; null(), &amp; <span class="comment">!&lt; seaice melt (positive) or formation (negative) ( kg/(m^2 s) )</span></div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  netmassin     =&gt; null(), &amp; <span class="comment">!&lt; Sum of water mass flux out of the ocean ( kg/(m^2 s) )</span></div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  netmassout    =&gt; null(), &amp; <span class="comment">!&lt; Net water mass flux into of the ocean ( kg/(m^2 s) )</span></div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  netsalt       =&gt; null()    <span class="comment">!&lt; Net salt entering the ocean</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ae314c1d1c87349579d919007d08b5ff9"></a>
@@ -375,8 +408,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, all of the heat, salt, and mass fluxes have been applied to the ocean. </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00145">145</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordtype">logical</span> :: fluxes_used = .true. <span class="comment">!&lt; If true, all of the heat, salt, and mass</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00148">148</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordtype">logical</span> :: fluxes_used = .true. <span class="comment">!&lt; If true, all of the heat, salt, and mass</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ab4251daae0640288e5aa8780afa2a135"></a>
@@ -393,7 +426,7 @@ Public variables and constants</h2></td></tr>
 
 <p>precipitating frozen water into the ocean ( kg/(m^2 s) ) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00076">76</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00073">73</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -411,7 +444,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Fractional ice shelf coverage of h-, u-, and v-. </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00126">126</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00129">129</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -429,7 +462,7 @@ Public variables and constants</h2></td></tr>
 
 <p>cells, nondimensional from 0 to 1. These are only </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00126">126</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00129">129</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -447,7 +480,7 @@ Public variables and constants</h2></td></tr>
 
 <p>associated if ice shelves are enabled, and are </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00126">126</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00129">129</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -465,7 +498,7 @@ Public variables and constants</h2></td></tr>
 
 <p>frozen river runoff (calving) entering ocean ( kg/(m^2 s) ) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00076">76</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00073">73</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -483,7 +516,7 @@ Public variables and constants</h2></td></tr>
 
 <p>additional heat flux from SST restoring or flux adjustments (W/m^2) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00064">64</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00061">61</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -501,8 +534,8 @@ Public variables and constants</h2></td></tr>
 
 <p>heat content associated with condensating water (W/m^2) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00089">89</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  heat_content_cond    =&gt; null(), &amp; <span class="comment">!&lt; heat content associated with condensating water (W/m^2)</span></div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  heat_content_lprec   =&gt; null(), &amp; <span class="comment">!&lt; heat content associated with liquid &gt;0 precip   (W/m^2) (diagnostic)</span></div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  heat_content_fprec   =&gt; null(), &amp; <span class="comment">!&lt; heat content associated with frozen precip      (W/m^2)</span></div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  heat_content_vprec   =&gt; null(), &amp; <span class="comment">!&lt; heat content associated with virtual &gt;0 precip  (W/m^2)</span></div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  heat_content_lrunoff =&gt; null(), &amp; <span class="comment">!&lt; heat content associated with liquid runoff      (W/m^2)</span></div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  heat_content_frunoff =&gt; null(), &amp; <span class="comment">!&lt; heat content associated with frozen runoff      (W/m^2)</span></div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  heat_content_icemelt =&gt; null(), &amp; <span class="comment">!&lt; heat content associated with liquid sea ice     (W/m^2)</span></div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  heat_content_massout =&gt; null(), &amp; <span class="comment">!&lt; heat content associated with mass leaving ocean (W/m^2)</span></div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  heat_content_massin  =&gt; null()    <span class="comment">!&lt; heat content associated with mass entering ocean (W/m^2)</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00086">86</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  heat_content_cond    =&gt; null(), &amp; <span class="comment">!&lt; heat content associated with condensating water (W/m^2)</span></div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  heat_content_lprec   =&gt; null(), &amp; <span class="comment">!&lt; heat content associated with liquid &gt;0 precip   (W/m^2) (diagnostic)</span></div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  heat_content_fprec   =&gt; null(), &amp; <span class="comment">!&lt; heat content associated with frozen precip      (W/m^2)</span></div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  heat_content_vprec   =&gt; null(), &amp; <span class="comment">!&lt; heat content associated with virtual &gt;0 precip  (W/m^2)</span></div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  heat_content_lrunoff =&gt; null(), &amp; <span class="comment">!&lt; heat content associated with liquid runoff      (W/m^2)</span></div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  heat_content_frunoff =&gt; null(), &amp; <span class="comment">!&lt; heat content associated with frozen runoff      (W/m^2)</span></div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  heat_content_icemelt =&gt; null(), &amp; <span class="comment">!&lt; heat content associated with liquid sea ice     (W/m^2)</span></div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  heat_content_massout =&gt; null(), &amp; <span class="comment">!&lt; heat content associated with mass leaving ocean (W/m^2)</span></div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  heat_content_massin  =&gt; null()    <span class="comment">!&lt; heat content associated with mass entering ocean (W/m^2)</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a70253a24c8dcd2f7de94076203c17502"></a>
@@ -519,7 +552,7 @@ Public variables and constants</h2></td></tr>
 
 <p>heat content associated with frozen precip (W/m^2) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00089">89</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00086">86</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -537,7 +570,7 @@ Public variables and constants</h2></td></tr>
 
 <p>heat content associated with frozen runoff (W/m^2) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00089">89</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00086">86</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -555,7 +588,7 @@ Public variables and constants</h2></td></tr>
 
 <p>heat content associated with liquid sea ice (W/m^2) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00089">89</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00086">86</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -573,7 +606,7 @@ Public variables and constants</h2></td></tr>
 
 <p>heat content associated with liquid &gt;0 precip (W/m^2) (diagnostic) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00089">89</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00086">86</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -591,7 +624,7 @@ Public variables and constants</h2></td></tr>
 
 <p>heat content associated with liquid runoff (W/m^2) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00089">89</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00086">86</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -609,7 +642,7 @@ Public variables and constants</h2></td></tr>
 
 <p>heat content associated with mass entering ocean (W/m^2) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00089">89</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00086">86</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -627,7 +660,7 @@ Public variables and constants</h2></td></tr>
 
 <p>heat content associated with mass leaving ocean (W/m^2) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00089">89</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00086">86</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -645,7 +678,7 @@ Public variables and constants</h2></td></tr>
 
 <p>heat content associated with virtual &gt;0 precip (W/m^2) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00089">89</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00086">86</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -663,7 +696,7 @@ Public variables and constants</h2></td></tr>
 
 <p>ice shelf melt rate (positive) or freezing (negative) ( m/year ) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00126">126</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00129">129</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -681,8 +714,8 @@ Public variables and constants</h2></td></tr>
 
 <p>latent (W/m^2) (typically &lt; 0) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00064">64</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  latent         =&gt; null(), &amp; <span class="comment">!&lt; latent (W/m^2)   (typically &lt; 0)</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  sens           =&gt; null(), &amp; <span class="comment">!&lt; sensible (W/m^2) (typically negative)</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  heat_added     =&gt; null()    <span class="comment">!&lt; additional heat flux from SST restoring or flux adjustments (W/m^2)</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00061">61</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  latent         =&gt; null(), &amp; <span class="comment">!&lt; latent (W/m^2)   (typically &lt; 0)</span></div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  sens           =&gt; null(), &amp; <span class="comment">!&lt; sensible (W/m^2) (typically negative)</span></div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  heat_added     =&gt; null()    <span class="comment">!&lt; additional heat flux from SST restoring or flux adjustments (W/m^2)</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ad1dc521fec84d1b72b7d6cd11c82acf7"></a>
@@ -699,8 +732,8 @@ Public variables and constants</h2></td></tr>
 
 <p>latent (W/m^2) from evaporating liquid water (typically &lt; 0) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00070">70</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  latent_evap_diag    =&gt; null(), &amp; <span class="comment">!&lt; latent (W/m^2) from evaporating liquid water (typically &lt; 0)</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  latent_fprec_diag   =&gt; null(), &amp; <span class="comment">!&lt; latent (W/m^2) from melting fprec  (typically &lt; 0)</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  latent_frunoff_diag =&gt; null()    <span class="comment">!&lt; latent (W/m^2) from melting frunoff (calving) (typically &lt; 0)</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00067">67</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  latent_evap_diag    =&gt; null(), &amp; <span class="comment">!&lt; latent (W/m^2) from evaporating liquid water (typically &lt; 0)</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  latent_fprec_diag   =&gt; null(), &amp; <span class="comment">!&lt; latent (W/m^2) from melting fprec  (typically &lt; 0)</span></div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  latent_frunoff_diag =&gt; null()    <span class="comment">!&lt; latent (W/m^2) from melting frunoff (calving) (typically &lt; 0)</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a6c5ec7eda18ed45946f651ff233d4ef6"></a>
@@ -717,7 +750,7 @@ Public variables and constants</h2></td></tr>
 
 <p>latent (W/m^2) from melting fprec (typically &lt; 0) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00070">70</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00067">67</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -735,7 +768,7 @@ Public variables and constants</h2></td></tr>
 
 <p>latent (W/m^2) from melting frunoff (calving) (typically &lt; 0) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00070">70</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00067">67</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -753,7 +786,7 @@ Public variables and constants</h2></td></tr>
 
 <p>precipitating liquid water into the ocean ( kg/(m^2 s) ) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00076">76</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00073">73</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -771,7 +804,7 @@ Public variables and constants</h2></td></tr>
 
 <p>liquid river runoff entering ocean ( kg/(m^2 s) ) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00076">76</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00073">73</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -789,8 +822,44 @@ Public variables and constants</h2></td></tr>
 
 <p>longwave (W/m^2) (typically negative) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00055">55</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00052">52</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
+</div>
+</div>
+<a id="a6bf316db4573bcc14790528bd41fc94a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bf316db4573bcc14790528bd41fc94a">&sect;&nbsp;</a></span>mass_berg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real, dimension(:,:), pointer mom_forcing_type::forcing::mass_berg =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>mass of icebergs (kg/m2) </p>
+
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00123">123</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+
+</div>
+</div>
+<a id="a2b12886d62a5ee0bb810be55705b1813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b12886d62a5ee0bb810be55705b1813">&sect;&nbsp;</a></span>max_msg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer mom_forcing_type::forcing::max_msg = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum number of messages to issue about excessive SW penetration. </p>
+
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00166">166</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keywordtype">integer</span> :: max_msg = 2<span class="comment"> !&lt; Maximum number of messages to issue about excessive SW penetration</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="aa8f7fe55801f8811b55123022dfea146"></a>
@@ -807,8 +876,8 @@ Public variables and constants</h2></td></tr>
 
 <p>adjustment to net fresh water to zero out global net ( kg/(m^2 s) ) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00140">140</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keywordtype">real</span> :: netfwglobaladj<span class="comment">     !&lt; adjustment to net fresh water to zero out global net ( kg/(m^2 s) )</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00143">143</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">real</span> :: netfwglobaladj<span class="comment">     !&lt; adjustment to net fresh water to zero out global net ( kg/(m^2 s) )</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ac9efb247076907bbc5702b421c57a95e"></a>
@@ -825,8 +894,8 @@ Public variables and constants</h2></td></tr>
 
 <p>scaling of net fresh water to zero out global net ( -1..1 ) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00143">143</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">real</span> :: netfwglobalscl<span class="comment">     !&lt; scaling of net fresh water to zero out global net ( -1..1 )</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00146">146</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordtype">real</span> :: netfwglobalscl<span class="comment">     !&lt; scaling of net fresh water to zero out global net ( -1..1 )</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a62a79bed1bfa1426d6b91f97fa6530a5"></a>
@@ -843,7 +912,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Sum of water mass flux out of the ocean ( kg/(m^2 s) ) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00076">76</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00073">73</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -861,7 +930,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Net water mass flux into of the ocean ( kg/(m^2 s) ) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00076">76</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00073">73</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -879,8 +948,26 @@ Public variables and constants</h2></td></tr>
 
 <p>Net salt entering the ocean. </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00076">76</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00073">73</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
+</div>
+</div>
+<a id="a6c5ba34fcbba835c7b4016ff8f1aff55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c5ba34fcbba835c7b4016ff8f1aff55">&sect;&nbsp;</a></span>num_msg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer mom_forcing_type::forcing::num_msg = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of messages issues about excessive SW penetration. </p>
+
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00165">165</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordtype">integer</span> :: num_msg = 0<span class="comment"> !&lt; Number of messages issues about excessive SW penetration</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ae0a5f5a46c0dcae81ded69bbe898619f"></a>
@@ -897,7 +984,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Pressure at the top ocean interface (Pa) as used. </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00108">108</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00105">105</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -915,8 +1002,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Pressure at the top ocean interface (Pa). </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00108">108</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  p_surf_full   =&gt; null(), &amp; <span class="comment">!&lt; Pressure at the top ocean interface (Pa).</span></div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">                             !! if there is sea-ice, then p_surf_flux is at ice-ocean interface</span></div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  p_surf        =&gt; null(), &amp; <span class="comment">!&lt; Pressure at the top ocean interface (Pa) as used</span></div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">                             !! to drive the ocean model. If p_surf is limited, </span></div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">                             !! p_surf may be smaller than p_surf_full,</span></div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">                             !! otherwise they are the same.</span></div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  p_surf_ssh    =&gt; null()    <span class="comment">!&lt; Pressure at the top ocean interface that is used</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00105">105</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  p_surf_full   =&gt; null(), &amp; <span class="comment">!&lt; Pressure at the top ocean interface (Pa).</span></div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">                             !! if there is sea-ice, then p_surf_flux is at ice-ocean interface</span></div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  p_surf        =&gt; null(), &amp; <span class="comment">!&lt; Pressure at the top ocean interface (Pa) as used</span></div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">                             !! to drive the ocean model. If p_surf is limited,</span></div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">                             !! p_surf may be smaller than p_surf_full,</span></div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">                             !! otherwise they are the same.</span></div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  p_surf_ssh    =&gt; null()    <span class="comment">!&lt; Pressure at the top ocean interface that is used</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a89c4983ff9bde33dd252f0ea5cfcd890"></a>
@@ -933,7 +1020,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Pressure at the top ocean interface that is used. </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00108">108</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00105">105</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -951,7 +1038,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Depth-integrated lateral viscosity of ice. </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00126">126</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00129">129</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -969,7 +1056,7 @@ Public variables and constants</h2></td></tr>
 
 <p>shelves or sea ice at u- or v-points (m3/s) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00126">126</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00129">129</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -987,8 +1074,8 @@ Public variables and constants</h2></td></tr>
 
 <p>net salt flux into the ocean ( kg salt/(m^2 s) ) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00101">101</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  salt_flux         =&gt; null(), &amp; <span class="comment">!&lt; net salt flux into the ocean ( kg salt/(m^2 s) )</span></div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  salt_flux_in      =&gt; null(), &amp; <span class="comment">!&lt; salt flux provided to the ocean from coupler ( kg salt/(m^2 s) )</span></div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  salt_flux_added =&gt; null()    <span class="comment">!&lt; additional salt flux from restoring or flux adjustment before adjustment</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00098">98</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  salt_flux         =&gt; null(), &amp; <span class="comment">!&lt; net salt flux into the ocean ( kg salt/(m^2 s) )</span></div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  salt_flux_in      =&gt; null(), &amp; <span class="comment">!&lt; salt flux provided to the ocean from coupler ( kg salt/(m^2 s) )</span></div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  salt_flux_added =&gt; null()    <span class="comment">!&lt; additional salt flux from restoring or flux adjustment before adjustment</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ada16659183f36e1e586e20b9733ea57c"></a>
@@ -1005,7 +1092,7 @@ Public variables and constants</h2></td></tr>
 
 <p>additional salt flux from restoring or flux adjustment before adjustment </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00101">101</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00098">98</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -1023,7 +1110,7 @@ Public variables and constants</h2></td></tr>
 
 <p>salt flux provided to the ocean from coupler ( kg salt/(m^2 s) ) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00101">101</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00098">98</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -1041,8 +1128,8 @@ Public variables and constants</h2></td></tr>
 
 <p>adjustment to restoring salt flux to zero out global net ( kg salt/(m^2 s) ) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00139">139</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordtype">real</span> :: saltfluxglobaladj<span class="comment">  !&lt; adjustment to restoring salt flux to zero out global net ( kg salt/(m^2 s) )</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00142">142</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordtype">real</span> :: saltfluxglobaladj<span class="comment">  !&lt; adjustment to restoring salt flux to zero out global net ( kg salt/(m^2 s) )</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="aafb6cc808731b1c5abb62dd9a8edf85b"></a>
@@ -1059,8 +1146,8 @@ Public variables and constants</h2></td></tr>
 
 <p>scaling of restoring salt flux to zero out global net ( -1..1 ) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00142">142</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordtype">real</span> :: saltfluxglobalscl<span class="comment">  !&lt; scaling of restoring salt flux to zero out global net ( -1..1 )</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00145">145</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordtype">real</span> :: saltfluxglobalscl<span class="comment">  !&lt; scaling of restoring salt flux to zero out global net ( -1..1 )</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a088dff23dee2090db2e268000ebc93d8"></a>
@@ -1077,7 +1164,7 @@ Public variables and constants</h2></td></tr>
 
 <p>seaice melt (positive) or formation (negative) ( kg/(m^2 s) ) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00076">76</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00073">73</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -1095,7 +1182,7 @@ Public variables and constants</h2></td></tr>
 
 <p>sensible (W/m^2) (typically negative) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00064">64</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00061">61</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -1113,8 +1200,8 @@ Public variables and constants</h2></td></tr>
 
 <p>shortwave (W/m^2) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00055">55</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  sw            =&gt; null(), &amp; <span class="comment">!&lt; shortwave (W/m^2)</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  sw_vis_dir    =&gt; null(), &amp; <span class="comment">!&lt; visible, direct shortwave (W/m^2)</span></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  sw_vis_dif    =&gt; null(), &amp; <span class="comment">!&lt; visible, diffuse shortwave (W/m^2)</span></div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  sw_nir_dir    =&gt; null(), &amp; <span class="comment">!&lt; near-IR, direct shortwave (W/m^2)</span></div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  sw_nir_dif    =&gt; null(), &amp; <span class="comment">!&lt; near-IR, diffuse shortwave (W/m^2)</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  lw            =&gt; null()    <span class="comment">!&lt; longwave (W/m^2) (typically negative)</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00052">52</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  sw            =&gt; null(), &amp; <span class="comment">!&lt; shortwave (W/m^2)</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  sw_vis_dir    =&gt; null(), &amp; <span class="comment">!&lt; visible, direct shortwave (W/m^2)</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  sw_vis_dif    =&gt; null(), &amp; <span class="comment">!&lt; visible, diffuse shortwave (W/m^2)</span></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  sw_nir_dir    =&gt; null(), &amp; <span class="comment">!&lt; near-IR, direct shortwave (W/m^2)</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  sw_nir_dif    =&gt; null(), &amp; <span class="comment">!&lt; near-IR, diffuse shortwave (W/m^2)</span></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  lw            =&gt; null()    <span class="comment">!&lt; longwave (W/m^2) (typically negative)</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a669179d082275daa11030f2c4de4177b"></a>
@@ -1131,7 +1218,7 @@ Public variables and constants</h2></td></tr>
 
 <p>near-IR, diffuse shortwave (W/m^2) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00055">55</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00052">52</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -1149,7 +1236,7 @@ Public variables and constants</h2></td></tr>
 
 <p>near-IR, direct shortwave (W/m^2) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00055">55</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00052">52</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -1167,7 +1254,7 @@ Public variables and constants</h2></td></tr>
 
 <p>visible, diffuse shortwave (W/m^2) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00055">55</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00052">52</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -1185,7 +1272,7 @@ Public variables and constants</h2></td></tr>
 
 <p>visible, direct shortwave (W/m^2) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00055">55</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00052">52</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -1203,8 +1290,8 @@ Public variables and constants</h2></td></tr>
 
 <p>zonal wind stress (Pa) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00045">45</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  taux          =&gt; null(), &amp; <span class="comment">!&lt; zonal wind stress (Pa)</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  tauy          =&gt; null(), &amp; <span class="comment">!&lt; meridional wind stress (Pa)</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  ustar         =&gt; null()    <span class="comment">!&lt; surface friction velocity scale (m/s)</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00042">42</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  taux          =&gt; null(), &amp; <span class="comment">!&lt; zonal wind stress (Pa)</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  tauy          =&gt; null(), &amp; <span class="comment">!&lt; meridional wind stress (Pa)</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  ustar         =&gt; null()    <span class="comment">!&lt; surface friction velocity scale (m/s)</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a70ea1bf8c88535d6af09aa39db3aae1f"></a>
@@ -1221,7 +1308,7 @@ Public variables and constants</h2></td></tr>
 
 <p>meridional wind stress (Pa) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00045">45</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00042">42</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -1239,8 +1326,8 @@ Public variables and constants</h2></td></tr>
 
 <p>tidal energy source driving mixing in bottom boundary layer (W/m^2) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00121">121</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  tke_tidal     =&gt; null(), &amp; <span class="comment">!&lt; tidal energy source driving mixing in bottom boundary layer (W/m^2)</span></div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  ustar_tidal   =&gt; null()    <span class="comment">!&lt; tidal contribution to bottom ustar (m/s)</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00118">118</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  tke_tidal     =&gt; null(), &amp; <span class="comment">!&lt; tidal energy source driving mixing in bottom boundary layer (W/m^2)</span></div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  ustar_tidal   =&gt; null()    <span class="comment">!&lt; tidal contribution to bottom ustar (m/s)</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="aca507d9e36f38c78a4a1e4700a79870e"></a>
@@ -1257,8 +1344,8 @@ Public variables and constants</h2></td></tr>
 
 <p>This structure may contain an array of named fields used for passive tracer fluxes. All arrays in tr_fluxes use the coupler indexing, which has no halos. This is not a convenient convention, but imposed on MOM6 by the coupler. </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00156">156</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">type</span>(coupler_2d_bc_type), <span class="keywordtype">pointer</span> :: tr_fluxes =&gt; null() <span class="comment">!&lt; This structure</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00159">159</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">type</span>(coupler_2d_bc_type), <span class="keywordtype">pointer</span> :: tr_fluxes =&gt; null() <span class="comment">!&lt; This structure</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a4749175214b31741ed4764a581257eed"></a>
@@ -1275,8 +1362,26 @@ Public variables and constants</h2></td></tr>
 
 <p>surface friction velocity scale (m/s) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00045">45</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00042">42</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
+</div>
+</div>
+<a id="a9ce04dc5481813ef9c799583e15c3e67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ce04dc5481813ef9c799583e15c3e67">&sect;&nbsp;</a></span>ustar_berg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real, dimension(:,:), pointer mom_forcing_type::forcing::ustar_berg =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>iceberg contribution to top ustar (m/s) </p>
+
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00123">123</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  ustar_berg   =&gt; null(),&amp;    <span class="comment">!&lt; iceberg contribution to top ustar (m/s)</span></div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  area_berg   =&gt; null(),&amp;     <span class="comment">!&lt; area of ocean surface covered by icebergs (m2/m2)</span></div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  mass_berg   =&gt; null()     <span class="comment">!&lt; mass of icebergs (kg/m2)</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ad59187b28a33fa3d64c203fe608270eb"></a>
@@ -1293,8 +1398,8 @@ Public variables and constants</h2></td></tr>
 
 <p>friction velocity under ice-shelves (m/s) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00126">126</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  ustar_shelf   =&gt; null(), &amp;   <span class="comment">!&lt; friction velocity under ice-shelves (m/s)</span></div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">                               !! as computed by the ocean at the previous time step.</span></div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  frac_shelf_h  =&gt; null(), &amp;   <span class="comment">!&lt; Fractional ice shelf coverage of h-, u-, and v-</span></div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  frac_shelf_u  =&gt; null(), &amp;   <span class="comment">!&lt; cells, nondimensional from 0 to 1. These are only</span></div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  frac_shelf_v  =&gt; null(), &amp;   <span class="comment">!&lt; associated if ice shelves are enabled, and are</span></div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">                               !! exactly 0 away from shelves or on land.</span></div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  iceshelf_melt   =&gt; null(), &amp; <span class="comment">!&lt; ice shelf melt rate (positive) or freezing (negative) ( m/year )</span></div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  rigidity_ice_u =&gt; null(),&amp;   <span class="comment">!&lt; Depth-integrated lateral viscosity of ice</span></div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  rigidity_ice_v =&gt; null()     <span class="comment">!&lt; shelves or sea ice at u- or v-points (m3/s)</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00129">129</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  ustar_shelf   =&gt; null(), &amp;   <span class="comment">!&lt; friction velocity under ice-shelves (m/s)</span></div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">                               !! as computed by the ocean at the previous time step.</span></div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  frac_shelf_h  =&gt; null(), &amp;   <span class="comment">!&lt; Fractional ice shelf coverage of h-, u-, and v-</span></div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  frac_shelf_u  =&gt; null(), &amp;   <span class="comment">!&lt; cells, nondimensional from 0 to 1. These are only</span></div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  frac_shelf_v  =&gt; null(), &amp;   <span class="comment">!&lt; associated if ice shelves are enabled, and are</span></div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment">                               !! exactly 0 away from shelves or on land.</span></div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  iceshelf_melt   =&gt; null(), &amp; <span class="comment">!&lt; ice shelf melt rate (positive) or freezing (negative) ( m/year )</span></div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  rigidity_ice_u =&gt; null(),&amp;   <span class="comment">!&lt; Depth-integrated lateral viscosity of ice</span></div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  rigidity_ice_v =&gt; null()     <span class="comment">!&lt; shelves or sea ice at u- or v-points (m3/s)</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a2d2d7fd22b96e3e21e7ba68d43c6db11"></a>
@@ -1311,7 +1416,7 @@ Public variables and constants</h2></td></tr>
 
 <p>tidal contribution to bottom ustar (m/s) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00121">121</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00118">118</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -1329,7 +1434,7 @@ Public variables and constants</h2></td></tr>
 
 <p>virtual liquid precip associated w/ SSS restoring ( kg/(m^2 s) ) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00076">76</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00073">73</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 
 </div>
 </div>
@@ -1347,8 +1452,8 @@ Public variables and constants</h2></td></tr>
 
 <p>adjustment to restoring vprec to zero out global net ( kg/(m^2 s) ) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00138">138</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keywordtype">real</span> :: vprecglobaladj<span class="comment">     !&lt; adjustment to restoring vprec to zero out global net ( kg/(m^2 s) )</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00141">141</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordtype">real</span> :: vprecglobaladj<span class="comment">     !&lt; adjustment to restoring vprec to zero out global net ( kg/(m^2 s) )</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a48318d43655ddec5d9b5a07cf1eb6340"></a>
@@ -1365,8 +1470,8 @@ Public variables and constants</h2></td></tr>
 
 <p>scaling of restoring vprec to zero out global net ( -1..1 ) </p>
 
-<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00141">141</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordtype">real</span> :: vprecglobalscl<span class="comment">     !&lt; scaling of restoring vprec to zero out global net ( -1..1 )</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html#l00144">144</a> of file <a class="el" href="../../d5/ded/MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">real</span> :: vprecglobalscl<span class="comment">     !&lt; scaling of restoring vprec to zero out global net ( -1..1 )</span></div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>

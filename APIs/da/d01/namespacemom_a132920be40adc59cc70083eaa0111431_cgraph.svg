@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 513;
+var viewWidth = 581;
 var viewHeight = 132;
 var sectionId = 'dynsection-0';
 </script>
@@ -54,92 +54,92 @@ var sectionId = 'dynsection-0';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom::calculate_surface_state</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-128 509,-128 509,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-128 577,-128 577,4 -4,4"/>
 <!-- Node0 -->
 <g id="node1" class="node"><title>Node0</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-44.5 0,-74.5 101,-74.5 101,-44.5 0,-44.5"/>
+<polygon fill="#bfbfbf" stroke="black" points="0,-44.5 0,-74.5 121,-74.5 121,-44.5 0,-44.5"/>
 <text text-anchor="start" x="8" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom::calculate_surface</text>
-<text text-anchor="middle" x="50.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">_state</text>
+<text text-anchor="middle" x="60.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">_state</text>
 </g>
 <!-- Node1 -->
 <g id="node2" class="node"><title>Node1</title>
 <g id="a_node2"><a xlink:href="../../d1/d99/namespacemom__tracer__flow__control.html#ac80d33b0f112d8469d38a8791268f3ad" target="_top" xlink:title="mom_tracer_flow_control\l::call_tracer_surface_state">
-<polygon fill="white" stroke="black" points="137,-90.5 137,-120.5 247,-120.5 247,-90.5 137,-90.5"/>
-<text text-anchor="start" x="145" y="-108.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_tracer_flow_control</text>
-<text text-anchor="middle" x="192" y="-97.5" font-family="Helvetica,sans-Serif" font-size="10.00">::call_tracer_surface_state</text>
+<polygon fill="white" stroke="black" points="157,-90.5 157,-120.5 289,-120.5 289,-90.5 157,-90.5"/>
+<text text-anchor="start" x="165" y="-108.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_tracer_flow_control</text>
+<text text-anchor="middle" x="223" y="-97.5" font-family="Helvetica,sans-Serif" font-size="10.00">::call_tracer_surface_state</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node1 -->
 <g id="edge1" class="edge"><title>Node0&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M97.1775,-74.5621C109.462,-78.6128 122.881,-83.0379 135.631,-87.2421"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="134.627,-90.5963 145.22,-90.404 136.819,-83.9484 134.627,-90.5963"/>
+<path fill="none" stroke="midnightblue" d="M114.054,-74.5621C128.678,-78.7535 144.701,-83.3456 159.821,-87.6791"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="159.025,-91.092 169.602,-90.4826 160.954,-84.3629 159.025,-91.092"/>
 </g>
 <!-- Node4 -->
 <g id="node5" class="node"><title>Node4</title>
 <g id="a_node5"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#a9cda07a87815f0e5594066162b4345c3" target="_top" xlink:title="Writes a message about entering a subroutine if call tree reporting is active. ">
-<polygon fill="white" stroke="black" points="283,-44.5 283,-74.5 376,-74.5 376,-44.5 283,-44.5"/>
-<text text-anchor="start" x="291" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="329.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">calltree_enter</text>
+<polygon fill="white" stroke="black" points="325,-44.5 325,-74.5 431,-74.5 431,-44.5 325,-44.5"/>
+<text text-anchor="start" x="333" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="378" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">calltree_enter</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node4 -->
 <g id="edge4" class="edge"><title>Node0&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M101.022,-59.5C149.211,-59.5 222.321,-59.5 272.579,-59.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="272.626,-63.0001 282.626,-59.5 272.626,-56.0001 272.626,-63.0001"/>
+<path fill="none" stroke="midnightblue" d="M121.214,-59.5C176.545,-59.5 258.535,-59.5 314.683,-59.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="314.854,-63.0001 324.854,-59.5 314.854,-56.0001 314.854,-63.0001"/>
 </g>
 <!-- Node5 -->
 <g id="node6" class="node"><title>Node5</title>
 <g id="a_node6"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#a88ea67781e2ed9b73ab7eac8ea5e8578" target="_top" xlink:title="Writes a message about leaving a subroutine if call tree reporting is active. ">
-<polygon fill="white" stroke="black" points="145.5,-0.5 145.5,-30.5 238.5,-30.5 238.5,-0.5 145.5,-0.5"/>
-<text text-anchor="start" x="153.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="192" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">calltree_leave</text>
+<polygon fill="white" stroke="black" points="170,-0.5 170,-30.5 276,-30.5 276,-0.5 170,-0.5"/>
+<text text-anchor="start" x="178" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="223" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">calltree_leave</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node5 -->
 <g id="edge6" class="edge"><title>Node0&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M99.1178,-44.4808C110.951,-40.7484 123.733,-36.717 135.892,-32.8816"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="136.997,-36.2033 145.481,-29.8573 134.891,-29.5275 136.997,-36.2033"/>
+<path fill="none" stroke="midnightblue" d="M116.286,-44.4808C130.379,-40.6173 145.641,-36.4334 160.068,-32.4783"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="161.179,-35.8028 169.898,-29.7834 159.328,-29.0519 161.179,-35.8028"/>
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
 <g id="a_node3"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="mom_error_handler::\lmom_error">
-<polygon fill="white" stroke="black" points="283,-93.5 283,-123.5 376,-123.5 376,-93.5 283,-93.5"/>
-<text text-anchor="start" x="291" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="329.5" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error</text>
+<polygon fill="white" stroke="black" points="325,-93.5 325,-123.5 431,-123.5 431,-93.5 325,-93.5"/>
+<text text-anchor="start" x="333" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="378" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M247.332,-106.703C255.707,-106.888 264.367,-107.08 272.772,-107.266"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="272.787,-110.767 282.862,-107.49 272.942,-103.769 272.787,-110.767"/>
+<path fill="none" stroke="midnightblue" d="M289.33,-106.781C297.76,-106.946 306.375,-107.115 314.754,-107.279"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="314.762,-110.78 324.829,-107.477 314.9,-103.782 314.762,-110.78"/>
 </g>
 <!-- Node3 -->
 <g id="node4" class="node"><title>Node3</title>
 <g id="a_node4"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="mom_error_handler::\lis_root_pe">
-<polygon fill="white" stroke="black" points="412,-44.5 412,-74.5 505,-74.5 505,-44.5 412,-44.5"/>
-<text text-anchor="start" x="420" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="458.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">is_root_pe</text>
+<polygon fill="white" stroke="black" points="467,-44.5 467,-74.5 573,-74.5 573,-44.5 467,-44.5"/>
+<text text-anchor="start" x="475" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="520" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">is_root_pe</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge3" class="edge"><title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M369.64,-93.3986C381.953,-88.6481 395.706,-83.3419 408.608,-78.364"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="410.2,-81.501 418.27,-74.6359 407.681,-74.9702 410.2,-81.501"/>
+<path fill="none" stroke="midnightblue" d="M422.147,-93.3986C435.986,-88.5549 451.475,-83.1336 465.938,-78.0715"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="467.472,-81.243 475.755,-74.6359 465.16,-74.636 467.472,-81.243"/>
 </g>
 <!-- Node4&#45;&gt;Node3 -->
 <g id="edge5" class="edge"><title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M376.35,-59.5C384.533,-59.5 393.141,-59.5 401.568,-59.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="401.717,-63.0001 411.717,-59.5 401.717,-56.0001 401.717,-63.0001"/>
+<path fill="none" stroke="midnightblue" d="M431.131,-59.5C439.421,-59.5 448.07,-59.5 456.568,-59.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="456.826,-63.0001 466.826,-59.5 456.826,-56.0001 456.826,-63.0001"/>
 </g>
 <!-- Node5&#45;&gt;Node3 -->
 <g id="edge7" class="edge"><title>Node5&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M238.872,-17.7883C276.113,-20.237 329.83,-25.1147 376,-34.5 385.257,-36.3818 394.965,-38.8793 404.322,-41.5686"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="403.331,-44.9252 413.914,-44.4227 405.328,-38.216 403.331,-44.9252"/>
+<path fill="none" stroke="midnightblue" d="M276.26,-17.6167C318.335,-19.9624 378.847,-24.7852 431,-34.5 441.176,-36.3955 451.874,-38.9461 462.169,-41.6955"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="461.314,-45.0905 471.885,-44.3775 463.177,-38.3428 461.314,-45.0905"/>
 </g>
 </g>
 </svg>

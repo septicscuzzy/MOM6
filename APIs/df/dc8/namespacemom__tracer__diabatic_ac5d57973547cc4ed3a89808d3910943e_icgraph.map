@@ -1,8 +1,9 @@
 <map id="mom_tracer_diabatic::tracer_vertdiff" name="mom_tracer_diabatic::tracer_vertdiff">
-<area shape="rect" id="node2" href="$d8/dc2/namespaceadvection__test__tracer.html#a02a7937d0c46fd2b70a64161d25ed378" title="advection_test_tracer\l::advection_test_tracer\l_column_physics" alt="" coords="183,5,314,61"/>
-<area shape="rect" id="node3" href="$d8/df3/namespacemom__diabatic__driver.html#a61e57d3902367aa46aa3c2d949ee900f" title="This subroutine imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentu..." alt="" coords="188,85,309,126"/>
-<area shape="rect" id="node4" href="$d6/dcd/namespaceideal__age__example.html#a910b9f6a989e02e130231ce67b708bfe" title="ideal_age_example::\lideal_age_tracer_column\l_physics" alt="" coords="177,149,320,205"/>
-<area shape="rect" id="node5" href="$d7/da0/namespaceisomip__tracer.html#ab39c7461cc8f1db9e0b681b9250abad1" title="This subroutine applies diapycnal diffusion and any other column. " alt="" coords="181,229,317,270"/>
-<area shape="rect" id="node6" href="$d6/dd2/namespacemom__ocmip2__cfc.html#af97d6b5ffc3e2a02d565592ba52bd39b" title="mom_ocmip2_cfc::ocmip2\l_cfc_column_physics" alt="" coords="176,294,321,335"/>
-<area shape="rect" id="node7" href="$df/d4e/namespacepseudo__salt__tracer.html#a006d8a5e36cc4ed2aed60fb0bace3902" title="pseudo_salt_tracer\l::pseudo_salt_tracer\l_column_physics" alt="" coords="189,359,308,415"/>
+<area shape="rect" id="node2" href="$d8/dc2/namespaceadvection__test__tracer.html#a02a7937d0c46fd2b70a64161d25ed378" title="advection_test_tracer\l::advection_test_tracer\l_column_physics" alt="" coords="206,5,361,61"/>
+<area shape="rect" id="node3" href="$d5/dbc/namespaceboundary__impulse__tracer.html#aca66c0e29a18f158c998ab10fecd6beb" title="boundary_impulse_tracer\l::boundary_impulse_tracer\l_column_physics" alt="" coords="196,85,371,141"/>
+<area shape="rect" id="node4" href="$d8/df3/namespacemom__diabatic__driver.html#a61e57d3902367aa46aa3c2d949ee900f" title="This subroutine imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentu..." alt="" coords="212,166,355,207"/>
+<area shape="rect" id="node5" href="$d6/dcd/namespaceideal__age__example.html#a910b9f6a989e02e130231ce67b708bfe" title="ideal_age_example::\lideal_age_tracer_column\l_physics" alt="" coords="200,232,367,288"/>
+<area shape="rect" id="node6" href="$d7/da0/namespaceisomip__tracer.html#ab39c7461cc8f1db9e0b681b9250abad1" title="This subroutine applies diapycnal diffusion and any other column. " alt="" coords="202,313,365,354"/>
+<area shape="rect" id="node7" href="$d6/dd2/namespacemom__ocmip2__cfc.html#af97d6b5ffc3e2a02d565592ba52bd39b" title="mom_ocmip2_cfc::ocmip2\l_cfc_column_physics" alt="" coords="196,378,371,419"/>
+<area shape="rect" id="node8" href="$df/d4e/namespacepseudo__salt__tracer.html#a006d8a5e36cc4ed2aed60fb0bace3902" title="pseudo_salt_tracer\l::pseudo_salt_tracer\l_column_physics" alt="" coords="213,444,353,500"/>
 </map>

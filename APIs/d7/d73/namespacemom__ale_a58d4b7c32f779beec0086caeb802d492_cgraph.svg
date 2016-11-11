@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 504;
+var viewWidth = 575;
 var viewHeight = 154;
 var sectionId = 'dynsection-2';
 </script>
@@ -54,112 +54,112 @@ var sectionId = 'dynsection-2';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_ale::ale_init</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-150 500,-150 500,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-150 571,-150 571,4 -4,4"/>
+<!-- Node15 -->
+<g id="node1" class="node"><title>Node15</title>
+<polygon fill="#bfbfbf" stroke="black" points="0,-55 0,-74 93,-74 93,-55 0,-55"/>
+<text text-anchor="middle" x="46.5" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ale::ale_init</text>
+</g>
+<!-- Node16 -->
+<g id="node2" class="node"><title>Node16</title>
+<g id="a_node2"><a xlink:href="../../d7/d73/namespacemom__ale.html#acb67ef912ee001b72fa9ed5d6c79cabe" target="_top" xlink:title="Initialize regridding module. ">
+<polygon fill="white" stroke="black" points="129,-99 129,-118 264,-118 264,-99 129,-99"/>
+<text text-anchor="middle" x="196.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ale::ale_initregridding</text>
+</a>
+</g>
+</g>
+<!-- Node15&#45;&gt;Node16 -->
+<g id="edge1" class="edge"><title>Node15&#45;&gt;Node16</title>
+<path fill="none" stroke="midnightblue" d="M79.6138,-74.0473C101.335,-80.5051 130.236,-89.0972 153.742,-96.0854"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="152.866,-99.4764 163.449,-98.9713 154.861,-92.7666 152.866,-99.4764"/>
+</g>
+<!-- Node20 -->
+<g id="node6" class="node"><title>Node20</title>
+<g id="a_node6"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#a9cda07a87815f0e5594066162b4345c3" target="_top" xlink:title="Writes a message about entering a subroutine if call tree reporting is active. ">
+<polygon fill="white" stroke="black" points="143.5,-49.5 143.5,-79.5 249.5,-79.5 249.5,-49.5 143.5,-49.5"/>
+<text text-anchor="start" x="151.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="196.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">calltree_enter</text>
+</a>
+</g>
+</g>
+<!-- Node15&#45;&gt;Node20 -->
+<g id="edge5" class="edge"><title>Node15&#45;&gt;Node20</title>
+<path fill="none" stroke="midnightblue" d="M93.1125,-64.5C105.769,-64.5 119.731,-64.5 133.167,-64.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="133.309,-68.0001 143.309,-64.5 133.309,-61.0001 133.309,-68.0001"/>
+</g>
+<!-- Node22 -->
+<g id="node8" class="node"><title>Node22</title>
+<g id="a_node8"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#a88ea67781e2ed9b73ab7eac8ea5e8578" target="_top" xlink:title="Writes a message about leaving a subroutine if call tree reporting is active. ">
+<polygon fill="white" stroke="black" points="143.5,-0.5 143.5,-30.5 249.5,-30.5 249.5,-0.5 143.5,-0.5"/>
+<text text-anchor="start" x="151.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="196.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">calltree_leave</text>
+</a>
+</g>
+</g>
+<!-- Node15&#45;&gt;Node22 -->
+<g id="edge7" class="edge"><title>Node15&#45;&gt;Node22</title>
+<path fill="none" stroke="midnightblue" d="M76.3872,-54.936C94.5518,-48.9221 118.581,-40.9665 140.297,-33.7768"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="141.689,-37.0027 150.082,-30.537 139.489,-30.3574 141.689,-37.0027"/>
+</g>
 <!-- Node17 -->
-<g id="node1" class="node"><title>Node17</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-55 0,-74 79,-74 79,-55 0,-55"/>
-<text text-anchor="middle" x="39.5" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ale::ale_init</text>
+<g id="node3" class="node"><title>Node17</title>
+<g id="a_node3"><a xlink:href="../../df/d46/namespacemom__string__functions.html#a7bfdab6bba33230cc94ed625e95022c9" target="_top" xlink:title="Returns the string corresponding to the nth word in the argument or &quot;&quot; if the string is not long enou...">
+<polygon fill="white" stroke="black" points="302.5,-115.5 302.5,-145.5 415.5,-145.5 415.5,-115.5 302.5,-115.5"/>
+<text text-anchor="start" x="310.5" y="-133.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_string_functions</text>
+<text text-anchor="middle" x="359" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">::extractword</text>
+</a>
+</g>
+</g>
+<!-- Node16&#45;&gt;Node17 -->
+<g id="edge2" class="edge"><title>Node16&#45;&gt;Node17</title>
+<path fill="none" stroke="midnightblue" d="M264.172,-117.639C273.533,-118.922 283.148,-120.24 292.487,-121.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="292.105,-125 302.488,-122.891 293.056,-118.065 292.105,-125"/>
+</g>
+<!-- Node19 -->
+<g id="node5" class="node"><title>Node19</title>
+<g id="a_node5"><a xlink:href="../../d7/d73/namespacemom__ale.html#aa4e21aab357f4922537bb9a07e80f49f" target="_top" xlink:title="Parses a string and generates a dz(:) profile. ">
+<polygon fill="white" stroke="black" points="300,-77 300,-96 418,-96 418,-77 300,-77"/>
+<text text-anchor="middle" x="359" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ale::dz_function1</text>
+</a>
+</g>
+</g>
+<!-- Node16&#45;&gt;Node19 -->
+<g id="edge4" class="edge"><title>Node16&#45;&gt;Node19</title>
+<path fill="none" stroke="midnightblue" d="M264.172,-99.3611C272.715,-98.1902 281.469,-96.9902 290.032,-95.8165"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="290.54,-99.2796 299.973,-94.4539 289.59,-92.3445 290.54,-99.2796"/>
 </g>
 <!-- Node18 -->
-<g id="node2" class="node"><title>Node18</title>
-<g id="a_node2"><a xlink:href="../../d7/d73/namespacemom__ale.html#acb67ef912ee001b72fa9ed5d6c79cabe" target="_top" xlink:title="Initialize regridding module. ">
-<polygon fill="white" stroke="black" points="115,-99 115,-118 230,-118 230,-99 115,-99"/>
-<text text-anchor="middle" x="172.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ale::ale_initregridding</text>
+<g id="node4" class="node"><title>Node18</title>
+<g id="a_node4"><a xlink:href="../../df/d46/namespacemom__string__functions.html#aad76dee92b69dab4488da049fe11cdb8" target="_top" xlink:title="Returns the string corresponding to the nth word in the argument or &quot;&quot; if the string is not long enou...">
+<polygon fill="white" stroke="black" points="454,-115.5 454,-145.5 567,-145.5 567,-115.5 454,-115.5"/>
+<text text-anchor="start" x="462" y="-133.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_string_functions</text>
+<text text-anchor="middle" x="510.5" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">::extract_word</text>
 </a>
 </g>
 </g>
 <!-- Node17&#45;&gt;Node18 -->
-<g id="edge1" class="edge"><title>Node17&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M68.925,-74.0473C87.8082,-80.3898 112.821,-88.7911 133.419,-95.7096"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="132.536,-99.1051 143.13,-98.9713 134.765,-92.4694 132.536,-99.1051"/>
-</g>
-<!-- Node22 -->
-<g id="node6" class="node"><title>Node22</title>
-<g id="a_node6"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#a9cda07a87815f0e5594066162b4345c3" target="_top" xlink:title="Writes a message about entering a subroutine if call tree reporting is active. ">
-<polygon fill="white" stroke="black" points="126,-49.5 126,-79.5 219,-79.5 219,-49.5 126,-49.5"/>
-<text text-anchor="start" x="134" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="172.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">calltree_enter</text>
-</a>
-</g>
-</g>
-<!-- Node17&#45;&gt;Node22 -->
-<g id="edge5" class="edge"><title>Node17&#45;&gt;Node22</title>
-<path fill="none" stroke="midnightblue" d="M79.0958,-64.5C90.5345,-64.5 103.298,-64.5 115.6,-64.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="115.786,-68.0001 125.786,-64.5 115.786,-61.0001 115.786,-68.0001"/>
-</g>
-<!-- Node24 -->
-<g id="node8" class="node"><title>Node24</title>
-<g id="a_node8"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#a88ea67781e2ed9b73ab7eac8ea5e8578" target="_top" xlink:title="Writes a message about leaving a subroutine if call tree reporting is active. ">
-<polygon fill="white" stroke="black" points="126,-0.5 126,-30.5 219,-30.5 219,-0.5 126,-0.5"/>
-<text text-anchor="start" x="134" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="172.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">calltree_leave</text>
-</a>
-</g>
-</g>
-<!-- Node17&#45;&gt;Node24 -->
-<g id="edge7" class="edge"><title>Node17&#45;&gt;Node24</title>
-<path fill="none" stroke="midnightblue" d="M66.0691,-54.936C81.9299,-49.0033 102.842,-41.1812 121.857,-34.0687"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="123.159,-37.3186 131.299,-30.537 120.707,-30.7622 123.159,-37.3186"/>
-</g>
-<!-- Node19 -->
-<g id="node3" class="node"><title>Node19</title>
-<g id="a_node3"><a xlink:href="../../df/d46/namespacemom__string__functions.html#a7bfdab6bba33230cc94ed625e95022c9" target="_top" xlink:title="Returns the string corresponding to the nth word in the argument or &quot;&quot; if the string is not long enou...">
-<polygon fill="white" stroke="black" points="268,-115.5 268,-145.5 363,-145.5 363,-115.5 268,-115.5"/>
-<text text-anchor="start" x="276" y="-133.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_string_functions</text>
-<text text-anchor="middle" x="315.5" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">::extractword</text>
-</a>
-</g>
-</g>
-<!-- Node18&#45;&gt;Node19 -->
-<g id="edge2" class="edge"><title>Node18&#45;&gt;Node19</title>
-<path fill="none" stroke="midnightblue" d="M230.038,-117.321C239.167,-118.746 248.622,-120.221 257.756,-121.646"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="257.478,-125.145 267.898,-123.229 258.557,-118.229 257.478,-125.145"/>
+<g id="edge3" class="edge"><title>Node17&#45;&gt;Node18</title>
+<path fill="none" stroke="midnightblue" d="M415.668,-130.5C424.813,-130.5 434.366,-130.5 443.729,-130.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="443.785,-134 453.785,-130.5 443.785,-127 443.785,-134"/>
 </g>
 <!-- Node21 -->
-<g id="node5" class="node"><title>Node21</title>
-<g id="a_node5"><a xlink:href="../../d7/d73/namespacemom__ale.html#aa4e21aab357f4922537bb9a07e80f49f" target="_top" xlink:title="Parses a string and generates a dz(:) profile. ">
-<polygon fill="white" stroke="black" points="266,-77 266,-96 365,-96 365,-77 266,-77"/>
-<text text-anchor="middle" x="315.5" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ale::dz_function1</text>
-</a>
-</g>
-</g>
-<!-- Node18&#45;&gt;Node21 -->
-<g id="edge4" class="edge"><title>Node18&#45;&gt;Node21</title>
-<path fill="none" stroke="midnightblue" d="M230.038,-99.6785C238.426,-98.3697 247.089,-97.0181 255.525,-95.7017"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="256.329,-99.1187 265.67,-94.1188 255.25,-92.2024 256.329,-99.1187"/>
-</g>
-<!-- Node20 -->
-<g id="node4" class="node"><title>Node20</title>
-<g id="a_node4"><a xlink:href="../../df/d46/namespacemom__string__functions.html#aad76dee92b69dab4488da049fe11cdb8" target="_top" xlink:title="Returns the string corresponding to the nth word in the argument or &quot;&quot; if the string is not long enou...">
-<polygon fill="white" stroke="black" points="401,-115.5 401,-145.5 496,-145.5 496,-115.5 401,-115.5"/>
-<text text-anchor="start" x="409" y="-133.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_string_functions</text>
-<text text-anchor="middle" x="448.5" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">::extract_word</text>
-</a>
-</g>
-</g>
-<!-- Node19&#45;&gt;Node20 -->
-<g id="edge3" class="edge"><title>Node19&#45;&gt;Node20</title>
-<path fill="none" stroke="midnightblue" d="M363.055,-130.5C371.924,-130.5 381.301,-130.5 390.454,-130.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="390.654,-134 400.654,-130.5 390.654,-127 390.654,-134"/>
-</g>
-<!-- Node23 -->
-<g id="node7" class="node"><title>Node23</title>
+<g id="node7" class="node"><title>Node21</title>
 <g id="a_node7"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="mom_error_handler::\lis_root_pe">
-<polygon fill="white" stroke="black" points="269,-25.5 269,-55.5 362,-55.5 362,-25.5 269,-25.5"/>
-<text text-anchor="start" x="277" y="-43.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="315.5" y="-32.5" font-family="Helvetica,sans-Serif" font-size="10.00">is_root_pe</text>
+<polygon fill="white" stroke="black" points="306,-25.5 306,-55.5 412,-55.5 412,-25.5 306,-25.5"/>
+<text text-anchor="start" x="314" y="-43.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="359" y="-32.5" font-family="Helvetica,sans-Serif" font-size="10.00">is_root_pe</text>
 </a>
 </g>
 </g>
-<!-- Node22&#45;&gt;Node23 -->
-<g id="edge6" class="edge"><title>Node22&#45;&gt;Node23</title>
-<path fill="none" stroke="midnightblue" d="M219.279,-56.7079C231.966,-54.5483 245.877,-52.1805 259.052,-49.938"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="259.68,-53.3815 268.951,-48.253 258.505,-46.4807 259.68,-53.3815"/>
+<!-- Node20&#45;&gt;Node21 -->
+<g id="edge6" class="edge"><title>Node20&#45;&gt;Node21</title>
+<path fill="none" stroke="midnightblue" d="M249.61,-56.7079C264.402,-54.496 280.654,-52.0658 295.971,-49.7753"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="296.505,-53.2345 305.877,-48.2941 295.47,-46.3115 296.505,-53.2345"/>
 </g>
-<!-- Node24&#45;&gt;Node23 -->
-<g id="edge8" class="edge"><title>Node24&#45;&gt;Node23</title>
-<path fill="none" stroke="midnightblue" d="M219.279,-23.6168C231.966,-25.8663 245.877,-28.3328 259.052,-30.6688"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="258.494,-34.1243 268.951,-32.4239 259.716,-27.2318 258.494,-34.1243"/>
+<!-- Node22&#45;&gt;Node21 -->
+<g id="edge8" class="edge"><title>Node22&#45;&gt;Node21</title>
+<path fill="none" stroke="midnightblue" d="M249.61,-23.6168C264.402,-25.9208 280.654,-28.4523 295.971,-30.8382"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="295.458,-34.3003 305.877,-32.3812 296.535,-27.3837 295.458,-34.3003"/>
 </g>
 </g>
 </svg>

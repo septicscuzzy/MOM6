@@ -2,6 +2,7 @@ var annotated_dup =
 [
     [ "advection_test_tracer", "d8/dc2/namespaceadvection__test__tracer.html", "d8/dc2/namespaceadvection__test__tracer" ],
     [ "bfb_surface_forcing", "d0/d4c/namespacebfb__surface__forcing.html", "d0/d4c/namespacebfb__surface__forcing" ],
+    [ "boundary_impulse_tracer", "d5/dbc/namespaceboundary__impulse__tracer.html", "d5/dbc/namespaceboundary__impulse__tracer" ],
     [ "coupler_types_mod", "d8/df9/namespacecoupler__types__mod.html", "d8/df9/namespacecoupler__types__mod" ],
     [ "dome_tracer", "d2/d4c/namespacedome__tracer.html", "d2/d4c/namespacedome__tracer" ],
     [ "ideal_age_example", "d6/dcd/namespaceideal__age__example.html", "d6/dcd/namespaceideal__age__example" ],
@@ -23,6 +24,7 @@ var annotated_dup =
     [ "mom_cvmix_shear", "d4/d6d/namespacemom__cvmix__shear.html", "d4/d6d/namespacemom__cvmix__shear" ],
     [ "mom_diabatic_aux", "d7/d3b/namespacemom__diabatic__aux.html", "d7/d3b/namespacemom__diabatic__aux" ],
     [ "mom_diabatic_driver", "d8/df3/namespacemom__diabatic__driver.html", "d8/df3/namespacemom__diabatic__driver" ],
+    [ "mom_diag_manager_wrapper", "d6/d72/namespacemom__diag__manager__wrapper.html", "d6/d72/namespacemom__diag__manager__wrapper" ],
     [ "mom_diag_mediator", "d9/d06/namespacemom__diag__mediator.html", "d9/d06/namespacemom__diag__mediator" ],
     [ "mom_diag_to_z", "d0/dbf/namespacemom__diag__to__z.html", "d0/dbf/namespacemom__diag__to__z" ],
     [ "mom_diagnostics", "d9/d8b/namespacemom__diagnostics.html", "d9/d8b/namespacemom__diagnostics" ],
@@ -65,6 +67,7 @@ var annotated_dup =
     [ "mom_neutral_diffusion", "d8/da4/namespacemom__neutral__diffusion.html", "d8/da4/namespacemom__neutral__diffusion" ],
     [ "mom_ocmip2_cfc", "d6/dd2/namespacemom__ocmip2__cfc.html", "d6/dd2/namespacemom__ocmip2__cfc" ],
     [ "mom_ocmip2_co2calc_mod", "db/d68/namespacemom__ocmip2__co2calc__mod.html", "db/d68/namespacemom__ocmip2__co2calc__mod" ],
+    [ "mom_offline_transport", "d1/d36/namespacemom__offline__transport.html", "d1/d36/namespacemom__offline__transport" ],
     [ "mom_opacity", "d2/db1/namespacemom__opacity.html", "d2/db1/namespacemom__opacity" ],
     [ "mom_open_boundary", "de/ddd/namespacemom__open__boundary.html", "de/ddd/namespacemom__open__boundary" ],
     [ "mom_pointaccel", "dd/d11/namespacemom__pointaccel.html", "dd/d11/namespacemom__pointaccel" ],

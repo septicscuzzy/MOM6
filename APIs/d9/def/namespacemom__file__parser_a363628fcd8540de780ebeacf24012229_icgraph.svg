@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 844;
+var viewWidth = 725;
 var viewHeight = 132;
 var sectionId = 'dynsection-41';
 </script>
@@ -54,107 +54,81 @@ var sectionId = 'dynsection-41';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_file_parser::openparameterblock</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-128 840,-128 840,4 -4,4"/>
-<!-- Node376 -->
-<g id="node1" class="node"><title>Node376</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-44.5 0,-63.5 155,-63.5 155,-44.5 0,-44.5"/>
-<text text-anchor="middle" x="77.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_file_parser::openparameterblock</text>
+<polygon fill="white" stroke="none" points="-4,4 -4,-128 721,-128 721,4 -4,4"/>
+<!-- Node272 -->
+<g id="node1" class="node"><title>Node272</title>
+<polygon fill="#bfbfbf" stroke="black" points="0,-44.5 0,-63.5 182,-63.5 182,-44.5 0,-44.5"/>
+<text text-anchor="middle" x="91" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_file_parser::openparameterblock</text>
 </g>
-<!-- Node377 -->
-<g id="node2" class="node"><title>Node377</title>
+<!-- Node273 -->
+<g id="node2" class="node"><title>Node273</title>
 <g id="a_node2"><a xlink:href="../../d8/d50/namespacebaroclinic__zone__initialization.html#a72863008aadad2118278f5e0978fd99b" target="_top" xlink:title="Reads the parameters unique to this module. ">
-<polygon fill="white" stroke="black" points="191,-88 191,-118 307,-118 307,-88 191,-88"/>
-<text text-anchor="start" x="199" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">baroclinic_zone_initialization</text>
-<text text-anchor="middle" x="249" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">::bcz_params</text>
+<polygon fill="white" stroke="black" points="218,-88 218,-118 358,-118 358,-88 218,-88"/>
+<text text-anchor="start" x="226" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">baroclinic_zone_initialization</text>
+<text text-anchor="middle" x="288" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">::bcz_params</text>
 </a>
 </g>
 </g>
-<!-- Node376&#45;&gt;Node377 -->
-<g id="edge1" class="edge"><title>Node376&#45;&gt;Node377</title>
-<path fill="none" stroke="midnightblue" d="M121.275,-66.3657C143.97,-72.9265 172.037,-81.0403 195.984,-87.963"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="122.162,-62.9789 111.584,-63.564 120.218,-69.7036 122.162,-62.9789"/>
+<!-- Node272&#45;&gt;Node273 -->
+<g id="edge1" class="edge"><title>Node272&#45;&gt;Node273</title>
+<path fill="none" stroke="midnightblue" d="M139.812,-66.0142C166.16,-72.635 199.115,-80.9161 227.159,-87.963"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="140.612,-62.6067 130.061,-63.564 138.906,-69.3956 140.612,-62.6067"/>
 </g>
-<!-- Node382 -->
-<g id="node7" class="node"><title>Node382</title>
-<g id="a_node7"><a xlink:href="../../d6/d07/namespacemom__diffconvection.html#ac36d9d7fd69e4422e7de01242094ff34" target="_top" xlink:title="mom_diffconvection\l::diffconvection_init">
-<polygon fill="white" stroke="black" points="205.5,-39 205.5,-69 292.5,-69 292.5,-39 205.5,-39"/>
-<text text-anchor="start" x="213.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">mom_diffconvection</text>
-<text text-anchor="middle" x="249" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">::diffconvection_init</text>
+<!-- Node276 -->
+<g id="node5" class="node"><title>Node276</title>
+<g id="a_node5"><a xlink:href="../../d6/d07/namespacemom__diffconvection.html#ac36d9d7fd69e4422e7de01242094ff34" target="_top" xlink:title="mom_diffconvection\l::diffconvection_init">
+<polygon fill="white" stroke="black" points="236,-39 236,-69 340,-69 340,-39 236,-39"/>
+<text text-anchor="start" x="244" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">mom_diffconvection</text>
+<text text-anchor="middle" x="288" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">::diffconvection_init</text>
 </a>
 </g>
 </g>
-<!-- Node376&#45;&gt;Node382 -->
-<g id="edge6" class="edge"><title>Node376&#45;&gt;Node382</title>
-<path fill="none" stroke="midnightblue" d="M165.403,-54C179.269,-54 193.057,-54 205.283,-54"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="165.315,-50.5001 155.315,-54 165.315,-57.5001 165.315,-50.5001"/>
+<!-- Node272&#45;&gt;Node276 -->
+<g id="edge4" class="edge"><title>Node272&#45;&gt;Node276</title>
+<path fill="none" stroke="midnightblue" d="M192.484,-54C207.517,-54 222.455,-54 235.867,-54"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="192.08,-50.5001 182.08,-54 192.08,-57.5001 192.08,-50.5001"/>
 </g>
-<!-- Node383 -->
-<g id="node8" class="node"><title>Node383</title>
-<g id="a_node8"><a xlink:href="../../d5/d08/namespacemom__kpp.html#a9c834424b6e067e280928db3700ec77e" target="_top" xlink:title="Initialize the CVmix KPP module and set up diagnostics Returns True if KPP is to be used...">
-<polygon fill="white" stroke="black" points="207.5,-0.5 207.5,-19.5 290.5,-19.5 290.5,-0.5 207.5,-0.5"/>
-<text text-anchor="middle" x="249" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_kpp::kpp_init</text>
+<!-- Node277 -->
+<g id="node6" class="node"><title>Node277</title>
+<g id="a_node6"><a xlink:href="../../d5/d08/namespacemom__kpp.html#a9c834424b6e067e280928db3700ec77e" target="_top" xlink:title="Initialize the CVmix KPP module and set up diagnostics Returns True if KPP is to be used...">
+<polygon fill="white" stroke="black" points="238.5,-0.5 238.5,-19.5 337.5,-19.5 337.5,-0.5 238.5,-0.5"/>
+<text text-anchor="middle" x="288" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_kpp::kpp_init</text>
 </a>
 </g>
 </g>
-<!-- Node376&#45;&gt;Node383 -->
-<g id="edge7" class="edge"><title>Node376&#45;&gt;Node383</title>
-<path fill="none" stroke="midnightblue" d="M124.965,-41.9383C152.15,-34.8815 185.988,-26.0976 211.293,-19.5287"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="124.079,-38.5523 115.279,-44.4527 125.838,-45.3277 124.079,-38.5523"/>
+<!-- Node272&#45;&gt;Node277 -->
+<g id="edge5" class="edge"><title>Node272&#45;&gt;Node277</title>
+<path fill="none" stroke="midnightblue" d="M144.225,-42.2159C175.703,-35.1131 215.275,-26.184 244.77,-19.5287"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="143.296,-38.8373 134.312,-44.4527 144.837,-45.6657 143.296,-38.8373"/>
 </g>
-<!-- Node378 -->
-<g id="node3" class="node"><title>Node378</title>
+<!-- Node274 -->
+<g id="node3" class="node"><title>Node274</title>
 <g id="a_node3"><a xlink:href="../../d8/d50/namespacebaroclinic__zone__initialization.html#a2f99c7b0ea7981ef7b2c342fbc8c00c1" target="_top" xlink:title="Initialization of temperature and salinity with the baroclinic zone initial conditions. ">
-<polygon fill="white" stroke="black" points="343,-82.5 343,-123.5 482,-123.5 482,-82.5 343,-82.5"/>
-<text text-anchor="start" x="351" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">baroclinic_zone_initialization</text>
-<text text-anchor="start" x="351" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">::baroclinic_zone_init_temperature</text>
-<text text-anchor="middle" x="412.5" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">_salinity</text>
+<polygon fill="white" stroke="black" points="394,-82.5 394,-123.5 559,-123.5 559,-82.5 394,-82.5"/>
+<text text-anchor="start" x="402" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">baroclinic_zone_initialization</text>
+<text text-anchor="start" x="402" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">::baroclinic_zone_init_temperature</text>
+<text text-anchor="middle" x="476.5" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">_salinity</text>
 </a>
 </g>
 </g>
-<!-- Node377&#45;&gt;Node378 -->
-<g id="edge2" class="edge"><title>Node377&#45;&gt;Node378</title>
-<path fill="none" stroke="midnightblue" d="M317.527,-103C325.935,-103 334.54,-103 342.964,-103"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="317.394,-99.5001 307.394,-103 317.394,-106.5 317.394,-99.5001"/>
+<!-- Node273&#45;&gt;Node274 -->
+<g id="edge2" class="edge"><title>Node273&#45;&gt;Node274</title>
+<path fill="none" stroke="midnightblue" d="M368.364,-103C376.791,-103 385.373,-103 393.826,-103"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="368.181,-99.5001 358.181,-103 368.181,-106.5 368.181,-99.5001"/>
 </g>
-<!-- Node379 -->
-<g id="node4" class="node"><title>Node379</title>
+<!-- Node275 -->
+<g id="node4" class="node"><title>Node275</title>
 <g id="a_node4"><a xlink:href="../../d6/d62/namespacemom__state__initialization.html#af4e854627c6572332ba3fd895f169321" target="_top" xlink:title="mom_state_initialization\l::mom_initialize_state">
-<polygon fill="white" stroke="black" points="518,-88 518,-118 619,-118 619,-88 518,-88"/>
-<text text-anchor="start" x="526" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">mom_state_initialization</text>
-<text text-anchor="middle" x="568.5" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">::mom_initialize_state</text>
+<polygon fill="white" stroke="black" points="595,-88 595,-118 717,-118 717,-88 595,-88"/>
+<text text-anchor="start" x="603" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">mom_state_initialization</text>
+<text text-anchor="middle" x="656" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">::mom_initialize_state</text>
 </a>
 </g>
 </g>
-<!-- Node378&#45;&gt;Node379 -->
-<g id="edge3" class="edge"><title>Node378&#45;&gt;Node379</title>
-<path fill="none" stroke="midnightblue" d="M492.429,-103C500.988,-103 509.515,-103 517.587,-103"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="492.392,-99.5001 482.392,-103 492.392,-106.5 492.392,-99.5001"/>
-</g>
-<!-- Node380 -->
-<g id="node5" class="node"><title>Node380</title>
-<g id="a_node5"><a xlink:href="../../da/d01/namespacemom.html#afebdc0103ad9cbe0ed4a54e522dc4104" target="_top" xlink:title="This subroutine initializes MOM. ">
-<polygon fill="white" stroke="black" points="655,-93.5 655,-112.5 744,-112.5 744,-93.5 655,-93.5"/>
-<text text-anchor="middle" x="699.5" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom::initialize_mom</text>
-</a>
-</g>
-</g>
-<!-- Node379&#45;&gt;Node380 -->
-<g id="edge4" class="edge"><title>Node379&#45;&gt;Node380</title>
-<path fill="none" stroke="midnightblue" d="M629.088,-103C637.755,-103 646.541,-103 654.815,-103"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="629.006,-99.5001 619.006,-103 629.006,-106.5 629.006,-99.5001"/>
-</g>
-<!-- Node381 -->
-<g id="node6" class="node"><title>Node381</title>
-<g id="a_node6"><a xlink:href="../../de/dbc/MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" target="_top" xlink:title="mom_main">
-<polygon fill="white" stroke="black" points="780,-93.5 780,-112.5 836,-112.5 836,-93.5 780,-93.5"/>
-<text text-anchor="middle" x="808" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_main</text>
-</a>
-</g>
-</g>
-<!-- Node380&#45;&gt;Node381 -->
-<g id="edge5" class="edge"><title>Node380&#45;&gt;Node381</title>
-<path fill="none" stroke="midnightblue" d="M754.407,-103C763.206,-103 771.981,-103 779.771,-103"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="754.125,-99.5001 744.125,-103 754.125,-106.5 754.125,-99.5001"/>
+<!-- Node274&#45;&gt;Node275 -->
+<g id="edge3" class="edge"><title>Node274&#45;&gt;Node275</title>
+<path fill="none" stroke="midnightblue" d="M569.391,-103C578.043,-103 586.654,-103 594.897,-103"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="569.236,-99.5001 559.236,-103 569.236,-106.5 569.236,-99.5001"/>
 </g>
 </g>
 </svg>

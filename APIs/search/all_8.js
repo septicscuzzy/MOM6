@@ -8,6 +8,7 @@ var searchData=
   ['gamma_5fitides',['gamma_itides',['../df/dba/structmom__set__diffusivity_1_1set__diffusivity__cs.html#a7e7bc46e1eabe7dfb144e92a286cfe88',1,'mom_set_diffusivity::set_diffusivity_cs']]],
   ['gamma_5flee',['gamma_lee',['../df/dba/structmom__set__diffusivity_1_1set__diffusivity__cs.html#a394940508ca2b1f3da0491c0e54d3d6b',1,'mom_set_diffusivity::set_diffusivity_cs']]],
   ['gamma_5ft',['gamma_t',['../dd/d1f/structmom__ice__shelf_1_1ice__shelf__cs.html#a0b9979a9d71a9b25ee9746950856fde0',1,'mom_ice_shelf::ice_shelf_cs::gamma_t()'],['../d2/d8f/structshelf__triangular__festuff_1_1ice__shelf__cs.html#a7381e4310b38f1882e4fea48dcf0e6ee',1,'shelf_triangular_festuff::ice_shelf_cs::gamma_t()']]],
+  ['gamma_5ft_5f3eq',['gamma_t_3eq',['../dd/d1f/structmom__ice__shelf_1_1ice__shelf__cs.html#aeb83cc157fa4fbb0da66cd8e0338a9b8',1,'mom_ice_shelf::ice_shelf_cs']]],
   ['gamma_5fuv',['gamma_uv',['../df/d7b/structmom__open__boundary_1_1ocean__obc__type.html#aab6de29cfaf827e2d3fde823efd31e56',1,'mom_open_boundary::ocean_obc_type']]],
   ['geo_5fheat',['geo_heat',['../d7/df9/structmom__geothermal_1_1geothermal__cs.html#a5382ca998f1d5f179ad8bce79f45e6f9',1,'mom_geothermal::geothermal_cs']]],
   ['geolatbu',['geolatbu',['../d8/d8b/structmom__grid_1_1ocean__grid__type.html#ab505a30865c99f0417e779ba1ddf2f74',1,'mom_grid::ocean_grid_type::geolatbu()'],['../dc/d96/structmom__dyn__horgrid_1_1dyn__horgrid__type.html#a72bef40f9dec94619b7df3d037881415',1,'mom_dyn_horgrid::dyn_horgrid_type::geolatbu()']]],

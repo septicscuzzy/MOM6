@@ -3,6 +3,7 @@ var ocean__model__MOM_8F90 =
     [ "ocean_model_data_get", "d8/d36/interfaceocean__model__mod_1_1ocean__model__data__get.html", "d8/d36/interfaceocean__model__mod_1_1ocean__model__data__get" ],
     [ "ocean_public_type", "da/dc4/structocean__model__mod_1_1ocean__public__type.html", "da/dc4/structocean__model__mod_1_1ocean__public__type" ],
     [ "ocean_state_type", "d6/d99/structocean__model__mod_1_1ocean__state__type.html", "d6/d99/structocean__model__mod_1_1ocean__state__type" ],
+    [ "add_berg_flux_to_shelf", "d1/d1a/ocean__model__MOM_8F90.html#a4faca949499f2eb3041b7397793858bc", null ],
     [ "convert_state_to_ocean_type", "d1/d1a/ocean__model__MOM_8F90.html#a64b695715eda52e446d95bfdddbe85d7", null ],
     [ "initialize_ocean_public_type", "d1/d1a/ocean__model__MOM_8F90.html#a69436704f765fcf78d898c60e0ea511a", null ],
     [ "ocean_model_data1d_get", "d1/d1a/ocean__model__MOM_8F90.html#a1ce15d13f4617f5f660164a7eb210f32", null ],

@@ -7,6 +7,8 @@ var structmom__tracer__hor__diff_1_1tracer__hor__diff__cs =
     [ "dt", "d7/d4b/structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a0a238c808eefaa599bf244d06902075c", null ],
     [ "first_call", "d7/d4b/structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a66c21891e3bb452e704941be3b1cbfb9", null ],
     [ "id_cfl", "d7/d4b/structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#af1f8562a68b20eaa9b0a2aafff5a09fa", null ],
+    [ "id_khdt_x", "d7/d4b/structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#af6c66a27ea26cf3c9d06d6f193e35d54", null ],
+    [ "id_khdt_y", "d7/d4b/structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a579953a548ec2a356ebda44dea10872d", null ],
     [ "id_khtr_h", "d7/d4b/structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a50a0a4c602cbf0b08b0ecd0c08674104", null ],
     [ "id_khtr_u", "d7/d4b/structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#ac3a9e02fc9b0cba7563acdad0627e9d0", null ],
     [ "id_khtr_v", "d7/d4b/structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a1ab6bc082b14b69de3afad8f06600d51", null ],

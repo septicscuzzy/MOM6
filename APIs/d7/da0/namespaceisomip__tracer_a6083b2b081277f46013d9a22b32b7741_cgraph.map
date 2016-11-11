@@ -1,10 +1,9 @@
 <map id="isomip_tracer::initialize_isomip_tracer" name="isomip_tracer::initialize_isomip_tracer">
-<area shape="rect" id="node2" href="$d1/d35/namespacemom__tracer__registry.html#ac008525fee272a225a19998ae437b5bf" title="This subroutine adds diagnostic arrays for a tracer that has previously been registered by a call to ..." alt="" coords="373,5,512,47"/>
-<area shape="rect" id="node3" href="$d0/de6/namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" title="mom_error_handler::\lmom_error" alt="" coords="564,115,688,156"/>
-<area shape="rect" id="node5" href="$d5/d89/namespacemom__io.html#a23e82d1d89d9bb1c9bdf802ce80d4508" title="This routine queries vardesc. " alt="" coords="183,122,319,149"/>
-<area shape="rect" id="node7" href="$d0/dbf/namespacemom__diag__to__z.html#a6946a3316715041c5944df17db1aef74" title="mom_diag_to_z::register\l_z_tracer" alt="" coords="181,173,321,215"/>
-<area shape="rect" id="node9" href="$de/dd7/namespacemom__ale__sponge.html#adfb5d248683fa9d6accfcf5638303c3f" title="This subroutine stores the reference profile for the variable. " alt="" coords="188,239,315,280"/>
-<area shape="rect" id="node4" href="$d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" title="mom_error_handler::\lis_root_pe" alt="" coords="736,115,860,156"/>
-<area shape="rect" id="node6" href="$d5/d89/namespacemom__io.html#ac4bc408e8b38dbd669842753f26ebf88" title="Copies a string. " alt="" coords="369,122,516,149"/>
-<area shape="rect" id="node8" href="$d0/dbf/namespacemom__diag__to__z.html#adde57f2503f5c182af511fba0f4c83ea" title="mom_diag_to_z::register\l_z_tracer_low" alt="" coords="373,173,513,215"/>
+<area shape="rect" id="node2" href="$d1/d35/namespacemom__tracer__registry.html#ac008525fee272a225a19998ae437b5bf" title="This subroutine adds diagnostic arrays for a tracer that has previously been registered by a call to ..." alt="" coords="427,5,591,47"/>
+<area shape="rect" id="node3" href="$d0/de6/namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" title="mom_error_handler::\lmom_error" alt="" coords="644,89,785,131"/>
+<area shape="rect" id="node5" href="$d5/d89/namespacemom__io.html#a23e82d1d89d9bb1c9bdf802ce80d4508" title="This routine queries vardesc. " alt="" coords="210,122,371,149"/>
+<area shape="rect" id="node7" href="$d0/dbf/namespacemom__diag__to__z.html#a6946a3316715041c5944df17db1aef74" title="mom_diag_to_z::register\l_z_tracer" alt="" coords="208,173,373,215"/>
+<area shape="rect" id="node4" href="$d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" title="mom_error_handler::\lis_root_pe" alt="" coords="833,89,975,131"/>
+<area shape="rect" id="node6" href="$d5/d89/namespacemom__io.html#ac4bc408e8b38dbd669842753f26ebf88" title="Copies a string. " alt="" coords="421,122,596,149"/>
+<area shape="rect" id="node8" href="$d0/dbf/namespacemom__diag__to__z.html#adde57f2503f5c182af511fba0f4c83ea" title="mom_diag_to_z::register\l_z_tracer_low" alt="" coords="426,173,591,215"/>
 </map>

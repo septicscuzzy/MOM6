@@ -10,7 +10,6 @@ var structmom__regridding_1_1regridding__cs =
     [ "fix_haloclines", "d9/d41/structmom__regridding_1_1regridding__cs.html#a9c5b08c6b9444c388770f5c6a0f77df8", null ],
     [ "halocline_filter_length", "d9/d41/structmom__regridding_1_1regridding__cs.html#a5ab8d6960a37da4810236b54bc307226", null ],
     [ "halocline_strat_tol", "d9/d41/structmom__regridding_1_1regridding__cs.html#aa51edcda0d7c02fdae1534337e8a5d71", null ],
-    [ "height_of_rigid_surface", "d9/d41/structmom__regridding_1_1regridding__cs.html#a5b80a1188cdf4fa881327a9b221d3389", null ],
     [ "integrate_downward_for_e", "d9/d41/structmom__regridding_1_1regridding__cs.html#a85c926baca8df82bd0005038ed446e7b", null ],
     [ "interpolation_scheme", "d9/d41/structmom__regridding_1_1regridding__cs.html#aad63fbfa22dc78477f0b4b557d2607be", null ],
     [ "max_depth_index_scale", "d9/d41/structmom__regridding_1_1regridding__cs.html#a28ac841d7571c94e1d90f7a7c0357c97", null ],

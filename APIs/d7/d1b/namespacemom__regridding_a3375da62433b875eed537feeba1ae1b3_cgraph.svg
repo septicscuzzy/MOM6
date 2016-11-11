@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 552;
+var viewWidth = 626;
 var viewHeight = 159;
 var sectionId = 'dynsection-3';
 </script>
@@ -54,128 +54,128 @@ var sectionId = 'dynsection-3';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_regridding::build_grid_hycom1</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-155 548,-155 548,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-155 622,-155 622,4 -4,4"/>
 <!-- Node12 -->
 <g id="node1" class="node"><title>Node12</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-46.5 0,-76.5 96,-76.5 96,-46.5 0,-46.5"/>
+<polygon fill="#bfbfbf" stroke="black" points="0,-46.5 0,-76.5 112,-76.5 112,-46.5 0,-46.5"/>
 <text text-anchor="start" x="8" y="-64.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::build</text>
-<text text-anchor="middle" x="48" y="-53.5" font-family="Helvetica,sans-Serif" font-size="10.00">_grid_hycom1</text>
+<text text-anchor="middle" x="56" y="-53.5" font-family="Helvetica,sans-Serif" font-size="10.00">_grid_hycom1</text>
 </g>
 <!-- Node13 -->
 <g id="node2" class="node"><title>Node13</title>
 <g id="a_node2"><a xlink:href="../../d7/d1b/namespacemom__regridding.html#ab18f7ea3cfa3c3892cb69086e3a4baef" target="_top" xlink:title="Adjust dz_Interface to ensure non&#45;negative future thicknesses. ">
-<polygon fill="white" stroke="black" points="133.5,-120.5 133.5,-150.5 234.5,-150.5 234.5,-120.5 133.5,-120.5"/>
-<text text-anchor="start" x="141.5" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::adjust</text>
-<text text-anchor="middle" x="184" y="-127.5" font-family="Helvetica,sans-Serif" font-size="10.00">_interface_motion</text>
+<polygon fill="white" stroke="black" points="149.5,-120.5 149.5,-150.5 267.5,-150.5 267.5,-120.5 149.5,-120.5"/>
+<text text-anchor="start" x="157.5" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::adjust</text>
+<text text-anchor="middle" x="208.5" y="-127.5" font-family="Helvetica,sans-Serif" font-size="10.00">_interface_motion</text>
 </a>
 </g>
 </g>
 <!-- Node12&#45;&gt;Node13 -->
 <g id="edge1" class="edge"><title>Node12&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M72.5979,-76.5992C89.0084,-86.8794 111.528,-100.554 132,-111.5 134.848,-113.023 137.809,-114.552 140.806,-116.06"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="139.315,-119.227 149.833,-120.496 142.402,-112.944 139.315,-119.227"/>
+<path fill="none" stroke="midnightblue" d="M82.463,-76.5562C100.479,-86.9436 125.361,-100.761 148,-111.5 151.522,-113.171 155.194,-114.833 158.907,-116.459"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="157.594,-119.703 168.166,-120.406 160.339,-113.264 157.594,-119.703"/>
 </g>
 <!-- Node14 -->
 <g id="node3" class="node"><title>Node14</title>
 <g id="a_node3"><a xlink:href="../../d7/d1b/namespacemom__regridding.html#acbe376c457e1ea0c4514b948cbf5144b" target="_top" xlink:title="mom_regridding::build\l_hycom1_column">
-<polygon fill="white" stroke="black" points="136,-71.5 136,-101.5 232,-101.5 232,-71.5 136,-71.5"/>
-<text text-anchor="start" x="144" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::build</text>
-<text text-anchor="middle" x="184" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">_hycom1_column</text>
+<polygon fill="white" stroke="black" points="152.5,-71.5 152.5,-101.5 264.5,-101.5 264.5,-71.5 152.5,-71.5"/>
+<text text-anchor="start" x="160.5" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::build</text>
+<text text-anchor="middle" x="208.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">_hycom1_column</text>
 </a>
 </g>
 </g>
 <!-- Node12&#45;&gt;Node14 -->
 <g id="edge2" class="edge"><title>Node12&#45;&gt;Node14</title>
-<path fill="none" stroke="midnightblue" d="M96.2434,-70.3141C105.75,-72.0878 115.84,-73.9702 125.649,-75.8001"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="125.259,-79.2878 135.732,-77.6813 126.543,-72.4065 125.259,-79.2878"/>
+<path fill="none" stroke="midnightblue" d="M112.186,-70.6671C122.001,-72.2976 132.308,-74.0096 142.369,-75.6809"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="141.882,-79.1479 152.321,-77.334 143.029,-72.2425 141.882,-79.1479"/>
 </g>
 <!-- Node18 -->
 <g id="node7" class="node"><title>Node18</title>
 <g id="a_node7"><a xlink:href="../../d7/d1b/namespacemom__regridding.html#a9dddf53999f90d1a4edc79179c5b5da4" target="_top" xlink:title="Returns the change in interface position motion after filtering and assuming the top and bottom inter...">
-<polygon fill="white" stroke="black" points="132,-22.5 132,-52.5 236,-52.5 236,-22.5 132,-22.5"/>
-<text text-anchor="start" x="140" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::filtered</text>
-<text text-anchor="middle" x="184" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">_grid_motion</text>
+<polygon fill="white" stroke="black" points="148,-22.5 148,-52.5 269,-52.5 269,-22.5 148,-22.5"/>
+<text text-anchor="start" x="156" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::filtered</text>
+<text text-anchor="middle" x="208.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">_grid_motion</text>
 </a>
 </g>
 </g>
 <!-- Node12&#45;&gt;Node18 -->
 <g id="edge6" class="edge"><title>Node12&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M96.2434,-53.0385C104.475,-51.5641 113.144,-50.0114 121.689,-48.481"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="122.403,-51.909 131.629,-46.7007 121.169,-45.0186 122.403,-51.909"/>
+<path fill="none" stroke="midnightblue" d="M112.186,-52.6996C120.507,-51.3726 129.181,-49.9894 137.759,-48.6214"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="138.434,-52.0581 147.758,-47.0269 137.332,-45.1455 138.434,-52.0581"/>
 </g>
 <!-- Node19 -->
 <g id="node8" class="node"><title>Node19</title>
 <g id="a_node8"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="mom_error_handler::\lmom_error">
-<polygon fill="white" stroke="black" points="293,-0.5 293,-30.5 386,-30.5 386,-0.5 293,-0.5"/>
-<text text-anchor="start" x="301" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="339.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error</text>
+<polygon fill="white" stroke="black" points="331,-0.5 331,-30.5 437,-30.5 437,-0.5 331,-0.5"/>
+<text text-anchor="start" x="339" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="384" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error</text>
 </a>
 </g>
 </g>
 <!-- Node12&#45;&gt;Node19 -->
 <g id="edge9" class="edge"><title>Node12&#45;&gt;Node19</title>
-<path fill="none" stroke="midnightblue" d="M67.7734,-46.4184C83.7772,-34.5913 107.948,-19.0699 132,-12.5 181.687,1.07218 240.635,-1.53247 282.805,-6.43237"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="282.524,-9.92428 292.879,-7.68343 283.386,-2.97764 282.524,-9.92428"/>
+<path fill="none" stroke="midnightblue" d="M77.8164,-46.4007C95.5016,-34.5629 122.076,-19.036 148,-12.5 205.132,1.90397 272.584,-0.896575 320.534,-6.07535"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="320.429,-9.58613 330.762,-7.24789 321.226,-2.63168 320.429,-9.58613"/>
 </g>
 <!-- Node15 -->
 <g id="node4" class="node"><title>Node15</title>
 <g id="a_node4"><a xlink:href="../../d7/d1b/namespacemom__regridding.html#a580e775df53e4bb61f118fcab44a3f92" target="_top" xlink:title="Given the set of target values and cell densities, this routine builds an interpolated profile for th...">
-<polygon fill="white" stroke="black" points="281.5,-104.5 281.5,-134.5 397.5,-134.5 397.5,-104.5 281.5,-104.5"/>
-<text text-anchor="start" x="289.5" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::regridding</text>
-<text text-anchor="middle" x="339.5" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">_set_ppolys</text>
+<polygon fill="white" stroke="black" points="317,-104.5 317,-134.5 451,-134.5 451,-104.5 317,-104.5"/>
+<text text-anchor="start" x="325" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::regridding</text>
+<text text-anchor="middle" x="384" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">_set_ppolys</text>
 </a>
 </g>
 </g>
 <!-- Node14&#45;&gt;Node15 -->
 <g id="edge3" class="edge"><title>Node14&#45;&gt;Node15</title>
-<path fill="none" stroke="midnightblue" d="M232.308,-96.6704C244.662,-99.3264 258.216,-102.24 271.386,-105.072"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="270.844,-108.535 281.356,-107.215 272.315,-101.691 270.844,-108.535"/>
+<path fill="none" stroke="midnightblue" d="M264.874,-97.0321C278.2,-99.567 292.669,-102.319 306.762,-104.999"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="306.458,-108.504 316.936,-106.935 307.766,-101.628 306.458,-108.504"/>
 </g>
 <!-- Node16 -->
 <g id="node5" class="node"><title>Node16</title>
 <g id="a_node5"><a xlink:href="../../d7/d1b/namespacemom__regridding.html#a12dff5ec4c479e77db1813a8d53db7c2" target="_top" xlink:title="mom_regridding::interpolate_grid">
-<polygon fill="white" stroke="black" points="272,-66 272,-85 407,-85 407,-66 272,-66"/>
-<text text-anchor="middle" x="339.5" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::interpolate_grid</text>
+<polygon fill="white" stroke="black" points="305,-66 305,-85 463,-85 463,-66 305,-66"/>
+<text text-anchor="middle" x="384" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::interpolate_grid</text>
 </a>
 </g>
 </g>
 <!-- Node14&#45;&gt;Node16 -->
 <g id="edge4" class="edge"><title>Node14&#45;&gt;Node16</title>
-<path fill="none" stroke="midnightblue" d="M232.308,-83.1099C241.689,-82.4376 251.762,-81.7157 261.834,-80.994"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="262.155,-84.4801 271.879,-80.2741 261.654,-77.498 262.155,-84.4801"/>
+<path fill="none" stroke="midnightblue" d="M264.874,-82.9893C274.394,-82.3857 284.497,-81.7451 294.63,-81.1027"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="294.993,-84.5868 304.752,-80.461 294.55,-77.6008 294.993,-84.5868"/>
 </g>
 <!-- Node17 -->
 <g id="node6" class="node"><title>Node17</title>
 <g id="a_node6"><a xlink:href="../../d7/d1b/namespacemom__regridding.html#a6ec0dea34ca979892fcaf54a2c676c5e" target="_top" xlink:title="mom_regridding::get\l_polynomial_coordinate">
-<polygon fill="white" stroke="black" points="443,-60.5 443,-90.5 544,-90.5 544,-60.5 443,-60.5"/>
-<text text-anchor="start" x="451" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::get</text>
-<text text-anchor="middle" x="493.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">_polynomial_coordinate</text>
+<polygon fill="white" stroke="black" points="499,-60.5 499,-90.5 618,-90.5 618,-60.5 499,-60.5"/>
+<text text-anchor="start" x="507" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::get</text>
+<text text-anchor="middle" x="558.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">_polynomial_coordinate</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node17 -->
 <g id="edge5" class="edge"><title>Node16&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M407.169,-75.5C415.676,-75.5 424.34,-75.5 432.728,-75.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="432.794,-79.0001 442.794,-75.5 432.794,-72.0001 432.794,-79.0001"/>
+<path fill="none" stroke="midnightblue" d="M463.175,-75.5C471.73,-75.5 480.393,-75.5 488.822,-75.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="488.964,-79.0001 498.964,-75.5 488.964,-72.0001 488.964,-79.0001"/>
 </g>
 <!-- Node18&#45;&gt;Node19 -->
 <g id="edge7" class="edge"><title>Node18&#45;&gt;Node19</title>
-<path fill="none" stroke="midnightblue" d="M236.113,-30.1743C250.994,-28.0416 267.327,-25.7006 282.493,-23.5271"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="283.371,-26.9371 292.773,-22.0537 282.378,-20.0079 283.371,-26.9371"/>
+<path fill="none" stroke="midnightblue" d="M269.209,-29.9288C285.768,-27.8291 303.789,-25.5441 320.503,-23.4247"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="321.236,-26.8598 330.716,-22.1296 320.355,-19.9155 321.236,-26.8598"/>
 </g>
 <!-- Node20 -->
 <g id="node9" class="node"><title>Node20</title>
 <g id="a_node9"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="mom_error_handler::\lis_root_pe">
-<polygon fill="white" stroke="black" points="447,-0.5 447,-30.5 540,-30.5 540,-0.5 447,-0.5"/>
-<text text-anchor="start" x="455" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="493.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">is_root_pe</text>
+<polygon fill="white" stroke="black" points="505.5,-0.5 505.5,-30.5 611.5,-30.5 611.5,-0.5 505.5,-0.5"/>
+<text text-anchor="start" x="513.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="558.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">is_root_pe</text>
 </a>
 </g>
 </g>
 <!-- Node19&#45;&gt;Node20 -->
 <g id="edge8" class="edge"><title>Node19&#45;&gt;Node20</title>
-<path fill="none" stroke="midnightblue" d="M386.105,-15.5C402.037,-15.5 420.102,-15.5 436.765,-15.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="436.927,-19.0001 446.927,-15.5 436.927,-12.0001 436.927,-19.0001"/>
+<path fill="none" stroke="midnightblue" d="M437.224,-15.5C455.548,-15.5 476.312,-15.5 495.369,-15.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="495.454,-19.0001 505.454,-15.5 495.454,-12.0001 495.454,-19.0001"/>
 </g>
 </g>
 </svg>

@@ -1,11 +1,13 @@
 var structmom__surface__forcing_1_1ice__ocean__boundary__type =
 [
+    [ "area_berg", "d0/d59/structmom__surface__forcing_1_1ice__ocean__boundary__type.html#af99115326d2cf62e24c0270d495ddbc4", null ],
     [ "calving", "d0/d59/structmom__surface__forcing_1_1ice__ocean__boundary__type.html#acb0bf763958ac0e52120e020b3dff38d", null ],
     [ "calving_hflx", "d0/d59/structmom__surface__forcing_1_1ice__ocean__boundary__type.html#a25382dc1a69a13f85e4ff17429444428", null ],
     [ "fluxes", "d0/d59/structmom__surface__forcing_1_1ice__ocean__boundary__type.html#a01a73499761a954a6aa7c74cc6e470ae", null ],
     [ "fprec", "d0/d59/structmom__surface__forcing_1_1ice__ocean__boundary__type.html#a755bfdcc256d0efac9f6e4321b3cfe39", null ],
     [ "lprec", "d0/d59/structmom__surface__forcing_1_1ice__ocean__boundary__type.html#a481ab72a34eafa83fc680b286d66508f", null ],
     [ "lw_flux", "d0/d59/structmom__surface__forcing_1_1ice__ocean__boundary__type.html#ae989dc8bf263f62b86eda91456fc7439", null ],
+    [ "mass_berg", "d0/d59/structmom__surface__forcing_1_1ice__ocean__boundary__type.html#a1bbf02e763f0b695955c4bf2c1bbead9", null ],
     [ "mi", "d0/d59/structmom__surface__forcing_1_1ice__ocean__boundary__type.html#a49931db11bfa21020ce520f5cfdef00d", null ],
     [ "p", "d0/d59/structmom__surface__forcing_1_1ice__ocean__boundary__type.html#a6deb704d6eb169791af1ce3f7aa59893", null ],
     [ "q_flux", "d0/d59/structmom__surface__forcing_1_1ice__ocean__boundary__type.html#a61a4ec2423189281540dfa5054b78458", null ],
@@ -18,6 +20,7 @@ var structmom__surface__forcing_1_1ice__ocean__boundary__type =
     [ "sw_flux_vis_dir", "d0/d59/structmom__surface__forcing_1_1ice__ocean__boundary__type.html#a5dda741b78331b62cb590e874dfe3825", null ],
     [ "t_flux", "d0/d59/structmom__surface__forcing_1_1ice__ocean__boundary__type.html#abcb7078c31996391f7d73234c0a2540b", null ],
     [ "u_flux", "d0/d59/structmom__surface__forcing_1_1ice__ocean__boundary__type.html#aa1d7b2377c6c363e3194bbf130ced145", null ],
+    [ "ustar_berg", "d0/d59/structmom__surface__forcing_1_1ice__ocean__boundary__type.html#a783c34612850b73cf055c09541543bb5", null ],
     [ "v_flux", "d0/d59/structmom__surface__forcing_1_1ice__ocean__boundary__type.html#a3097088bbdabc4b540dbe4d51de844cf", null ],
     [ "wind_stagger", "d0/d59/structmom__surface__forcing_1_1ice__ocean__boundary__type.html#a1d39374d0118a5326f2abe0a8e5d87fe", null ],
     [ "xtype", "d0/d59/structmom__surface__forcing_1_1ice__ocean__boundary__type.html#a980a16b5ae8ad1ac6371a7e4764103d9", null ]

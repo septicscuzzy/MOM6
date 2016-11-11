@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 726;
+var viewWidth = 835;
 var viewHeight = 186;
 var sectionId = 'dynsection-16';
 </script>
@@ -54,146 +54,146 @@ var sectionId = 'dynsection-16';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_ice_shelf::cg_diagonal_subgrid_basal_bilinear</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-182 722,-182 722,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-182 831,-182 831,4 -4,4"/>
 <!-- Node118 -->
 <g id="node1" class="node"><title>Node118</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-73.5 0,-103.5 117,-103.5 117,-73.5 0,-73.5"/>
+<polygon fill="#bfbfbf" stroke="black" points="0,-73.5 0,-103.5 140,-103.5 140,-73.5 0,-73.5"/>
 <text text-anchor="start" x="8" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ice_shelf::cg_diagonal</text>
-<text text-anchor="middle" x="58.5" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">_subgrid_basal_bilinear</text>
+<text text-anchor="middle" x="70" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">_subgrid_basal_bilinear</text>
 </g>
 <!-- Node119 -->
 <g id="node2" class="node"><title>Node119</title>
 <g id="a_node2"><a xlink:href="../../df/da2/namespacemom__ice__shelf.html#a0fa0e5e0225816e5e5e87994371f11f1" target="_top" xlink:title="mom_ice_shelf::matrix\l_diagonal_bilinear">
-<polygon fill="white" stroke="black" points="153,-73.5 153,-103.5 249,-103.5 249,-73.5 153,-73.5"/>
-<text text-anchor="start" x="161" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ice_shelf::matrix</text>
-<text text-anchor="middle" x="201" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">_diagonal_bilinear</text>
+<polygon fill="white" stroke="black" points="176,-73.5 176,-103.5 292,-103.5 292,-73.5 176,-73.5"/>
+<text text-anchor="start" x="184" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ice_shelf::matrix</text>
+<text text-anchor="middle" x="234" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">_diagonal_bilinear</text>
 </a>
 </g>
 </g>
 <!-- Node118&#45;&gt;Node119 -->
 <g id="edge1" class="edge"><title>Node118&#45;&gt;Node119</title>
-<path fill="none" stroke="midnightblue" d="M127.114,-88.5C135.732,-88.5 144.403,-88.5 152.608,-88.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="127.052,-85.0001 117.052,-88.5 127.052,-92.0001 127.052,-85.0001"/>
+<path fill="none" stroke="midnightblue" d="M150.245,-88.5C158.855,-88.5 167.492,-88.5 175.766,-88.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="150.173,-85.0001 140.172,-88.5 150.172,-92.0001 150.173,-85.0001"/>
 </g>
 <!-- Node120 -->
 <g id="node3" class="node"><title>Node120</title>
 <g id="a_node3"><a xlink:href="../../df/da2/namespacemom__ice__shelf.html#a95d21b019a635ad3a8ef060d765362e1" target="_top" xlink:title="mom_ice_shelf::ice\l_shelf_solve_inner">
-<polygon fill="white" stroke="black" points="285,-73.5 285,-103.5 369,-103.5 369,-73.5 285,-73.5"/>
-<text text-anchor="start" x="293" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ice_shelf::ice</text>
-<text text-anchor="middle" x="327" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">_shelf_solve_inner</text>
+<polygon fill="white" stroke="black" points="328,-73.5 328,-103.5 429,-103.5 429,-73.5 328,-73.5"/>
+<text text-anchor="start" x="336" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ice_shelf::ice</text>
+<text text-anchor="middle" x="378.5" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">_shelf_solve_inner</text>
 </a>
 </g>
 </g>
 <!-- Node119&#45;&gt;Node120 -->
 <g id="edge2" class="edge"><title>Node119&#45;&gt;Node120</title>
-<path fill="none" stroke="midnightblue" d="M259.304,-88.5C267.965,-88.5 276.75,-88.5 284.976,-88.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="259.233,-85.0001 249.233,-88.5 259.233,-92.0001 259.233,-85.0001"/>
+<path fill="none" stroke="midnightblue" d="M302.166,-88.5C310.765,-88.5 319.443,-88.5 327.698,-88.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="302.139,-85.0001 292.139,-88.5 302.139,-92.0001 302.139,-85.0001"/>
 </g>
 <!-- Node121 -->
 <g id="node4" class="node"><title>Node121</title>
 <g id="a_node4"><a xlink:href="../../df/da2/namespacemom__ice__shelf.html#a5d64b696412c0bfd8ded2e2eacaa917c" target="_top" xlink:title="mom_ice_shelf::ice\l_shelf_solve_outer">
-<polygon fill="white" stroke="black" points="405,-73.5 405,-103.5 489,-103.5 489,-73.5 405,-73.5"/>
-<text text-anchor="start" x="413" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ice_shelf::ice</text>
-<text text-anchor="middle" x="447" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">_shelf_solve_outer</text>
+<polygon fill="white" stroke="black" points="465,-73.5 465,-103.5 566,-103.5 566,-73.5 465,-73.5"/>
+<text text-anchor="start" x="473" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ice_shelf::ice</text>
+<text text-anchor="middle" x="515.5" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">_shelf_solve_outer</text>
 </a>
 </g>
 </g>
 <!-- Node120&#45;&gt;Node121 -->
 <g id="edge3" class="edge"><title>Node120&#45;&gt;Node121</title>
-<path fill="none" stroke="midnightblue" d="M379.501,-88.5C388.015,-88.5 396.74,-88.5 404.952,-88.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="379.271,-85.0001 369.271,-88.5 379.271,-92.0001 379.271,-85.0001"/>
+<path fill="none" stroke="midnightblue" d="M439.207,-88.5C447.67,-88.5 456.299,-88.5 464.552,-88.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="439.002,-85.0001 429.002,-88.5 439.002,-92.0001 439.002,-85.0001"/>
 </g>
 <!-- Node122 -->
 <g id="node5" class="node"><title>Node122</title>
 <g id="a_node5"><a xlink:href="../../df/da2/namespacemom__ice__shelf.html#a3b0e0cc9f36c5197236cc05867b780df" target="_top" xlink:title="mom_ice_shelf::shelf\l_calc_flux">
-<polygon fill="white" stroke="black" points="530,-147.5 530,-177.5 621,-177.5 621,-147.5 530,-147.5"/>
-<text text-anchor="start" x="538" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ice_shelf::shelf</text>
-<text text-anchor="middle" x="575.5" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">_calc_flux</text>
+<polygon fill="white" stroke="black" points="609,-147.5 609,-177.5 719,-177.5 719,-147.5 609,-147.5"/>
+<text text-anchor="start" x="617" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ice_shelf::shelf</text>
+<text text-anchor="middle" x="664" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">_calc_flux</text>
 </a>
 </g>
 </g>
 <!-- Node121&#45;&gt;Node122 -->
 <g id="edge4" class="edge"><title>Node121&#45;&gt;Node122</title>
-<path fill="none" stroke="midnightblue" d="M478.08,-109.274C492.09,-118.626 509.135,-129.549 525,-138.5 530.407,-141.55 536.259,-144.599 541.982,-147.45"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="480.036,-106.372 469.787,-103.687 476.125,-112.177 480.036,-106.372"/>
+<path fill="none" stroke="midnightblue" d="M548.728,-108.935C564.477,-118.508 583.897,-129.71 602,-138.5 608.45,-141.631 615.419,-144.675 622.262,-147.485"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="550.268,-105.774 539.916,-103.518 546.602,-111.737 550.268,-105.774"/>
 </g>
 <!-- Node124 -->
 <g id="node7" class="node"><title>Node124</title>
 <g id="a_node7"><a xlink:href="../../df/da2/namespacemom__ice__shelf.html#ae315e8464ef8a20062e3bccb61886755" target="_top" xlink:title="mom_ice_shelf::initialize\l_ice_shelf">
-<polygon fill="white" stroke="black" points="525,-98.5 525,-128.5 626,-128.5 626,-98.5 525,-98.5"/>
-<text text-anchor="start" x="533" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ice_shelf::initialize</text>
-<text text-anchor="middle" x="575.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ice_shelf</text>
+<polygon fill="white" stroke="black" points="602,-98.5 602,-128.5 726,-128.5 726,-98.5 602,-98.5"/>
+<text text-anchor="start" x="610" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ice_shelf::initialize</text>
+<text text-anchor="middle" x="664" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ice_shelf</text>
 </a>
 </g>
 </g>
 <!-- Node121&#45;&gt;Node124 -->
 <g id="edge6" class="edge"><title>Node121&#45;&gt;Node124</title>
-<path fill="none" stroke="midnightblue" d="M498.91,-98.5613C507.448,-100.249 516.297,-101.997 524.803,-103.678"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="499.56,-95.1221 489.071,-96.6168 498.203,-101.989 499.56,-95.1221"/>
+<path fill="none" stroke="midnightblue" d="M576.217,-98.6907C584.64,-100.128 593.309,-101.607 601.759,-103.049"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="576.545,-95.196 566.098,-96.9639 575.367,-102.096 576.545,-95.196"/>
 </g>
 <!-- Node126 -->
 <g id="node9" class="node"><title>Node126</title>
 <g id="a_node9"><a xlink:href="../../df/da2/namespacemom__ice__shelf.html#ae7611e3515ecf0eae0c5d6d17330fd6f" target="_top" xlink:title="mom_ice_shelf::initialize\l_diagnostic_fields">
-<polygon fill="white" stroke="black" points="525,-49.5 525,-79.5 626,-79.5 626,-49.5 525,-49.5"/>
-<text text-anchor="start" x="533" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ice_shelf::initialize</text>
-<text text-anchor="middle" x="575.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">_diagnostic_fields</text>
+<polygon fill="white" stroke="black" points="602,-49.5 602,-79.5 726,-79.5 726,-49.5 602,-49.5"/>
+<text text-anchor="start" x="610" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ice_shelf::initialize</text>
+<text text-anchor="middle" x="664" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">_diagnostic_fields</text>
 </a>
 </g>
 </g>
 <!-- Node121&#45;&gt;Node126 -->
 <g id="edge9" class="edge"><title>Node121&#45;&gt;Node126</title>
-<path fill="none" stroke="midnightblue" d="M498.91,-78.8411C507.448,-77.2214 516.297,-75.5425 524.803,-73.9287"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="498.243,-75.4052 489.071,-80.7079 499.548,-82.2825 498.243,-75.4052"/>
+<path fill="none" stroke="midnightblue" d="M576.217,-78.7169C584.64,-77.3372 593.309,-75.9169 601.759,-74.5326"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="575.401,-75.304 566.098,-80.3747 576.533,-82.2119 575.401,-75.304"/>
 </g>
 <!-- Node127 -->
 <g id="node10" class="node"><title>Node127</title>
 <g id="a_node10"><a xlink:href="../../df/da2/namespacemom__ice__shelf.html#ac084bdc5be4e708e3263488e9574a3c9" target="_top" xlink:title="mom_ice_shelf::solo\l_time_step">
-<polygon fill="white" stroke="black" points="531,-0.5 531,-30.5 620,-30.5 620,-0.5 531,-0.5"/>
-<text text-anchor="start" x="539" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ice_shelf::solo</text>
-<text text-anchor="middle" x="575.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_time_step</text>
+<polygon fill="white" stroke="black" points="610.5,-0.5 610.5,-30.5 717.5,-30.5 717.5,-0.5 610.5,-0.5"/>
+<text text-anchor="start" x="618.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ice_shelf::solo</text>
+<text text-anchor="middle" x="664" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_time_step</text>
 </a>
 </g>
 </g>
 <!-- Node121&#45;&gt;Node127 -->
 <g id="edge10" class="edge"><title>Node121&#45;&gt;Node127</title>
-<path fill="none" stroke="midnightblue" d="M479.555,-67.9388C493.338,-59.1909 509.797,-49.0551 525,-40.5 530.957,-37.1478 537.418,-33.732 543.644,-30.5458"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="477.464,-65.1213 470.924,-73.4565 481.234,-71.0191 477.464,-65.1213"/>
+<path fill="none" stroke="midnightblue" d="M550.236,-68.2998C565.765,-59.3305 584.576,-48.9224 602,-40.5 609.11,-37.0632 616.819,-33.6628 624.287,-30.529"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="548.384,-65.3283 541.508,-73.3885 551.909,-71.3757 548.384,-65.3283"/>
 </g>
 <!-- Node123 -->
 <g id="node6" class="node"><title>Node123</title>
 <g id="a_node6"><a xlink:href="../../de/dbc/MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" target="_top" xlink:title="mom_main">
-<polygon fill="white" stroke="black" points="662,-128 662,-147 718,-147 718,-128 662,-128"/>
-<text text-anchor="middle" x="690" y="-135" font-family="Helvetica,sans-Serif" font-size="10.00">mom_main</text>
+<polygon fill="white" stroke="black" points="762,-128 762,-147 827,-147 827,-128 762,-128"/>
+<text text-anchor="middle" x="794.5" y="-135" font-family="Helvetica,sans-Serif" font-size="10.00">mom_main</text>
 </a>
 </g>
 </g>
 <!-- Node122&#45;&gt;Node123 -->
 <g id="edge5" class="edge"><title>Node122&#45;&gt;Node123</title>
-<path fill="none" stroke="midnightblue" d="M631.049,-150.378C641.754,-147.999 652.54,-145.602 661.857,-143.532"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="630.289,-146.961 621.286,-152.548 631.807,-153.795 630.289,-146.961"/>
+<path fill="none" stroke="midnightblue" d="M729.08,-150.033C740.453,-147.82 751.833,-145.606 761.795,-143.668"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="728.271,-146.625 719.123,-151.97 729.608,-153.496 728.271,-146.625"/>
 </g>
 <!-- Node124&#45;&gt;Node123 -->
 <g id="edge8" class="edge"><title>Node124&#45;&gt;Node123</title>
-<path fill="none" stroke="midnightblue" d="M635.973,-126.188C645.006,-128.115 653.928,-130.018 661.803,-131.698"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="636.682,-122.76 626.172,-124.097 635.221,-129.606 636.682,-122.76"/>
+<path fill="none" stroke="midnightblue" d="M736.31,-126.819C745.195,-128.478 753.897,-130.103 761.726,-131.565"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="736.712,-123.333 726.239,-124.938 735.427,-130.214 736.712,-123.333"/>
 </g>
 <!-- Node125 -->
 <g id="node8" class="node"><title>Node125</title>
 <g id="a_node8"><a xlink:href="../../d5/d6d/ice__shelf__driver_8F90.html#aec5bef92f0dad343f545cd8d62e378d8" target="_top" xlink:title="shelf_main">
-<polygon fill="white" stroke="black" points="662.5,-60 662.5,-79 717.5,-79 717.5,-60 662.5,-60"/>
-<text text-anchor="middle" x="690" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">shelf_main</text>
+<polygon fill="white" stroke="black" points="762.5,-60 762.5,-79 826.5,-79 826.5,-60 762.5,-60"/>
+<text text-anchor="middle" x="794.5" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">shelf_main</text>
 </a>
 </g>
 </g>
 <!-- Node124&#45;&gt;Node125 -->
 <g id="edge7" class="edge"><title>Node124&#45;&gt;Node125</title>
-<path fill="none" stroke="midnightblue" d="M624.335,-94.791C638.184,-89.3746 652.729,-83.6858 664.51,-79.0783"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="622.94,-91.5787 614.901,-98.4808 625.489,-98.0978 622.94,-91.5787"/>
+<path fill="none" stroke="midnightblue" d="M718.727,-95.1032C734.817,-89.5938 751.812,-83.7744 765.527,-79.0783"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="717.19,-91.93 708.863,-98.4808 719.458,-98.5525 717.19,-91.93"/>
 </g>
 <!-- Node127&#45;&gt;Node125 -->
 <g id="edge11" class="edge"><title>Node127&#45;&gt;Node125</title>
-<path fill="none" stroke="midnightblue" d="M616.875,-34.8798C634.637,-43.4059 654.7,-53.0361 669.148,-59.9712"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="618.367,-31.714 607.838,-30.542 615.338,-38.0247 618.367,-31.714"/>
+<path fill="none" stroke="midnightblue" d="M711.5,-34.4625C716.4,-36.4892 721.305,-38.5297 726,-40.5 741.171,-46.8674 758.192,-54.1813 771.347,-59.8711"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="712.717,-31.1787 702.138,-30.6041 710.05,-37.6506 712.717,-31.1787"/>
 </g>
 </g>
 </svg>

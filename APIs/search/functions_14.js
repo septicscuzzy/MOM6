@@ -2,7 +2,7 @@ var searchData=
 [
   ['val_5fweights',['val_weights',['../d7/d60/namespaceuser__change__diffusivity.html#a9b291c89fbc92f517c683b5fa2797e92',1,'user_change_diffusivity']]],
   ['var_5fdesc',['var_desc',['../d5/d89/namespacemom__io.html#a39c3ccc06bb1a6e446af2ee9010eba16',1,'mom_io']]],
-  ['varmix_5finit',['varmix_init',['../d0/d86/namespacemom__lateral__mixing__coeffs.html#a7223a562f29b97ca912810324be00c90',1,'mom_lateral_mixing_coeffs']]],
+  ['varmix_5finit',['varmix_init',['../d0/d86/namespacemom__lateral__mixing__coeffs.html#aeb658054e8d4d723dff397f8ae186e4a',1,'mom_lateral_mixing_coeffs']]],
   ['vert_5ffill_5fts',['vert_fill_ts',['../d6/d4c/namespacemom__isopycnal__slopes.html#a4a5a4ea71140c8e115264614305840c9',1,'mom_isopycnal_slopes::vert_fill_ts()'],['../d1/d75/namespacemom__thickness__diffuse.html#aff6aa879773518e476ed0a603a1a301e',1,'mom_thickness_diffuse::vert_fill_ts()']]],
   ['verticalgridend',['verticalgridend',['../d6/dad/namespacemom__verticalgrid.html#a64fe319acba142cde9c35f21257ff64f',1,'mom_verticalgrid']]],
   ['verticalgridinit',['verticalgridinit',['../d6/dad/namespacemom__verticalgrid.html#a03cf3cb3b748549a1195641a154695f2',1,'mom_verticalgrid']]],

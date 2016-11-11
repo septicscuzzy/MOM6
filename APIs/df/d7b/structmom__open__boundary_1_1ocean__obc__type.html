@@ -127,15 +127,9 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:a206a840887d74fa4356e7584a01011ce"><td class="memItemLeft" align="right" valign="top">logical, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d7b/structmom__open__boundary_1_1ocean__obc__type.html#a206a840887d74fa4356e7584a01011ce">obc_mask_v</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a206a840887d74fa4356e7584a01011ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">True at meridional velocity points that have prescribed OBCs.  <a href="#a206a840887d74fa4356e7584a01011ce">More...</a><br /></td></tr>
 <tr class="separator:a206a840887d74fa4356e7584a01011ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84d4744109d0d3593a8f38879ed48ceb"><td class="memItemLeft" align="right" valign="top">integer, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d7b/structmom__open__boundary_1_1ocean__obc__type.html#a84d4744109d0d3593a8f38879ed48ceb">obc_direction_u</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a84d4744109d0d3593a8f38879ed48ceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orientation of OBC at u-points.  <a href="#a84d4744109d0d3593a8f38879ed48ceb">More...</a><br /></td></tr>
-<tr class="separator:a84d4744109d0d3593a8f38879ed48ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af31b4ee85be6cdaa485cdc642309f696"><td class="memItemLeft" align="right" valign="top">integer, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d7b/structmom__open__boundary_1_1ocean__obc__type.html#af31b4ee85be6cdaa485cdc642309f696">obc_direction_v</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:af31b4ee85be6cdaa485cdc642309f696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orientation of OBC at v-points.  <a href="#af31b4ee85be6cdaa485cdc642309f696">More...</a><br /></td></tr>
-<tr class="separator:af31b4ee85be6cdaa485cdc642309f696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb3d926064646e364747e29ceb00bfaf"><td class="memItemLeft" align="right" valign="top">type(<a class="el" href="../../da/d8f/structmom__open__boundary_1_1obc__segment__type.html">obc_segment_type</a>), dimension(:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d7b/structmom__open__boundary_1_1ocean__obc__type.html#afb3d926064646e364747e29ceb00bfaf">obc_segment_list</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:afb3d926064646e364747e29ceb00bfaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of segment objects.  <a href="#afb3d926064646e364747e29ceb00bfaf">More...</a><br /></td></tr>
-<tr class="separator:afb3d926064646e364747e29ceb00bfaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc18ee3e869383497c9c665a1e25b90"><td class="memItemLeft" align="right" valign="top">type(<a class="el" href="../../da/d8f/structmom__open__boundary_1_1obc__segment__type.html">obc_segment_type</a>), dimension(:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d7b/structmom__open__boundary_1_1ocean__obc__type.html#a3cc18ee3e869383497c9c665a1e25b90">obc_segment_number</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:a3cc18ee3e869383497c9c665a1e25b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of segment objects.  <a href="#a3cc18ee3e869383497c9c665a1e25b90">More...</a><br /></td></tr>
+<tr class="separator:a3cc18ee3e869383497c9c665a1e25b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f66b52532280c15c69f05f53683bb48"><td class="memItemLeft" align="right" valign="top">integer, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d7b/structmom__open__boundary_1_1ocean__obc__type.html#a1f66b52532280c15c69f05f53683bb48">obc_segment_u</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a1f66b52532280c15c69f05f53683bb48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Segment number of u-points.  <a href="#a1f66b52532280c15c69f05f53683bb48">More...</a><br /></td></tr>
 <tr class="separator:a1f66b52532280c15c69f05f53683bb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,7 +209,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The SSH anomaly in the outer domain, in m or kg m-2. </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00095">95</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00086">86</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
 
 </div>
 </div>
@@ -233,7 +227,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The SSH anomaly in the outer domain, in m or kg m-2. </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00095">95</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00086">86</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
 
 </div>
 </div>
@@ -287,8 +281,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The relative weighting for the baroclinic radiation velocities (or speed of characteristics) at the new time level (1) or the running mean (0) for thicknesses. Valid values range from 0 to 1, with a default of 0.2. </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00114">114</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">real</span> :: gamma_h<span class="comment">  !&lt; The relative weighting for the baroclinic radiation</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00105">105</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">real</span> :: gamma_h<span class="comment">  !&lt; The relative weighting for the baroclinic radiation</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="aab6de29cfaf827e2d3fde823efd31e56"></a>
@@ -305,8 +299,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The relative weighting for the baroclinic radiation velocities (or speed of characteristics) at the new time level (1) or the running mean (0) for velocities. Valid values range from 0 to 1, with a default of 0.3. </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00110">110</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">real</span> :: gamma_uv<span class="comment"> !&lt; The relative weighting for the baroclinic radiation</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00101">101</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">real</span> :: gamma_uv<span class="comment"> !&lt; The relative weighting for the baroclinic radiation</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a83029d489490f5dca5dc5e035c3f59cc"></a>
@@ -343,42 +337,6 @@ Public variables and constants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00059">59</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">integer</span> :: number_of_segments = 0<span class="comment"> !&lt; The number of open-boundary segments.</span></div></div><!-- fragment -->
-</div>
-</div>
-<a id="a84d4744109d0d3593a8f38879ed48ceb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84d4744109d0d3593a8f38879ed48ceb">&sect;&nbsp;</a></span>obc_direction_u</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">integer, dimension(:,:), pointer mom_open_boundary::ocean_obc_type::obc_direction_u =&gt; NULL()</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Orientation of OBC at u-points. </p>
-
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00074">74</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    obc_direction_u =&gt; null(), &amp; <span class="comment">!&lt; Orientation of OBC at u-points.</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    obc_direction_v =&gt; null()    <span class="comment">!&lt; Orientation of OBC at v-points.</span></div></div><!-- fragment -->
-</div>
-</div>
-<a id="af31b4ee85be6cdaa485cdc642309f696"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af31b4ee85be6cdaa485cdc642309f696">&sect;&nbsp;</a></span>obc_direction_v</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">integer, dimension(:,:), pointer mom_open_boundary::ocean_obc_type::obc_direction_v =&gt; NULL()</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Orientation of OBC at v-points. </p>
-
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00074">74</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-
 </div>
 </div>
 <a id="a96b2cb4d3a146e82f998087023c8b55c"></a>
@@ -431,26 +389,26 @@ Public variables and constants</h2></td></tr>
 
 <p>Is there an open boundary on this tile? </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00121">121</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">logical</span> :: obc_pe<span class="comment"> !&lt; Is there an open boundary on this tile?</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00112">112</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">logical</span> :: obc_pe<span class="comment"> !&lt; Is there an open boundary on this tile?</span></div></div><!-- fragment -->
 </div>
 </div>
-<a id="afb3d926064646e364747e29ceb00bfaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb3d926064646e364747e29ceb00bfaf">&sect;&nbsp;</a></span>obc_segment_list</h2>
+<a id="a3cc18ee3e869383497c9c665a1e25b90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cc18ee3e869383497c9c665a1e25b90">&sect;&nbsp;</a></span>obc_segment_number</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">type(<a class="el" href="../../da/d8f/structmom__open__boundary_1_1obc__segment__type.html">obc_segment_type</a>), dimension(:), pointer mom_open_boundary::ocean_obc_type::obc_segment_list =&gt; NULL()</td>
+          <td class="memname">type(<a class="el" href="../../da/d8f/structmom__open__boundary_1_1obc__segment__type.html">obc_segment_type</a>), dimension(:), pointer mom_open_boundary::ocean_obc_type::obc_segment_number =&gt; NULL()</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>List of segment objects. </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00078">78</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">type</span>(obc_segment_type), <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:)</span> :: &amp;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    obc_segment_list =&gt; null()   <span class="comment">!&lt; List of segment objects.</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00069">69</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">type</span>(obc_segment_type), <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:)</span> :: &amp;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    obc_segment_number =&gt; null()   <span class="comment">!&lt; List of segment objects.</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a1f66b52532280c15c69f05f53683bb48"></a>
@@ -467,8 +425,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Segment number of u-points. </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00081">81</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    obc_segment_u =&gt; null(), &amp;   <span class="comment">!&lt; Segment number of u-points.</span></div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    obc_segment_v =&gt; null()      <span class="comment">!&lt; Segment number of v-points.</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00072">72</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    obc_segment_u =&gt; null(), &amp;   <span class="comment">!&lt; Segment number of u-points.</span></div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    obc_segment_v =&gt; null()      <span class="comment">!&lt; Segment number of v-points.</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a8da56534e2220133935bfb6959879944"></a>
@@ -485,7 +443,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Segment number of v-points. </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00081">81</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00072">72</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
 
 </div>
 </div>
@@ -501,8 +459,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00123">123</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordtype">character(len=200)</span> :: obc_values_config</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00114">114</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">character(len=200)</span> :: obc_values_config</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a2d5817388411804d56505f53ac49ccc6"></a>
@@ -519,8 +477,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The maximum magnitude of the baroclinic radiation velocity (or speed of characteristics), in m s-1. The default value is 10 m s-1. </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00118">118</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">real</span> :: rx_max<span class="comment">   !&lt; The maximum magnitude of the baroclinic radiation</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00109">109</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">real</span> :: rx_max<span class="comment">   !&lt; The maximum magnitude of the baroclinic radiation</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a43dbb78ddf4d49d48ee90605ee1f56c6"></a>
@@ -537,7 +495,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The rx_old_h value for radiation coeff for layer thickness h in x-direction. </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00085">85</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00076">76</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
 
 </div>
 </div>
@@ -555,8 +513,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The rx_old_u value for radiation coeff for u-velocity in x-direction. </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00085">85</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: &amp;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    rx_old_u =&gt; null(), &amp;  <span class="comment">!&lt; The rx_old_u value for radiation coeff for u-velocity in x-direction</span></div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    ry_old_v =&gt; null(), &amp;  <span class="comment">!&lt; The ry_old_v value for radiation coeff for v-velocity in y-direction</span></div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    rx_old_h =&gt; null(), &amp;  <span class="comment">!&lt; The rx_old_h value for radiation coeff for layer thickness h in x-direction</span></div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    ry_old_h =&gt; null()     <span class="comment">!&lt; The ry_old_h value for radiation coeff for layer thickness h in y-direction</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00076">76</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: &amp;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    rx_old_u =&gt; null(), &amp;  <span class="comment">!&lt; The rx_old_u value for radiation coeff for u-velocity in x-direction</span></div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    ry_old_v =&gt; null(), &amp;  <span class="comment">!&lt; The ry_old_v value for radiation coeff for v-velocity in y-direction</span></div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    rx_old_h =&gt; null(), &amp;  <span class="comment">!&lt; The rx_old_h value for radiation coeff for layer thickness h in x-direction</span></div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    ry_old_h =&gt; null()     <span class="comment">!&lt; The ry_old_h value for radiation coeff for layer thickness h in y-direction</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a80706fd27e53f4a6d5bc3ec87151888f"></a>
@@ -573,7 +531,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The ry_old_h value for radiation coeff for layer thickness h in y-direction. </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00085">85</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00076">76</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
 
 </div>
 </div>
@@ -591,7 +549,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The ry_old_v value for radiation coeff for v-velocity in y-direction. </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00085">85</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00076">76</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
 
 </div>
 </div>
@@ -645,8 +603,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The prescribed values of the zonal velocity (u) at OBC points. </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00103">103</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: &amp;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    u =&gt; null(), &amp;  <span class="comment">!&lt; The prescribed values of the zonal velocity (u) at OBC points.</span></div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    v =&gt; null(), &amp;  <span class="comment">!&lt; The prescribed values of the meridional velocity (v) at OBC points.</span></div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    uh =&gt; null(), &amp; <span class="comment">!&lt; The prescribed values of the zonal volume transport (uh) at OBC points.</span></div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    vh =&gt; null()    <span class="comment">!&lt; The prescribed values of the meridional volume transport (vh) at OBC points.</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00094">94</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: &amp;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    u =&gt; null(), &amp;  <span class="comment">!&lt; The prescribed values of the zonal velocity (u) at OBC points.</span></div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    v =&gt; null(), &amp;  <span class="comment">!&lt; The prescribed values of the meridional velocity (v) at OBC points.</span></div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    uh =&gt; null(), &amp; <span class="comment">!&lt; The prescribed values of the zonal volume transport (uh) at OBC points.</span></div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    vh =&gt; null()    <span class="comment">!&lt; The prescribed values of the meridional volume transport (vh) at OBC points.</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a09c5ea5e09edee409425da85c2fb5b2c"></a>
@@ -663,8 +621,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The u-velocity in the outer domain, in m s-1. </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00095">95</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    ubt_outer =&gt; null(), &amp;    <span class="comment">!&lt; The u-velocity in the outer domain, in m s-1.</span></div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    vbt_outer =&gt; null(), &amp;    <span class="comment">!&lt; The v-velocity in the outer domain, in m s-1.</span></div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    eta_outer_u =&gt; null(), &amp;  <span class="comment">!&lt; The SSH anomaly in the outer domain, in m or kg m-2.</span></div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    eta_outer_v =&gt; null()     <span class="comment">!&lt; The SSH anomaly in the outer domain, in m or kg m-2.</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00086">86</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    ubt_outer =&gt; null(), &amp;    <span class="comment">!&lt; The u-velocity in the outer domain, in m s-1.</span></div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    vbt_outer =&gt; null(), &amp;    <span class="comment">!&lt; The v-velocity in the outer domain, in m s-1.</span></div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    eta_outer_u =&gt; null(), &amp;  <span class="comment">!&lt; The SSH anomaly in the outer domain, in m or kg m-2.</span></div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    eta_outer_v =&gt; null()     <span class="comment">!&lt; The SSH anomaly in the outer domain, in m or kg m-2.</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="acee4ddd89c3c18a909817baab0df79c0"></a>
@@ -681,7 +639,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The prescribed values of the zonal volume transport (uh) at OBC points. </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00103">103</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00094">94</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
 
 </div>
 </div>
@@ -699,8 +657,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Is the open boundary info going to get updated? </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00122">122</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordtype">logical</span> :: update_obc = .false. <span class="comment">!&lt; Is the open boundary info going to get updated?</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00113">113</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">logical</span> :: update_obc = .false. <span class="comment">!&lt; Is the open boundary info going to get updated?</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="addff94b9d70a4dfcaf47643ba9fdd084"></a>
@@ -717,7 +675,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The prescribed values of the meridional velocity (v) at OBC points. </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00103">103</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00094">94</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
 
 </div>
 </div>
@@ -735,7 +693,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The v-velocity in the outer domain, in m s-1. </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00095">95</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00086">86</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
 
 </div>
 </div>
@@ -753,7 +711,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The prescribed values of the meridional volume transport (vh) at OBC points. </p>
 
-<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00103">103</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html#l00094">94</a> of file <a class="el" href="../../db/ddc/MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
 
 </div>
 </div>

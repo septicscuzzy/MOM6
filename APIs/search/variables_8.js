@@ -47,7 +47,6 @@ var searchData=
   ['heat_5fprev',['heat_prev',['../df/d88/structmom__sum__output_1_1sum__output__cs.html#a630fe190b51ca0422b7b06a4e1b8acbf',1,'mom_sum_output::sum_output_cs']]],
   ['heat_5fprev_5fefp',['heat_prev_efp',['../df/d88/structmom__sum__output_1_1sum__output__cs.html#ae49c98c2868366d127738cb0e2e7dcd3',1,'mom_sum_output::sum_output_cs']]],
   ['heating_5ffile',['heating_file',['../d7/d12/structmeso__surface__forcing_1_1meso__surface__forcing__cs.html#aeba35bdde294c551fd2f2733024102b4',1,'meso_surface_forcing::meso_surface_forcing_cs']]],
-  ['height_5fof_5frigid_5fsurface',['height_of_rigid_surface',['../d9/d41/structmom__regridding_1_1regridding__cs.html#a5b80a1188cdf4fa881327a9b221d3389',1,'mom_regridding::regridding_cs']]],
   ['henyey_5figw_5fbackground',['henyey_igw_background',['../df/dba/structmom__set__diffusivity_1_1set__diffusivity__cs.html#a7c1812e069550b4fcc1e002611de0cc6',1,'mom_set_diffusivity::set_diffusivity_cs']]],
   ['henyey_5figw_5fbackground_5fnew',['henyey_igw_background_new',['../df/dba/structmom__set__diffusivity_1_1set__diffusivity__cs.html#a1d70e2dae33fd95f2bfe7aa77326d13f',1,'mom_set_diffusivity::set_diffusivity_cs']]],
   ['hi',['hi',['../d8/d8b/structmom__grid_1_1ocean__grid__type.html#a0a4e29f04b514ea956d655d22ee79bcc',1,'mom_grid::ocean_grid_type::hi()'],['../dc/d96/structmom__dyn__horgrid_1_1dyn__horgrid__type.html#a774fbdd7951ce49dfe3c74ec4659a5b9',1,'mom_dyn_horgrid::dyn_horgrid_type::hi()']]],

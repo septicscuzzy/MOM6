@@ -1,9 +1,12 @@
 <map id="mom_remapping::initialize_remapping" name="mom_remapping::initialize_remapping">
-<area shape="rect" id="node2" href="$de/dd7/namespacemom__ale__sponge.html#a135d5ca4d0dff789bc6db5ac789b4142" title="This subroutine determines the number of points which are within. " alt="" coords="199,8,348,49"/>
-<area shape="rect" id="node7" href="$d6/d75/namespacemom__remapping.html#a8a79c37c89f8b800f79198aceca5f090" title="Runs unit tests on remapping functions. Should only be called from a single/root thread Returns True ..." alt="" coords="396,71,556,112"/>
-<area shape="rect" id="node3" href="$da/d77/namespacedome2d__initialization.html#ab0df2b602fe1c83baa66ba03cc2c6dd4" title="Set up sponges in 2d DOME configuration. " alt="" coords="399,5,553,47"/>
-<area shape="rect" id="node4" href="$d6/d62/namespacemom__state__initialization.html#af4e854627c6572332ba3fd895f169321" title="mom_state_initialization\l::mom_initialize_state" alt="" coords="604,8,739,49"/>
-<area shape="rect" id="node5" href="$da/d01/namespacemom.html#afebdc0103ad9cbe0ed4a54e522dc4104" title="This subroutine initializes MOM. " alt="" coords="787,46,905,73"/>
-<area shape="rect" id="node6" href="$de/dbc/MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" title="mom_main" alt="" coords="953,46,1028,73"/>
-<area shape="rect" id="node8" href="$da/d01/namespacemom.html#ae77cfd2e790f1266b31d93c58659d46c" title="Calls unit tests for other modules. These are NOT normally invoked and so we provide the module use s..." alt="" coords="623,75,720,102"/>
+<area shape="rect" id="node2" href="$de/dd7/namespacemom__ale__sponge.html#a135d5ca4d0dff789bc6db5ac789b4142" title="This subroutine determines the number of points which are within. " alt="" coords="231,5,409,47"/>
+<area shape="rect" id="node5" href="$d6/d75/namespacemom__remapping.html#a8a79c37c89f8b800f79198aceca5f090" title="Runs unit tests on remapping functions. Should only be called from a single/root thread Returns True ..." alt="" coords="227,71,413,112"/>
+<area shape="rect" id="node9" href="$dd/d33/namespacemom__wave__speed.html#a46e21529ec8098b0b19053afa133b971" title="Initialize control structure for MOM_wave_speed. " alt="" coords="235,136,405,177"/>
+<area shape="rect" id="node3" href="$da/d77/namespacedome2d__initialization.html#ab0df2b602fe1c83baa66ba03cc2c6dd4" title="Set up sponges in 2d DOME configuration. " alt="" coords="461,5,648,47"/>
+<area shape="rect" id="node4" href="$d6/d62/namespacemom__state__initialization.html#af4e854627c6572332ba3fd895f169321" title="mom_state_initialization\l::mom_initialize_state" alt="" coords="696,5,859,47"/>
+<area shape="rect" id="node6" href="$da/d01/namespacemom.html#ae77cfd2e790f1266b31d93c58659d46c" title="Calls unit tests for other modules. These are NOT normally invoked and so we provide the module use s..." alt="" coords="497,78,613,105"/>
+<area shape="rect" id="node7" href="$da/d01/namespacemom.html#a0be2869fef30e1e0604facfe1b41555d" title="This subroutine initializes MOM. " alt="" coords="706,78,849,105"/>
+<area shape="rect" id="node8" href="$de/dbc/MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" title="mom_main" alt="" coords="907,78,993,105"/>
+<area shape="rect" id="node10" href="$d9/d8b/namespacemom__diagnostics.html#ab2108574e351f6deb812da3faf437278" title="mom_diagnostics::mom\l_diagnostics_init" alt="" coords="474,132,635,173"/>
+<area shape="rect" id="node11" href="$d0/d86/namespacemom__lateral__mixing__coeffs.html#aeb658054e8d4d723dff397f8ae186e4a" title="Initializes the variables mixing coefficients container. " alt="" coords="485,197,624,239"/>
 </map>

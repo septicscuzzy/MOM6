@@ -120,6 +120,8 @@ Public variables and constants</h2></td></tr>
 <tr class="separator:a636303c77997ece68d8f5f0806f4a300"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab01e807b131fdd9d1f1aa7a585b37062"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/deb/structmom__tracer__flow__control_1_1tracer__flow__control__cs.html#ab01e807b131fdd9d1f1aa7a585b37062">use_pseudo_salt_tracer</a> = .false.</td></tr>
 <tr class="separator:ab01e807b131fdd9d1f1aa7a585b37062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b499f82e833c1ccd1dd3600b0b3ca37"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/deb/structmom__tracer__flow__control_1_1tracer__flow__control__cs.html#a9b499f82e833c1ccd1dd3600b0b3ca37">use_boundary_impulse_tracer</a> = .false.</td></tr>
+<tr class="separator:a9b499f82e833c1ccd1dd3600b0b3ca37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8414a92ca96cf6aeeedee155e33d8254"><td class="memItemLeft" align="right" valign="top">type(user_tracer_example_cs), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/deb/structmom__tracer__flow__control_1_1tracer__flow__control__cs.html#a8414a92ca96cf6aeeedee155e33d8254">user_tracer_example_csp</a> =&gt; NULL()</td></tr>
 <tr class="separator:a8414a92ca96cf6aeeedee155e33d8254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf8f9b159e4e3f1c17f617e03a8daeca"><td class="memItemLeft" align="right" valign="top">type(dome_tracer_cs), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/deb/structmom__tracer__flow__control_1_1tracer__flow__control__cs.html#adf8f9b159e4e3f1c17f617e03a8daeca">dome_tracer_csp</a> =&gt; NULL()</td></tr>
@@ -138,10 +140,12 @@ Public variables and constants</h2></td></tr>
 <tr class="separator:a85dfdce8629c492383a4b49ad56d8710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a219a211b37fa37f249f61d3f1abf45e5"><td class="memItemLeft" align="right" valign="top">type(pseudo_salt_tracer_cs), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/deb/structmom__tracer__flow__control_1_1tracer__flow__control__cs.html#a219a211b37fa37f249f61d3f1abf45e5">pseudo_salt_tracer_csp</a> =&gt; NULL()</td></tr>
 <tr class="separator:a219a211b37fa37f249f61d3f1abf45e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07cd3e6a2f2f43ae5481aeb570bebff4"><td class="memItemLeft" align="right" valign="top">type(boundary_impulse_tracer_cs), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/deb/structmom__tracer__flow__control_1_1tracer__flow__control__cs.html#a07cd3e6a2f2f43ae5481aeb570bebff4">boundary_impulse_tracer_csp</a> =&gt; NULL()</td></tr>
+<tr class="separator:a07cd3e6a2f2f43ae5481aeb570bebff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00091">91</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00093">93</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
 </div><h2 class="groupheader">Variables and constants</h2>
 <a id="aca77a0aec5a8b8c95f69ad15fefb4e87"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aca77a0aec5a8b8c95f69ad15fefb4e87">&sect;&nbsp;</a></span>advection_test_tracer_csp</h2>
@@ -155,8 +159,24 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00108">108</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">type</span>(advection_test_tracer_cs), <span class="keywordtype">pointer</span> :: advection_test_tracer_csp =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00111">111</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">type</span>(advection_test_tracer_cs), <span class="keywordtype">pointer</span> :: advection_test_tracer_csp =&gt; null()</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a07cd3e6a2f2f43ae5481aeb570bebff4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07cd3e6a2f2f43ae5481aeb570bebff4">&sect;&nbsp;</a></span>boundary_impulse_tracer_csp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">type(boundary_impulse_tracer_cs), pointer mom_tracer_flow_control::tracer_flow_control_cs::boundary_impulse_tracer_csp =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00117">117</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">type</span>(boundary_impulse_tracer_cs), <span class="keywordtype">pointer</span> :: boundary_impulse_tracer_csp =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="adf8f9b159e4e3f1c17f617e03a8daeca"></a>
@@ -171,8 +191,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00103">103</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">type</span>(dome_tracer_cs), <span class="keywordtype">pointer</span> :: dome_tracer_csp =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00106">106</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordtype">type</span>(dome_tracer_cs), <span class="keywordtype">pointer</span> :: dome_tracer_csp =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ac28d93df254ee779203e0f5d3502d68f"></a>
@@ -187,8 +207,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00106">106</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordtype">type</span>(dye_tracer_cs), <span class="keywordtype">pointer</span> :: dye_tracer_csp =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00109">109</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">type</span>(dye_tracer_cs), <span class="keywordtype">pointer</span> :: dye_tracer_csp =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a02ba633614a1c9187bd39fb330dac182"></a>
@@ -203,8 +223,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00105">105</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">type</span>(ideal_age_tracer_cs), <span class="keywordtype">pointer</span> :: ideal_age_tracer_csp =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00108">108</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">type</span>(ideal_age_tracer_cs), <span class="keywordtype">pointer</span> :: ideal_age_tracer_csp =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a4e9f5d8c7dc0ac02468949d247f961fc"></a>
@@ -219,8 +239,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00104">104</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">type</span>(isomip_tracer_cs), <span class="keywordtype">pointer</span> :: isomip_tracer_csp =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00107">107</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">type</span>(isomip_tracer_cs), <span class="keywordtype">pointer</span> :: isomip_tracer_csp =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a85dfdce8629c492383a4b49ad56d8710"></a>
@@ -235,8 +255,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00109">109</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">type</span>(ocmip2_cfc_cs), <span class="keywordtype">pointer</span> :: ocmip2_cfc_csp =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00112">112</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">type</span>(ocmip2_cfc_cs), <span class="keywordtype">pointer</span> :: ocmip2_cfc_csp =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a560715747ca2e071da9df0e6e66a5e12"></a>
@@ -251,8 +271,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00107">107</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">type</span>(oil_tracer_cs), <span class="keywordtype">pointer</span> :: oil_tracer_csp =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00110">110</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">type</span>(oil_tracer_cs), <span class="keywordtype">pointer</span> :: oil_tracer_csp =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a219a211b37fa37f249f61d3f1abf45e5"></a>
@@ -267,8 +287,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00113">113</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">type</span>(pseudo_salt_tracer_cs), <span class="keywordtype">pointer</span> :: pseudo_salt_tracer_csp =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00116">116</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">type</span>(pseudo_salt_tracer_cs), <span class="keywordtype">pointer</span> :: pseudo_salt_tracer_csp =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a7adcffc52e93c6459424f895aee2dc25"></a>
@@ -283,8 +303,24 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00098">98</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">logical</span> :: use_advection_test_tracer = .false.</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00100">100</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">logical</span> :: use_advection_test_tracer = .false.</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a9b499f82e833c1ccd1dd3600b0b3ca37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b499f82e833c1ccd1dd3600b0b3ca37">&sect;&nbsp;</a></span>use_boundary_impulse_tracer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">logical mom_tracer_flow_control::tracer_flow_control_cs::use_boundary_impulse_tracer = .false.</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00104">104</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">logical</span> :: use_boundary_impulse_tracer = .false.</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a6f0798d7c731d1fe8fda09cdd2edfe7e"></a>
@@ -299,8 +335,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00093">93</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">logical</span> :: use_dome_tracer = .false.</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00095">95</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">logical</span> :: use_dome_tracer = .false.</div></div><!-- fragment -->
 </div>
 </div>
 <a id="abc3706776811ee5f2b76ee38cdad14bc"></a>
@@ -315,8 +351,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00095">95</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">logical</span> :: use_ideal_age = .false.</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00097">97</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">logical</span> :: use_ideal_age = .false.</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a3492bc792dad60ddd87726522ff9e250"></a>
@@ -331,8 +367,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00094">94</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">logical</span> :: use_isomip_tracer = .false.</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00096">96</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">logical</span> :: use_isomip_tracer = .false.</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a636303c77997ece68d8f5f0806f4a300"></a>
@@ -347,8 +383,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00100">100</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">logical</span> :: use_mom_generic_tracer = .false.</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00102">102</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">logical</span> :: use_mom_generic_tracer = .false.</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a845472c95d49a5a8e4f75e0bbb452b95"></a>
@@ -363,8 +399,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00099">99</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">logical</span> :: use_ocmip2_cfc = .false.</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00101">101</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">logical</span> :: use_ocmip2_cfc = .false.</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a1c704cd51874f7c969b3990d719e3889"></a>
@@ -379,8 +415,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00097">97</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">logical</span> :: use_oil = .false.</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00099">99</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">logical</span> :: use_oil = .false.</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ab01e807b131fdd9d1f1aa7a585b37062"></a>
@@ -395,8 +431,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00101">101</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">logical</span> :: use_pseudo_salt_tracer = .false.</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00103">103</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">logical</span> :: use_pseudo_salt_tracer = .false.</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ac26756b4583fc470912675b8143e0b14"></a>
@@ -411,8 +447,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00096">96</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">logical</span> :: use_regional_dyes = .false.</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00098">98</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">logical</span> :: use_regional_dyes = .false.</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ac4c84680676d24179c183f5282a93843"></a>
@@ -427,8 +463,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00092">92</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">logical</span> :: use_user_tracer_example = .false.</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00094">94</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">logical</span> :: use_user_tracer_example = .false.</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a8414a92ca96cf6aeeedee155e33d8254"></a>
@@ -443,8 +479,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00102">102</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">type</span>(user_tracer_example_cs), <span class="keywordtype">pointer</span> :: user_tracer_example_csp =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html#l00105">105</a> of file <a class="el" href="../../de/d8c/MOM__tracer__flow__control_8F90_source.html">MOM_tracer_flow_control.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">type</span>(user_tracer_example_cs), <span class="keywordtype">pointer</span> :: user_tracer_example_csp =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>

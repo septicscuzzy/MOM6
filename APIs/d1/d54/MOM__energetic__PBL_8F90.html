@@ -94,7 +94,13 @@ $(document).ready(function(){initNavTree('d1/d54/MOM__energetic__PBL_8F90.html',
 <div class="title">MOM_energetic_PBL.F90 File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;<a class="el" href="../../dd/d60/version__variable_8h_source.html">version_variable.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for MOM_energetic_PBL.F90:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/db3/MOM__energetic__PBL_8F90__incl.svg" width="175" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 <p><a href="../../d1/d54/MOM__energetic__PBL_8F90_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -111,12 +117,18 @@ Modules</h2></td></tr>
 Functions/Subroutines</h2></td></tr>
 <tr class="memitem:abbd123b1c2c8a6aeadb54d481992047f"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db2/namespacemom__energetic__pbl.html#abbd123b1c2c8a6aeadb54d481992047f">mom_energetic_pbl::energetic_pbl</a> (h_3d, u_3d, v_3d, tv, fluxes, dt, Kd_int, G, GV, CS, dSV_dT, dSV_dS, TKE_forced, dt_diag, last_call, dT_expected, dS_expected)</td></tr>
 <tr class="separator:abbd123b1c2c8a6aeadb54d481992047f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0752cb8b34aefea1ece231bbe7c2f655"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db2/namespacemom__energetic__pbl.html#a0752cb8b34aefea1ece231bbe7c2f655">mom_energetic_pbl::find_pe_chg</a> (Kddt_h, h_k, b_den_1, dTe_term, dSe_term, dT_km1_t2, dS_km1_t2, dT_to_dPE_k, dS_to_dPE_k, dT_to_dPEa, dS_to_dPEa, pres, dT_to_dColHt_k, dS_to_dColHt_k, dT_to_dColHta, dS_to_dColHta, PE_chg, dPEc_dKd, dPE_max, dPEc_dKd_0)</td></tr>
-<tr class="memdesc:a0752cb8b34aefea1ece231bbe7c2f655"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates the change in potential energy and or derivatives for several changes in an interfaces's diapycnal diffusivity times a timestep using the original form used in the first version of ePBL.  <a href="../../de/db2/namespacemom__energetic__pbl.html#a0752cb8b34aefea1ece231bbe7c2f655">More...</a><br /></td></tr>
-<tr class="separator:a0752cb8b34aefea1ece231bbe7c2f655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e73e771faefad2b5b259f3d9c9d541"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db2/namespacemom__energetic__pbl.html#aa6e73e771faefad2b5b259f3d9c9d541">mom_energetic_pbl::find_pe_chg</a> (Kddt_h0, dKddt_h, hp_a, hp_b, Th_a, Sh_a, Th_b, Sh_b, dT_to_dPE_a, dS_to_dPE_a, dT_to_dPE_b, dS_to_dPE_b, pres, dT_to_dColHt_a, dS_to_dColHt_a, dT_to_dColHt_b, dS_to_dColHt_b, PE_chg, dPEc_dKd, dPE_max, dPEc_dKd_0, ColHt_cor)</td></tr>
+<tr class="memdesc:aa6e73e771faefad2b5b259f3d9c9d541"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates the change in potential energy and or derivatives for several changes in an interfaces's diapycnal diffusivity times a timestep.  <a href="../../de/db2/namespacemom__energetic__pbl.html#aa6e73e771faefad2b5b259f3d9c9d541">More...</a><br /></td></tr>
+<tr class="separator:aa6e73e771faefad2b5b259f3d9c9d541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1196602a2d4f550ef30f82d419c681"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db2/namespacemom__energetic__pbl.html#a6e1196602a2d4f550ef30f82d419c681">mom_energetic_pbl::find_pe_chg_orig</a> (Kddt_h, h_k, b_den_1, dTe_term, dSe_term, dT_km1_t2, dS_km1_t2, dT_to_dPE_k, dS_to_dPE_k, dT_to_dPEa, dS_to_dPEa, pres, dT_to_dColHt_k, dS_to_dColHt_k, dT_to_dColHta, dS_to_dColHta, PE_chg, dPEc_dKd, dPE_max, dPEc_dKd_0)</td></tr>
+<tr class="memdesc:a6e1196602a2d4f550ef30f82d419c681"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates the change in potential energy and or derivatives for several changes in an interfaces's diapycnal diffusivity times a timestep using the original form used in the first version of ePBL.  <a href="../../de/db2/namespacemom__energetic__pbl.html#a6e1196602a2d4f550ef30f82d419c681">More...</a><br /></td></tr>
+<tr class="separator:a6e1196602a2d4f550ef30f82d419c681"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56b8f065e1443f5d40d431d346bde737"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db2/namespacemom__energetic__pbl.html#a56b8f065e1443f5d40d431d346bde737">mom_energetic_pbl::energetic_pbl_get_mld</a> (CS, MLD, G)</td></tr>
 <tr class="memdesc:a56b8f065e1443f5d40d431d346bde737"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the ePBL active mixed layer depth into MLD.  <a href="../../de/db2/namespacemom__energetic__pbl.html#a56b8f065e1443f5d40d431d346bde737">More...</a><br /></td></tr>
 <tr class="separator:a56b8f065e1443f5d40d431d346bde737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a2a1efe8d59b260ed6e996d8f4a7cb5"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db2/namespacemom__energetic__pbl.html#a5a2a1efe8d59b260ed6e996d8f4a7cb5">mom_energetic_pbl::ust_2_u10_coare3p5</a> (USTair, U10)</td></tr>
+<tr class="memdesc:a5a2a1efe8d59b260ed6e996d8f4a7cb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes wind speed from ustar_air based on COARE 3.5 Cd relationship.  <a href="../../de/db2/namespacemom__energetic__pbl.html#a5a2a1efe8d59b260ed6e996d8f4a7cb5">More...</a><br /></td></tr>
+<tr class="separator:a5a2a1efe8d59b260ed6e996d8f4a7cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f410dabd3ccd5c856b436edeaa35f9b"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db2/namespacemom__energetic__pbl.html#a3f410dabd3ccd5c856b436edeaa35f9b">mom_energetic_pbl::energetic_pbl_init</a> (Time, G, GV, param_file, diag, CS)</td></tr>
 <tr class="separator:a3f410dabd3ccd5c856b436edeaa35f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64860c8b0110ba516795a288acdefd1f"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db2/namespacemom__energetic__pbl.html#a64860c8b0110ba516795a288acdefd1f">mom_energetic_pbl::energetic_pbl_end</a> (CS)</td></tr>

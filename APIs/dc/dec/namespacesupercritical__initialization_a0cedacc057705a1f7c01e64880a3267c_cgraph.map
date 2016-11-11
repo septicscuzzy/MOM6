@@ -1,5 +1,4 @@
 <map id="supercritical_initialization::supercritical_initialize_topography" name="supercritical_initialization::supercritical_initialize_topography">
-<area shape="rect" id="node2" href="$d9/def/namespacemom__file__parser.html#a17c0ef1bb1912f02faa0aaa1e0f64210" title="mom_file_parser::log\l_version" alt="" coords="191,5,314,47"/>
-<area shape="rect" id="node4" href="$d0/de6/namespacemom__error__handler.html#a1c462df7b61f1296407b4af51dfeceab" title="mom_error_handler::\lmom_mesg" alt="" coords="191,71,315,112"/>
-<area shape="rect" id="node3" href="$d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" title="mom_error_handler::\lis_root_pe" alt="" coords="363,39,487,80"/>
+<area shape="rect" id="node2" href="$d0/de6/namespacemom__error__handler.html#a1c462df7b61f1296407b4af51dfeceab" title="mom_error_handler::\lmom_mesg" alt="" coords="220,13,361,54"/>
+<area shape="rect" id="node3" href="$d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" title="mom_error_handler::\lis_root_pe" alt="" coords="409,13,551,54"/>
 </map>

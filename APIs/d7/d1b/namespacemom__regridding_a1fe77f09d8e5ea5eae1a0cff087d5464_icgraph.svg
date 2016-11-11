@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 659;
+var viewWidth = 743;
 var viewHeight = 225;
 var sectionId = 'dynsection-18';
 </script>
@@ -54,168 +54,168 @@ var sectionId = 'dynsection-18';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_regridding::build_zstar_column</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-220.5 655,-220.5 655,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-220.5 739,-220.5 739,4 -4,4"/>
 <!-- Node77 -->
 <g id="node1" class="node"><title>Node77</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-133.5 0,-163.5 96,-163.5 96,-133.5 0,-133.5"/>
+<polygon fill="#bfbfbf" stroke="black" points="0,-133.5 0,-163.5 112,-163.5 112,-133.5 0,-133.5"/>
 <text text-anchor="start" x="8" y="-151.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::build</text>
-<text text-anchor="middle" x="48" y="-140.5" font-family="Helvetica,sans-Serif" font-size="10.00">_zstar_column</text>
+<text text-anchor="middle" x="56" y="-140.5" font-family="Helvetica,sans-Serif" font-size="10.00">_zstar_column</text>
 </g>
 <!-- Node78 -->
 <g id="node2" class="node"><title>Node78</title>
-<g id="a_node2"><a xlink:href="../../d7/d1b/namespacemom__regridding.html#ae49eb6807ab2559382afe3a56f0c8793" target="_top" xlink:title="Builds a z*&#45;ccordinate grid with partial steps (Adcroft and Campin, 2004). z* is defined as z* = (z&#45;e...">
-<polygon fill="white" stroke="black" points="138,-169.5 138,-199.5 234,-199.5 234,-169.5 138,-169.5"/>
-<text text-anchor="start" x="146" y="-187.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::build</text>
-<text text-anchor="middle" x="186" y="-176.5" font-family="Helvetica,sans-Serif" font-size="10.00">_zstar_grid</text>
+<g id="a_node2"><a xlink:href="../../d7/d1b/namespacemom__regridding.html#a55e6873a74355daea004d39c452e0069" target="_top" xlink:title="Builds a z*&#45;ccordinate grid with partial steps (Adcroft and Campin, 2004). z* is defined as z* = (z&#45;e...">
+<polygon fill="white" stroke="black" points="154.5,-169.5 154.5,-199.5 266.5,-199.5 266.5,-169.5 154.5,-169.5"/>
+<text text-anchor="start" x="162.5" y="-187.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::build</text>
+<text text-anchor="middle" x="210.5" y="-176.5" font-family="Helvetica,sans-Serif" font-size="10.00">_zstar_grid</text>
 </a>
 </g>
 </g>
 <!-- Node77&#45;&gt;Node78 -->
 <g id="edge1" class="edge"><title>Node77&#45;&gt;Node78</title>
-<path fill="none" stroke="midnightblue" d="M106.174,-163.634C116.743,-166.432 127.67,-169.324 137.899,-172.032"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="106.747,-160.166 96.1845,-160.99 104.956,-166.932 106.747,-160.166"/>
+<path fill="none" stroke="midnightblue" d="M121.853,-163.809C132.644,-166.357 143.746,-168.978 154.269,-171.462"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="122.593,-160.388 112.056,-161.497 120.984,-167.201 122.593,-160.388"/>
 </g>
 <!-- Node80 -->
 <g id="node4" class="node"><title>Node80</title>
 <g id="a_node4"><a xlink:href="../../d9/d06/namespacemom__diag__mediator.html#a67a9077037d7bf86f7415ca1ad672295" target="_top" xlink:title="Build/update target vertical grids for diagnostic remapping. ">
-<polygon fill="white" stroke="black" points="132,-98.5 132,-128.5 240,-128.5 240,-98.5 132,-98.5"/>
-<text text-anchor="start" x="140" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_diag_mediator::</text>
-<text text-anchor="middle" x="186" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">diag_update_target_grids</text>
+<polygon fill="white" stroke="black" points="148,-98.5 148,-128.5 273,-128.5 273,-98.5 148,-98.5"/>
+<text text-anchor="start" x="156" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_diag_mediator::</text>
+<text text-anchor="middle" x="210.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">diag_update_target_grids</text>
 </a>
 </g>
 </g>
 <!-- Node77&#45;&gt;Node80 -->
 <g id="edge3" class="edge"><title>Node77&#45;&gt;Node80</title>
-<path fill="none" stroke="midnightblue" d="M106.07,-133.813C114.611,-131.615 123.389,-129.356 131.845,-127.18"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="104.997,-130.475 96.1845,-136.357 106.741,-137.254 104.997,-130.475"/>
+<path fill="none" stroke="midnightblue" d="M121.988,-133.585C130.547,-131.62 139.3,-129.611 147.802,-127.66"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="121.02,-130.216 112.056,-135.864 122.586,-137.039 121.02,-130.216"/>
 </g>
 <!-- Node79 -->
 <g id="node3" class="node"><title>Node79</title>
-<g id="a_node3"><a xlink:href="../../d7/d1b/namespacemom__regridding.html#a1a4ef08eafeb47fe9c96d08d736b16b1" target="_top" xlink:title="mom_regridding::regridding_main">
-<polygon fill="white" stroke="black" points="276,-197 276,-216 413,-216 413,-197 276,-197"/>
-<text text-anchor="middle" x="344.5" y="-204" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::regridding_main</text>
+<g id="a_node3"><a xlink:href="../../d7/d1b/namespacemom__regridding.html#abf6d4e0d14c8b3b69fa4ffca42122c5f" target="_top" xlink:title="mom_regridding::regridding_main">
+<polygon fill="white" stroke="black" points="309,-197 309,-216 469,-216 469,-197 309,-197"/>
+<text text-anchor="middle" x="389" y="-204" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::regridding_main</text>
 </a>
 </g>
 </g>
 <!-- Node78&#45;&gt;Node79 -->
 <g id="edge2" class="edge"><title>Node78&#45;&gt;Node79</title>
-<path fill="none" stroke="midnightblue" d="M244.391,-192.568C254.6,-194.003 265.321,-195.51 275.786,-196.981"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="244.77,-189.087 234.38,-191.16 243.795,-196.018 244.77,-189.087"/>
+<path fill="none" stroke="midnightblue" d="M277.007,-192.665C288.242,-194.066 300.003,-195.532 311.495,-196.964"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="277.218,-189.164 266.861,-191.401 276.352,-196.111 277.218,-189.164"/>
 </g>
 <!-- Node81 -->
 <g id="node5" class="node"><title>Node81</title>
 <g id="a_node5"><a xlink:href="../../d1/da1/namespacemom__bulk__mixed__layer.html#a9c3a37aae75b52453efad11d8c8abbe6" target="_top" xlink:title="mom_bulk_mixed_layer\l::bulkmixedlayer">
-<polygon fill="white" stroke="black" points="294,-147.5 294,-177.5 395,-177.5 395,-147.5 294,-147.5"/>
-<text text-anchor="start" x="302" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_bulk_mixed_layer</text>
-<text text-anchor="middle" x="344.5" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">::bulkmixedlayer</text>
+<polygon fill="white" stroke="black" points="329.5,-147.5 329.5,-177.5 448.5,-177.5 448.5,-147.5 329.5,-147.5"/>
+<text text-anchor="start" x="337.5" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_bulk_mixed_layer</text>
+<text text-anchor="middle" x="389" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">::bulkmixedlayer</text>
 </a>
 </g>
 </g>
 <!-- Node80&#45;&gt;Node81 -->
 <g id="edge4" class="edge"><title>Node80&#45;&gt;Node81</title>
-<path fill="none" stroke="midnightblue" d="M244.85,-131.613C261.488,-136.822 279.449,-142.446 295.427,-147.448"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="245.821,-128.249 235.232,-128.601 243.73,-134.93 245.821,-128.249"/>
+<path fill="none" stroke="midnightblue" d="M275.693,-131.321C294.75,-136.612 315.427,-142.352 333.784,-147.448"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="276.468,-127.904 265.896,-128.601 274.595,-134.649 276.468,-127.904"/>
 </g>
 <!-- Node83 -->
 <g id="node7" class="node"><title>Node83</title>
 <g id="a_node7"><a xlink:href="../../d4/de7/namespacemom__mixed__layer__restrat.html#aa7bc0bffcb1f179da48339460555c343" target="_top" xlink:title="This subroutine does interface depth diffusion. The fluxes are limited to give positive definiteness...">
-<polygon fill="white" stroke="black" points="289.5,-98.5 289.5,-128.5 399.5,-128.5 399.5,-98.5 289.5,-98.5"/>
-<text text-anchor="start" x="297.5" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_mixed_layer_restrat</text>
-<text text-anchor="middle" x="344.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">::mixedlayer_restrat_bml</text>
+<polygon fill="white" stroke="black" points="324.5,-98.5 324.5,-128.5 453.5,-128.5 453.5,-98.5 324.5,-98.5"/>
+<text text-anchor="start" x="332.5" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_mixed_layer_restrat</text>
+<text text-anchor="middle" x="389" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">::mixedlayer_restrat_bml</text>
 </a>
 </g>
 </g>
 <!-- Node80&#45;&gt;Node83 -->
 <g id="edge6" class="edge"><title>Node80&#45;&gt;Node83</title>
-<path fill="none" stroke="midnightblue" d="M250.567,-113.5C263.4,-113.5 276.779,-113.5 289.256,-113.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="250.421,-110 240.421,-113.5 250.421,-117 250.421,-110"/>
+<path fill="none" stroke="midnightblue" d="M283.434,-113.5C296.939,-113.5 310.973,-113.5 324.209,-113.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="283.231,-110 273.231,-113.5 283.231,-117 283.231,-110"/>
 </g>
 <!-- Node85 -->
 <g id="node9" class="node"><title>Node85</title>
 <g id="a_node9"><a xlink:href="../../d4/de7/namespacemom__mixed__layer__restrat.html#a8c3660ca67ff94ff55449ce75e362e32" target="_top" xlink:title="This subroutine does interface depth diffusion. The fluxes are limited to give positive definiteness...">
-<polygon fill="white" stroke="black" points="285,-49.5 285,-79.5 404,-79.5 404,-49.5 285,-49.5"/>
-<text text-anchor="start" x="293" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_mixed_layer_restrat</text>
-<text text-anchor="middle" x="344.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">::mixedlayer_restrat_general</text>
+<polygon fill="white" stroke="black" points="319,-49.5 319,-79.5 459,-79.5 459,-49.5 319,-49.5"/>
+<text text-anchor="start" x="327" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_mixed_layer_restrat</text>
+<text text-anchor="middle" x="389" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">::mixedlayer_restrat_general</text>
 </a>
 </g>
 </g>
 <!-- Node80&#45;&gt;Node85 -->
 <g id="edge8" class="edge"><title>Node80&#45;&gt;Node85</title>
-<path fill="none" stroke="midnightblue" d="M244.85,-95.3871C261.488,-90.1778 279.449,-84.5543 295.427,-79.5516"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="243.73,-92.0704 235.232,-98.3986 245.821,-98.7506 243.73,-92.0704"/>
+<path fill="none" stroke="midnightblue" d="M275.693,-95.6788C294.75,-90.3882 315.427,-84.6478 333.784,-79.5516"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="274.595,-92.351 265.896,-98.3986 276.468,-99.0959 274.595,-92.351"/>
 </g>
 <!-- Node86 -->
 <g id="node10" class="node"><title>Node86</title>
-<g id="a_node10"><a xlink:href="../../d1/d75/namespacemom__thickness__diffuse.html#a9506f374762ce6d5d12424a9314fad2f" target="_top" xlink:title="mom_thickness_diffuse\l::thickness_diffuse">
-<polygon fill="white" stroke="black" points="295,-0.5 295,-30.5 394,-30.5 394,-0.5 295,-0.5"/>
-<text text-anchor="start" x="303" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_thickness_diffuse</text>
-<text text-anchor="middle" x="344.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::thickness_diffuse</text>
+<g id="a_node10"><a xlink:href="../../d1/d75/namespacemom__thickness__diffuse.html#a9506f374762ce6d5d12424a9314fad2f" target="_top" xlink:title="Calculates thickness diffusion coefficients and applies thickness diffusion to layer thicknesses...">
+<polygon fill="white" stroke="black" points="329,-0.5 329,-30.5 449,-30.5 449,-0.5 329,-0.5"/>
+<text text-anchor="start" x="337" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_thickness_diffuse</text>
+<text text-anchor="middle" x="389" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::thickness_diffuse</text>
 </a>
 </g>
 </g>
 <!-- Node80&#45;&gt;Node86 -->
 <g id="edge10" class="edge"><title>Node80&#45;&gt;Node86</title>
-<path fill="none" stroke="midnightblue" d="M209.087,-91.3144C226.155,-75.1682 251.014,-53.7273 276,-39.5 281.836,-36.1767 288.214,-33.1875 294.645,-30.5394"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="206.593,-88.8565 201.82,-98.3153 211.45,-93.8975 206.593,-88.8565"/>
+<path fill="none" stroke="midnightblue" d="M235.02,-91.8151C253.827,-75.4668 281.51,-53.536 309,-39.5 315.511,-36.1757 322.563,-33.2233 329.682,-30.6268"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="232.701,-89.1934 227.53,-98.4404 237.339,-94.4367 232.701,-89.1934"/>
 </g>
 <!-- Node82 -->
 <g id="node6" class="node"><title>Node82</title>
 <g id="a_node6"><a xlink:href="../../d8/df3/namespacemom__diabatic__driver.html#a61e57d3902367aa46aa3c2d949ee900f" target="_top" xlink:title="This subroutine imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentu...">
-<polygon fill="white" stroke="black" points="458.5,-147.5 458.5,-177.5 549.5,-177.5 549.5,-147.5 458.5,-147.5"/>
-<text text-anchor="start" x="466.5" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_diabatic_driver</text>
-<text text-anchor="middle" x="504" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">::diabatic</text>
+<polygon fill="white" stroke="black" points="516,-147.5 516,-177.5 623,-177.5 623,-147.5 516,-147.5"/>
+<text text-anchor="start" x="524" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_diabatic_driver</text>
+<text text-anchor="middle" x="569.5" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">::diabatic</text>
 </a>
 </g>
 </g>
 <!-- Node81&#45;&gt;Node82 -->
 <g id="edge5" class="edge"><title>Node81&#45;&gt;Node82</title>
-<path fill="none" stroke="midnightblue" d="M405.479,-162.5C423.017,-162.5 441.874,-162.5 458.288,-162.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="405.334,-159 395.334,-162.5 405.334,-166 405.334,-159"/>
+<path fill="none" stroke="midnightblue" d="M458.994,-162.5C477.907,-162.5 498.102,-162.5 515.931,-162.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="458.942,-159 448.942,-162.5 458.942,-166 458.942,-159"/>
 </g>
 <!-- Node84 -->
 <g id="node8" class="node"><title>Node84</title>
 <g id="a_node8"><a xlink:href="../../d4/de7/namespacemom__mixed__layer__restrat.html#a27efc1d26cdf8b66108c3dad047bbb91" target="_top" xlink:title="This subroutine does interface depth diffusion. The fluxes are limited to give positive definiteness...">
-<polygon fill="white" stroke="black" points="449,-73.5 449,-103.5 559,-103.5 559,-73.5 449,-73.5"/>
-<text text-anchor="start" x="457" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_mixed_layer_restrat</text>
-<text text-anchor="middle" x="504" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">::mixedlayer_restrat</text>
+<polygon fill="white" stroke="black" points="505,-73.5 505,-103.5 634,-103.5 634,-73.5 505,-73.5"/>
+<text text-anchor="start" x="513" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_mixed_layer_restrat</text>
+<text text-anchor="middle" x="569.5" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">::mixedlayer_restrat</text>
 </a>
 </g>
 </g>
 <!-- Node83&#45;&gt;Node84 -->
 <g id="edge7" class="edge"><title>Node83&#45;&gt;Node84</title>
-<path fill="none" stroke="midnightblue" d="M409.953,-103.269C422.911,-101.212 436.405,-99.0707 448.964,-97.0771"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="409.03,-99.8719 399.703,-104.896 410.128,-106.785 409.03,-99.8719"/>
+<path fill="none" stroke="midnightblue" d="M463.953,-103.142C477.53,-101.241 491.595,-99.2711 504.838,-97.4163"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="463.104,-99.727 453.687,-104.58 464.075,-106.659 463.104,-99.727"/>
 </g>
 <!-- Node85&#45;&gt;Node84 -->
 <g id="edge9" class="edge"><title>Node85&#45;&gt;Node84</title>
-<path fill="none" stroke="midnightblue" d="M414.262,-74.978C425.888,-76.7496 437.81,-78.5662 448.99,-80.2699"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="414.56,-71.4832 404.147,-73.4367 413.506,-78.4033 414.56,-71.4832"/>
+<path fill="none" stroke="midnightblue" d="M469.025,-75.1253C481.038,-76.7404 493.302,-78.3893 504.929,-79.9527"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="469.39,-71.6429 459.013,-73.779 468.457,-78.5804 469.39,-71.6429"/>
 </g>
 <!-- Node87 -->
 <g id="node11" class="node"><title>Node87</title>
 <g id="a_node11"><a xlink:href="../../da/d01/namespacemom.html#a4c8332b095c6d295084089aa6b3b678a" target="_top" xlink:title="This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to...">
-<polygon fill="white" stroke="black" points="465.5,-6 465.5,-25 542.5,-25 542.5,-6 465.5,-6"/>
-<text text-anchor="middle" x="504" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">mom::step_mom</text>
+<polygon fill="white" stroke="black" points="524.5,-6 524.5,-25 614.5,-25 614.5,-6 524.5,-6"/>
+<text text-anchor="middle" x="569.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">mom::step_mom</text>
 </a>
 </g>
 </g>
 <!-- Node86&#45;&gt;Node87 -->
 <g id="edge11" class="edge"><title>Node86&#45;&gt;Node87</title>
-<path fill="none" stroke="midnightblue" d="M404.219,-15.5C424.684,-15.5 447.083,-15.5 465.37,-15.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="404.04,-12.0001 394.04,-15.5 404.04,-19.0001 404.04,-12.0001"/>
+<path fill="none" stroke="midnightblue" d="M459.63,-15.5C481.387,-15.5 504.78,-15.5 524.285,-15.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="459.438,-12.0001 449.438,-15.5 459.438,-19.0001 459.438,-12.0001"/>
 </g>
 <!-- Node88 -->
 <g id="node12" class="node"><title>Node88</title>
 <g id="a_node12"><a xlink:href="../../de/dbc/MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" target="_top" xlink:title="mom_main">
-<polygon fill="white" stroke="black" points="595,-6 595,-25 651,-25 651,-6 595,-6"/>
-<text text-anchor="middle" x="623" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">mom_main</text>
+<polygon fill="white" stroke="black" points="670,-6 670,-25 735,-25 735,-6 670,-6"/>
+<text text-anchor="middle" x="702.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">mom_main</text>
 </a>
 </g>
 </g>
 <!-- Node87&#45;&gt;Node88 -->
 <g id="edge12" class="edge"><title>Node87&#45;&gt;Node88</title>
-<path fill="none" stroke="midnightblue" d="M552.862,-15.5C567.152,-15.5 582.317,-15.5 594.792,-15.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="552.664,-12.0001 542.664,-15.5 552.664,-19.0001 552.664,-12.0001"/>
+<path fill="none" stroke="midnightblue" d="M625.164,-15.5C640.305,-15.5 656.239,-15.5 669.611,-15.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="624.851,-12.0001 614.851,-15.5 624.851,-19.0001 624.851,-12.0001"/>
 </g>
 </g>
 </svg>

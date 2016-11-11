@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('d9/d41/structmom__regridding_1_1regrid
 <div class="dynheader">
 Collaboration diagram for mom_regridding::regridding_cs:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d51/structmom__regridding_1_1regridding__cs__coll__graph.svg" width="452" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d51/structmom__regridding_1_1regridding__cs__coll__graph.svg" width="520" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -179,9 +179,6 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:a85c926baca8df82bd0005038ed446e7b"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d41/structmom__regridding_1_1regridding__cs.html#a85c926baca8df82bd0005038ed446e7b">integrate_downward_for_e</a> = .true.</td></tr>
 <tr class="memdesc:a85c926baca8df82bd0005038ed446e7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, integrate for interface positions from the top downward. If false, integrate from the bottom upward, as does the rest of the model.  <a href="#a85c926baca8df82bd0005038ed446e7b">More...</a><br /></td></tr>
 <tr class="separator:a85c926baca8df82bd0005038ed446e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b80a1188cdf4fa881327a9b221d3389"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d41/structmom__regridding_1_1regridding__cs.html#a5b80a1188cdf4fa881327a9b221d3389">height_of_rigid_surface</a> = -1.E30</td></tr>
-<tr class="memdesc:a5b80a1188cdf4fa881327a9b221d3389"><td class="mdescLeft">&#160;</td><td class="mdescRight">The height to use as a threshold for detection of a "rigid lid" such as an ice shelf base. If the free-surface is depressed below this height the z* coordinate generator assumes the depression is due to a rigid surface. This is a kludge until we provide the position of such a surface to the ALE code.  <a href="#a5b80a1188cdf4fa881327a9b221d3389">More...</a><br /></td></tr>
-<tr class="separator:a5b80a1188cdf4fa881327a9b221d3389"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Regridding control structure. </p>
@@ -364,24 +361,6 @@ Public variables and constants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d1/d10/MOM__regridding_8F90_source.html#l00122">122</a> of file <a class="el" href="../../d1/d10/MOM__regridding_8F90_source.html">MOM_regridding.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordtype">real</span> :: halocline_strat_tol = 0.25</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a5b80a1188cdf4fa881327a9b221d3389"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b80a1188cdf4fa881327a9b221d3389">&sect;&nbsp;</a></span>height_of_rigid_surface</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">real mom_regridding::regridding_cs::height_of_rigid_surface = -1.E30</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The height to use as a threshold for detection of a "rigid lid" such as an ice shelf base. If the free-surface is depressed below this height the z* coordinate generator assumes the depression is due to a rigid surface. This is a kludge until we provide the position of such a surface to the ALE code. </p>
-
-<p>Definition at line <a class="el" href="../../d1/d10/MOM__regridding_8F90_source.html#l00141">141</a> of file <a class="el" href="../../d1/d10/MOM__regridding_8F90_source.html">MOM_regridding.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordtype">real</span> :: height_of_rigid_surface = -1.e30</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a85c926baca8df82bd0005038ed446e7b"></a>

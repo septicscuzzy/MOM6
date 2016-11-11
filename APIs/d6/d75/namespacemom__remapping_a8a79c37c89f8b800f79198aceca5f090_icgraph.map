@@ -1,5 +1,5 @@
 <map id="mom_remapping::remapping_unit_tests" name="mom_remapping::remapping_unit_tests">
-<area shape="rect" id="node2" href="$da/d01/namespacemom.html#ae77cfd2e790f1266b31d93c58659d46c" title="Calls unit tests for other modules. These are NOT normally invoked and so we provide the module use s..." alt="" coords="213,13,311,39"/>
-<area shape="rect" id="node3" href="$da/d01/namespacemom.html#afebdc0103ad9cbe0ed4a54e522dc4104" title="This subroutine initializes MOM. " alt="" coords="359,13,477,39"/>
-<area shape="rect" id="node4" href="$de/dbc/MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" title="mom_main" alt="" coords="525,13,600,39"/>
+<area shape="rect" id="node2" href="$da/d01/namespacemom.html#ae77cfd2e790f1266b31d93c58659d46c" title="Calls unit tests for other modules. These are NOT normally invoked and so we provide the module use s..." alt="" coords="240,13,356,39"/>
+<area shape="rect" id="node3" href="$da/d01/namespacemom.html#a0be2869fef30e1e0604facfe1b41555d" title="This subroutine initializes MOM. " alt="" coords="404,13,547,39"/>
+<area shape="rect" id="node4" href="$de/dbc/MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" title="mom_main" alt="" coords="595,13,681,39"/>
 </map>

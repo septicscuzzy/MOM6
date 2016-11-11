@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 629;
+var viewWidth = 709;
 var viewHeight = 61;
 var sectionId = 'dynsection-7';
 </script>
@@ -54,73 +54,73 @@ var sectionId = 'dynsection-7';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_entrain_diffusive::f_kb_to_ea_kb</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-57 625,-57 625,4 -4,4"/>
-<!-- Node36 -->
-<g id="node1" class="node"><title>Node36</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-22.5 0,-52.5 97,-52.5 97,-22.5 0,-22.5"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-57 705,-57 705,4 -4,4"/>
+<!-- Node35 -->
+<g id="node1" class="node"><title>Node35</title>
+<polygon fill="#bfbfbf" stroke="black" points="0,-22.5 0,-52.5 115,-52.5 115,-22.5 0,-22.5"/>
 <text text-anchor="start" x="8" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_entrain_diffusive</text>
-<text text-anchor="middle" x="48.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">::f_kb_to_ea_kb</text>
+<text text-anchor="middle" x="57.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">::f_kb_to_ea_kb</text>
+</g>
+<!-- Node36 -->
+<g id="node2" class="node"><title>Node36</title>
+<g id="a_node2"><a xlink:href="../../da/d32/namespacemom__entrain__diffusive.html#aa2d2f462912ba1e201b1b73e62a905f3" target="_top" xlink:title="mom_entrain_diffusive\l::determine_dskb">
+<polygon fill="white" stroke="black" points="302,-22.5 302,-52.5 417,-52.5 417,-22.5 302,-22.5"/>
+<text text-anchor="start" x="310" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_entrain_diffusive</text>
+<text text-anchor="middle" x="359.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">::determine_dskb</text>
+</a>
+</g>
+</g>
+<!-- Node35&#45;&gt;Node36 -->
+<g id="edge1" class="edge"><title>Node35&#45;&gt;Node36</title>
+<path fill="none" stroke="midnightblue" d="M115.238,-39.6309C127.055,-39.9931 139.433,-40.3125 151,-40.5 202.104,-41.3285 214.896,-41.3285 266,-40.5 274.314,-40.3652 283.046,-40.1623 291.688,-39.9244"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="291.868,-43.4207 301.762,-39.6309 291.664,-36.4237 291.868,-43.4207"/>
+</g>
+<!-- Node39 -->
+<g id="node5" class="node"><title>Node39</title>
+<g id="a_node5"><a xlink:href="../../da/d32/namespacemom__entrain__diffusive.html#ae45dbf976314c3a9e278ebcebedab109" target="_top" xlink:title="mom_entrain_diffusive\l::find_maxf_kb">
+<polygon fill="white" stroke="black" points="151,-0.5 151,-30.5 266,-30.5 266,-0.5 151,-0.5"/>
+<text text-anchor="start" x="159" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_entrain_diffusive</text>
+<text text-anchor="middle" x="208.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::find_maxf_kb</text>
+</a>
+</g>
+</g>
+<!-- Node35&#45;&gt;Node39 -->
+<g id="edge4" class="edge"><title>Node35&#45;&gt;Node39</title>
+<path fill="none" stroke="midnightblue" d="M115.256,-29.12C123.649,-27.8806 132.362,-26.5942 140.933,-25.3287"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="141.521,-28.7799 150.902,-23.8567 140.498,-21.855 141.521,-28.7799"/>
 </g>
 <!-- Node37 -->
-<g id="node2" class="node"><title>Node37</title>
-<g id="a_node2"><a xlink:href="../../da/d32/namespacemom__entrain__diffusive.html#aa2d2f462912ba1e201b1b73e62a905f3" target="_top" xlink:title="mom_entrain_diffusive\l::determine_dskb">
-<polygon fill="white" stroke="black" points="266,-22.5 266,-52.5 363,-52.5 363,-22.5 266,-22.5"/>
-<text text-anchor="start" x="274" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_entrain_diffusive</text>
-<text text-anchor="middle" x="314.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">::determine_dskb</text>
+<g id="node3" class="node"><title>Node37</title>
+<g id="a_node3"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="mom_error_handler::\lmom_error">
+<polygon fill="white" stroke="black" points="453,-22.5 453,-52.5 559,-52.5 559,-22.5 453,-22.5"/>
+<text text-anchor="start" x="461" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="506" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error</text>
 </a>
 </g>
 </g>
 <!-- Node36&#45;&gt;Node37 -->
-<g id="edge1" class="edge"><title>Node36&#45;&gt;Node37</title>
-<path fill="none" stroke="midnightblue" d="M97.1811,-39.5087C108.892,-39.9205 121.397,-40.2916 133,-40.5 176.104,-41.2741 186.896,-41.2741 230,-40.5 238.34,-40.3502 247.145,-40.1164 255.787,-39.8438"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="255.941,-43.3407 265.819,-39.5087 255.708,-36.3446 255.941,-43.3407"/>
-</g>
-<!-- Node40 -->
-<g id="node5" class="node"><title>Node40</title>
-<g id="a_node5"><a xlink:href="../../da/d32/namespacemom__entrain__diffusive.html#ae45dbf976314c3a9e278ebcebedab109" target="_top" xlink:title="mom_entrain_diffusive\l::find_maxf_kb">
-<polygon fill="white" stroke="black" points="133,-0.5 133,-30.5 230,-30.5 230,-0.5 133,-0.5"/>
-<text text-anchor="start" x="141" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_entrain_diffusive</text>
-<text text-anchor="middle" x="181.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::find_maxf_kb</text>
-</a>
-</g>
-</g>
-<!-- Node36&#45;&gt;Node40 -->
-<g id="edge4" class="edge"><title>Node36&#45;&gt;Node40</title>
-<path fill="none" stroke="midnightblue" d="M97.1646,-29.4953C105.472,-28.1001 114.195,-26.6353 122.739,-25.2004"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="123.369,-28.6436 132.651,-23.5356 122.21,-21.7403 123.369,-28.6436"/>
+<g id="edge2" class="edge"><title>Node36&#45;&gt;Node37</title>
+<path fill="none" stroke="midnightblue" d="M417.195,-37.5C425.515,-37.5 434.123,-37.5 442.55,-37.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="442.708,-41.0001 452.708,-37.5 442.708,-34.0001 442.708,-41.0001"/>
 </g>
 <!-- Node38 -->
-<g id="node3" class="node"><title>Node38</title>
-<g id="a_node3"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="mom_error_handler::\lmom_error">
-<polygon fill="white" stroke="black" points="399,-22.5 399,-52.5 492,-52.5 492,-22.5 399,-22.5"/>
-<text text-anchor="start" x="407" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="445.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error</text>
+<g id="node4" class="node"><title>Node38</title>
+<g id="a_node4"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="mom_error_handler::\lis_root_pe">
+<polygon fill="white" stroke="black" points="595,-22.5 595,-52.5 701,-52.5 701,-22.5 595,-22.5"/>
+<text text-anchor="start" x="603" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="648" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">is_root_pe</text>
 </a>
 </g>
 </g>
 <!-- Node37&#45;&gt;Node38 -->
-<g id="edge2" class="edge"><title>Node37&#45;&gt;Node38</title>
-<path fill="none" stroke="midnightblue" d="M363.168,-37.5C371.434,-37.5 380.097,-37.5 388.56,-37.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="388.743,-41.0001 398.743,-37.5 388.743,-34.0001 388.743,-41.0001"/>
+<g id="edge3" class="edge"><title>Node37&#45;&gt;Node38</title>
+<path fill="none" stroke="midnightblue" d="M559.131,-37.5C567.421,-37.5 576.07,-37.5 584.568,-37.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="584.826,-41.0001 594.826,-37.5 584.826,-34.0001 584.826,-41.0001"/>
 </g>
-<!-- Node39 -->
-<g id="node4" class="node"><title>Node39</title>
-<g id="a_node4"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="mom_error_handler::\lis_root_pe">
-<polygon fill="white" stroke="black" points="528,-22.5 528,-52.5 621,-52.5 621,-22.5 528,-22.5"/>
-<text text-anchor="start" x="536" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="574.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">is_root_pe</text>
-</a>
-</g>
-</g>
-<!-- Node38&#45;&gt;Node39 -->
-<g id="edge3" class="edge"><title>Node38&#45;&gt;Node39</title>
-<path fill="none" stroke="midnightblue" d="M492.35,-37.5C500.533,-37.5 509.141,-37.5 517.568,-37.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="517.717,-41.0001 527.717,-37.5 517.717,-34.0001 517.717,-41.0001"/>
-</g>
-<!-- Node40&#45;&gt;Node37 -->
-<g id="edge5" class="edge"><title>Node40&#45;&gt;Node37</title>
-<path fill="none" stroke="midnightblue" d="M230.165,-23.5047C238.472,-24.8999 247.195,-26.3647 255.739,-27.7996"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="255.21,-31.2597 265.651,-29.4644 256.369,-24.3564 255.21,-31.2597"/>
+<!-- Node39&#45;&gt;Node36 -->
+<g id="edge5" class="edge"><title>Node39&#45;&gt;Node36</title>
+<path fill="none" stroke="midnightblue" d="M266.256,-23.88C274.649,-25.1194 283.362,-26.4058 291.933,-27.6713"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="291.498,-31.145 301.902,-29.1433 292.521,-24.2201 291.498,-31.145"/>
 </g>
 </g>
 </svg>

@@ -94,10 +94,11 @@ $(document).ready(function(){initNavTree('db/d10/MOM__lateral__mixing__coeffs_8F
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;MOM_memory.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d60/version__variable_8h_source.html">version_variable.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM_lateral_mixing_coeffs.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d9d/MOM__lateral__mixing__coeffs_8F90__incl.svg" width="135" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d9d/MOM__lateral__mixing__coeffs_8F90__incl.svg" width="280" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="../../db/d10/MOM__lateral__mixing__coeffs_8F90_source.html">Go to the source code of this file.</a></p>
@@ -105,28 +106,32 @@ Include dependency graph for MOM_lateral_mixing_coeffs.F90:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Types</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">type &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d90/structmom__lateral__mixing__coeffs_1_1varmix__cs.html">mom_lateral_mixing_coeffs::varmix_cs</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable mixing coefficients.  <a href="../../d0/d90/structmom__lateral__mixing__coeffs_1_1varmix__cs.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Modules</h2></td></tr>
 <tr class="memitem:d0/d86/namespacemom__lateral__mixing__coeffs"><td class="memItemLeft" align="right" valign="top">module &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d86/namespacemom__lateral__mixing__coeffs.html">mom_lateral_mixing_coeffs</a></td></tr>
+<tr class="memdesc:d0/d86/namespacemom__lateral__mixing__coeffs"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable mixing coefficients. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions/Subroutines</h2></td></tr>
 <tr class="memitem:af206bc656869b4fc27d4d7e8a15d438e"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d86/namespacemom__lateral__mixing__coeffs.html#af206bc656869b4fc27d4d7e8a15d438e">mom_lateral_mixing_coeffs::calc_resoln_function</a> (h, tv, G, GV, CS)</td></tr>
+<tr class="memdesc:af206bc656869b4fc27d4d7e8a15d438e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and stores the non-dimensional resolution functions.  <a href="../../d0/d86/namespacemom__lateral__mixing__coeffs.html#af206bc656869b4fc27d4d7e8a15d438e">More...</a><br /></td></tr>
 <tr class="separator:af206bc656869b4fc27d4d7e8a15d438e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8abf768b636e96aafa9544287624523e"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d86/namespacemom__lateral__mixing__coeffs.html#a8abf768b636e96aafa9544287624523e">mom_lateral_mixing_coeffs::calc_slope_functions</a> (h, tv, dt, G, GV, CS)</td></tr>
-<tr class="memdesc:a8abf768b636e96aafa9544287624523e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates functions of isopycnal slopes.  <a href="../../d0/d86/namespacemom__lateral__mixing__coeffs.html#a8abf768b636e96aafa9544287624523e">More...</a><br /></td></tr>
+<tr class="memdesc:a8abf768b636e96aafa9544287624523e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and stores functions of isopycnal slopes, e.g. Sx, Sy, S*N, mostly used in the Visbeck et al. style scaling of diffusivity.  <a href="../../d0/d86/namespacemom__lateral__mixing__coeffs.html#a8abf768b636e96aafa9544287624523e">More...</a><br /></td></tr>
 <tr class="separator:a8abf768b636e96aafa9544287624523e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae625fee7e36d68e290b3af57697d0afe"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d86/namespacemom__lateral__mixing__coeffs.html#ae625fee7e36d68e290b3af57697d0afe">mom_lateral_mixing_coeffs::calc_visbeck_coeffs</a> (h, e, slope_x, slope_y, N2_u, N2_v, G, GV, CS)</td></tr>
-<tr class="memdesc:ae625fee7e36d68e290b3af57697d0afe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates diffusivity coefficients similar to Visbeck et al.  <a href="../../d0/d86/namespacemom__lateral__mixing__coeffs.html#ae625fee7e36d68e290b3af57697d0afe">More...</a><br /></td></tr>
+<tr class="memdesc:ae625fee7e36d68e290b3af57697d0afe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates factors used when setting diffusivity coefficients similar to Visbeck et al.  <a href="../../d0/d86/namespacemom__lateral__mixing__coeffs.html#ae625fee7e36d68e290b3af57697d0afe">More...</a><br /></td></tr>
 <tr class="separator:ae625fee7e36d68e290b3af57697d0afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99c2bbbd90d46bebeb2e8bd4c29817dd"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d86/namespacemom__lateral__mixing__coeffs.html#a99c2bbbd90d46bebeb2e8bd4c29817dd">mom_lateral_mixing_coeffs::calc_slope_functions_using_just_e</a> (h, G, GV, CS, e, calculate_slopes)</td></tr>
 <tr class="memdesc:a99c2bbbd90d46bebeb2e8bd4c29817dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The original calc_slope_function() that calculated slopes using interface positions only, not accounting for density variations.  <a href="../../d0/d86/namespacemom__lateral__mixing__coeffs.html#a99c2bbbd90d46bebeb2e8bd4c29817dd">More...</a><br /></td></tr>
 <tr class="separator:a99c2bbbd90d46bebeb2e8bd4c29817dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7223a562f29b97ca912810324be00c90"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d86/namespacemom__lateral__mixing__coeffs.html#a7223a562f29b97ca912810324be00c90">mom_lateral_mixing_coeffs::varmix_init</a> (Time, G, param_file, diag, CS, wave_speed_CSp)</td></tr>
-<tr class="separator:a7223a562f29b97ca912810324be00c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb658054e8d4d723dff397f8ae186e4a"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d86/namespacemom__lateral__mixing__coeffs.html#aeb658054e8d4d723dff397f8ae186e4a">mom_lateral_mixing_coeffs::varmix_init</a> (Time, G, param_file, diag, CS)</td></tr>
+<tr class="memdesc:aeb658054e8d4d723dff397f8ae186e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the variables mixing coefficients container.  <a href="../../d0/d86/namespacemom__lateral__mixing__coeffs.html#aeb658054e8d4d723dff397f8ae186e4a">More...</a><br /></td></tr>
+<tr class="separator:aeb658054e8d4d723dff397f8ae186e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

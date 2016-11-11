@@ -1,6 +1,7 @@
 var structocean__model__mod_1_1ocean__state__type =
 [
     [ "c_p", "d6/d99/structocean__model__mod_1_1ocean__state__type.html#aa5aeb62a3d89ddf0082b3648ff72c7a0", null ],
+    [ "density_iceberg", "d6/d99/structocean__model__mod_1_1ocean__state__type.html#af5b0ab43247de62dfcc941cd0ae4d667", null ],
     [ "dirs", "d6/d99/structocean__model__mod_1_1ocean__state__type.html#af1dd5d5dc4cbb924b4d4c4b1aac40250", null ],
     [ "energysavedays", "d6/d99/structocean__model__mod_1_1ocean__state__type.html#a73847803326697f26a30ccada312a7c4", null ],
     [ "flux_tmp", "d6/d99/structocean__model__mod_1_1ocean__state__type.html#a0e1ba778c515ad551972cd379ae5ea79", null ],
@@ -9,7 +10,9 @@ var structocean__model__mod_1_1ocean__state__type =
     [ "grid", "d6/d99/structocean__model__mod_1_1ocean__state__type.html#a0af180c20010becfea38651ef9221c11", null ],
     [ "gv", "d6/d99/structocean__model__mod_1_1ocean__state__type.html#aabec53779d162b1d0f1abb0ea6297a00", null ],
     [ "ice_shelf_csp", "d6/d99/structocean__model__mod_1_1ocean__state__type.html#a64e04e0f349b176fe4a3455ca3385705", null ],
+    [ "icebergs_apply_rigid_boundary", "d6/d99/structocean__model__mod_1_1ocean__state__type.html#a46d3908c5d17be9359c1705de83b1368", null ],
     [ "is_ocean_pe", "d6/d99/structocean__model__mod_1_1ocean__state__type.html#adc525b63b9fa41254e12730c3731d15c", null ],
+    [ "kv_iceberg", "d6/d99/structocean__model__mod_1_1ocean__state__type.html#a9ec6d144239d3576406f1df1d54c78a2", null ],
     [ "mom_csp", "d6/d99/structocean__model__mod_1_1ocean__state__type.html#a88f3e9204c6b1ce9a68e9b4e9d3a2b4b", null ],
     [ "nstep", "d6/d99/structocean__model__mod_1_1ocean__state__type.html#a4042c5e4b3bf33018bf410f1d2eb6fe9", null ],
     [ "press_to_z", "d6/d99/structocean__model__mod_1_1ocean__state__type.html#a1a8074bca7b31769a9f1ca385b566294", null ],

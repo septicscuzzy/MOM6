@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 718;
+var viewWidth = 679;
 var viewHeight = 127;
 var sectionId = 'dynsection-14';
 </script>
@@ -54,125 +54,107 @@ var sectionId = 'dynsection-14';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_grid_initialize::int_di_dx</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-122.5 714,-122.5 714,4 -4,4"/>
-<!-- Node98 -->
-<g id="node1" class="node"><title>Node98</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-49.5 0,-79.5 84,-79.5 84,-49.5 0,-49.5"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-122.5 675,-122.5 675,4 -4,4"/>
+<!-- Node86 -->
+<g id="node1" class="node"><title>Node86</title>
+<polygon fill="#bfbfbf" stroke="black" points="0,-49.5 0,-79.5 100,-79.5 100,-49.5 0,-49.5"/>
 <text text-anchor="start" x="8" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_grid_initialize</text>
-<text text-anchor="middle" x="42" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">::int_di_dx</text>
+<text text-anchor="middle" x="50" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">::int_di_dx</text>
 </g>
-<!-- Node99 -->
-<g id="node2" class="node"><title>Node99</title>
+<!-- Node87 -->
+<g id="node2" class="node"><title>Node87</title>
 <g id="a_node2"><a xlink:href="../../d5/daa/namespacemom__grid__initialize.html#ac37d98379b33a9e95d0bbffc1d7a730f" target="_top" xlink:title="mom_grid_initialize\l::set_grid_metrics_mercator">
-<polygon fill="white" stroke="black" points="120,-49.5 120,-79.5 236,-79.5 236,-49.5 120,-49.5"/>
-<text text-anchor="start" x="128" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_grid_initialize</text>
-<text text-anchor="middle" x="178" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">::set_grid_metrics_mercator</text>
+<polygon fill="white" stroke="black" points="136,-49.5 136,-79.5 274,-79.5 274,-49.5 136,-49.5"/>
+<text text-anchor="start" x="144" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_grid_initialize</text>
+<text text-anchor="middle" x="205" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">::set_grid_metrics_mercator</text>
 </a>
 </g>
 </g>
-<!-- Node98&#45;&gt;Node99 -->
-<g id="edge1" class="edge"><title>Node98&#45;&gt;Node99</title>
-<path fill="none" stroke="midnightblue" d="M94.5564,-64.5C102.828,-64.5 111.431,-64.5 119.824,-64.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="94.2978,-61.0001 84.2978,-64.5 94.2978,-68.0001 94.2978,-61.0001"/>
+<!-- Node86&#45;&gt;Node87 -->
+<g id="edge1" class="edge"><title>Node86&#45;&gt;Node87</title>
+<path fill="none" stroke="midnightblue" d="M110.302,-64.5C118.684,-64.5 127.355,-64.5 135.886,-64.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="110.252,-61.0001 100.252,-64.5 110.252,-68.0001 110.252,-61.0001"/>
 </g>
-<!-- Node100 -->
-<g id="node3" class="node"><title>Node100</title>
+<!-- Node88 -->
+<g id="node3" class="node"><title>Node88</title>
 <g id="a_node3"><a xlink:href="../../d5/daa/namespacemom__grid__initialize.html#a235a9712823e2f78e4958e8d681b6ba4" target="_top" xlink:title="set_grid_metrics is used to set the primary values in the model&#39;s horizontal grid. The bathymetry, land&#45;sea mask and any restricted channel widths are not known yet, so these are set later. ">
-<polygon fill="white" stroke="black" points="272,-49.5 272,-79.5 356,-79.5 356,-49.5 272,-49.5"/>
-<text text-anchor="start" x="280" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_grid_initialize</text>
-<text text-anchor="middle" x="314" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">::set_grid_metrics</text>
+<polygon fill="white" stroke="black" points="310,-49.5 310,-79.5 410,-79.5 410,-49.5 310,-49.5"/>
+<text text-anchor="start" x="318" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_grid_initialize</text>
+<text text-anchor="middle" x="360" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">::set_grid_metrics</text>
 </a>
 </g>
 </g>
-<!-- Node99&#45;&gt;Node100 -->
-<g id="edge2" class="edge"><title>Node99&#45;&gt;Node100</title>
-<path fill="none" stroke="midnightblue" d="M246.366,-64.5C255.038,-64.5 263.702,-64.5 271.776,-64.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="246.217,-61.0001 236.217,-64.5 246.217,-68.0001 246.217,-61.0001"/>
+<!-- Node87&#45;&gt;Node88 -->
+<g id="edge2" class="edge"><title>Node87&#45;&gt;Node88</title>
+<path fill="none" stroke="midnightblue" d="M284.551,-64.5C293.169,-64.5 301.752,-64.5 309.863,-64.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="284.445,-61.0001 274.445,-64.5 284.445,-68.0001 284.445,-61.0001"/>
 </g>
-<!-- Node101 -->
-<g id="node4" class="node"><title>Node101</title>
+<!-- Node89 -->
+<g id="node4" class="node"><title>Node89</title>
 <g id="a_node4"><a xlink:href="../../d6/d48/MOM__sum__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" target="_top" xlink:title="mom_main">
-<polygon fill="white" stroke="black" points="414.5,-99 414.5,-118 470.5,-118 470.5,-99 414.5,-99"/>
-<text text-anchor="middle" x="442.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">mom_main</text>
+<polygon fill="white" stroke="black" points="475.5,-99 475.5,-118 540.5,-118 540.5,-99 475.5,-99"/>
+<text text-anchor="middle" x="508" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">mom_main</text>
 </a>
 </g>
 </g>
-<!-- Node100&#45;&gt;Node101 -->
-<g id="edge3" class="edge"><title>Node100&#45;&gt;Node101</title>
-<path fill="none" stroke="midnightblue" d="M365.657,-82.1197C382.235,-87.8861 400.017,-94.071 414.193,-99.0018"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="366.666,-78.7651 356.071,-78.7855 364.366,-85.3766 366.666,-78.7651"/>
+<!-- Node88&#45;&gt;Node89 -->
+<g id="edge3" class="edge"><title>Node88&#45;&gt;Node89</title>
+<path fill="none" stroke="midnightblue" d="M419.792,-82.2181C438.762,-87.935 459.063,-94.0531 475.3,-98.9467"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="420.607,-78.8082 410.022,-79.2738 418.587,-85.5105 420.607,-78.8082"/>
 </g>
-<!-- Node102 -->
-<g id="node5" class="node"><title>Node102</title>
+<!-- Node90 -->
+<g id="node5" class="node"><title>Node90</title>
 <g id="a_node5"><a xlink:href="../../df/da2/namespacemom__ice__shelf.html#ae315e8464ef8a20062e3bccb61886755" target="_top" xlink:title="mom_ice_shelf::initialize\l_ice_shelf">
-<polygon fill="white" stroke="black" points="392,-49.5 392,-79.5 493,-79.5 493,-49.5 392,-49.5"/>
-<text text-anchor="start" x="400" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ice_shelf::initialize</text>
-<text text-anchor="middle" x="442.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ice_shelf</text>
+<polygon fill="white" stroke="black" points="446,-49.5 446,-79.5 570,-79.5 570,-49.5 446,-49.5"/>
+<text text-anchor="start" x="454" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_ice_shelf::initialize</text>
+<text text-anchor="middle" x="508" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ice_shelf</text>
 </a>
 </g>
 </g>
-<!-- Node100&#45;&gt;Node102 -->
-<g id="edge4" class="edge"><title>Node100&#45;&gt;Node102</title>
-<path fill="none" stroke="midnightblue" d="M366.189,-64.5C374.64,-64.5 383.389,-64.5 391.803,-64.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="366.071,-61.0001 356.071,-64.5 366.071,-68.0001 366.071,-61.0001"/>
+<!-- Node88&#45;&gt;Node90 -->
+<g id="edge4" class="edge"><title>Node88&#45;&gt;Node90</title>
+<path fill="none" stroke="midnightblue" d="M420.2,-64.5C428.675,-64.5 437.408,-64.5 445.918,-64.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="420.022,-61.0001 410.022,-64.5 420.022,-68.0001 420.022,-61.0001"/>
 </g>
-<!-- Node105 -->
-<g id="node8" class="node"><title>Node105</title>
+<!-- Node93 -->
+<g id="node8" class="node"><title>Node93</title>
 <g id="a_node8"><a xlink:href="../../d3/da8/namespacemom__fixed__initialization.html#a6c1c054d9cda9f1bd11abba748614c92" target="_top" xlink:title="MOM_initialize_fixed sets up time&#45;invariant quantities related to MOM6&#39;s horizontal grid...">
-<polygon fill="white" stroke="black" points="392.5,-0.5 392.5,-30.5 492.5,-30.5 492.5,-0.5 392.5,-0.5"/>
-<text text-anchor="start" x="400.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_fixed_initialization</text>
-<text text-anchor="middle" x="442.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::mom_initialize_fixed</text>
+<polygon fill="white" stroke="black" points="447.5,-0.5 447.5,-30.5 568.5,-30.5 568.5,-0.5 447.5,-0.5"/>
+<text text-anchor="start" x="455.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_fixed_initialization</text>
+<text text-anchor="middle" x="508" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::mom_initialize_fixed</text>
 </a>
 </g>
 </g>
-<!-- Node100&#45;&gt;Node105 -->
-<g id="edge7" class="edge"><title>Node100&#45;&gt;Node105</title>
-<path fill="none" stroke="midnightblue" d="M363.607,-45.6722C376.454,-40.6958 390.154,-35.3891 402.425,-30.6359"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="362.047,-42.5228 353.986,-49.3986 364.575,-49.0502 362.047,-42.5228"/>
+<!-- Node88&#45;&gt;Node93 -->
+<g id="edge7" class="edge"><title>Node88&#45;&gt;Node93</title>
+<path fill="none" stroke="midnightblue" d="M415.841,-46.0945C431.116,-40.9678 447.525,-35.4608 462.152,-30.5516"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="414.363,-42.8986 405.996,-49.3986 416.59,-49.5349 414.363,-42.8986"/>
 </g>
-<!-- Node103 -->
-<g id="node6" class="node"><title>Node103</title>
+<!-- Node91 -->
+<g id="node6" class="node"><title>Node91</title>
 <g id="a_node6"><a xlink:href="../../d5/d6d/ice__shelf__driver_8F90.html#aec5bef92f0dad343f545cd8d62e378d8" target="_top" xlink:title="shelf_main">
-<polygon fill="white" stroke="black" points="546,-82 546,-101 601,-101 601,-82 546,-82"/>
-<text text-anchor="middle" x="573.5" y="-89" font-family="Helvetica,sans-Serif" font-size="10.00">shelf_main</text>
+<polygon fill="white" stroke="black" points="606.5,-74 606.5,-93 670.5,-93 670.5,-74 606.5,-74"/>
+<text text-anchor="middle" x="638.5" y="-81" font-family="Helvetica,sans-Serif" font-size="10.00">shelf_main</text>
 </a>
 </g>
 </g>
-<!-- Node102&#45;&gt;Node103 -->
-<g id="edge5" class="edge"><title>Node102&#45;&gt;Node103</title>
-<path fill="none" stroke="midnightblue" d="M503.21,-76.9975C518.086,-80.111 533.303,-83.2959 545.673,-85.8851"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="503.511,-73.4846 493.006,-74.8617 502.077,-80.3362 503.511,-73.4846"/>
+<!-- Node90&#45;&gt;Node91 -->
+<g id="edge5" class="edge"><title>Node90&#45;&gt;Node91</title>
+<path fill="none" stroke="midnightblue" d="M580.229,-75.0319C589.399,-76.3878 598.377,-77.7153 606.404,-78.9021"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="580.644,-71.5553 570.239,-73.5548 579.62,-78.48 580.644,-71.5553"/>
 </g>
-<!-- Node104 -->
-<g id="node7" class="node"><title>Node104</title>
+<!-- Node92 -->
+<g id="node7" class="node"><title>Node92</title>
 <g id="a_node7"><a xlink:href="../../de/dbc/MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" target="_top" xlink:title="mom_main">
-<polygon fill="white" stroke="black" points="654,-25 654,-44 710,-44 710,-25 654,-25"/>
-<text text-anchor="middle" x="682" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00">mom_main</text>
+<polygon fill="white" stroke="black" points="606,-36 606,-55 671,-55 671,-36 606,-36"/>
+<text text-anchor="middle" x="638.5" y="-43" font-family="Helvetica,sans-Serif" font-size="10.00">mom_main</text>
 </a>
 </g>
 </g>
-<!-- Node102&#45;&gt;Node104 -->
-<g id="edge6" class="edge"><title>Node102&#45;&gt;Node104</title>
-<path fill="none" stroke="midnightblue" d="M503.314,-56.9445C551.619,-50.8429 617.353,-42.5396 653.813,-37.9342"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="502.77,-53.4853 493.288,-58.211 503.648,-60.4301 502.77,-53.4853"/>
-</g>
-<!-- Node106 -->
-<g id="node9" class="node"><title>Node106</title>
-<g id="a_node9"><a xlink:href="../../da/d01/namespacemom.html#afebdc0103ad9cbe0ed4a54e522dc4104" target="_top" xlink:title="This subroutine initializes MOM. ">
-<polygon fill="white" stroke="black" points="529,-6 529,-25 618,-25 618,-6 529,-6"/>
-<text text-anchor="middle" x="573.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">mom::initialize_mom</text>
-</a>
-</g>
-</g>
-<!-- Node105&#45;&gt;Node106 -->
-<g id="edge8" class="edge"><title>Node105&#45;&gt;Node106</title>
-<path fill="none" stroke="midnightblue" d="M502.868,-15.5C511.667,-15.5 520.595,-15.5 528.989,-15.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="502.637,-12.0001 492.637,-15.5 502.637,-19.0001 502.637,-12.0001"/>
-</g>
-<!-- Node106&#45;&gt;Node104 -->
-<g id="edge9" class="edge"><title>Node106&#45;&gt;Node104</title>
-<path fill="none" stroke="midnightblue" d="M628.121,-25.0661C637.016,-26.653 645.897,-28.2374 653.771,-29.6423"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="628.584,-21.5936 618.125,-23.2828 627.355,-28.4848 628.584,-21.5936"/>
+<!-- Node90&#45;&gt;Node92 -->
+<g id="edge6" class="edge"><title>Node90&#45;&gt;Node92</title>
+<path fill="none" stroke="midnightblue" d="M580.31,-53.956C589.195,-52.6424 597.897,-51.3558 605.726,-50.1982"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="579.62,-50.52 570.239,-55.4452 580.644,-57.4447 579.62,-50.52"/>
 </g>
 </g>
 </svg>

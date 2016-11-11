@@ -1,6 +1,5 @@
 <map id="mom_obsolete_diagnostics::register_obsolete_diagnostics" name="mom_obsolete_diagnostics::register_obsolete_diagnostics">
-<area shape="rect" id="node2" href="$df/d1a/namespacemom__obsolete__diagnostics.html#a137ff7cb882b715d0ccf915fef52386c" title="Fakes a register of a diagnostic to find out if an obsolete parameter appears in the diag_table..." alt="" coords="221,5,372,47"/>
-<area shape="rect" id="node3" href="$d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" title="mom_error_handler::\lis_root_pe" alt="" coords="592,85,716,127"/>
-<area shape="rect" id="node4" href="$d0/de6/namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" title="mom_error_handler::\lmom_error" alt="" coords="420,56,544,97"/>
-<area shape="rect" id="node5" href="$d9/def/namespacemom__file__parser.html#a17c0ef1bb1912f02faa0aaa1e0f64210" title="mom_file_parser::log\l_version" alt="" coords="421,173,543,215"/>
+<area shape="rect" id="node2" href="$df/d1a/namespacemom__obsolete__diagnostics.html#a137ff7cb882b715d0ccf915fef52386c" title="Fakes a register of a diagnostic to find out if an obsolete parameter appears in the diag_table..." alt="" coords="256,5,436,47"/>
+<area shape="rect" id="node3" href="$d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" title="mom_error_handler::\lis_root_pe" alt="" coords="673,60,815,101"/>
+<area shape="rect" id="node4" href="$d0/de6/namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" title="mom_error_handler::\lmom_error" alt="" coords="484,60,625,101"/>
 </map>

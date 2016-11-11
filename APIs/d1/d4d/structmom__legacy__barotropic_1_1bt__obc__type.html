@@ -95,19 +95,11 @@ $(document).ready(function(){initNavTree('d1/d4d/structmom__legacy__barotropic_1
 <div class="dynheader">
 Collaboration diagram for mom_legacy_barotropic::bt_obc_type:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d2c/structmom__legacy__barotropic_1_1bt__obc__type__coll__graph.svg" width="291" height="318"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d2c/structmom__legacy__barotropic_1_1bt__obc__type__coll__graph.svg" width="204" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private variables and constants</h2></td></tr>
-<tr class="memitem:a86c4eb70f6fc77e54097855be2536f5b"><td class="memItemLeft" align="right" valign="top">logical, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4d/structmom__legacy__barotropic_1_1bt__obc__type.html#a86c4eb70f6fc77e54097855be2536f5b">obc_mask_u</a> =&gt; NULL()</td></tr>
-<tr class="separator:a86c4eb70f6fc77e54097855be2536f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b7dd88f367038ccc7e42329ebc13ec6"><td class="memItemLeft" align="right" valign="top">logical, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4d/structmom__legacy__barotropic_1_1bt__obc__type.html#a5b7dd88f367038ccc7e42329ebc13ec6">obc_mask_v</a> =&gt; NULL()</td></tr>
-<tr class="separator:a5b7dd88f367038ccc7e42329ebc13ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a097de89fc2c2ab37c5351c81ad69aee7"><td class="memItemLeft" align="right" valign="top">integer, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4d/structmom__legacy__barotropic_1_1bt__obc__type.html#a097de89fc2c2ab37c5351c81ad69aee7">obc_direction_u</a> =&gt; NULL()</td></tr>
-<tr class="separator:a097de89fc2c2ab37c5351c81ad69aee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fb39002e7a3aab3b8005d79e4d7afe9"><td class="memItemLeft" align="right" valign="top">integer, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4d/structmom__legacy__barotropic_1_1bt__obc__type.html#a8fb39002e7a3aab3b8005d79e4d7afe9">obc_direction_v</a> =&gt; NULL()</td></tr>
-<tr class="separator:a8fb39002e7a3aab3b8005d79e4d7afe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5610335d6b5410efe3111427bb07fffd"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4d/structmom__legacy__barotropic_1_1bt__obc__type.html#a5610335d6b5410efe3111427bb07fffd">cg_u</a> =&gt; NULL()</td></tr>
 <tr class="separator:a5610335d6b5410efe3111427bb07fffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6c61f595ad2d3169af3733cd90383cc"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4d/structmom__legacy__barotropic_1_1bt__obc__type.html#af6c61f595ad2d3169af3733cd90383cc">cg_v</a> =&gt; NULL()</td></tr>
@@ -169,8 +161,8 @@ Private variables and constants</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00357">357</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">pointer</span> :: &amp;</div><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    cg_u =&gt; null(), &amp;     <span class="comment">! The external wave speed at u-points, in m s-1.</span></div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    cg_v =&gt; null(), &amp;     <span class="comment">! The external wave speed at u-points, in m s-1.</span></div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    h_u =&gt; null(), &amp;      <span class="comment">! The total thickness at the u-points, in m or kg m-2.</span></div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    h_v =&gt; null(), &amp;      <span class="comment">! The total thickness at the v-points, in m or kg m-2.</span></div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    uhbt =&gt; null(), &amp;     <span class="comment">! The zonal and meridional barotropic thickness fluxes</span></div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    vhbt =&gt; null(), &amp;     <span class="comment">! specified for open boundary conditions (if any),</span></div><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                          <span class="comment">! in units of m3 s-1.</span></div><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    ubt_outer =&gt; null(), &amp; <span class="comment">! The zonal and meridional velocities just outside</span></div><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    vbt_outer =&gt; null(), &amp; <span class="comment">! the domain, as set by the open boundary conditions,</span></div><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                           <span class="comment">! in units of m s-1.</span></div><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    eta_outer_u =&gt; null(), &amp; <span class="comment">! The surface height outside of the domain at a</span></div><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    eta_outer_v =&gt; null()    <span class="comment">! u- or v- point with an open boundary condition,</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00351">351</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">pointer</span> :: &amp;</div><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    cg_u =&gt; null(), &amp;     <span class="comment">! The external wave speed at u-points, in m s-1.</span></div><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    cg_v =&gt; null(), &amp;     <span class="comment">! The external wave speed at u-points, in m s-1.</span></div><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    h_u =&gt; null(), &amp;      <span class="comment">! The total thickness at the u-points, in m or kg m-2.</span></div><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    h_v =&gt; null(), &amp;      <span class="comment">! The total thickness at the v-points, in m or kg m-2.</span></div><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    uhbt =&gt; null(), &amp;     <span class="comment">! The zonal and meridional barotropic thickness fluxes</span></div><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    vhbt =&gt; null(), &amp;     <span class="comment">! specified for open boundary conditions (if any),</span></div><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                          <span class="comment">! in units of m3 s-1.</span></div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    ubt_outer =&gt; null(), &amp; <span class="comment">! The zonal and meridional velocities just outside</span></div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    vbt_outer =&gt; null(), &amp; <span class="comment">! the domain, as set by the open boundary conditions,</span></div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                           <span class="comment">! in units of m s-1.</span></div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    eta_outer_u =&gt; null(), &amp; <span class="comment">! The surface height outside of the domain at a</span></div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    eta_outer_v =&gt; null()    <span class="comment">! u- or v- point with an open boundary condition,</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="af6c61f595ad2d3169af3733cd90383cc"></a>
@@ -193,7 +185,7 @@ Private variables and constants</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00357">357</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00351">351</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -217,7 +209,7 @@ Private variables and constants</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00357">357</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00351">351</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -241,7 +233,7 @@ Private variables and constants</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00357">357</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00351">351</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -265,7 +257,7 @@ Private variables and constants</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00357">357</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00351">351</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -289,7 +281,7 @@ Private variables and constants</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00357">357</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00351">351</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -313,7 +305,7 @@ Private variables and constants</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00371">371</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00365">365</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -337,7 +329,7 @@ Private variables and constants</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00372">372</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00366">366</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -361,8 +353,8 @@ Private variables and constants</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00371">371</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  <span class="keywordtype">integer</span> :: is_u_obc, ie_u_obc, js_u_obc, je_u_obc</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00365">365</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  <span class="keywordtype">integer</span> :: is_u_obc, ie_u_obc, js_u_obc, je_u_obc</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a71c323e9ac1c76b5fedbd6ee100a7591"></a>
@@ -385,8 +377,8 @@ Private variables and constants</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00372">372</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <span class="keywordtype">integer</span> :: is_v_obc, ie_v_obc, js_v_obc, je_v_obc</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00366">366</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  <span class="keywordtype">integer</span> :: is_v_obc, ie_v_obc, js_v_obc, je_v_obc</div></div><!-- fragment -->
 </div>
 </div>
 <a id="aa31049df7add8c631aa1bc21dc8fd30b"></a>
@@ -409,7 +401,7 @@ Private variables and constants</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00371">371</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00365">365</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -433,7 +425,7 @@ Private variables and constants</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00372">372</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00366">366</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -457,7 +449,7 @@ Private variables and constants</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00371">371</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00365">365</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -481,103 +473,7 @@ Private variables and constants</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00372">372</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
-
-</div>
-</div>
-<a id="a097de89fc2c2ab37c5351c81ad69aee7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a097de89fc2c2ab37c5351c81ad69aee7">&sect;&nbsp;</a></span>obc_direction_u</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">integer, dimension(:,:), pointer mom_legacy_barotropic::bt_obc_type::obc_direction_u =&gt; NULL()</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00354">354</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">pointer</span> :: &amp;</div><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    obc_direction_u =&gt; null(), &amp;</div><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    obc_direction_v =&gt; null()</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a8fb39002e7a3aab3b8005d79e4d7afe9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fb39002e7a3aab3b8005d79e4d7afe9">&sect;&nbsp;</a></span>obc_direction_v</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">integer, dimension(:,:), pointer mom_legacy_barotropic::bt_obc_type::obc_direction_v =&gt; NULL()</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00354">354</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
-
-</div>
-</div>
-<a id="a86c4eb70f6fc77e54097855be2536f5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86c4eb70f6fc77e54097855be2536f5b">&sect;&nbsp;</a></span>obc_mask_u</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">logical, dimension(:,:), pointer mom_legacy_barotropic::bt_obc_type::obc_mask_u =&gt; NULL()</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00351">351</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  <span class="keywordtype">logical</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">pointer</span> :: &amp;</div><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    obc_mask_u =&gt; null(), &amp;</div><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    obc_mask_v =&gt; null()</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a5b7dd88f367038ccc7e42329ebc13ec6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b7dd88f367038ccc7e42329ebc13ec6">&sect;&nbsp;</a></span>obc_mask_v</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">logical, dimension(:,:), pointer mom_legacy_barotropic::bt_obc_type::obc_mask_v =&gt; NULL()</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00351">351</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00366">366</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -601,7 +497,7 @@ Private variables and constants</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00357">357</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00351">351</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -625,7 +521,7 @@ Private variables and constants</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00357">357</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00351">351</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -649,7 +545,7 @@ Private variables and constants</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00357">357</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00351">351</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -673,7 +569,7 @@ Private variables and constants</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00357">357</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html#l00351">351</a> of file <a class="el" href="../../dc/de7/MOM__legacy__barotropic_8F90_source.html">MOM_legacy_barotropic.F90</a>.</p>
 
 </div>
 </div>

@@ -94,10 +94,11 @@ $(document).ready(function(){initNavTree('d2/d6f/MOM__thickness__diffuse_8F90.ht
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;MOM_memory.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d60/version__variable_8h_source.html">version_variable.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM_thickness_diffuse.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/dc4/MOM__thickness__diffuse_8F90__incl.svg" width="144" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/dc4/MOM__thickness__diffuse_8F90__incl.svg" width="280" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="../../d2/d6f/MOM__thickness__diffuse_8F90_source.html">Go to the source code of this file.</a></p>
@@ -105,26 +106,34 @@ Include dependency graph for MOM_thickness_diffuse.F90:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Types</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">type &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dce/structmom__thickness__diffuse_1_1thickness__diffuse__cs.html">mom_thickness_diffuse::thickness_diffuse_cs</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control structure for thickness diffusion.  <a href="../../da/dce/structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Modules</h2></td></tr>
 <tr class="memitem:d1/d75/namespacemom__thickness__diffuse"><td class="memItemLeft" align="right" valign="top">module &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d75/namespacemom__thickness__diffuse.html">mom_thickness_diffuse</a></td></tr>
+<tr class="memdesc:d1/d75/namespacemom__thickness__diffuse"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thickness diffusion (or Gent McWilliams) <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a9506f374762ce6d5d12424a9314fad2f"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d75/namespacemom__thickness__diffuse.html#a9506f374762ce6d5d12424a9314fad2f">mom_thickness_diffuse::thickness_diffuse</a> (h, uhtr, vhtr, tv, dt, G, GV, MEKE, VarMix, CDp, CS)</td></tr>
+<tr class="memdesc:a9506f374762ce6d5d12424a9314fad2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates thickness diffusion coefficients and applies thickness diffusion to layer thicknesses, h. Diffusivities are limited to ensure stability. Also returns along-layer mass fluxes used in the continuity equation.  <a href="../../d1/d75/namespacemom__thickness__diffuse.html#a9506f374762ce6d5d12424a9314fad2f">More...</a><br /></td></tr>
 <tr class="separator:a9506f374762ce6d5d12424a9314fad2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad461e8977f22cd7488fb1925e58cf084"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d75/namespacemom__thickness__diffuse.html#ad461e8977f22cd7488fb1925e58cf084">mom_thickness_diffuse::thickness_diffuse_full</a> (h, e, Kh_u, Kh_v, tv, uhD, vhD, dt, G, GV, MEKE, CS, int_slope_u, int_slope_v, slope_x, slope_y)</td></tr>
+<tr class="memdesc:ad461e8977f22cd7488fb1925e58cf084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates parameterized layer transports for use in the continuity equation. Fluxes are limited to give positive definite thicknesses. Called by <a class="el" href="../../d1/d75/namespacemom__thickness__diffuse.html#a9506f374762ce6d5d12424a9314fad2f" title="Calculates thickness diffusion coefficients and applies thickness diffusion to layer thicknesses...">thickness_diffuse()</a>.  <a href="../../d1/d75/namespacemom__thickness__diffuse.html#ad461e8977f22cd7488fb1925e58cf084">More...</a><br /></td></tr>
 <tr class="separator:ad461e8977f22cd7488fb1925e58cf084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a364792384e494f2e7e5644282e7f42c7"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d75/namespacemom__thickness__diffuse.html#a364792384e494f2e7e5644282e7f42c7">mom_thickness_diffuse::add_detangling_kh</a> (h, e, Kh_u, Kh_v, KH_u_CFL, KH_v_CFL, tv, dt, G, GV, CS, int_slope_u, int_slope_v)</td></tr>
+<tr class="memdesc:a364792384e494f2e7e5644282e7f42c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies thickness diffusivities to untangle layer structures.  <a href="../../d1/d75/namespacemom__thickness__diffuse.html#a364792384e494f2e7e5644282e7f42c7">More...</a><br /></td></tr>
 <tr class="separator:a364792384e494f2e7e5644282e7f42c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff6aa879773518e476ed0a603a1a301e"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d75/namespacemom__thickness__diffuse.html#aff6aa879773518e476ed0a603a1a301e">mom_thickness_diffuse::vert_fill_ts</a> (h, T_in, S_in, kappa, dt, T_f, S_f, G, GV, halo_here)</td></tr>
+<tr class="memdesc:aff6aa879773518e476ed0a603a1a301e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills tracer values in massless layers with sensible values by diffusing vertically with a (small) constant diffusivity.  <a href="../../d1/d75/namespacemom__thickness__diffuse.html#aff6aa879773518e476ed0a603a1a301e">More...</a><br /></td></tr>
 <tr class="separator:aff6aa879773518e476ed0a603a1a301e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ee394c86c4af4429080fd32924b4170"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d75/namespacemom__thickness__diffuse.html#a1ee394c86c4af4429080fd32924b4170">mom_thickness_diffuse::thickness_diffuse_init</a> (Time, G, GV, param_file, diag, CDp, CS)</td></tr>
+<tr class="memdesc:a1ee394c86c4af4429080fd32924b4170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the thickness diffusion module/strucutre.  <a href="../../d1/d75/namespacemom__thickness__diffuse.html#a1ee394c86c4af4429080fd32924b4170">More...</a><br /></td></tr>
 <tr class="separator:a1ee394c86c4af4429080fd32924b4170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a3a5c750e8a2323afa82b118329378c"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d75/namespacemom__thickness__diffuse.html#a1a3a5c750e8a2323afa82b118329378c">mom_thickness_diffuse::thickness_diffuse_end</a> (CS)</td></tr>
+<tr class="memdesc:a1a3a5c750e8a2323afa82b118329378c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocate the thickness diffusion control structure.  <a href="../../d1/d75/namespacemom__thickness__diffuse.html#a1a3a5c750e8a2323afa82b118329378c">More...</a><br /></td></tr>
 <tr class="separator:a1a3a5c750e8a2323afa82b118329378c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

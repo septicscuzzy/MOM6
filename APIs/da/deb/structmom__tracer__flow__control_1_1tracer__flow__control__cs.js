@@ -1,6 +1,7 @@
 var structmom__tracer__flow__control_1_1tracer__flow__control__cs =
 [
     [ "advection_test_tracer_csp", "da/deb/structmom__tracer__flow__control_1_1tracer__flow__control__cs.html#aca77a0aec5a8b8c95f69ad15fefb4e87", null ],
+    [ "boundary_impulse_tracer_csp", "da/deb/structmom__tracer__flow__control_1_1tracer__flow__control__cs.html#a07cd3e6a2f2f43ae5481aeb570bebff4", null ],
     [ "dome_tracer_csp", "da/deb/structmom__tracer__flow__control_1_1tracer__flow__control__cs.html#adf8f9b159e4e3f1c17f617e03a8daeca", null ],
     [ "dye_tracer_csp", "da/deb/structmom__tracer__flow__control_1_1tracer__flow__control__cs.html#ac28d93df254ee779203e0f5d3502d68f", null ],
     [ "ideal_age_tracer_csp", "da/deb/structmom__tracer__flow__control_1_1tracer__flow__control__cs.html#a02ba633614a1c9187bd39fb330dac182", null ],
@@ -9,6 +10,7 @@ var structmom__tracer__flow__control_1_1tracer__flow__control__cs =
     [ "oil_tracer_csp", "da/deb/structmom__tracer__flow__control_1_1tracer__flow__control__cs.html#a560715747ca2e071da9df0e6e66a5e12", null ],
     [ "pseudo_salt_tracer_csp", "da/deb/structmom__tracer__flow__control_1_1tracer__flow__control__cs.html#a219a211b37fa37f249f61d3f1abf45e5", null ],
     [ "use_advection_test_tracer", "da/deb/structmom__tracer__flow__control_1_1tracer__flow__control__cs.html#a7adcffc52e93c6459424f895aee2dc25", null ],
+    [ "use_boundary_impulse_tracer", "da/deb/structmom__tracer__flow__control_1_1tracer__flow__control__cs.html#a9b499f82e833c1ccd1dd3600b0b3ca37", null ],
     [ "use_dome_tracer", "da/deb/structmom__tracer__flow__control_1_1tracer__flow__control__cs.html#a6f0798d7c731d1fe8fda09cdd2edfe7e", null ],
     [ "use_ideal_age", "da/deb/structmom__tracer__flow__control_1_1tracer__flow__control__cs.html#abc3706776811ee5f2b76ee38cdad14bc", null ],
     [ "use_isomip_tracer", "da/deb/structmom__tracer__flow__control_1_1tracer__flow__control__cs.html#a3492bc792dad60ddd87726522ff9e250", null ],

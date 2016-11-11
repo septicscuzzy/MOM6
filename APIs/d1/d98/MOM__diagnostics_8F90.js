@@ -7,7 +7,7 @@ var MOM__diagnostics_8F90 =
     [ "calculate_vertical_integrals", "d1/d98/MOM__diagnostics_8F90.html#a0b6f33e7b575b5f685f781030b301876", null ],
     [ "find_weights", "d1/d98/MOM__diagnostics_8F90.html#ab43b50cd32dfe693c6ce575c279988fb", null ],
     [ "mom_diagnostics_end", "d1/d98/MOM__diagnostics_8F90.html#ae7ada8fb77b23b1b4cfb10d8c8b0ba50", null ],
-    [ "mom_diagnostics_init", "d1/d98/MOM__diagnostics_8F90.html#a34823715075351ca854378d8cd22ebf2", null ],
+    [ "mom_diagnostics_init", "d1/d98/MOM__diagnostics_8F90.html#ab2108574e351f6deb812da3faf437278", null ],
     [ "register_time_deriv", "d1/d98/MOM__diagnostics_8F90.html#a09d6bde56531baa237e612627550d124", null ],
     [ "set_dependent_diagnostics", "d1/d98/MOM__diagnostics_8F90.html#a90a92410576d955e89d2aa4e3f6d7402", null ]
 ];

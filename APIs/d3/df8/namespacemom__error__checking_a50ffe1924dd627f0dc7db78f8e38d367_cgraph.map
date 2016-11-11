@@ -1,4 +1,4 @@
 <map id="mom_error_checking::totaltands" name="mom_error_checking::totaltands">
-<area shape="rect" id="node2" href="$d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" title="mom_error_handler::\lis_root_pe" alt="" coords="176,5,300,47"/>
-<area shape="rect" id="node3" href="$d3/df8/namespacemom__error__checking.html#a1584aedd10e6259ebd02a901d9c3a659" title="This function returns the sum over computational domain of all processors of hThick*stuff, where stuff is a 3&#45;d array at tracer points. " alt="" coords="177,71,299,112"/>
+<area shape="rect" id="node2" href="$d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" title="mom_error_handler::\lis_root_pe" alt="" coords="197,5,338,47"/>
+<area shape="rect" id="node3" href="$d3/df8/namespacemom__error__checking.html#a1584aedd10e6259ebd02a901d9c3a659" title="This function returns the sum over computational domain of all processors of hThick*stuff, where stuff is a 3&#45;d array at tracer points. " alt="" coords="196,71,339,112"/>
 </map>

@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 848;
+var viewWidth = 989;
 var viewHeight = 227;
 var sectionId = 'dynsection-4';
 </script>
@@ -54,140 +54,140 @@ var sectionId = 'dynsection-4';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_forcing_type::calculatebuoyancyflux2d</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-223 844,-223 844,4 -4,4"/>
-<!-- Node31 -->
-<g id="node1" class="node"><title>Node31</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-50 0,-69 173,-69 173,-50 0,-50"/>
-<text text-anchor="middle" x="86.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">mom_forcing_type::calculatebuoyancyflux2d</text>
-</g>
+<polygon fill="white" stroke="none" points="-4,4 -4,-223 985,-223 985,4 -4,4"/>
 <!-- Node32 -->
-<g id="node2" class="node"><title>Node32</title>
-<g id="a_node2"><a xlink:href="../../dd/dc3/namespacemom__forcing__type.html#a2bb917f3d8bcdcf4f5bf49c435992640" target="_top" xlink:title="This routine calculates surface buoyancy flux by adding up the heat, FW &amp; salt fluxes. These are actual fluxes, with units of stuff per time. Setting dt=1 in the call to extractFluxes routine allows us to get &quot;stuf per time&quot; rather than the time integrated fluxes needed in other routines that call extractFluxes. ">
-<polygon fill="white" stroke="black" points="209,-50 209,-69 382,-69 382,-50 209,-50"/>
-<text text-anchor="middle" x="295.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">mom_forcing_type::calculatebuoyancyflux1d</text>
-</a>
-</g>
-</g>
-<!-- Node31&#45;&gt;Node32 -->
-<g id="edge1" class="edge"><title>Node31&#45;&gt;Node32</title>
-<path fill="none" stroke="midnightblue" d="M173.189,-59.5C181.663,-59.5 190.301,-59.5 198.867,-59.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="198.875,-63.0001 208.875,-59.5 198.875,-56.0001 198.875,-63.0001"/>
+<g id="node1" class="node"><title>Node32</title>
+<polygon fill="#bfbfbf" stroke="black" points="0,-50 0,-69 210,-69 210,-50 0,-50"/>
+<text text-anchor="middle" x="105" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">mom_forcing_type::calculatebuoyancyflux2d</text>
 </g>
 <!-- Node33 -->
-<g id="node3" class="node"><title>Node33</title>
-<g id="a_node3"><a xlink:href="../../d1/d01/namespacemom__eos.html#a204529f8434a0322314e6ce2a9762436" target="_top" xlink:title="Calls the appropriate subroutine to calculate density derivatives for 1&#45;D array inputs. ">
-<polygon fill="white" stroke="black" points="444.5,-90.5 444.5,-120.5 531.5,-120.5 531.5,-90.5 444.5,-90.5"/>
-<text text-anchor="start" x="452.5" y="-108.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos::calculate</text>
-<text text-anchor="middle" x="488" y="-97.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs</text>
+<g id="node2" class="node"><title>Node33</title>
+<g id="a_node2"><a xlink:href="../../dd/dc3/namespacemom__forcing__type.html#a2bb917f3d8bcdcf4f5bf49c435992640" target="_top" xlink:title="This routine calculates surface buoyancy flux by adding up the heat, FW &amp; salt fluxes. These are actual fluxes, with units of stuff per time. Setting dt=1 in the call to extractFluxes routine allows us to get &quot;stuf per time&quot; rather than the time integrated fluxes needed in other routines that call extractFluxes. ">
+<polygon fill="white" stroke="black" points="246,-50 246,-69 456,-69 456,-50 246,-50"/>
+<text text-anchor="middle" x="351" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">mom_forcing_type::calculatebuoyancyflux1d</text>
 </a>
 </g>
 </g>
 <!-- Node32&#45;&gt;Node33 -->
-<g id="edge2" class="edge"><title>Node32&#45;&gt;Node33</title>
-<path fill="none" stroke="midnightblue" d="M335.972,-69.0312C364.49,-75.9175 403.308,-85.291 434.449,-92.8104"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="433.724,-96.2361 444.267,-95.1812 435.368,-89.4316 433.724,-96.2361"/>
-</g>
-<!-- Node39 -->
-<g id="node9" class="node"><title>Node39</title>
-<g id="a_node9"><a xlink:href="../../dd/dc3/namespacemom__forcing__type.html#ab67e7c2e99099bcf22d12885f349e1e4" target="_top" xlink:title="This subroutine extracts fluxes from the surface fluxes type. It works on a j&#45;row for optimization pu...">
-<polygon fill="white" stroke="black" points="418,-50 418,-69 558,-69 558,-50 418,-50"/>
-<text text-anchor="middle" x="488" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">mom_forcing_type::extractfluxes1d</text>
-</a>
-</g>
-</g>
-<!-- Node32&#45;&gt;Node39 -->
-<g id="edge8" class="edge"><title>Node32&#45;&gt;Node39</title>
-<path fill="none" stroke="midnightblue" d="M382.276,-59.5C390.772,-59.5 399.369,-59.5 407.793,-59.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="407.965,-63.0001 417.965,-59.5 407.965,-56.0001 407.965,-63.0001"/>
-</g>
-<!-- Node40 -->
-<g id="node10" class="node"><title>Node40</title>
-<g id="a_node10"><a xlink:href="../../d8/daf/namespacemom__shortwave__abs.html#a8a1184c3f836d0900dfd5fa587cfb879" target="_top" xlink:title="mom_shortwave_abs::\lsumswoverbands">
-<polygon fill="white" stroke="black" points="439,-0.5 439,-30.5 537,-30.5 537,-0.5 439,-0.5"/>
-<text text-anchor="start" x="447" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_shortwave_abs::</text>
-<text text-anchor="middle" x="488" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">sumswoverbands</text>
-</a>
-</g>
-</g>
-<!-- Node32&#45;&gt;Node40 -->
-<g id="edge10" class="edge"><title>Node32&#45;&gt;Node40</title>
-<path fill="none" stroke="midnightblue" d="M337.836,-49.9527C364.363,-43.8256 399.21,-35.777 428.551,-29.0001"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="429.721,-32.322 438.677,-26.6613 428.146,-25.5016 429.721,-32.322"/>
+<g id="edge1" class="edge"><title>Node32&#45;&gt;Node33</title>
+<path fill="none" stroke="midnightblue" d="M210.186,-59.5C218.566,-59.5 227.06,-59.5 235.506,-59.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="235.774,-63.0001 245.774,-59.5 235.774,-56.0001 235.774,-63.0001"/>
 </g>
 <!-- Node34 -->
-<g id="node4" class="node"><title>Node34</title>
-<g id="a_node4"><a xlink:href="../../d5/de6/namespacemom__eos__linear.html#a73d8a625582247379092adf1aeeb55e0" target="_top" xlink:title="mom_eos_linear::calculate\l_density_derivs_linear">
-<polygon fill="white" stroke="black" points="597,-188.5 597,-218.5 708,-218.5 708,-188.5 597,-188.5"/>
-<text text-anchor="start" x="605" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos_linear::calculate</text>
-<text text-anchor="middle" x="652.5" y="-195.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs_linear</text>
+<g id="node3" class="node"><title>Node34</title>
+<g id="a_node3"><a xlink:href="../../d1/d01/namespacemom__eos.html#a204529f8434a0322314e6ce2a9762436" target="_top" xlink:title="Calls the appropriate subroutine to calculate density derivatives for 1&#45;D array inputs. ">
+<polygon fill="white" stroke="black" points="525,-90.5 525,-120.5 629,-120.5 629,-90.5 525,-90.5"/>
+<text text-anchor="start" x="533" y="-108.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos::calculate</text>
+<text text-anchor="middle" x="577" y="-97.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs</text>
 </a>
 </g>
 </g>
 <!-- Node33&#45;&gt;Node34 -->
-<g id="edge3" class="edge"><title>Node33&#45;&gt;Node34</title>
-<path fill="none" stroke="midnightblue" d="M507.905,-120.744C528.313,-136.729 562.18,-161.924 594,-179.5 596.888,-181.095 599.904,-182.651 602.977,-184.154"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="601.749,-187.444 612.292,-188.492 604.704,-181.098 601.749,-187.444"/>
+<g id="edge2" class="edge"><title>Node33&#45;&gt;Node34</title>
+<path fill="none" stroke="midnightblue" d="M398.413,-69.0312C432.147,-75.9589 478.139,-85.4036 514.866,-92.9456"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="514.461,-96.4355 524.961,-95.0187 515.869,-89.5786 514.461,-96.4355"/>
+</g>
+<!-- Node40 -->
+<g id="node9" class="node"><title>Node40</title>
+<g id="a_node9"><a xlink:href="../../dd/dc3/namespacemom__forcing__type.html#ab67e7c2e99099bcf22d12885f349e1e4" target="_top" xlink:title="This subroutine extracts fluxes from the surface fluxes type. It works on a j&#45;row for optimization pu...">
+<polygon fill="white" stroke="black" points="492,-50 492,-69 662,-69 662,-50 492,-50"/>
+<text text-anchor="middle" x="577" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">mom_forcing_type::extractfluxes1d</text>
+</a>
+</g>
+</g>
+<!-- Node33&#45;&gt;Node40 -->
+<g id="edge8" class="edge"><title>Node33&#45;&gt;Node40</title>
+<path fill="none" stroke="midnightblue" d="M456.131,-59.5C464.659,-59.5 473.249,-59.5 481.701,-59.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="481.928,-63.0001 491.928,-59.5 481.928,-56.0001 481.928,-63.0001"/>
+</g>
+<!-- Node41 -->
+<g id="node10" class="node"><title>Node41</title>
+<g id="a_node10"><a xlink:href="../../d8/daf/namespacemom__shortwave__abs.html#a8a1184c3f836d0900dfd5fa587cfb879" target="_top" xlink:title="mom_shortwave_abs::\lsumswoverbands">
+<polygon fill="white" stroke="black" points="519,-0.5 519,-30.5 635,-30.5 635,-0.5 519,-0.5"/>
+<text text-anchor="start" x="527" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_shortwave_abs::</text>
+<text text-anchor="middle" x="577" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">sumswoverbands</text>
+</a>
+</g>
+</g>
+<!-- Node33&#45;&gt;Node41 -->
+<g id="edge10" class="edge"><title>Node33&#45;&gt;Node41</title>
+<path fill="none" stroke="midnightblue" d="M400.605,-49.9527C432.225,-43.7415 473.897,-35.5559 508.688,-28.722"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="509.635,-32.1029 518.773,-26.741 508.286,-25.2341 509.635,-32.1029"/>
 </g>
 <!-- Node35 -->
-<g id="node5" class="node"><title>Node35</title>
-<g id="a_node5"><a xlink:href="../../dd/d6b/namespacemom__eos__unesco.html#af8666837abadea54c016bf59838f96cc" target="_top" xlink:title="mom_eos_unesco::calculate\l_density_derivs_unesco">
-<polygon fill="white" stroke="black" points="594,-139.5 594,-169.5 711,-169.5 711,-139.5 594,-139.5"/>
-<text text-anchor="start" x="602" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos_unesco::calculate</text>
-<text text-anchor="middle" x="652.5" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs_unesco</text>
+<g id="node4" class="node"><title>Node35</title>
+<g id="a_node4"><a xlink:href="../../d5/de6/namespacemom__eos__linear.html#a73d8a625582247379092adf1aeeb55e0" target="_top" xlink:title="mom_eos_linear::calculate\l_density_derivs_linear">
+<polygon fill="white" stroke="black" points="702,-188.5 702,-218.5 835,-218.5 835,-188.5 702,-188.5"/>
+<text text-anchor="start" x="710" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos_linear::calculate</text>
+<text text-anchor="middle" x="768.5" y="-195.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs_linear</text>
 </a>
 </g>
 </g>
-<!-- Node33&#45;&gt;Node35 -->
-<g id="edge4" class="edge"><title>Node33&#45;&gt;Node35</title>
-<path fill="none" stroke="midnightblue" d="M531.695,-118.374C550.12,-123.93 571.988,-130.524 591.967,-136.548"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="591.014,-139.917 601.599,-139.453 593.035,-133.215 591.014,-139.917"/>
+<!-- Node34&#45;&gt;Node35 -->
+<g id="edge3" class="edge"><title>Node34&#45;&gt;Node35</title>
+<path fill="none" stroke="midnightblue" d="M599.301,-120.642C622.68,-136.775 661.726,-162.31 698,-179.5 701.828,-181.314 705.832,-183.061 709.901,-184.728"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="708.876,-188.085 719.464,-188.467 711.425,-181.566 708.876,-188.085"/>
 </g>
 <!-- Node36 -->
-<g id="node6" class="node"><title>Node36</title>
-<g id="a_node6"><a xlink:href="../../de/d76/namespacemom__eos__wright.html#ad7748e85ddacb33ad90ec3a9017e6e72" target="_top" xlink:title="mom_eos_wright::calculate\l_density_derivs_wright">
-<polygon fill="white" stroke="black" points="596,-90.5 596,-120.5 709,-120.5 709,-90.5 596,-90.5"/>
-<text text-anchor="start" x="604" y="-108.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos_wright::calculate</text>
-<text text-anchor="middle" x="652.5" y="-97.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs_wright</text>
+<g id="node5" class="node"><title>Node36</title>
+<g id="a_node5"><a xlink:href="../../dd/d6b/namespacemom__eos__unesco.html#af8666837abadea54c016bf59838f96cc" target="_top" xlink:title="mom_eos_unesco::calculate\l_density_derivs_unesco">
+<polygon fill="white" stroke="black" points="698,-139.5 698,-169.5 839,-169.5 839,-139.5 698,-139.5"/>
+<text text-anchor="start" x="706" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos_unesco::calculate</text>
+<text text-anchor="middle" x="768.5" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs_unesco</text>
 </a>
 </g>
 </g>
-<!-- Node33&#45;&gt;Node36 -->
-<g id="edge5" class="edge"><title>Node33&#45;&gt;Node36</title>
-<path fill="none" stroke="midnightblue" d="M531.695,-105.5C548.277,-105.5 567.649,-105.5 585.922,-105.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="585.935,-109 595.935,-105.5 585.935,-102 585.935,-109"/>
+<!-- Node34&#45;&gt;Node36 -->
+<g id="edge4" class="edge"><title>Node34&#45;&gt;Node36</title>
+<path fill="none" stroke="midnightblue" d="M629.281,-118.76C650.957,-124.365 676.508,-130.972 699.707,-136.97"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="698.929,-140.384 709.487,-139.499 700.682,-133.607 698.929,-140.384"/>
 </g>
 <!-- Node37 -->
-<g id="node7" class="node"><title>Node37</title>
-<g id="a_node7"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="mom_error_handler::\lmom_error">
-<polygon fill="white" stroke="black" points="606,-41.5 606,-71.5 699,-71.5 699,-41.5 606,-41.5"/>
-<text text-anchor="start" x="614" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="652.5" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error</text>
+<g id="node6" class="node"><title>Node37</title>
+<g id="a_node6"><a xlink:href="../../de/d76/namespacemom__eos__wright.html#ad7748e85ddacb33ad90ec3a9017e6e72" target="_top" xlink:title="mom_eos_wright::calculate\l_density_derivs_wright">
+<polygon fill="white" stroke="black" points="700.5,-90.5 700.5,-120.5 836.5,-120.5 836.5,-90.5 700.5,-90.5"/>
+<text text-anchor="start" x="708.5" y="-108.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos_wright::calculate</text>
+<text text-anchor="middle" x="768.5" y="-97.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs_wright</text>
 </a>
 </g>
 </g>
-<!-- Node33&#45;&gt;Node37 -->
-<g id="edge6" class="edge"><title>Node33&#45;&gt;Node37</title>
-<path fill="none" stroke="midnightblue" d="M531.695,-92.6258C551.421,-86.6776 575.095,-79.539 596.17,-73.1842"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="597.397,-76.4697 605.961,-70.2317 595.376,-69.7678 597.397,-76.4697"/>
+<!-- Node34&#45;&gt;Node37 -->
+<g id="edge5" class="edge"><title>Node34&#45;&gt;Node37</title>
+<path fill="none" stroke="midnightblue" d="M629.281,-105.5C648.121,-105.5 669.888,-105.5 690.493,-105.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="690.498,-109 700.498,-105.5 690.498,-102 690.498,-109"/>
 </g>
 <!-- Node38 -->
-<g id="node8" class="node"><title>Node38</title>
-<g id="a_node8"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="mom_error_handler::\lis_root_pe">
-<polygon fill="white" stroke="black" points="747,-41.5 747,-71.5 840,-71.5 840,-41.5 747,-41.5"/>
-<text text-anchor="start" x="755" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="793.5" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">is_root_pe</text>
+<g id="node7" class="node"><title>Node38</title>
+<g id="a_node7"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="mom_error_handler::\lmom_error">
+<polygon fill="white" stroke="black" points="715.5,-41.5 715.5,-71.5 821.5,-71.5 821.5,-41.5 715.5,-41.5"/>
+<text text-anchor="start" x="723.5" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="768.5" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error</text>
 </a>
 </g>
 </g>
-<!-- Node37&#45;&gt;Node38 -->
-<g id="edge7" class="edge"><title>Node37&#45;&gt;Node38</title>
-<path fill="none" stroke="midnightblue" d="M699.014,-56.5C711.014,-56.5 724.102,-56.5 736.581,-56.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="736.884,-60.0001 746.884,-56.5 736.884,-53.0001 736.884,-60.0001"/>
+<!-- Node34&#45;&gt;Node38 -->
+<g id="edge6" class="edge"><title>Node34&#45;&gt;Node38</title>
+<path fill="none" stroke="midnightblue" d="M629.281,-92.2399C652.692,-86.1866 680.622,-78.9645 705.228,-72.6021"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="706.383,-75.9186 715.188,-70.0265 704.63,-69.1415 706.383,-75.9186"/>
 </g>
-<!-- Node39&#45;&gt;Node37 -->
-<g id="edge9" class="edge"><title>Node39&#45;&gt;Node37</title>
-<path fill="none" stroke="midnightblue" d="M558.386,-58.219C570.796,-57.9899 583.583,-57.7539 595.556,-57.5328"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="595.904,-61.0271 605.838,-57.343 595.775,-54.0283 595.904,-61.0271"/>
+<!-- Node39 -->
+<g id="node8" class="node"><title>Node39</title>
+<g id="a_node8"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="mom_error_handler::\lis_root_pe">
+<polygon fill="white" stroke="black" points="875,-41.5 875,-71.5 981,-71.5 981,-41.5 875,-41.5"/>
+<text text-anchor="start" x="883" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="928" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">is_root_pe</text>
+</a>
+</g>
+</g>
+<!-- Node38&#45;&gt;Node39 -->
+<g id="edge7" class="edge"><title>Node38&#45;&gt;Node39</title>
+<path fill="none" stroke="midnightblue" d="M821.508,-56.5C835.279,-56.5 850.289,-56.5 864.552,-56.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="864.778,-60.0001 874.778,-56.5 864.778,-53.0001 864.778,-60.0001"/>
+</g>
+<!-- Node40&#45;&gt;Node38 -->
+<g id="edge9" class="edge"><title>Node40&#45;&gt;Node38</title>
+<path fill="none" stroke="midnightblue" d="M662.221,-58.1667C676.636,-57.9385 691.38,-57.7051 705.097,-57.4879"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="705.419,-60.9833 715.363,-57.3254 705.309,-53.9842 705.419,-60.9833"/>
 </g>
 </g>
 </svg>

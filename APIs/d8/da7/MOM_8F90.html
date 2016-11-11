@@ -95,11 +95,10 @@ $(document).ready(function(){initNavTree('d8/da7/MOM_8F90.html','../../');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;MOM_memory.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/d60/version__variable_8h_source.html">version_variable.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/db0/MOM_8F90__incl.svg" width="246" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/db0/MOM_8F90__incl.svg" width="142" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="../../d8/da7/MOM_8F90_source.html">Go to the source code of this file.</a></p>
@@ -121,9 +120,12 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a4c8332b095c6d295084089aa6b3b678a"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d01/namespacemom.html#a4c8332b095c6d295084089aa6b3b678a">mom::step_mom</a> (fluxes, state, Time_start, time_interval, CS)</td></tr>
 <tr class="memdesc:a4c8332b095c6d295084089aa6b3b678a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to one of the step_MOM_dyn_...routines. The action of lateral processes on tracers occur in calls to advect_tracer and tracer_hordiff. Vertical mixing and possibly remapping occur inside of diabatic.  <a href="../../da/d01/namespacemom.html#a4c8332b095c6d295084089aa6b3b678a">More...</a><br /></td></tr>
 <tr class="separator:a4c8332b095c6d295084089aa6b3b678a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afebdc0103ad9cbe0ed4a54e522dc4104"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d01/namespacemom.html#afebdc0103ad9cbe0ed4a54e522dc4104">mom::initialize_mom</a> (Time, param_file, dirs, CS, Time_in)</td></tr>
-<tr class="memdesc:afebdc0103ad9cbe0ed4a54e522dc4104"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine initializes MOM.  <a href="../../da/d01/namespacemom.html#afebdc0103ad9cbe0ed4a54e522dc4104">More...</a><br /></td></tr>
-<tr class="separator:afebdc0103ad9cbe0ed4a54e522dc4104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada859fe9e7e841ea281dae323cc4f6ac"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d01/namespacemom.html#ada859fe9e7e841ea281dae323cc4f6ac">mom::step_tracers</a> (fluxes, state, Time_start, time_interval, CS)</td></tr>
+<tr class="memdesc:ada859fe9e7e841ea281dae323cc4f6ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">step_tracers is the main driver for running tracers offline in MOM6. This has been primarily developed with ALE configurations in mind. Some work has been done in isopycnal configuration, but the work is very preliminary. Some more detail about this capability along with some of the subroutines called here can be found in tracers/MOM_offline_control.F90  <a href="../../da/d01/namespacemom.html#ada859fe9e7e841ea281dae323cc4f6ac">More...</a><br /></td></tr>
+<tr class="separator:ada859fe9e7e841ea281dae323cc4f6ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0be2869fef30e1e0604facfe1b41555d"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d01/namespacemom.html#a0be2869fef30e1e0604facfe1b41555d">mom::initialize_mom</a> (Time, param_file, dirs, CS, Time_in, offline_tracer_mode)</td></tr>
+<tr class="memdesc:a0be2869fef30e1e0604facfe1b41555d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine initializes MOM.  <a href="../../da/d01/namespacemom.html#a0be2869fef30e1e0604facfe1b41555d">More...</a><br /></td></tr>
+<tr class="separator:a0be2869fef30e1e0604facfe1b41555d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dd32ae97ee7dd3cbb8e14e4cf11f191"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d01/namespacemom.html#a0dd32ae97ee7dd3cbb8e14e4cf11f191">mom::finish_mom_initialization</a> (Time, dirs, CS, fluxes)</td></tr>
 <tr class="memdesc:a0dd32ae97ee7dd3cbb8e14e4cf11f191"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine finishes initializing MOM and writes out the initial conditions.  <a href="../../da/d01/namespacemom.html#a0dd32ae97ee7dd3cbb8e14e4cf11f191">More...</a><br /></td></tr>
 <tr class="separator:a0dd32ae97ee7dd3cbb8e14e4cf11f191"><td class="memSeparator" colspan="2">&#160;</td></tr>

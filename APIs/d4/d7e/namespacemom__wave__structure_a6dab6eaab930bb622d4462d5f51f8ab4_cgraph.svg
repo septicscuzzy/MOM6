@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 514;
+var viewWidth = 583;
 var viewHeight = 205;
 var sectionId = 'dynsection-2';
 </script>
@@ -54,120 +54,120 @@ var sectionId = 'dynsection-2';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_wave_structure::wave_structure</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-201 510,-201 510,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-201 579,-201 579,4 -4,4"/>
 <!-- Node6 -->
 <g id="node1" class="node"><title>Node6</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-44.5 0,-74.5 94,-74.5 94,-44.5 0,-44.5"/>
+<polygon fill="#bfbfbf" stroke="black" points="0,-44.5 0,-74.5 110,-74.5 110,-44.5 0,-44.5"/>
 <text text-anchor="start" x="8" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_wave_structure</text>
-<text text-anchor="middle" x="47" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">::wave_structure</text>
+<text text-anchor="middle" x="55" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">::wave_structure</text>
 </g>
 <!-- Node7 -->
 <g id="node2" class="node"><title>Node7</title>
 <g id="a_node2"><a xlink:href="../../d1/d01/namespacemom__eos.html#a204529f8434a0322314e6ce2a9762436" target="_top" xlink:title="Calls the appropriate subroutine to calculate density derivatives for 1&#45;D array inputs. ">
-<polygon fill="white" stroke="black" points="133.5,-88.5 133.5,-118.5 220.5,-118.5 220.5,-88.5 133.5,-88.5"/>
-<text text-anchor="start" x="141.5" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos::calculate</text>
-<text text-anchor="middle" x="177" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs</text>
+<polygon fill="white" stroke="black" points="149,-88.5 149,-118.5 253,-118.5 253,-88.5 149,-88.5"/>
+<text text-anchor="start" x="157" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos::calculate</text>
+<text text-anchor="middle" x="201" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
 <g id="edge1" class="edge"><title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M91.6923,-74.5192C102.006,-78.0645 113.104,-81.8796 123.753,-85.5401"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="122.776,-88.9053 133.371,-88.8462 125.052,-82.2855 122.776,-88.9053"/>
+<path fill="none" stroke="midnightblue" d="M105.154,-74.5192C116.611,-78.0202 128.93,-81.7842 140.772,-85.4027"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="139.992,-88.824 150.579,-88.3991 142.038,-82.1296 139.992,-88.824"/>
 </g>
 <!-- Node11 -->
 <g id="node6" class="node"><title>Node11</title>
 <g id="a_node6"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="mom_error_handler::\lmom_error">
-<polygon fill="white" stroke="black" points="272,-19.5 272,-49.5 365,-49.5 365,-19.5 272,-19.5"/>
-<text text-anchor="start" x="280" y="-37.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="318.5" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error</text>
+<polygon fill="white" stroke="black" points="309.5,-19.5 309.5,-49.5 415.5,-49.5 415.5,-19.5 309.5,-19.5"/>
+<text text-anchor="start" x="317.5" y="-37.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="362.5" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node11 -->
 <g id="edge7" class="edge"><title>Node6&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M94.0225,-55.2308C140.339,-50.9342 211.832,-44.3022 261.432,-39.7011"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="262.033,-43.1604 271.667,-38.7516 261.387,-36.1904 262.033,-43.1604"/>
+<path fill="none" stroke="midnightblue" d="M110.265,-55.0593C163.209,-50.7267 243.672,-44.1423 299.204,-39.5979"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="299.589,-43.0782 309.27,-38.7741 299.018,-36.1015 299.589,-43.0782"/>
 </g>
 <!-- Node13 -->
 <g id="node8" class="node"><title>Node13</title>
 <g id="a_node8"><a xlink:href="../../d4/d7e/namespacemom__wave__structure.html#ad8e6e47af44d24efcd3f3b80f4344fbd" target="_top" xlink:title="mom_wave_structure\l::tridiag_solver">
-<polygon fill="white" stroke="black" points="130,-0.5 130,-30.5 224,-30.5 224,-0.5 130,-0.5"/>
-<text text-anchor="start" x="138" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_wave_structure</text>
-<text text-anchor="middle" x="177" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::tridiag_solver</text>
+<polygon fill="white" stroke="black" points="146,-0.5 146,-30.5 256,-30.5 256,-0.5 146,-0.5"/>
+<text text-anchor="start" x="154" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_wave_structure</text>
+<text text-anchor="middle" x="201" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::tridiag_solver</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node13 -->
 <g id="edge8" class="edge"><title>Node6&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M91.6923,-44.4808C101.571,-41.0849 112.17,-37.4414 122.405,-33.9233"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="123.751,-37.1617 132.07,-30.6009 121.475,-30.5419 123.751,-37.1617"/>
+<path fill="none" stroke="midnightblue" d="M105.154,-44.4808C116.611,-40.9798 128.93,-37.2158 140.772,-33.5973"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="142.038,-36.8704 150.579,-30.6009 139.992,-30.176 142.038,-36.8704"/>
 </g>
 <!-- Node8 -->
 <g id="node3" class="node"><title>Node8</title>
 <g id="a_node3"><a xlink:href="../../d5/de6/namespacemom__eos__linear.html#a73d8a625582247379092adf1aeeb55e0" target="_top" xlink:title="mom_eos_linear::calculate\l_density_derivs_linear">
-<polygon fill="white" stroke="black" points="263,-166.5 263,-196.5 374,-196.5 374,-166.5 263,-166.5"/>
-<text text-anchor="start" x="271" y="-184.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos_linear::calculate</text>
-<text text-anchor="middle" x="318.5" y="-173.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs_linear</text>
+<polygon fill="white" stroke="black" points="296,-166.5 296,-196.5 429,-196.5 429,-166.5 296,-166.5"/>
+<text text-anchor="start" x="304" y="-184.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos_linear::calculate</text>
+<text text-anchor="middle" x="362.5" y="-173.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs_linear</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
 <g id="edge2" class="edge"><title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M198.573,-118.606C214.77,-130.11 238.179,-145.892 260,-157.5 263.053,-159.124 266.24,-160.717 269.481,-162.261"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="268.135,-165.494 278.685,-166.468 271.045,-159.128 268.135,-165.494"/>
+<path fill="none" stroke="midnightblue" d="M224.216,-118.613C242.008,-130.271 267.89,-146.254 292,-157.5 295.839,-159.291 299.851,-161.021 303.926,-162.675"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="302.91,-166.035 313.499,-166.393 305.444,-159.51 302.91,-166.035"/>
 </g>
 <!-- Node9 -->
 <g id="node4" class="node"><title>Node9</title>
 <g id="a_node4"><a xlink:href="../../dd/d6b/namespacemom__eos__unesco.html#af8666837abadea54c016bf59838f96cc" target="_top" xlink:title="mom_eos_unesco::calculate\l_density_derivs_unesco">
-<polygon fill="white" stroke="black" points="260,-117.5 260,-147.5 377,-147.5 377,-117.5 260,-117.5"/>
-<text text-anchor="start" x="268" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos_unesco::calculate</text>
-<text text-anchor="middle" x="318.5" y="-124.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs_unesco</text>
+<polygon fill="white" stroke="black" points="292,-117.5 292,-147.5 433,-147.5 433,-117.5 292,-117.5"/>
+<text text-anchor="start" x="300" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos_unesco::calculate</text>
+<text text-anchor="middle" x="362.5" y="-124.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs_unesco</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node9 -->
 <g id="edge3" class="edge"><title>Node7&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M220.613,-112.359C229.927,-114.295 240.007,-116.39 250.024,-118.473"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="249.486,-121.936 259.989,-120.544 250.911,-115.082 249.486,-121.936"/>
+<path fill="none" stroke="midnightblue" d="M253.345,-112.835C262.469,-114.494 272.165,-116.257 281.858,-118.02"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="281.469,-121.506 291.934,-119.852 282.722,-114.619 281.469,-121.506"/>
 </g>
 <!-- Node10 -->
 <g id="node5" class="node"><title>Node10</title>
 <g id="a_node5"><a xlink:href="../../de/d76/namespacemom__eos__wright.html#ad7748e85ddacb33ad90ec3a9017e6e72" target="_top" xlink:title="mom_eos_wright::calculate\l_density_derivs_wright">
-<polygon fill="white" stroke="black" points="262,-68.5 262,-98.5 375,-98.5 375,-68.5 262,-68.5"/>
-<text text-anchor="start" x="270" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos_wright::calculate</text>
-<text text-anchor="middle" x="318.5" y="-75.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs_wright</text>
+<polygon fill="white" stroke="black" points="294.5,-68.5 294.5,-98.5 430.5,-98.5 430.5,-68.5 294.5,-68.5"/>
+<text text-anchor="start" x="302.5" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos_wright::calculate</text>
+<text text-anchor="middle" x="362.5" y="-75.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs_wright</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node10 -->
 <g id="edge4" class="edge"><title>Node7&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M220.613,-97.3907C230.449,-95.9804 241.139,-94.4478 251.707,-92.9326"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="252.369,-96.3737 261.771,-91.4899 251.375,-89.4445 252.369,-96.3737"/>
+<path fill="none" stroke="midnightblue" d="M253.345,-97.0618C263.214,-95.8243 273.75,-94.5031 284.229,-93.1891"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="284.748,-96.6515 294.235,-91.9345 283.877,-89.7059 284.748,-96.6515"/>
 </g>
 <!-- Node7&#45;&gt;Node11 -->
 <g id="edge5" class="edge"><title>Node7&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M203.849,-88.3907C219.809,-79.2945 240.832,-67.7273 260,-58.5 263.366,-56.8798 266.87,-55.26 270.413,-53.6699"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="272.062,-56.7687 279.818,-49.5508 269.254,-50.3567 272.062,-56.7687"/>
+<path fill="none" stroke="midnightblue" d="M229.93,-88.346C247.48,-79.1236 270.744,-67.4389 292,-58.5 296.402,-56.649 301.001,-54.8265 305.646,-53.0638"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="307.026,-56.2851 315.196,-49.5393 304.603,-49.718 307.026,-56.2851"/>
 </g>
 <!-- Node12 -->
 <g id="node7" class="node"><title>Node12</title>
 <g id="a_node7"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="mom_error_handler::\lis_root_pe">
-<polygon fill="white" stroke="black" points="413,-19.5 413,-49.5 506,-49.5 506,-19.5 413,-19.5"/>
-<text text-anchor="start" x="421" y="-37.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="459.5" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">is_root_pe</text>
+<polygon fill="white" stroke="black" points="469,-19.5 469,-49.5 575,-49.5 575,-19.5 469,-19.5"/>
+<text text-anchor="start" x="477" y="-37.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="522" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">is_root_pe</text>
 </a>
 </g>
 </g>
 <!-- Node11&#45;&gt;Node12 -->
 <g id="edge6" class="edge"><title>Node11&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M365.014,-34.5C377.014,-34.5 390.102,-34.5 402.581,-34.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="402.884,-38.0001 412.884,-34.5 402.884,-31.0001 402.884,-38.0001"/>
+<path fill="none" stroke="midnightblue" d="M415.508,-34.5C429.279,-34.5 444.289,-34.5 458.552,-34.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="458.778,-38.0001 468.778,-34.5 458.778,-31.0001 458.778,-38.0001"/>
 </g>
 <!-- Node13&#45;&gt;Node11 -->
 <g id="edge9" class="edge"><title>Node13&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M224.064,-21.774C236.213,-23.4286 249.449,-25.2314 262.037,-26.9459"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="261.579,-30.4157 271.96,-28.2974 262.524,-23.4798 261.579,-30.4157"/>
+<path fill="none" stroke="midnightblue" d="M256.445,-21.9856C270.243,-23.6292 285.168,-25.4071 299.317,-27.0926"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="299.111,-30.5927 309.455,-28.3003 299.939,-23.6419 299.111,-30.5927"/>
 </g>
 </g>
 </svg>

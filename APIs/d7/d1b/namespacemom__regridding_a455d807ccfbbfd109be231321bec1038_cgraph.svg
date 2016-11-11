@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 502;
+var viewWidth = 561;
 var viewHeight = 110;
 var sectionId = 'dynsection-14';
 </script>
@@ -54,73 +54,73 @@ var sectionId = 'dynsection-14';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_regridding::build_sigma_grid</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-106 498,-106 498,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-106 557,-106 557,4 -4,4"/>
 <!-- Node63 -->
 <g id="node1" class="node"><title>Node63</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-22.5 0,-52.5 96,-52.5 96,-22.5 0,-22.5"/>
+<polygon fill="#bfbfbf" stroke="black" points="0,-22.5 0,-52.5 112,-52.5 112,-22.5 0,-22.5"/>
 <text text-anchor="start" x="8" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::build</text>
-<text text-anchor="middle" x="48" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">_sigma_grid</text>
+<text text-anchor="middle" x="56" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">_sigma_grid</text>
 </g>
 <!-- Node64 -->
 <g id="node2" class="node"><title>Node64</title>
 <g id="a_node2"><a xlink:href="../../d7/d1b/namespacemom__regridding.html#a68643f9a20305cc482687a67f0bfbb79" target="_top" xlink:title="mom_regridding::build\l_sigma_column">
-<polygon fill="white" stroke="black" points="136,-71.5 136,-101.5 232,-101.5 232,-71.5 136,-71.5"/>
-<text text-anchor="start" x="144" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::build</text>
-<text text-anchor="middle" x="184" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">_sigma_column</text>
+<polygon fill="white" stroke="black" points="152.5,-71.5 152.5,-101.5 264.5,-101.5 264.5,-71.5 152.5,-71.5"/>
+<text text-anchor="start" x="160.5" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::build</text>
+<text text-anchor="middle" x="208.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">_sigma_column</text>
 </a>
 </g>
 </g>
 <!-- Node63&#45;&gt;Node64 -->
 <g id="edge1" class="edge"><title>Node63&#45;&gt;Node64</title>
-<path fill="none" stroke="midnightblue" d="M90.2978,-52.6014C103.544,-57.4451 118.369,-62.8664 132.213,-67.9285"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="131.014,-71.2168 141.608,-71.3641 133.418,-64.6426 131.014,-71.2168"/>
+<path fill="none" stroke="midnightblue" d="M103.383,-52.6014C118.618,-57.5615 135.713,-63.1274 151.578,-68.2929"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="150.678,-71.6805 161.27,-71.4484 152.845,-65.0244 150.678,-71.6805"/>
 </g>
 <!-- Node65 -->
 <g id="node3" class="node"><title>Node65</title>
 <g id="a_node3"><a xlink:href="../../d7/d1b/namespacemom__regridding.html#a9dddf53999f90d1a4edc79179c5b5da4" target="_top" xlink:title="Returns the change in interface position motion after filtering and assuming the top and bottom inter...">
-<polygon fill="white" stroke="black" points="132,-22.5 132,-52.5 236,-52.5 236,-22.5 132,-22.5"/>
-<text text-anchor="start" x="140" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::filtered</text>
-<text text-anchor="middle" x="184" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">_grid_motion</text>
+<polygon fill="white" stroke="black" points="148,-22.5 148,-52.5 269,-52.5 269,-22.5 148,-22.5"/>
+<text text-anchor="start" x="156" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_regridding::filtered</text>
+<text text-anchor="middle" x="208.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">_grid_motion</text>
 </a>
 </g>
 </g>
 <!-- Node63&#45;&gt;Node65 -->
 <g id="edge2" class="edge"><title>Node63&#45;&gt;Node65</title>
-<path fill="none" stroke="midnightblue" d="M96.2434,-37.5C104.386,-37.5 112.956,-37.5 121.41,-37.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="121.629,-41.0001 131.629,-37.5 121.629,-34.0001 121.629,-41.0001"/>
+<path fill="none" stroke="midnightblue" d="M112.186,-37.5C120.417,-37.5 128.993,-37.5 137.48,-37.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="137.758,-41.0001 147.758,-37.5 137.758,-34.0001 137.758,-41.0001"/>
 </g>
 <!-- Node66 -->
 <g id="node4" class="node"><title>Node66</title>
 <g id="a_node4"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="mom_error_handler::\lmom_error">
-<polygon fill="white" stroke="black" points="272,-0.5 272,-30.5 365,-30.5 365,-0.5 272,-0.5"/>
-<text text-anchor="start" x="280" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="318.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error</text>
+<polygon fill="white" stroke="black" points="305,-0.5 305,-30.5 411,-30.5 411,-0.5 305,-0.5"/>
+<text text-anchor="start" x="313" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="358" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error</text>
 </a>
 </g>
 </g>
 <!-- Node63&#45;&gt;Node66 -->
 <g id="edge5" class="edge"><title>Node63&#45;&gt;Node66</title>
-<path fill="none" stroke="midnightblue" d="M92.4342,-22.4504C105.039,-18.7662 118.93,-15.3516 132,-13.5 175.285,-7.3676 224.82,-8.30061 261.808,-10.5306"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="261.685,-14.0299 271.892,-11.1891 262.141,-7.0448 261.685,-14.0299"/>
+<path fill="none" stroke="midnightblue" d="M104.712,-22.4466C118.532,-18.7623 133.741,-15.3487 148,-13.5 197.035,-7.14253 253.084,-8.11966 294.787,-10.4245"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="294.609,-13.9199 304.798,-11.0183 295.023,-6.93221 294.609,-13.9199"/>
 </g>
 <!-- Node65&#45;&gt;Node66 -->
 <g id="edge3" class="edge"><title>Node65&#45;&gt;Node66</title>
-<path fill="none" stroke="midnightblue" d="M236.228,-28.9942C244.512,-27.6188 253.126,-26.1885 261.515,-24.7956"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="262.308,-28.212 271.599,-23.1212 261.161,-21.3065 262.308,-28.212"/>
+<path fill="none" stroke="midnightblue" d="M269.069,-28.6152C277.574,-27.3466 286.341,-26.039 294.893,-24.7634"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="295.431,-28.2219 304.806,-23.2849 294.399,-21.2985 295.431,-28.2219"/>
 </g>
 <!-- Node67 -->
 <g id="node5" class="node"><title>Node67</title>
 <g id="a_node5"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="mom_error_handler::\lis_root_pe">
-<polygon fill="white" stroke="black" points="401,-0.5 401,-30.5 494,-30.5 494,-0.5 401,-0.5"/>
-<text text-anchor="start" x="409" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="447.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">is_root_pe</text>
+<polygon fill="white" stroke="black" points="447,-0.5 447,-30.5 553,-30.5 553,-0.5 447,-0.5"/>
+<text text-anchor="start" x="455" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="500" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">is_root_pe</text>
 </a>
 </g>
 </g>
 <!-- Node66&#45;&gt;Node67 -->
 <g id="edge4" class="edge"><title>Node66&#45;&gt;Node67</title>
-<path fill="none" stroke="midnightblue" d="M365.35,-15.5C373.533,-15.5 382.141,-15.5 390.568,-15.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="390.717,-19.0001 400.717,-15.5 390.717,-12.0001 390.717,-19.0001"/>
+<path fill="none" stroke="midnightblue" d="M411.131,-15.5C419.421,-15.5 428.07,-15.5 436.568,-15.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="436.826,-19.0001 446.826,-15.5 436.826,-12.0001 436.826,-19.0001"/>
 </g>
 </g>
 </svg>

@@ -32,7 +32,7 @@ var searchData=
   ['variable_5fwinds',['variable_winds',['../d9/d84/structmom__surface__forcing_1_1surface__forcing__cs.html#a2c5501928bc2c08dbef21fcc2c7e13c1',1,'mom_surface_forcing::surface_forcing_cs']]],
   ['varmix',['varmix',['../d8/dfa/structmom_1_1mom__control__struct.html#a6ac3fdd39f7b29ccc1e388f6d8b18b41',1,'mom::mom_control_struct']]],
   ['varmix_5fcs',['varmix_cs',['../d0/d90/structmom__lateral__mixing__coeffs_1_1varmix__cs.html',1,'mom_lateral_mixing_coeffs']]],
-  ['varmix_5finit',['varmix_init',['../d0/d86/namespacemom__lateral__mixing__coeffs.html#a7223a562f29b97ca912810324be00c90',1,'mom_lateral_mixing_coeffs']]],
+  ['varmix_5finit',['varmix_init',['../d0/d86/namespacemom__lateral__mixing__coeffs.html#aeb658054e8d4d723dff397f8ae186e4a',1,'mom_lateral_mixing_coeffs']]],
   ['varmix_5fktop',['varmix_ktop',['../d0/d90/structmom__lateral__mixing__coeffs_1_1varmix__cs.html#acc23da8f8c4820374dfba32ef8df2581',1,'mom_lateral_mixing_coeffs::varmix_cs']]],
   ['vars',['vars',['../d5/d78/structmom__restart_1_1field__restart.html#a48db81ddeffe97eabd6ff1020bab4089',1,'mom_restart::field_restart']]],
   ['vbt_5fic',['vbt_ic',['../d2/d10/structmom__barotropic_1_1barotropic__cs.html#ac3e29537cc25fcecddd51631fa2aa49a',1,'mom_barotropic::barotropic_cs::vbt_ic()'],['../d8/d72/structmom__legacy__barotropic_1_1legacy__barotropic__cs.html#af4799ddbb7c6c30d5ea276b5eeabf468',1,'mom_legacy_barotropic::legacy_barotropic_cs::vbt_ic()']]],

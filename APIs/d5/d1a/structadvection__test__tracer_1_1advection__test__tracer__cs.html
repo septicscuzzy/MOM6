@@ -100,6 +100,8 @@ Collaboration diagram for advection_test_tracer::advection_test_tracer_cs:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public variables and constants</h2></td></tr>
+<tr class="memitem:a00889fd18361ee6fba75c3fd62c358e0"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d1a/structadvection__test__tracer_1_1advection__test__tracer__cs.html#a00889fd18361ee6fba75c3fd62c358e0">ntr</a> = NTR</td></tr>
+<tr class="separator:a00889fd18361ee6fba75c3fd62c358e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c0acc2218fbe0c2a16997e53883f1d8"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d1a/structadvection__test__tracer_1_1advection__test__tracer__cs.html#a7c0acc2218fbe0c2a16997e53883f1d8">coupled_tracers</a> = .false.</td></tr>
 <tr class="separator:a7c0acc2218fbe0c2a16997e53883f1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b1288fe66af5ce8ad81f25f26c00a8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d60/version__variable_8h.html#acda997fe1761de4c6bca0f27dc786964">character</a>(len=200)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d1a/structadvection__test__tracer_1_1advection__test__tracer__cs.html#a1b1288fe66af5ce8ad81f25f26c00a8d">tracer_ic_file</a></td></tr>
@@ -136,8 +138,6 @@ Public variables and constants</h2></td></tr>
 <tr class="separator:a681aa8904d374c30522cf22191ae5f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5516544236f253e5819676badb5c601d"><td class="memItemLeft" align="right" valign="top">integer, dimension(<a class="el" href="../../d5/d1a/structadvection__test__tracer_1_1advection__test__tracer__cs.html#a00889fd18361ee6fba75c3fd62c358e0">ntr</a>)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d1a/structadvection__test__tracer_1_1advection__test__tracer__cs.html#a5516544236f253e5819676badb5c601d">ind_tr</a></td></tr>
 <tr class="separator:a5516544236f253e5819676badb5c601d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00889fd18361ee6fba75c3fd62c358e0"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d1a/structadvection__test__tracer_1_1advection__test__tracer__cs.html#a00889fd18361ee6fba75c3fd62c358e0">ntr</a> = NTR</td></tr>
-<tr class="separator:a00889fd18361ee6fba75c3fd62c358e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aee63fe7dc969869f2d8256b725d86b"><td class="memItemLeft" align="right" valign="top">type(diag_ctrl), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d1a/structadvection__test__tracer_1_1advection__test__tracer__cs.html#a2aee63fe7dc969869f2d8256b725d86b">diag</a></td></tr>
 <tr class="separator:a2aee63fe7dc969869f2d8256b725d86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2d59f808866f78707c56c161110a8ed"><td class="memItemLeft" align="right" valign="top">integer, dimension(<a class="el" href="../../d5/d1a/structadvection__test__tracer_1_1advection__test__tracer__cs.html#a00889fd18361ee6fba75c3fd62c358e0">ntr</a>)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d1a/structadvection__test__tracer_1_1advection__test__tracer__cs.html#ab2d59f808866f78707c56c161110a8ed">id_tracer</a> = -1</td></tr>
@@ -169,8 +169,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00094">94</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">logical</span> :: coupled_tracers = .false.  <span class="comment">! These tracers are not offered to the</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00095">95</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">logical</span> :: coupled_tracers = .false.  <span class="comment">! These tracers are not offered to the</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a2aee63fe7dc969869f2d8256b725d86b"></a>
@@ -281,8 +281,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00116">116</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(NTR)</span> :: ind_tr <span class="comment">! Indices returned by aof_set_coupler_flux</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00117">117</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(NTR)</span> :: ind_tr <span class="comment">! Indices returned by aof_set_coupler_flux</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ab477d529b84a5e53426843e8b0324c09"></a>
@@ -297,8 +297,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00109">109</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">real</span> :: land_val(ntr) = -1.0 <span class="comment">! The value of tr used where land is masked out.</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00110">110</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">real</span> :: land_val(ntr) = -1.0 <span class="comment">! The value of tr used where land is masked out.</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a349f7c7137fc75cc4ae553902a969224"></a>
@@ -313,8 +313,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00110">110</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">logical</span> :: mask_tracers  <span class="comment">! If true, tracers are masked out in massless layers.</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00111">111</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">logical</span> :: mask_tracers  <span class="comment">! If true, tracers are masked out in massless layers.</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a00889fd18361ee6fba75c3fd62c358e0"></a>
@@ -329,8 +329,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00119">119</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">integer</span> :: ntr = ntr</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00094">94</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">integer</span> :: ntr = ntr                     <span class="comment">! Number of tracers in this module</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="af6681a6732e8ad828cc843eeb08d7ecb"></a>
@@ -345,8 +345,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00098">98</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: time <span class="comment">! A pointer to the ocean model&#39;s clock.</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00099">99</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: time <span class="comment">! A pointer to the ocean model&#39;s clock.</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a704b8fc747a6b25cce99661743b0ab10"></a>
@@ -361,8 +361,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00100">100</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span> :: tr(:,:,:,:) =&gt; null()   <span class="comment">! The array of tracers used in this</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00101">101</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span> :: tr(:,:,:,:) =&gt; null()   <span class="comment">! The array of tracers used in this</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ada2f17bf6a90851801b758605d25d4a2"></a>
@@ -377,8 +377,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00104">104</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">type</span>(p3d), <span class="keywordtype">dimension(NTR)</span> :: &amp;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    tr_adx, &amp;<span class="comment">! Tracer zonal advective fluxes in g m-3 m3 s-1.</span></div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    tr_ady, &amp;<span class="comment">! Tracer meridional advective fluxes in g m-3 m3 s-1.</span></div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    tr_dfx, &amp;<span class="comment">! Tracer zonal diffusive fluxes in g m-3 m3 s-1.</span></div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    tr_dfy   <span class="comment">! Tracer meridional diffusive fluxes in g m-3 m3 s-1.</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00105">105</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">type</span>(p3d), <span class="keywordtype">dimension(NTR)</span> :: &amp;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    tr_adx, &amp;<span class="comment">! Tracer zonal advective fluxes in g m-3 m3 s-1.</span></div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    tr_ady, &amp;<span class="comment">! Tracer meridional advective fluxes in g m-3 m3 s-1.</span></div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    tr_dfx, &amp;<span class="comment">! Tracer zonal diffusive fluxes in g m-3 m3 s-1.</span></div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    tr_dfy   <span class="comment">! Tracer meridional diffusive fluxes in g m-3 m3 s-1.</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="af668720de572ed040561243511e819ae"></a>
@@ -393,7 +393,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00104">104</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00105">105</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
 
 </div>
 </div>
@@ -409,8 +409,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00102">102</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span> :: tr_aux(:,:,:,:) =&gt; null() <span class="comment">! The masked tracer concentration</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00103">103</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span> :: tr_aux(:,:,:,:) =&gt; null() <span class="comment">! The masked tracer concentration</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a81a0a52487093e953cc67b7315d9b705"></a>
@@ -441,7 +441,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00104">104</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00105">105</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
 
 </div>
 </div>
@@ -457,7 +457,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00104">104</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00105">105</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
 
 </div>
 </div>
@@ -473,8 +473,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00099">99</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">type</span>(tracer_registry_type), <span class="keywordtype">pointer</span> :: tr_reg =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00100">100</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">type</span>(tracer_registry_type), <span class="keywordtype">pointer</span> :: tr_reg =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a1b1288fe66af5ce8ad81f25f26c00a8d"></a>
@@ -489,8 +489,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00096">96</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">character(len=200)</span> :: tracer_ic_file <span class="comment">! The full path to the IC file, or &quot; &quot;</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00097">97</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">character(len=200)</span> :: tracer_ic_file <span class="comment">! The full path to the IC file, or &quot; &quot;</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="afc9db0aee20780c3f8e1e8d5b8616916"></a>
@@ -505,8 +505,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00111">111</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">logical</span> :: use_sponge</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00112">112</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">logical</span> :: use_sponge</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a92356585c6949bc02c5b36a18880da46"></a>
@@ -521,8 +521,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00113">113</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">real</span> :: x_origin, x_width <span class="comment">! Parameters describing the test functions</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00114">114</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">real</span> :: x_origin, x_width <span class="comment">! Parameters describing the test functions</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="adfc9c2b78bf77967d87293aff35a0fcd"></a>
@@ -537,7 +537,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00113">113</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00114">114</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
 
 </div>
 </div>
@@ -553,8 +553,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00114">114</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">real</span> :: y_origin, y_width <span class="comment">! Parameters describing the test functions</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00115">115</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordtype">real</span> :: y_origin, y_width <span class="comment">! Parameters describing the test functions</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a681aa8904d374c30522cf22191ae5f48"></a>
@@ -569,7 +569,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00114">114</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html#l00115">115</a> of file <a class="el" href="../../d3/d55/advection__test__tracer_8F90_source.html">advection_test_tracer.F90</a>.</p>
 
 </div>
 </div>

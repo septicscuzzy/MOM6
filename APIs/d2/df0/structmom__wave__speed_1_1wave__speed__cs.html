@@ -98,12 +98,25 @@ $(document).ready(function(){initNavTree('d2/df0/structmom__wave__speed_1_1wave_
 <div class="dynheader">
 Collaboration diagram for mom_wave_speed::wave_speed_cs:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d77/structmom__wave__speed_1_1wave__speed__cs__coll__graph.svg" width="154" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d77/structmom__wave__speed_1_1wave__speed__cs__coll__graph.svg" width="480" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public variables and constants</h2></td></tr>
+<tr class="memitem:a21e9abf2840922f805d71c8d85df92d9"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df0/structmom__wave__speed_1_1wave__speed__cs.html#a21e9abf2840922f805d71c8d85df92d9">use_ebt_mode</a> = .false.</td></tr>
+<tr class="memdesc:a21e9abf2840922f805d71c8d85df92d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, calculate the equivalent barotropic wave speed instead of the first baroclinic wave speed. This parameter controls the default behavior of <a class="el" href="../../dd/d33/namespacemom__wave__speed.html#a72302e356c47c5055ba0b1a8714c772a" title="Calculates the wave speed of the first baroclinic mode. ">wave_speed()</a> which can be overridden by optional arguments.  <a href="#a21e9abf2840922f805d71c8d85df92d9">More...</a><br /></td></tr>
+<tr class="separator:a21e9abf2840922f805d71c8d85df92d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68bc3cf5460e439bc3a69e244af86952"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df0/structmom__wave__speed_1_1wave__speed__cs.html#a68bc3cf5460e439bc3a69e244af86952">mono_n2_column_fraction</a> = 0.</td></tr>
+<tr class="memdesc:a68bc3cf5460e439bc3a69e244af86952"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lower fraction of water column over which N2 is limited as monotonic for the purposes of calculating the equivalent barotropic wave speed. This parameter controls the default behavior of <a class="el" href="../../dd/d33/namespacemom__wave__speed.html#a72302e356c47c5055ba0b1a8714c772a" title="Calculates the wave speed of the first baroclinic mode. ">wave_speed()</a> which can be overridden by optional arguments.  <a href="#a68bc3cf5460e439bc3a69e244af86952">More...</a><br /></td></tr>
+<tr class="separator:a68bc3cf5460e439bc3a69e244af86952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a7b23d5ba481a4355a49456bbdf739"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df0/structmom__wave__speed_1_1wave__speed__cs.html#a94a7b23d5ba481a4355a49456bbdf739">mono_n2_depth</a> = -1.</td></tr>
+<tr class="memdesc:a94a7b23d5ba481a4355a49456bbdf739"><td class="mdescLeft">&#160;</td><td class="mdescRight">The depth below which N2 is limited as monotonic for the purposes of calculating the equivalent barotropic wave speed. (m) This parameter controls the default behavior of <a class="el" href="../../dd/d33/namespacemom__wave__speed.html#a72302e356c47c5055ba0b1a8714c772a" title="Calculates the wave speed of the first baroclinic mode. ">wave_speed()</a> which can be overridden by optional arguments.  <a href="#a94a7b23d5ba481a4355a49456bbdf739">More...</a><br /></td></tr>
+<tr class="separator:a94a7b23d5ba481a4355a49456bbdf739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac386de2353df58fdf5f2a12c9ea9229f"><td class="memItemLeft" align="right" valign="top">type(remapping_cs)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df0/structmom__wave__speed_1_1wave__speed__cs.html#ac386de2353df58fdf5f2a12c9ea9229f">remapping_cs</a></td></tr>
+<tr class="memdesc:ac386de2353df58fdf5f2a12c9ea9229f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for vertical remapping when calculating equivalent barotropic mode structure.  <a href="#ac386de2353df58fdf5f2a12c9ea9229f">More...</a><br /></td></tr>
+<tr class="separator:ac386de2353df58fdf5f2a12c9ea9229f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c93a316aed8fe0dc700e109ac974a8d"><td class="memItemLeft" align="right" valign="top">type(diag_ctrl), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df0/structmom__wave__speed_1_1wave__speed__cs.html#a2c93a316aed8fe0dc700e109ac974a8d">diag</a></td></tr>
+<tr class="memdesc:a2c93a316aed8fe0dc700e109ac974a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostics control structure.  <a href="#a2c93a316aed8fe0dc700e109ac974a8d">More...</a><br /></td></tr>
 <tr class="separator:a2c93a316aed8fe0dc700e109ac974a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -123,8 +136,83 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Diagnostics control structure. </p>
+
+<p>Definition at line <a class="el" href="../../d9/d52/MOM__wave__speed_8F90_source.html#l00037">37</a> of file <a class="el" href="../../d9/d52/MOM__wave__speed_8F90_source.html">MOM_wave_speed.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag<span class="comment"> !&lt; Diagnostics control structure</span></div></div><!-- fragment -->
+</div>
+</div>
+<a id="a68bc3cf5460e439bc3a69e244af86952"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68bc3cf5460e439bc3a69e244af86952">&sect;&nbsp;</a></span>mono_n2_column_fraction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real mom_wave_speed::wave_speed_cs::mono_n2_column_fraction = 0.</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The lower fraction of water column over which N2 is limited as monotonic for the purposes of calculating the equivalent barotropic wave speed. This parameter controls the default behavior of <a class="el" href="../../dd/d33/namespacemom__wave__speed.html#a72302e356c47c5055ba0b1a8714c772a" title="Calculates the wave speed of the first baroclinic mode. ">wave_speed()</a> which can be overridden by optional arguments. </p>
+
+<p>Definition at line <a class="el" href="../../d9/d52/MOM__wave__speed_8F90_source.html#l00027">27</a> of file <a class="el" href="../../d9/d52/MOM__wave__speed_8F90_source.html">MOM_wave_speed.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">real</span> :: mono_n2_column_fraction = 0.<span class="comment"> !&lt; The lower fraction of water column over which N2 is limited as</span></div></div><!-- fragment -->
+</div>
+</div>
+<a id="a94a7b23d5ba481a4355a49456bbdf739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a7b23d5ba481a4355a49456bbdf739">&sect;&nbsp;</a></span>mono_n2_depth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real mom_wave_speed::wave_speed_cs::mono_n2_depth = -1.</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The depth below which N2 is limited as monotonic for the purposes of calculating the equivalent barotropic wave speed. (m) This parameter controls the default behavior of <a class="el" href="../../dd/d33/namespacemom__wave__speed.html#a72302e356c47c5055ba0b1a8714c772a" title="Calculates the wave speed of the first baroclinic mode. ">wave_speed()</a> which can be overridden by optional arguments. </p>
+
+<p>Definition at line <a class="el" href="../../d9/d52/MOM__wave__speed_8F90_source.html#l00031">31</a> of file <a class="el" href="../../d9/d52/MOM__wave__speed_8F90_source.html">MOM_wave_speed.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">real</span> :: mono_n2_depth = -1.<span class="comment">          !&lt; The depth below which N2 is limited as monotonic for the purposes of</span></div></div><!-- fragment -->
+</div>
+</div>
+<a id="ac386de2353df58fdf5f2a12c9ea9229f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac386de2353df58fdf5f2a12c9ea9229f">&sect;&nbsp;</a></span>remapping_cs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">type(remapping_cs) mom_wave_speed::wave_speed_cs::remapping_cs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Used for vertical remapping when calculating equivalent barotropic mode structure. </p>
+
+<p>Definition at line <a class="el" href="../../d9/d52/MOM__wave__speed_8F90_source.html#l00035">35</a> of file <a class="el" href="../../d9/d52/MOM__wave__speed_8F90_source.html">MOM_wave_speed.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">type</span>(<a class="code" href="../../dd/d2b/structmom__remapping_1_1remapping__cs.html">remapping_cs</a>) :: <a class="code" href="../../dd/d2b/structmom__remapping_1_1remapping__cs.html">remapping_cs</a><span class="comment">   !&lt; Used for vertical remapping when calculating equivalent barotropic</span></div><div class="ttc" id="structmom__remapping_1_1remapping__cs_html"><div class="ttname"><a href="../../dd/d2b/structmom__remapping_1_1remapping__cs.html">mom_remapping::remapping_cs</a></div><div class="ttdoc">Container for remapping parameters. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d8b/MOM__remapping_8F90_source.html#l00022">MOM_remapping.F90:22</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a21e9abf2840922f805d71c8d85df92d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21e9abf2840922f805d71c8d85df92d9">&sect;&nbsp;</a></span>use_ebt_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">logical mom_wave_speed::wave_speed_cs::use_ebt_mode = .false.</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true, calculate the equivalent barotropic wave speed instead of the first baroclinic wave speed. This parameter controls the default behavior of <a class="el" href="../../dd/d33/namespacemom__wave__speed.html#a72302e356c47c5055ba0b1a8714c772a" title="Calculates the wave speed of the first baroclinic mode. ">wave_speed()</a> which can be overridden by optional arguments. </p>
+
 <p>Definition at line <a class="el" href="../../d9/d52/MOM__wave__speed_8F90_source.html#l00023">23</a> of file <a class="el" href="../../d9/d52/MOM__wave__speed_8F90_source.html">MOM_wave_speed.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag <span class="comment">! Diagnostics control structure</span></div></div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordtype">logical</span> :: use_ebt_mode = .false.    <span class="comment">!&lt; If true, calculate the equivalent barotropic wave speed instead</span></div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>

@@ -1,5 +1,5 @@
 <map id="mom_diapyc_energy_req::find_pe_chg_orig" name="mom_diapyc_energy_req::find_pe_chg_orig">
-<area shape="rect" id="node2" href="$d7/daa/namespacemom__diapyc__energy__req.html#ae781d0079acfadcd996aaff8d63957da" title="mom_diapyc_energy_req\l::diapyc_energy_req_calc" alt="" coords="196,5,339,47"/>
-<area shape="rect" id="node3" href="$d7/daa/namespacemom__diapyc__energy__req.html#afe7d4fc70231c1812ffd38faef76558e" title="mom_diapyc_energy_req\l::diapyc_energy_req_test" alt="" coords="387,5,529,47"/>
-<area shape="rect" id="node4" href="$d8/df3/namespacemom__diabatic__driver.html#a61e57d3902367aa46aa3c2d949ee900f" title="This subroutine imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentu..." alt="" coords="577,5,699,47"/>
+<area shape="rect" id="node2" href="$d7/daa/namespacemom__diapyc__energy__req.html#ae781d0079acfadcd996aaff8d63957da" title="mom_diapyc_energy_req\l::diapyc_energy_req_calc" alt="" coords="220,5,391,47"/>
+<area shape="rect" id="node3" href="$d7/daa/namespacemom__diapyc__energy__req.html#afe7d4fc70231c1812ffd38faef76558e" title="mom_diapyc_energy_req\l::diapyc_energy_req_test" alt="" coords="439,5,607,47"/>
+<area shape="rect" id="node4" href="$d8/df3/namespacemom__diabatic__driver.html#a61e57d3902367aa46aa3c2d949ee900f" title="This subroutine imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentu..." alt="" coords="655,5,797,47"/>
 </map>

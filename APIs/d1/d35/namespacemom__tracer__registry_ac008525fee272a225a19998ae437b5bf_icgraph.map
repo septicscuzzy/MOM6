@@ -1,11 +1,12 @@
 <map id="mom_tracer_registry::add_tracer_diagnostics" name="mom_tracer_registry::add_tracer_diagnostics">
-<area shape="rect" id="node2" href="$d8/dc2/namespaceadvection__test__tracer.html#adad96933565e1ee601662052ad3f6943" title="advection_test_tracer\l::initialize_advection\l_test_tracer" alt="" coords="203,5,327,61"/>
-<area shape="rect" id="node3" href="$d2/d4c/namespacedome__tracer.html#acbbc86d4dbc4997c0cd55aa498d2c668" title="dome_tracer::initialize\l_dome_tracer" alt="" coords="203,85,328,126"/>
-<area shape="rect" id="node4" href="$de/def/namespaceregional__dyes.html#aeef37afe2f348fc7d94fe977d74d6d0b" title="regional_dyes::initialize\l_dye_tracer" alt="" coords="200,150,331,191"/>
-<area shape="rect" id="node5" href="$d6/dcd/namespaceideal__age__example.html#abec4db7c44f7a6d5c891a6d8a17a99b3" title="ideal_age_example::\linitialize_ideal_age\l_tracer" alt="" coords="205,215,325,271"/>
-<area shape="rect" id="node6" href="$d7/da0/namespaceisomip__tracer.html#a6083b2b081277f46013d9a22b32b7741" title="Initializes the NTR tracer fields in tr(:,:,:,:) " alt="" coords="201,294,329,335"/>
-<area shape="rect" id="node7" href="$d6/dd2/namespacemom__ocmip2__cfc.html#a0c916b2f0835bd79002803f246d2ef49" title="mom_ocmip2_cfc::initialize\l_ocmip2_cfc" alt="" coords="192,359,339,401"/>
-<area shape="rect" id="node8" href="$de/d98/namespaceoil__tracer.html#a2bb5dd516d506706c1e67e1206e389b5" title="oil_tracer::initialize\l_oil_tracer" alt="" coords="211,425,319,466"/>
-<area shape="rect" id="node9" href="$df/d4e/namespacepseudo__salt__tracer.html#adaef10fff7bd433eab35152075b3f166" title="pseudo_salt_tracer\l::initialize_pseudo\l_salt_tracer" alt="" coords="209,489,322,545"/>
-<area shape="rect" id="node10" href="$df/db5/namespaceuser__tracer__example.html#a16d417b6068f44605caf3573bf5f4de9" title="user_tracer_example\l::user_initialize_tracer" alt="" coords="203,569,328,610"/>
+<area shape="rect" id="node2" href="$d8/dc2/namespaceadvection__test__tracer.html#adad96933565e1ee601662052ad3f6943" title="advection_test_tracer\l::initialize_advection\l_test_tracer" alt="" coords="234,5,381,61"/>
+<area shape="rect" id="node3" href="$d5/dbc/namespaceboundary__impulse__tracer.html#a3e9d605e0a7bed7bb6028cb916ded161" title="Initialize tracer from restart or set to 1 at surface to initialize. " alt="" coords="224,85,391,141"/>
+<area shape="rect" id="node4" href="$d2/d4c/namespacedome__tracer.html#acbbc86d4dbc4997c0cd55aa498d2c668" title="dome_tracer::initialize\l_dome_tracer" alt="" coords="233,166,382,207"/>
+<area shape="rect" id="node5" href="$de/def/namespaceregional__dyes.html#aeef37afe2f348fc7d94fe977d74d6d0b" title="regional_dyes::initialize\l_dye_tracer" alt="" coords="229,231,386,273"/>
+<area shape="rect" id="node6" href="$d6/dcd/namespaceideal__age__example.html#abec4db7c44f7a6d5c891a6d8a17a99b3" title="ideal_age_example::\linitialize_ideal_age\l_tracer" alt="" coords="237,297,378,353"/>
+<area shape="rect" id="node7" href="$d7/da0/namespaceisomip__tracer.html#a6083b2b081277f46013d9a22b32b7741" title="Initializes the NTR tracer fields in tr(:,:,:,:) " alt="" coords="230,378,385,419"/>
+<area shape="rect" id="node8" href="$d6/dd2/namespacemom__ocmip2__cfc.html#a0c916b2f0835bd79002803f246d2ef49" title="mom_ocmip2_cfc::initialize\l_ocmip2_cfc" alt="" coords="217,443,397,485"/>
+<area shape="rect" id="node9" href="$de/d98/namespaceoil__tracer.html#a2bb5dd516d506706c1e67e1206e389b5" title="oil_tracer::initialize\l_oil_tracer" alt="" coords="242,509,373,550"/>
+<area shape="rect" id="node10" href="$df/d4e/namespacepseudo__salt__tracer.html#adaef10fff7bd433eab35152075b3f166" title="pseudo_salt_tracer\l::initialize_pseudo\l_salt_tracer" alt="" coords="241,575,373,631"/>
+<area shape="rect" id="node11" href="$df/db5/namespaceuser__tracer__example.html#a16d417b6068f44605caf3573bf5f4de9" title="user_tracer_example\l::user_initialize_tracer" alt="" coords="233,655,382,697"/>
 </map>

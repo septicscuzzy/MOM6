@@ -1,12 +1,15 @@
 <map id="mom_remapping::remapping_core_h" name="mom_remapping::remapping_core_h">
-<area shape="rect" id="node2" href="$de/dd7/namespacemom__ale__sponge.html#a8f6e6db99f860b048a58e97e58c101a6" title="This subroutine applies damping to the layers thicknesses, temp, salt and a variety of tracers for ev..." alt="" coords="213,15,352,56"/>
-<area shape="rect" id="node4" href="$d6/d62/namespacemom__state__initialization.html#a71ee3c056ca59c1c3529a4ec22e09fe3" title="Adjust the layer thicknesses by cutting away the top at the depth where the hydrostatic pressure matc..." alt="" coords="215,88,350,129"/>
-<area shape="rect" id="node10" href="$d9/d06/namespacemom__diag__mediator.html#ab5e628e0b8acd96234fab33d0fae2161" title="Remap diagnostic field to z&#45;star vertical grid. " alt="" coords="219,169,346,211"/>
-<area shape="rect" id="node3" href="$d8/df3/namespacemom__diabatic__driver.html#a61e57d3902367aa46aa3c2d949ee900f" title="This subroutine imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentu..." alt="" coords="407,5,528,47"/>
-<area shape="rect" id="node5" href="$d6/d62/namespacemom__state__initialization.html#acc1029776c1bdda2862ed0f95c8dc640" title="Adjust the layer thicknesses by cutting away the top of each model column at the depth where the hydr..." alt="" coords="400,71,535,112"/>
-<area shape="rect" id="node9" href="$d6/d62/namespacemom__state__initialization.html#a5c77bf2b0ea9d28e28b661a2a42d3f88" title="Run simple unit tests. " alt="" coords="400,136,535,177"/>
-<area shape="rect" id="node6" href="$d6/d62/namespacemom__state__initialization.html#af4e854627c6572332ba3fd895f169321" title="mom_state_initialization\l::mom_initialize_state" alt="" coords="583,71,717,112"/>
-<area shape="rect" id="node7" href="$da/d01/namespacemom.html#afebdc0103ad9cbe0ed4a54e522dc4104" title="This subroutine initializes MOM. " alt="" coords="765,78,884,105"/>
-<area shape="rect" id="node8" href="$de/dbc/MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" title="mom_main" alt="" coords="932,78,1007,105"/>
-<area shape="rect" id="node11" href="$d9/d06/namespacemom__diag__mediator.html#adb1030a0216c52dd0d25bd67a5b31868" title="mom_diag_mediator::\lpost_data_3d" alt="" coords="404,201,531,243"/>
+<area shape="rect" id="node2" href="$de/dd7/namespacemom__ale__sponge.html#a8f6e6db99f860b048a58e97e58c101a6" title="This subroutine applies damping to the layers thicknesses, temp, salt and a variety of tracers for ev..." alt="" coords="244,39,407,80"/>
+<area shape="rect" id="node4" href="$d6/d62/namespacemom__state__initialization.html#a71ee3c056ca59c1c3529a4ec22e09fe3" title="Adjust the layer thicknesses by cutting away the top at the depth where the hydrostatic pressure matc..." alt="" coords="244,136,407,177"/>
+<area shape="rect" id="node8" href="$d9/d06/namespacemom__diag__mediator.html#ab5e628e0b8acd96234fab33d0fae2161" title="Remap diagnostic field to z&#45;star vertical grid. " alt="" coords="252,201,399,243"/>
+<area shape="rect" id="node10" href="$dd/d33/namespacemom__wave__speed.html#a72302e356c47c5055ba0b1a8714c772a" title="Calculates the wave speed of the first baroclinic mode. " alt="" coords="240,267,411,308"/>
+<area shape="rect" id="node3" href="$d8/df3/namespacemom__diabatic__driver.html#a61e57d3902367aa46aa3c2d949ee900f" title="This subroutine imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentu..." alt="" coords="479,5,622,47"/>
+<area shape="rect" id="node5" href="$d6/d62/namespacemom__state__initialization.html#acc1029776c1bdda2862ed0f95c8dc640" title="Adjust the layer thicknesses by cutting away the top of each model column at the depth where the hydr..." alt="" coords="469,71,632,112"/>
+<area shape="rect" id="node7" href="$d6/d62/namespacemom__state__initialization.html#a5c77bf2b0ea9d28e28b661a2a42d3f88" title="Run simple unit tests. " alt="" coords="469,136,632,177"/>
+<area shape="rect" id="node6" href="$d6/d62/namespacemom__state__initialization.html#af4e854627c6572332ba3fd895f169321" title="mom_state_initialization\l::mom_initialize_state" alt="" coords="691,71,853,112"/>
+<area shape="rect" id="node9" href="$d9/d06/namespacemom__diag__mediator.html#adb1030a0216c52dd0d25bd67a5b31868" title="mom_diag_mediator::\lpost_data_3d" alt="" coords="477,201,624,243"/>
+<area shape="rect" id="node11" href="$d9/d8b/namespacemom__diagnostics.html#abb6644248c28ab2e952361bfec436063" title="mom_diagnostics::calculate\l_diagnostic_fields" alt="" coords="459,267,643,308"/>
+<area shape="rect" id="node12" href="$d0/d86/namespacemom__lateral__mixing__coeffs.html#af206bc656869b4fc27d4d7e8a15d438e" title="Calculates and stores the non&#45;dimensional resolution functions. " alt="" coords="481,333,620,389"/>
+<area shape="rect" id="node13" href="$da/d01/namespacemom.html#a4c8332b095c6d295084089aa6b3b678a" title="This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to..." alt="" coords="712,347,832,374"/>
+<area shape="rect" id="node14" href="$de/dbc/MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" title="mom_main" alt="" coords="901,347,988,374"/>
 </map>

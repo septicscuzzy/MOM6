@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['wave_5fspeed',['wave_speed',['../dd/d33/namespacemom__wave__speed.html#a90775d734022991a9b49d5ee25210051',1,'mom_wave_speed']]],
-  ['wave_5fspeed_5finit',['wave_speed_init',['../dd/d33/namespacemom__wave__speed.html#a009e412d19187190145ca2184beec3af',1,'mom_wave_speed']]],
+  ['wave_5fspeed',['wave_speed',['../dd/d33/namespacemom__wave__speed.html#a72302e356c47c5055ba0b1a8714c772a',1,'mom_wave_speed']]],
+  ['wave_5fspeed_5finit',['wave_speed_init',['../dd/d33/namespacemom__wave__speed.html#a46e21529ec8098b0b19053afa133b971',1,'mom_wave_speed']]],
+  ['wave_5fspeed_5fset_5fparam',['wave_speed_set_param',['../dd/d33/namespacemom__wave__speed.html#a035c9e3306d6b21809e240a5b24a2db0',1,'mom_wave_speed']]],
   ['wave_5fspeeds',['wave_speeds',['../dd/d33/namespacemom__wave__speed.html#a0009abd8573168b780c95db2962982d6',1,'mom_wave_speed']]],
   ['wave_5fstructure',['wave_structure',['../d4/d7e/namespacemom__wave__structure.html#a6dab6eaab930bb622d4462d5f51f8ab4',1,'mom_wave_structure']]],
   ['wave_5fstructure_5finit',['wave_structure_init',['../d4/d7e/namespacemom__wave__structure.html#a4dc27a0fbdbb402b9f4def03f70cfba2',1,'mom_wave_structure']]],

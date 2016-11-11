@@ -46,58 +46,58 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 514;
+var viewWidth = 588;
 var viewHeight = 28;
-var sectionId = 'dynsection-7';
+var sectionId = 'dynsection-5';
 </script>
 <script xlink:href="../../svgpan.js"/>
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_meke::meke_lengthscales</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-24 510,-24 510,4 -4,4"/>
-<!-- Node28 -->
-<g id="node1" class="node"><title>Node28</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-19.5 131,-19.5 131,-0.5 0,-0.5"/>
-<text text-anchor="middle" x="65.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_meke::meke_lengthscales</text>
+<polygon fill="white" stroke="none" points="-4,4 -4,-24 584,-24 584,4 -4,4"/>
+<!-- Node23 -->
+<g id="node1" class="node"><title>Node23</title>
+<polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-19.5 158,-19.5 158,-0.5 0,-0.5"/>
+<text text-anchor="middle" x="79" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_meke::meke_lengthscales</text>
 </g>
-<!-- Node29 -->
-<g id="node2" class="node"><title>Node29</title>
+<!-- Node24 -->
+<g id="node2" class="node"><title>Node24</title>
 <g id="a_node2"><a xlink:href="../../df/d46/namespacemom__meke.html#adff303c8c542ec848294078e4b3bc010" target="_top" xlink:title="Integrates forward&#45;in&#45;time the MEKE eddy energy equation. See MEKE equations. ">
-<polygon fill="white" stroke="black" points="167,-0.5 167,-19.5 301,-19.5 301,-0.5 167,-0.5"/>
-<text text-anchor="middle" x="234" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_meke::step_forward_meke</text>
+<polygon fill="white" stroke="black" points="194,-0.5 194,-19.5 353,-19.5 353,-0.5 194,-0.5"/>
+<text text-anchor="middle" x="273.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_meke::step_forward_meke</text>
 </a>
 </g>
 </g>
-<!-- Node28&#45;&gt;Node29 -->
-<g id="edge1" class="edge"><title>Node28&#45;&gt;Node29</title>
-<path fill="none" stroke="midnightblue" d="M141.589,-10C150.049,-10 158.623,-10 166.956,-10"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="141.35,-6.5001 131.35,-10 141.35,-13.5001 141.35,-6.5001"/>
+<!-- Node23&#45;&gt;Node24 -->
+<g id="edge1" class="edge"><title>Node23&#45;&gt;Node24</title>
+<path fill="none" stroke="midnightblue" d="M168.03,-10C176.605,-10 185.268,-10 193.744,-10"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="168.02,-6.5001 158.02,-10 168.02,-13.5001 168.02,-6.5001"/>
 </g>
-<!-- Node30 -->
-<g id="node3" class="node"><title>Node30</title>
+<!-- Node25 -->
+<g id="node3" class="node"><title>Node25</title>
 <g id="a_node3"><a xlink:href="../../da/d01/namespacemom.html#a4c8332b095c6d295084089aa6b3b678a" target="_top" xlink:title="This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to...">
-<polygon fill="white" stroke="black" points="337,-0.5 337,-19.5 414,-19.5 414,-0.5 337,-0.5"/>
-<text text-anchor="middle" x="375.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom::step_mom</text>
+<polygon fill="white" stroke="black" points="389,-0.5 389,-19.5 479,-19.5 479,-0.5 389,-0.5"/>
+<text text-anchor="middle" x="434" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom::step_mom</text>
 </a>
 </g>
 </g>
-<!-- Node29&#45;&gt;Node30 -->
-<g id="edge2" class="edge"><title>Node29&#45;&gt;Node30</title>
-<path fill="none" stroke="midnightblue" d="M311.128,-10C320.009,-10 328.751,-10 336.771,-10"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="311.073,-6.5001 301.073,-10 311.073,-13.5001 311.073,-6.5001"/>
+<!-- Node24&#45;&gt;Node25 -->
+<g id="edge2" class="edge"><title>Node24&#45;&gt;Node25</title>
+<path fill="none" stroke="midnightblue" d="M363.335,-10C372.196,-10 380.894,-10 388.979,-10"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="363.286,-6.5001 353.286,-10 363.286,-13.5001 363.286,-6.5001"/>
 </g>
-<!-- Node31 -->
-<g id="node4" class="node"><title>Node31</title>
+<!-- Node26 -->
+<g id="node4" class="node"><title>Node26</title>
 <g id="a_node4"><a xlink:href="../../de/dbc/MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" target="_top" xlink:title="mom_main">
-<polygon fill="white" stroke="black" points="450,-0.5 450,-19.5 506,-19.5 506,-0.5 450,-0.5"/>
-<text text-anchor="middle" x="478" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_main</text>
+<polygon fill="white" stroke="black" points="515,-0.5 515,-19.5 580,-19.5 580,-0.5 515,-0.5"/>
+<text text-anchor="middle" x="547.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_main</text>
 </a>
 </g>
 </g>
-<!-- Node30&#45;&gt;Node31 -->
-<g id="edge3" class="edge"><title>Node30&#45;&gt;Node31</title>
-<path fill="none" stroke="midnightblue" d="M424.342,-10C433.067,-10 441.888,-10 449.751,-10"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="424.208,-6.5001 414.208,-10 424.208,-13.5001 424.208,-6.5001"/>
+<!-- Node25&#45;&gt;Node26 -->
+<g id="edge3" class="edge"><title>Node25&#45;&gt;Node26</title>
+<path fill="none" stroke="midnightblue" d="M489.26,-10C498.006,-10 506.8,-10 514.782,-10"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="489.068,-6.5001 479.068,-10 489.068,-13.5001 489.068,-6.5001"/>
 </g>
 </g>
 </svg>

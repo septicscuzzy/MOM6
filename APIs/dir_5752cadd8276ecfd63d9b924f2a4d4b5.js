@@ -5,6 +5,7 @@ var dir_5752cadd8276ecfd63d9b924f2a4d4b5 =
     [ "MOM_coms.F90", "d4/d4e/MOM__coms_8F90.html", "d4/d4e/MOM__coms_8F90" ],
     [ "MOM_constants.F90", "d0/d7a/MOM__constants_8F90.html", "d0/d7a/MOM__constants_8F90" ],
     [ "MOM_cpu_clock.F90", "d1/d79/MOM__cpu__clock_8F90.html", null ],
+    [ "MOM_diag_manager_wrapper.F90", "de/d4c/MOM__diag__manager__wrapper_8F90.html", "de/d4c/MOM__diag__manager__wrapper_8F90" ],
     [ "MOM_diag_mediator.F90", "db/da5/MOM__diag__mediator_8F90.html", "db/da5/MOM__diag__mediator_8F90" ],
     [ "MOM_diag_vkernels.F90", "d3/de8/MOM__diag__vkernels_8F90.html", "d3/de8/MOM__diag__vkernels_8F90" ],
     [ "MOM_document.F90", "df/dab/MOM__document_8F90.html", "df/dab/MOM__document_8F90" ],

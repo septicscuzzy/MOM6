@@ -24,6 +24,8 @@ var MOM__legacy__barotropic_8F90 =
     [ "swap", "dc/de7/MOM__legacy__barotropic_8F90.html#ac501c7f590b7b9f0cedb48da7d14c0aa", null ],
     [ "uhbt_to_ubt", "dc/de7/MOM__legacy__barotropic_8F90.html#ad9add945a282d75804293003405f794d", null ],
     [ "vhbt_to_vbt", "dc/de7/MOM__legacy__barotropic_8F90.html#aa500b44df0ce8db775bed7840dfb436c", null ],
+    [ "apply_u_obcs", "dc/de7/MOM__legacy__barotropic_8F90.html#a67457578f0e89f0b036faa5e2df53af4", null ],
+    [ "apply_v_obcs", "dc/de7/MOM__legacy__barotropic_8F90.html#a20f02a787d054c1eaad90e3962f348e3", null ],
     [ "arithmetic", "dc/de7/MOM__legacy__barotropic_8F90.html#a8bf596f641b8ee764001d871188e3418", null ],
     [ "arithmetic_string", "dc/de7/MOM__legacy__barotropic_8F90.html#a9ca2aa62eb4b54478a73a31daf8248f5", null ],
     [ "bt_cont_string", "dc/de7/MOM__legacy__barotropic_8F90.html#a78bda94c899b6a66d80ec07021708328", null ],

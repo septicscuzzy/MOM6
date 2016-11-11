@@ -1,4 +1,4 @@
 <map id="mom_diag_mediator::axes_grp" name="mom_diag_mediator::axes_grp">
-<area shape="rect" id="node3" href="$de/d92/structmom__diag__mediator_1_1diag__ctrl.html" title="The following data type a list of diagnostic fields an their variants, as well as variables that cont..." alt="" coords="757,681,884,722"/>
-<area shape="rect" id="node5" href="$d9/d4e/structmom__diag__mediator_1_1diag__type.html" title="This type is used to represent a diagnostic at the diag_mediator level. There can be both &#39;primary&#39; a..." alt="" coords="507,474,633,515"/>
+<area shape="rect" id="node3" href="$de/d92/structmom__diag__mediator_1_1diag__ctrl.html" title="The following data type a list of diagnostic fields an their variants, as well as variables that cont..." alt="" coords="869,690,1016,731"/>
+<area shape="rect" id="node5" href="$d9/d4e/structmom__diag__mediator_1_1diag__type.html" title="This type is used to represent a diagnostic at the diag_mediator level. There can be both &#39;primary&#39; a..." alt="" coords="581,483,728,525"/>
 </map>

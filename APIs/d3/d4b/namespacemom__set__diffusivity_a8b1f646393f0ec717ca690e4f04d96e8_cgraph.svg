@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 690;
+var viewWidth = 791;
 var viewHeight = 683;
 var sectionId = 'dynsection-9';
 </script>
@@ -54,368 +54,368 @@ var sectionId = 'dynsection-9';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_set_diffusivity::set_diffusivity</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-679 686,-679 686,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-679 787,-679 787,4 -4,4"/>
 <!-- Node28 -->
 <g id="node1" class="node"><title>Node28</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-316.5 0,-346.5 86,-346.5 86,-316.5 0,-316.5"/>
+<polygon fill="#bfbfbf" stroke="black" points="0,-316.5 0,-346.5 104,-346.5 104,-316.5 0,-316.5"/>
 <text text-anchor="start" x="8" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_set_diffusivity</text>
-<text text-anchor="middle" x="43" y="-323.5" font-family="Helvetica,sans-Serif" font-size="10.00">::set_diffusivity</text>
+<text text-anchor="middle" x="52" y="-323.5" font-family="Helvetica,sans-Serif" font-size="10.00">::set_diffusivity</text>
 </g>
 <!-- Node29 -->
 <g id="node2" class="node"><title>Node29</title>
 <g id="a_node2"><a xlink:href="../../d3/d4b/namespacemom__set__diffusivity.html#aaad945a967cee858d63180245b0e57de" target="_top" xlink:title="mom_set_diffusivity\l::add_drag_diffusivity">
-<polygon fill="white" stroke="black" points="136.5,-644.5 136.5,-674.5 228.5,-674.5 228.5,-644.5 136.5,-644.5"/>
-<text text-anchor="start" x="144.5" y="-662.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_set_diffusivity</text>
-<text text-anchor="middle" x="182.5" y="-651.5" font-family="Helvetica,sans-Serif" font-size="10.00">::add_drag_diffusivity</text>
+<polygon fill="white" stroke="black" points="157,-644.5 157,-674.5 267,-674.5 267,-644.5 157,-644.5"/>
+<text text-anchor="start" x="165" y="-662.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_set_diffusivity</text>
+<text text-anchor="middle" x="212" y="-651.5" font-family="Helvetica,sans-Serif" font-size="10.00">::add_drag_diffusivity</text>
 </a>
 </g>
 </g>
 <!-- Node28&#45;&gt;Node29 -->
 <g id="edge1" class="edge"><title>Node28&#45;&gt;Node29</title>
-<path fill="none" stroke="midnightblue" d="M43.3984,-346.618C42.3007,-395.002 45.3566,-547.987 122,-635.5 123.734,-637.48 125.654,-639.298 127.712,-640.969"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="125.978,-644.021 136.227,-646.705 129.889,-638.215 125.978,-644.021"/>
+<path fill="none" stroke="midnightblue" d="M52.7086,-346.841C52.6291,-395.899 59.1045,-550.69 140,-635.5 142.454,-638.073 145.194,-640.37 148.129,-642.421"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="146.459,-645.499 156.848,-647.573 150.02,-639.473 146.459,-645.499"/>
 </g>
 <!-- Node30 -->
 <g id="node3" class="node"><title>Node30</title>
 <g id="a_node3"><a xlink:href="../../d3/d4b/namespacemom__set__diffusivity.html#a46f446c690ca20950b890cb71594998a" target="_top" xlink:title="mom_set_diffusivity\l::add_int_tide_diffusivity">
-<polygon fill="white" stroke="black" points="132,-595.5 132,-625.5 233,-625.5 233,-595.5 132,-595.5"/>
-<text text-anchor="start" x="140" y="-613.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_set_diffusivity</text>
-<text text-anchor="middle" x="182.5" y="-602.5" font-family="Helvetica,sans-Serif" font-size="10.00">::add_int_tide_diffusivity</text>
+<polygon fill="white" stroke="black" points="151,-595.5 151,-625.5 273,-625.5 273,-595.5 151,-595.5"/>
+<text text-anchor="start" x="159" y="-613.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_set_diffusivity</text>
+<text text-anchor="middle" x="212" y="-602.5" font-family="Helvetica,sans-Serif" font-size="10.00">::add_int_tide_diffusivity</text>
 </a>
 </g>
 </g>
 <!-- Node28&#45;&gt;Node30 -->
 <g id="edge2" class="edge"><title>Node28&#45;&gt;Node30</title>
-<path fill="none" stroke="midnightblue" d="M44.2974,-346.608C45.9492,-389.754 56.4496,-515.015 122,-586.5 122.889,-587.47 123.823,-588.401 124.796,-589.296"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="122.826,-592.195 132.907,-595.454 127.059,-586.62 122.826,-592.195"/>
+<path fill="none" stroke="midnightblue" d="M53.68,-346.523C56.4594,-389.981 70.4425,-517.139 140,-586.5 141.065,-587.562 142.179,-588.578 143.335,-589.548"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="141.319,-592.409 151.505,-595.322 145.359,-586.692 141.319,-592.409"/>
 </g>
 <!-- Node31 -->
 <g id="node4" class="node"><title>Node31</title>
 <g id="a_node4"><a xlink:href="../../d3/d4b/namespacemom__set__diffusivity.html#ae07e002beec2b76c8cdb1bc52ecfa81f" target="_top" xlink:title="Calculates a BBL diffusivity use a Prandtl number 1 diffusivitiy with a law of the wall turbulent vis...">
-<polygon fill="white" stroke="black" points="130.5,-546.5 130.5,-576.5 234.5,-576.5 234.5,-546.5 130.5,-546.5"/>
-<text text-anchor="start" x="138.5" y="-564.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_set_diffusivity</text>
-<text text-anchor="middle" x="182.5" y="-553.5" font-family="Helvetica,sans-Serif" font-size="10.00">::add_lotw_bbl_diffusivity</text>
+<polygon fill="white" stroke="black" points="148.5,-546.5 148.5,-576.5 275.5,-576.5 275.5,-546.5 148.5,-546.5"/>
+<text text-anchor="start" x="156.5" y="-564.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_set_diffusivity</text>
+<text text-anchor="middle" x="212" y="-553.5" font-family="Helvetica,sans-Serif" font-size="10.00">::add_lotw_bbl_diffusivity</text>
 </a>
 </g>
 </g>
 <!-- Node28&#45;&gt;Node31 -->
 <g id="edge3" class="edge"><title>Node28&#45;&gt;Node31</title>
-<path fill="none" stroke="midnightblue" d="M45.5928,-346.645C50.3005,-384.039 67.4309,-481.748 122,-537.5 123.047,-538.57 124.148,-539.593 125.294,-540.572"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="123.265,-543.424 133.43,-546.413 127.347,-537.738 123.265,-543.424"/>
+<path fill="none" stroke="midnightblue" d="M55.084,-346.596C61.0798,-384.306 81.8328,-483.466 140,-537.5 141.278,-538.687 142.617,-539.816 144.007,-540.889"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="142.177,-543.875 152.455,-546.446 146.024,-538.027 142.177,-543.875"/>
 </g>
 <!-- Node32 -->
 <g id="node5" class="node"><title>Node32</title>
 <g id="a_node5"><a xlink:href="../../d3/d4b/namespacemom__set__diffusivity.html#a7ab975ff8ad030b18eb1b294be1947b5" target="_top" xlink:title="mom_set_diffusivity\l::add_mlrad_diffusivity">
-<polygon fill="white" stroke="black" points="135,-497.5 135,-527.5 230,-527.5 230,-497.5 135,-497.5"/>
-<text text-anchor="start" x="143" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_set_diffusivity</text>
-<text text-anchor="middle" x="182.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">::add_mlrad_diffusivity</text>
+<polygon fill="white" stroke="black" points="154.5,-497.5 154.5,-527.5 269.5,-527.5 269.5,-497.5 154.5,-497.5"/>
+<text text-anchor="start" x="162.5" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_set_diffusivity</text>
+<text text-anchor="middle" x="212" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">::add_mlrad_diffusivity</text>
 </a>
 </g>
 </g>
 <!-- Node28&#45;&gt;Node32 -->
 <g id="edge4" class="edge"><title>Node28&#45;&gt;Node32</title>
-<path fill="none" stroke="midnightblue" d="M48.352,-346.693C57.5046,-376.274 81.3259,-442.223 122,-482.5 125.607,-486.071 129.725,-489.3 134.073,-492.198"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="132.274,-495.2 142.645,-497.367 135.889,-489.206 132.274,-495.2"/>
+<path fill="none" stroke="midnightblue" d="M58.0992,-346.94C68.7375,-376.953 96.0254,-443.624 140,-482.5 144.367,-486.361 149.304,-489.777 154.49,-492.787"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="152.918,-495.914 163.397,-497.477 156.18,-489.721 152.918,-495.914"/>
 </g>
 <!-- Node33 -->
 <g id="node6" class="node"><title>Node33</title>
 <g id="a_node6"><a xlink:href="../../d0/dbf/namespacemom__diag__to__z.html#a7d4acde4f372e656824e51985375ba65" target="_top" xlink:title="mom_diag_to_z::calc\l_zint_diags">
-<polygon fill="white" stroke="black" points="293.5,-509.5 293.5,-539.5 385.5,-539.5 385.5,-509.5 293.5,-509.5"/>
-<text text-anchor="start" x="301.5" y="-527.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_diag_to_z::calc</text>
-<text text-anchor="middle" x="339.5" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">_zint_diags</text>
+<polygon fill="white" stroke="black" points="337,-509.5 337,-539.5 447,-539.5 447,-509.5 337,-509.5"/>
+<text text-anchor="start" x="345" y="-527.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_diag_to_z::calc</text>
+<text text-anchor="middle" x="392" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">_zint_diags</text>
 </a>
 </g>
 </g>
 <!-- Node28&#45;&gt;Node33 -->
 <g id="edge5" class="edge"><title>Node28&#45;&gt;Node33</title>
-<path fill="none" stroke="midnightblue" d="M49.9729,-346.545C60.6624,-371.57 85.4216,-421.736 122,-449.5 167.006,-483.661 189.66,-469.863 243,-488.5 258.368,-493.87 275.006,-500.022 290.022,-505.703"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="289.035,-509.073 299.626,-509.356 291.524,-502.53 289.035,-509.073"/>
+<path fill="none" stroke="midnightblue" d="M59.9925,-346.739C72.4022,-372.05 100.717,-422.626 140,-449.5 194.725,-486.938 220.549,-469.253 284,-488.5 301.795,-493.898 321.097,-500.24 338.345,-506.084"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="337.641,-509.542 348.236,-509.457 339.901,-502.917 337.641,-509.542"/>
 </g>
 <!-- Node36 -->
 <g id="node9" class="node"><title>Node36</title>
 <g id="a_node9"><a xlink:href="../../d4/d6d/namespacemom__cvmix__shear.html#a2f3d29d1a423be72d0f895d84db9e0a5" target="_top" xlink:title="Subroutine for calculating (internal) diffusivity. ">
-<polygon fill="white" stroke="black" points="123,-409.5 123,-439.5 242,-439.5 242,-409.5 123,-409.5"/>
-<text text-anchor="start" x="131" y="-427.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_cvmix_shear::calculate</text>
-<text text-anchor="middle" x="182.5" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">_cvmix_shear</text>
+<polygon fill="white" stroke="black" points="140,-409.5 140,-439.5 284,-439.5 284,-409.5 140,-409.5"/>
+<text text-anchor="start" x="148" y="-427.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_cvmix_shear::calculate</text>
+<text text-anchor="middle" x="212" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">_cvmix_shear</text>
 </a>
 </g>
 </g>
 <!-- Node28&#45;&gt;Node36 -->
 <g id="edge8" class="edge"><title>Node28&#45;&gt;Node36</title>
-<path fill="none" stroke="midnightblue" d="M58.0241,-346.629C72.7747,-361.846 97.2428,-385.191 122,-400.5 124.487,-402.038 127.089,-403.513 129.757,-404.921"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="128.489,-408.197 139.01,-409.45 131.567,-401.91 128.489,-408.197"/>
+<path fill="none" stroke="midnightblue" d="M68.4794,-346.541C85.0144,-361.909 112.567,-385.576 140,-400.5 143.218,-402.251 146.587,-403.907 150.035,-405.468"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="148.723,-408.713 159.297,-409.377 151.445,-402.264 148.723,-408.713"/>
 </g>
 <!-- Node37 -->
 <g id="node10" class="node"><title>Node37</title>
 <g id="a_node10"><a xlink:href="../../d8/d95/namespacemom__kappa__shear.html#a84a0a23b1cb6df3e8613fdd7853cb495" target="_top" xlink:title="mom_kappa_shear::calculate\l_kappa_shear">
-<polygon fill="white" stroke="black" points="122,-360.5 122,-390.5 243,-390.5 243,-360.5 122,-360.5"/>
-<text text-anchor="start" x="130" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_kappa_shear::calculate</text>
-<text text-anchor="middle" x="182.5" y="-367.5" font-family="Helvetica,sans-Serif" font-size="10.00">_kappa_shear</text>
+<polygon fill="white" stroke="black" points="140,-360.5 140,-390.5 284,-390.5 284,-360.5 140,-360.5"/>
+<text text-anchor="start" x="148" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_kappa_shear::calculate</text>
+<text text-anchor="middle" x="212" y="-367.5" font-family="Helvetica,sans-Serif" font-size="10.00">_kappa_shear</text>
 </a>
 </g>
 </g>
 <!-- Node28&#45;&gt;Node37 -->
 <g id="edge9" class="edge"><title>Node28&#45;&gt;Node37</title>
-<path fill="none" stroke="midnightblue" d="M86.0017,-344.941C98.211,-348.848 111.754,-353.181 124.712,-357.328"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="123.884,-360.738 134.475,-360.452 126.017,-354.071 123.884,-360.738"/>
+<path fill="none" stroke="midnightblue" d="M104.298,-345.786C117.989,-349.598 132.95,-353.765 147.223,-357.739"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="146.397,-361.143 156.97,-360.454 148.275,-354.399 146.397,-361.143"/>
 </g>
 <!-- Node44 -->
 <g id="node17" class="node"><title>Node44</title>
 <g id="a_node17"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#a9cda07a87815f0e5594066162b4345c3" target="_top" xlink:title="Writes a message about entering a subroutine if call tree reporting is active. ">
-<polygon fill="white" stroke="black" points="448,-316.5 448,-346.5 541,-346.5 541,-316.5 448,-316.5"/>
-<text text-anchor="start" x="456" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="494.5" y="-323.5" font-family="Helvetica,sans-Serif" font-size="10.00">calltree_enter</text>
+<polygon fill="white" stroke="black" points="517.5,-316.5 517.5,-346.5 623.5,-346.5 623.5,-316.5 517.5,-316.5"/>
+<text text-anchor="start" x="525.5" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="570.5" y="-323.5" font-family="Helvetica,sans-Serif" font-size="10.00">calltree_enter</text>
 </a>
 </g>
 </g>
 <!-- Node28&#45;&gt;Node44 -->
 <g id="edge17" class="edge"><title>Node28&#45;&gt;Node44</title>
-<path fill="none" stroke="midnightblue" d="M86.2879,-331.5C167.833,-331.5 346.787,-331.5 437.87,-331.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="437.998,-335 447.998,-331.5 437.998,-328 437.998,-335"/>
+<path fill="none" stroke="midnightblue" d="M104.412,-331.5C199.758,-331.5 403.655,-331.5 506.874,-331.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="507.144,-335 517.144,-331.5 507.144,-328 507.144,-335"/>
 </g>
 <!-- Node45 -->
 <g id="node18" class="node"><title>Node45</title>
 <g id="a_node18"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#a88ea67781e2ed9b73ab7eac8ea5e8578" target="_top" xlink:title="Writes a message about leaving a subroutine if call tree reporting is active. ">
-<polygon fill="white" stroke="black" points="293,-272.5 293,-302.5 386,-302.5 386,-272.5 293,-272.5"/>
-<text text-anchor="start" x="301" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="339.5" y="-279.5" font-family="Helvetica,sans-Serif" font-size="10.00">calltree_leave</text>
+<polygon fill="white" stroke="black" points="339,-272.5 339,-302.5 445,-302.5 445,-272.5 339,-272.5"/>
+<text text-anchor="start" x="347" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="392" y="-279.5" font-family="Helvetica,sans-Serif" font-size="10.00">calltree_leave</text>
 </a>
 </g>
 </g>
 <!-- Node28&#45;&gt;Node45 -->
 <g id="edge19" class="edge"><title>Node28&#45;&gt;Node45</title>
-<path fill="none" stroke="midnightblue" d="M86.0476,-323.636C97.678,-321.547 110.315,-319.358 122,-317.5 176.47,-308.841 238.878,-300.344 282.651,-294.616"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="283.342,-298.056 292.806,-293.293 282.437,-291.115 283.342,-298.056"/>
+<path fill="none" stroke="midnightblue" d="M104.012,-322.936C115.815,-321.053 128.334,-319.135 140,-317.5 204.04,-308.524 277.514,-299.942 328.346,-294.274"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="328.967,-297.727 338.52,-293.145 328.194,-290.77 328.967,-297.727"/>
 </g>
 <!-- Node46 -->
 <g id="node19" class="node"><title>Node46</title>
 <g id="a_node19"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#a34a02e601a60f03cb97a72fe25a32853" target="_top" xlink:title="Writes a message about reaching a milestone if call tree reporting is active. ">
-<polygon fill="white" stroke="black" points="448,-228.5 448,-258.5 541,-258.5 541,-228.5 448,-228.5"/>
-<text text-anchor="start" x="456" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="494.5" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">calltree_waypoint</text>
+<polygon fill="white" stroke="black" points="517.5,-228.5 517.5,-258.5 623.5,-258.5 623.5,-228.5 517.5,-228.5"/>
+<text text-anchor="start" x="525.5" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="570.5" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">calltree_waypoint</text>
 </a>
 </g>
 </g>
 <!-- Node28&#45;&gt;Node46 -->
 <g id="edge21" class="edge"><title>Node28&#45;&gt;Node46</title>
-<path fill="none" stroke="midnightblue" d="M72.6162,-316.354C87.0947,-309.196 105.135,-301.028 122,-295.5 230.163,-260.047 363.798,-248.765 437.707,-245.175"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="437.9,-248.67 447.73,-244.718 437.581,-241.678 437.9,-248.67"/>
+<path fill="none" stroke="midnightblue" d="M83.7673,-316.349C100.132,-308.824 120.791,-300.156 140,-294.5 266.888,-257.142 422.512,-247.048 507.247,-244.386"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="507.578,-247.878 517.473,-244.091 507.376,-240.881 507.578,-247.878"/>
 </g>
 <!-- Node47 -->
 <g id="node20" class="node"><title>Node47</title>
 <g id="a_node20"><a xlink:href="../../d3/d4b/namespacemom__set__diffusivity.html#a79611c5775b154d49d3219efde90055c" target="_top" xlink:title="mom_set_diffusivity\l::double_diffusion">
-<polygon fill="white" stroke="black" points="139.5,-196.5 139.5,-226.5 225.5,-226.5 225.5,-196.5 139.5,-196.5"/>
-<text text-anchor="start" x="147.5" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_set_diffusivity</text>
-<text text-anchor="middle" x="182.5" y="-203.5" font-family="Helvetica,sans-Serif" font-size="10.00">::double_diffusion</text>
+<polygon fill="white" stroke="black" points="160,-196.5 160,-226.5 264,-226.5 264,-196.5 160,-196.5"/>
+<text text-anchor="start" x="168" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_set_diffusivity</text>
+<text text-anchor="middle" x="212" y="-203.5" font-family="Helvetica,sans-Serif" font-size="10.00">::double_diffusion</text>
 </a>
 </g>
 </g>
 <!-- Node28&#45;&gt;Node47 -->
 <g id="edge23" class="edge"><title>Node28&#45;&gt;Node47</title>
-<path fill="none" stroke="midnightblue" d="M54.3824,-316.185C68.0816,-296.856 93.7824,-263.484 122,-241.5 126.619,-237.902 131.736,-234.554 136.976,-231.498"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="138.755,-234.514 145.841,-226.637 135.39,-228.376 138.755,-234.514"/>
+<path fill="none" stroke="midnightblue" d="M64.4612,-316.296C79.8295,-296.777 108.814,-262.884 140,-241.5 145.635,-237.636 151.847,-234.12 158.182,-230.966"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="159.923,-234.016 167.497,-226.608 156.956,-227.676 159.923,-234.016"/>
 </g>
 <!-- Node48 -->
 <g id="node21" class="node"><title>Node48</title>
 <g id="a_node21"><a xlink:href="../../d3/d4b/namespacemom__set__diffusivity.html#a3280e9e2ed60f24be11cb2308dd5a22d" target="_top" xlink:title="mom_set_diffusivity\l::find_n2">
-<polygon fill="white" stroke="black" points="139.5,-147.5 139.5,-177.5 225.5,-177.5 225.5,-147.5 139.5,-147.5"/>
-<text text-anchor="start" x="147.5" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_set_diffusivity</text>
-<text text-anchor="middle" x="182.5" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">::find_n2</text>
+<polygon fill="white" stroke="black" points="160,-147.5 160,-177.5 264,-177.5 264,-147.5 160,-147.5"/>
+<text text-anchor="start" x="168" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_set_diffusivity</text>
+<text text-anchor="middle" x="212" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">::find_n2</text>
 </a>
 </g>
 </g>
 <!-- Node28&#45;&gt;Node48 -->
 <g id="edge24" class="edge"><title>Node28&#45;&gt;Node48</title>
-<path fill="none" stroke="midnightblue" d="M48.4578,-316.323C57.6507,-287.479 81.3325,-224.341 122,-187.5 124.612,-185.134 127.48,-182.972 130.502,-180.999"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="132.408,-183.941 139.342,-175.931 128.926,-177.869 132.408,-183.941"/>
+<path fill="none" stroke="midnightblue" d="M58.2684,-316.093C69.0284,-286.856 96.2707,-223.075 140,-187.5 143.307,-184.809 146.925,-182.399 150.72,-180.24"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="152.478,-183.273 159.834,-175.648 149.328,-177.022 152.478,-183.273"/>
 </g>
 <!-- Node49 -->
 <g id="node22" class="node"><title>Node49</title>
 <g id="a_node22"><a xlink:href="../../d3/d4b/namespacemom__set__diffusivity.html#a17d34181e20efe93c91a24baba5f1359" target="_top" xlink:title="mom_set_diffusivity\l::find_tke_to_kd">
-<polygon fill="white" stroke="black" points="139.5,-98.5 139.5,-128.5 225.5,-128.5 225.5,-98.5 139.5,-98.5"/>
-<text text-anchor="start" x="147.5" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_set_diffusivity</text>
-<text text-anchor="middle" x="182.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">::find_tke_to_kd</text>
+<polygon fill="white" stroke="black" points="160,-98.5 160,-128.5 264,-128.5 264,-98.5 160,-98.5"/>
+<text text-anchor="start" x="168" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_set_diffusivity</text>
+<text text-anchor="middle" x="212" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">::find_tke_to_kd</text>
 </a>
 </g>
 </g>
 <!-- Node28&#45;&gt;Node49 -->
 <g id="edge25" class="edge"><title>Node28&#45;&gt;Node49</title>
-<path fill="none" stroke="midnightblue" d="M46.1044,-316.298C51.8079,-280.592 70.7341,-190.473 122,-138.5 124.633,-135.83 127.595,-133.431 130.755,-131.278"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="132.649,-134.224 139.489,-126.134 129.096,-128.193 132.649,-134.224"/>
+<path fill="none" stroke="midnightblue" d="M55.6289,-316.332C62.6528,-280.304 85.1853,-188.846 140,-138.5 143.194,-135.566 146.753,-132.973 150.529,-130.681"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="152.452,-133.624 159.663,-125.863 149.186,-127.433 152.452,-133.624"/>
 </g>
 <!-- Node51 -->
 <g id="node24" class="node"><title>Node51</title>
 <g id="a_node24"><a xlink:href="../../da/d52/namespacemom__intrinsic__functions.html#a8c2f5945631280be41cfa981515e63fc" target="_top" xlink:title="mom_intrinsic_functions\l::invcosh">
-<polygon fill="white" stroke="black" points="132,-49.5 132,-79.5 233,-79.5 233,-49.5 132,-49.5"/>
-<text text-anchor="start" x="140" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_intrinsic_functions</text>
-<text text-anchor="middle" x="182.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">::invcosh</text>
+<polygon fill="white" stroke="black" points="151,-49.5 151,-79.5 273,-79.5 273,-49.5 151,-49.5"/>
+<text text-anchor="start" x="159" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_intrinsic_functions</text>
+<text text-anchor="middle" x="212" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">::invcosh</text>
 </a>
 </g>
 </g>
 <!-- Node28&#45;&gt;Node51 -->
 <g id="edge27" class="edge"><title>Node28&#45;&gt;Node51</title>
-<path fill="none" stroke="midnightblue" d="M44.6514,-316.302C47.2301,-274.628 59.9261,-157.154 122,-89.5 123.335,-88.0449 124.768,-86.6716 126.28,-85.3758"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="128.334,-88.2097 134.399,-79.5225 124.241,-82.5314 128.334,-88.2097"/>
+<path fill="none" stroke="midnightblue" d="M54.0535,-316.373C57.7834,-274.373 73.9614,-155.107 140,-89.5 141.46,-88.0494 143.009,-86.6826 144.631,-85.3949"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="146.92,-88.0742 153.269,-79.5926 143.016,-82.2634 146.92,-88.0742"/>
 </g>
 <!-- Node52 -->
 <g id="node25" class="node"><title>Node52</title>
-<g id="a_node25"><a xlink:href="../../d1/d75/namespacemom__thickness__diffuse.html#aff6aa879773518e476ed0a603a1a301e" target="_top" xlink:title="mom_thickness_diffuse\l::vert_fill_ts">
-<polygon fill="white" stroke="black" points="133,-0.5 133,-30.5 232,-30.5 232,-0.5 133,-0.5"/>
-<text text-anchor="start" x="141" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_thickness_diffuse</text>
-<text text-anchor="middle" x="182.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::vert_fill_ts</text>
+<g id="a_node25"><a xlink:href="../../d1/d75/namespacemom__thickness__diffuse.html#aff6aa879773518e476ed0a603a1a301e" target="_top" xlink:title="Fills tracer values in massless layers with sensible values by diffusing vertically with a (small) co...">
+<polygon fill="white" stroke="black" points="152,-0.5 152,-30.5 272,-30.5 272,-0.5 152,-0.5"/>
+<text text-anchor="start" x="160" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_thickness_diffuse</text>
+<text text-anchor="middle" x="212" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::vert_fill_ts</text>
 </a>
 </g>
 </g>
 <!-- Node28&#45;&gt;Node52 -->
 <g id="edge28" class="edge"><title>Node28&#45;&gt;Node52</title>
-<path fill="none" stroke="midnightblue" d="M43.6612,-316.403C43.4215,-269.468 48.9246,-124.247 122,-40.5 123.165,-39.165 124.413,-37.8996 125.729,-36.7002"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="128.037,-39.3439 133.914,-30.5287 123.822,-33.7548 128.037,-39.3439"/>
+<path fill="none" stroke="midnightblue" d="M52.986,-316.175C53.7822,-268.573 62.6933,-121.613 140,-40.5 141.386,-39.0455 142.862,-37.6756 144.412,-36.3853"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="146.522,-39.1803 152.702,-30.5746 142.504,-33.448 146.522,-39.1803"/>
 </g>
 <!-- Node34 -->
 <g id="node7" class="node"><title>Node34</title>
 <g id="a_node7"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="mom_error_handler::\lmom_error">
-<polygon fill="white" stroke="black" points="448,-512.5 448,-542.5 541,-542.5 541,-512.5 448,-512.5"/>
-<text text-anchor="start" x="456" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="494.5" y="-519.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error</text>
+<polygon fill="white" stroke="black" points="517.5,-512.5 517.5,-542.5 623.5,-542.5 623.5,-512.5 517.5,-512.5"/>
+<text text-anchor="start" x="525.5" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="570.5" y="-519.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error</text>
 </a>
 </g>
 </g>
 <!-- Node33&#45;&gt;Node34 -->
 <g id="edge6" class="edge"><title>Node33&#45;&gt;Node34</title>
-<path fill="none" stroke="midnightblue" d="M385.578,-525.384C401.856,-525.703 420.432,-526.067 437.53,-526.403"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="437.884,-529.91 447.951,-526.607 438.022,-522.911 437.884,-529.91"/>
+<path fill="none" stroke="midnightblue" d="M447.396,-525.425C466.372,-525.747 487.809,-526.111 507.366,-526.444"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="507.34,-529.944 517.398,-526.614 507.459,-522.945 507.34,-529.944"/>
 </g>
 <!-- Node35 -->
 <g id="node8" class="node"><title>Node35</title>
 <g id="a_node8"><a xlink:href="../../d0/de6/namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="mom_error_handler::\lis_root_pe">
-<polygon fill="white" stroke="black" points="589,-294.5 589,-324.5 682,-324.5 682,-294.5 589,-294.5"/>
-<text text-anchor="start" x="597" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
-<text text-anchor="middle" x="635.5" y="-301.5" font-family="Helvetica,sans-Serif" font-size="10.00">is_root_pe</text>
+<polygon fill="white" stroke="black" points="677,-294.5 677,-324.5 783,-324.5 783,-294.5 677,-294.5"/>
+<text text-anchor="start" x="685" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_error_handler::</text>
+<text text-anchor="middle" x="730" y="-301.5" font-family="Helvetica,sans-Serif" font-size="10.00">is_root_pe</text>
 </a>
 </g>
 </g>
 <!-- Node34&#45;&gt;Node35 -->
 <g id="edge7" class="edge"><title>Node34&#45;&gt;Node35</title>
-<path fill="none" stroke="midnightblue" d="M541.272,-512.471C545.543,-509.909 549.554,-506.938 553,-503.5 601.074,-455.537 622.304,-374.94 630.327,-334.391"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="633.773,-335.004 632.171,-324.531 626.892,-333.717 633.773,-335.004"/>
+<path fill="none" stroke="midnightblue" d="M623.508,-514.923C629.865,-511.893 635.904,-508.141 641,-503.5 691.953,-457.094 715.355,-375.453 724.317,-334.463"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="727.78,-335.005 726.384,-324.502 720.925,-333.583 727.78,-335.005"/>
 </g>
 <!-- Node38 -->
 <g id="node11" class="node"><title>Node38</title>
 <g id="a_node11"><a xlink:href="../../d1/d01/namespacemom__eos.html#a204529f8434a0322314e6ce2a9762436" target="_top" xlink:title="Calls the appropriate subroutine to calculate density derivatives for 1&#45;D array inputs. ">
-<polygon fill="white" stroke="black" points="296,-458.5 296,-488.5 383,-488.5 383,-458.5 296,-458.5"/>
-<text text-anchor="start" x="304" y="-476.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos::calculate</text>
-<text text-anchor="middle" x="339.5" y="-465.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs</text>
+<polygon fill="white" stroke="black" points="340,-458.5 340,-488.5 444,-488.5 444,-458.5 340,-458.5"/>
+<text text-anchor="start" x="348" y="-476.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos::calculate</text>
+<text text-anchor="middle" x="392" y="-465.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs</text>
 </a>
 </g>
 </g>
 <!-- Node37&#45;&gt;Node38 -->
 <g id="edge10" class="edge"><title>Node37&#45;&gt;Node38</title>
-<path fill="none" stroke="midnightblue" d="M227.298,-390.637C232.853,-393.477 238.248,-396.755 243,-400.5 264.224,-417.228 257.656,-432.925 279,-449.5 281.472,-451.419 284.117,-453.206 286.869,-454.867"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="285.471,-458.09 295.936,-459.749 288.79,-451.926 285.471,-458.09"/>
+<path fill="none" stroke="midnightblue" d="M267.102,-390.624C273.079,-393.418 278.856,-396.687 284,-400.5 305.71,-416.592 298.189,-433.545 320,-449.5 323.367,-451.963 327.004,-454.186 330.792,-456.189"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="329.308,-459.359 339.843,-460.478 332.305,-453.033 329.308,-459.359"/>
 </g>
 <!-- Node42 -->
 <g id="node15" class="node"><title>Node42</title>
 <g id="a_node15"><a xlink:href="../../d8/d95/namespacemom__kappa__shear.html#a4d43a516e89feda04c134210558a7d0a" target="_top" xlink:title="mom_kappa_shear::calculate\l_projected_state">
-<polygon fill="white" stroke="black" points="279,-409.5 279,-439.5 400,-439.5 400,-409.5 279,-409.5"/>
-<text text-anchor="start" x="287" y="-427.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_kappa_shear::calculate</text>
-<text text-anchor="middle" x="339.5" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">_projected_state</text>
+<polygon fill="white" stroke="black" points="320,-409.5 320,-439.5 464,-439.5 464,-409.5 320,-409.5"/>
+<text text-anchor="start" x="328" y="-427.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_kappa_shear::calculate</text>
+<text text-anchor="middle" x="392" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">_projected_state</text>
 </a>
 </g>
 </g>
 <!-- Node37&#45;&gt;Node42 -->
 <g id="edge15" class="edge"><title>Node37&#45;&gt;Node42</title>
-<path fill="none" stroke="midnightblue" d="M231.27,-390.601C246.96,-395.562 264.566,-401.127 280.906,-406.293"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="280.298,-409.771 290.888,-409.448 282.408,-403.097 280.298,-409.771"/>
+<path fill="none" stroke="midnightblue" d="M267.858,-390.601C286.386,-395.702 307.242,-401.443 326.45,-406.73"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="325.753,-410.169 336.323,-409.448 327.61,-403.42 325.753,-410.169"/>
 </g>
 <!-- Node43 -->
 <g id="node16" class="node"><title>Node43</title>
 <g id="a_node16"><a xlink:href="../../d8/d95/namespacemom__kappa__shear.html#a69c584e62c72ad2b84a2338b6de82083" target="_top" xlink:title="mom_kappa_shear::find\l_kappa_tke">
-<polygon fill="white" stroke="black" points="288,-360.5 288,-390.5 391,-390.5 391,-360.5 288,-360.5"/>
-<text text-anchor="start" x="296" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_kappa_shear::find</text>
-<text text-anchor="middle" x="339.5" y="-367.5" font-family="Helvetica,sans-Serif" font-size="10.00">_kappa_tke</text>
+<polygon fill="white" stroke="black" points="331.5,-360.5 331.5,-390.5 452.5,-390.5 452.5,-360.5 331.5,-360.5"/>
+<text text-anchor="start" x="339.5" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_kappa_shear::find</text>
+<text text-anchor="middle" x="392" y="-367.5" font-family="Helvetica,sans-Serif" font-size="10.00">_kappa_tke</text>
 </a>
 </g>
 </g>
 <!-- Node37&#45;&gt;Node43 -->
 <g id="edge16" class="edge"><title>Node37&#45;&gt;Node43</title>
-<path fill="none" stroke="midnightblue" d="M243.427,-375.5C254.645,-375.5 266.382,-375.5 277.629,-375.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="277.791,-379 287.791,-375.5 277.791,-372 277.791,-379"/>
+<path fill="none" stroke="midnightblue" d="M284.118,-375.5C296.373,-375.5 309.101,-375.5 321.319,-375.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="321.44,-379 331.44,-375.5 321.439,-372 321.44,-379"/>
 </g>
 <!-- Node38&#45;&gt;Node34 -->
 <g id="edge14" class="edge"><title>Node38&#45;&gt;Node34</title>
-<path fill="none" stroke="midnightblue" d="M383.119,-488.542C401.115,-494.893 422.245,-502.351 441.174,-509.032"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="440.25,-512.417 450.844,-512.445 442.579,-505.816 440.25,-512.417"/>
+<path fill="none" stroke="midnightblue" d="M442.165,-488.542C463.401,-495.039 488.421,-502.694 510.636,-509.491"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="509.706,-512.866 520.293,-512.445 511.754,-506.173 509.706,-512.866"/>
 </g>
 <!-- Node39 -->
 <g id="node12" class="node"><title>Node39</title>
 <g id="a_node12"><a xlink:href="../../d5/de6/namespacemom__eos__linear.html#a73d8a625582247379092adf1aeeb55e0" target="_top" xlink:title="mom_eos_linear::calculate\l_density_derivs_linear">
-<polygon fill="white" stroke="black" points="439,-463.5 439,-493.5 550,-493.5 550,-463.5 439,-463.5"/>
-<text text-anchor="start" x="447" y="-481.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos_linear::calculate</text>
-<text text-anchor="middle" x="494.5" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs_linear</text>
+<polygon fill="white" stroke="black" points="504,-463.5 504,-493.5 637,-493.5 637,-463.5 504,-463.5"/>
+<text text-anchor="start" x="512" y="-481.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos_linear::calculate</text>
+<text text-anchor="middle" x="570.5" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs_linear</text>
 </a>
 </g>
 </g>
 <!-- Node38&#45;&gt;Node39 -->
 <g id="edge11" class="edge"><title>Node38&#45;&gt;Node39</title>
-<path fill="none" stroke="midnightblue" d="M383.119,-474.893C397.263,-475.355 413.343,-475.88 428.769,-476.385"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="428.676,-479.883 438.785,-476.712 428.905,-472.887 428.676,-479.883"/>
+<path fill="none" stroke="midnightblue" d="M444.051,-474.946C459.48,-475.383 476.766,-475.873 493.458,-476.346"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="493.657,-479.853 503.752,-476.637 493.856,-472.856 493.657,-479.853"/>
 </g>
 <!-- Node40 -->
 <g id="node13" class="node"><title>Node40</title>
 <g id="a_node13"><a xlink:href="../../dd/d6b/namespacemom__eos__unesco.html#af8666837abadea54c016bf59838f96cc" target="_top" xlink:title="mom_eos_unesco::calculate\l_density_derivs_unesco">
-<polygon fill="white" stroke="black" points="436,-414.5 436,-444.5 553,-444.5 553,-414.5 436,-414.5"/>
-<text text-anchor="start" x="444" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos_unesco::calculate</text>
-<text text-anchor="middle" x="494.5" y="-421.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs_unesco</text>
+<polygon fill="white" stroke="black" points="500,-414.5 500,-444.5 641,-444.5 641,-414.5 500,-414.5"/>
+<text text-anchor="start" x="508" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos_unesco::calculate</text>
+<text text-anchor="middle" x="570.5" y="-421.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs_unesco</text>
 </a>
 </g>
 </g>
 <!-- Node38&#45;&gt;Node40 -->
 <g id="edge12" class="edge"><title>Node38&#45;&gt;Node40</title>
-<path fill="none" stroke="midnightblue" d="M383.119,-461.244C398.057,-456.948 415.154,-452.031 431.36,-447.37"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="432.664,-450.637 441.307,-444.51 430.73,-443.91 432.664,-450.637"/>
+<path fill="none" stroke="midnightblue" d="M444.051,-460.773C461.311,-456.471 480.895,-451.588 499.371,-446.982"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="500.35,-450.346 509.206,-444.531 498.656,-443.554 500.35,-450.346"/>
 </g>
 <!-- Node41 -->
 <g id="node14" class="node"><title>Node41</title>
 <g id="a_node14"><a xlink:href="../../de/d76/namespacemom__eos__wright.html#ad7748e85ddacb33ad90ec3a9017e6e72" target="_top" xlink:title="mom_eos_wright::calculate\l_density_derivs_wright">
-<polygon fill="white" stroke="black" points="438,-365.5 438,-395.5 551,-395.5 551,-365.5 438,-365.5"/>
-<text text-anchor="start" x="446" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos_wright::calculate</text>
-<text text-anchor="middle" x="494.5" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs_wright</text>
+<polygon fill="white" stroke="black" points="502.5,-365.5 502.5,-395.5 638.5,-395.5 638.5,-365.5 502.5,-365.5"/>
+<text text-anchor="start" x="510.5" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_eos_wright::calculate</text>
+<text text-anchor="middle" x="570.5" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00">_density_derivs_wright</text>
 </a>
 </g>
 </g>
 <!-- Node38&#45;&gt;Node41 -->
 <g id="edge13" class="edge"><title>Node38&#45;&gt;Node41</title>
-<path fill="none" stroke="midnightblue" d="M383.193,-459.36C389.099,-456.539 394.886,-453.262 400,-449.5 420.353,-434.528 415.849,-420.743 436,-405.5 438.32,-403.745 440.781,-402.085 443.33,-400.518"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="445.219,-403.472 452.253,-395.548 441.813,-397.356 445.219,-403.472"/>
+<path fill="none" stroke="midnightblue" d="M444.324,-460.037C451.242,-457.129 458.009,-453.647 464,-449.5 484.775,-435.118 479.365,-420.082 500,-405.5 502.67,-403.613 505.498,-401.854 508.426,-400.216"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="510.102,-403.291 517.45,-395.658 506.946,-397.042 510.102,-403.291"/>
 </g>
 <!-- Node44&#45;&gt;Node35 -->
 <g id="edge18" class="edge"><title>Node44&#45;&gt;Node35</title>
-<path fill="none" stroke="midnightblue" d="M541.014,-324.296C553.134,-322.378 566.363,-320.284 578.955,-318.291"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="579.554,-321.74 588.884,-316.72 578.46,-314.826 579.554,-321.74"/>
+<path fill="none" stroke="midnightblue" d="M623.508,-324.235C637.279,-322.312 652.289,-320.215 666.552,-318.223"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="667.358,-321.644 676.778,-316.795 666.39,-314.712 667.358,-321.644"/>
 </g>
 <!-- Node45&#45;&gt;Node35 -->
 <g id="edge20" class="edge"><title>Node45&#45;&gt;Node35</title>
-<path fill="none" stroke="midnightblue" d="M386.115,-290.913C438.043,-294.799 522.882,-301.148 578.706,-305.325"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="578.545,-308.823 588.778,-306.079 579.067,-301.842 578.545,-308.823"/>
+<path fill="none" stroke="midnightblue" d="M445.131,-290.913C504.847,-294.823 602.644,-301.227 666.423,-305.403"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="666.539,-308.918 676.746,-306.079 666.996,-301.933 666.539,-308.918"/>
 </g>
 <!-- Node46&#45;&gt;Node35 -->
 <g id="edge22" class="edge"><title>Node46&#45;&gt;Node35</title>
-<path fill="none" stroke="midnightblue" d="M527.389,-258.642C547.078,-267.991 572.531,-280.076 593.683,-290.119"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="592.224,-293.301 602.759,-294.429 595.227,-286.978 592.224,-293.301"/>
+<path fill="none" stroke="midnightblue" d="M607.634,-258.642C630.243,-268.116 659.56,-280.401 683.716,-290.524"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="682.459,-293.792 693.034,-294.429 685.164,-287.336 682.459,-293.792"/>
 </g>
 <!-- Node50 -->
 <g id="node23" class="node"><title>Node50</title>
 <g id="a_node23"><a xlink:href="../../d3/d4b/namespacemom__set__diffusivity.html#ae1b3a63b8470de5a3d9ba9706376281b" target="_top" xlink:title="mom_set_diffusivity\l::set_density_ratios">
-<polygon fill="white" stroke="black" points="296.5,-98.5 296.5,-128.5 382.5,-128.5 382.5,-98.5 296.5,-98.5"/>
-<text text-anchor="start" x="304.5" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_set_diffusivity</text>
-<text text-anchor="middle" x="339.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">::set_density_ratios</text>
+<polygon fill="white" stroke="black" points="340,-98.5 340,-128.5 444,-128.5 444,-98.5 340,-98.5"/>
+<text text-anchor="start" x="348" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">mom_set_diffusivity</text>
+<text text-anchor="middle" x="392" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">::set_density_ratios</text>
 </a>
 </g>
 </g>
 <!-- Node49&#45;&gt;Node50 -->
 <g id="edge26" class="edge"><title>Node49&#45;&gt;Node50</title>
-<path fill="none" stroke="midnightblue" d="M225.854,-113.5C244.555,-113.5 266.719,-113.5 286.419,-113.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="286.465,-117 296.465,-113.5 286.465,-110 286.465,-117"/>
+<path fill="none" stroke="midnightblue" d="M264.008,-113.5C284.583,-113.5 308.493,-113.5 329.981,-113.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="329.985,-117 339.985,-113.5 329.985,-110 329.985,-117"/>
 </g>
 </g>
 </svg>

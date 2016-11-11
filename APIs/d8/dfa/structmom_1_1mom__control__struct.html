@@ -214,6 +214,9 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:a8b78ad039d8accc587e1632db96f8c50"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfa/structmom_1_1mom__control__struct.html#a8b78ad039d8accc587e1632db96f8c50">do_dynamics</a></td></tr>
 <tr class="memdesc:a8b78ad039d8accc587e1632db96f8c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">If false, does not call step_MOM_dyn_*. This is an undocumented run-time flag that is fragile.  <a href="#a8b78ad039d8accc587e1632db96f8c50">More...</a><br /></td></tr>
 <tr class="separator:a8b78ad039d8accc587e1632db96f8c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4d6f003dee79f4aae0bcf3559fed974"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfa/structmom_1_1mom__control__struct.html#ac4d6f003dee79f4aae0bcf3559fed974">offline_tracer_mode</a> = .false.</td></tr>
+<tr class="memdesc:ac4d6f003dee79f4aae0bcf3559fed974"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, <a class="el" href="../../da/d01/namespacemom.html#ada859fe9e7e841ea281dae323cc4f6ac" title="step_tracers is the main driver for running tracers offline in MOM6. This has been primarily develope...">step_tracers()</a> is called instead of step_MOM(). This is intended for running MOM6 in offline tracer mode.  <a href="#ac4d6f003dee79f4aae0bcf3559fed974">More...</a><br /></td></tr>
+<tr class="separator:ac4d6f003dee79f4aae0bcf3559fed974"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0ffc40dfa1896668a7f6a4ef184d23b"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfa/structmom_1_1mom__control__struct.html#aa0ffc40dfa1896668a7f6a4ef184d23b">dt</a></td></tr>
 <tr class="memdesc:aa0ffc40dfa1896668a7f6a4ef184d23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">(baroclinic) dynamics time step (seconds)  <a href="#aa0ffc40dfa1896668a7f6a4ef184d23b">More...</a><br /></td></tr>
 <tr class="separator:aa0ffc40dfa1896668a7f6a4ef184d23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -477,6 +480,10 @@ Public variables and constants</h2></td></tr>
 <tr class="separator:a4e2e591fd5dc78834077b0eb79fc705d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55f25816ae25747f053612e5c9807e6f"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfa/structmom_1_1mom__control__struct.html#a55f25816ae25747f053612e5c9807e6f">id_e_preale</a> = -1</td></tr>
 <tr class="separator:a55f25816ae25747f053612e5c9807e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ab6113993c9b2f3471de8f58a718c9"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfa/structmom_1_1mom__control__struct.html#a18ab6113993c9b2f3471de8f58a718c9">id_uhtr</a> = -1</td></tr>
+<tr class="separator:a18ab6113993c9b2f3471de8f58a718c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbded6b9e5d2f2c6bb881ee19211d43b"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfa/structmom_1_1mom__control__struct.html#abbded6b9e5d2f2c6bb881ee19211d43b">id_vhtr</a> = -1</td></tr>
+<tr class="separator:abbded6b9e5d2f2c6bb881ee19211d43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d0af6a54d5556053172230c22d3a3a9"><td class="memItemLeft" align="right" valign="top">type(mom_dyn_unsplit_cs), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfa/structmom_1_1mom__control__struct.html#a3d0af6a54d5556053172230c22d3a3a9">dyn_unsplit_csp</a> =&gt; NULL()</td></tr>
 <tr class="separator:a3d0af6a54d5556053172230c22d3a3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeca38d3d757e76a33e3fc24eeaa9e912"><td class="memItemLeft" align="right" valign="top">type(mom_dyn_unsplit_rk2_cs), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfa/structmom_1_1mom__control__struct.html#aeca38d3d757e76a33e3fc24eeaa9e912">dyn_unsplit_rk2_csp</a> =&gt; NULL()</td></tr>
@@ -497,8 +504,6 @@ Public variables and constants</h2></td></tr>
 <tr class="separator:ab40d39a5b4446372246cb055514db969"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ac3fdd39f7b29ccc1e388f6d8b18b41"><td class="memItemLeft" align="right" valign="top">type(varmix_cs), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfa/structmom_1_1mom__control__struct.html#a6ac3fdd39f7b29ccc1e388f6d8b18b41">varmix</a> =&gt; NULL()</td></tr>
 <tr class="separator:a6ac3fdd39f7b29ccc1e388f6d8b18b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa278667bf74cd0ed2491d0d7a564209"><td class="memItemLeft" align="right" valign="top">type(wave_speed_cs), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfa/structmom_1_1mom__control__struct.html#afa278667bf74cd0ed2491d0d7a564209">wave_speed_csp</a> =&gt; NULL()</td></tr>
-<tr class="separator:afa278667bf74cd0ed2491d0d7a564209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa93ae415aa3c314d8972efe135a703f8"><td class="memItemLeft" align="right" valign="top">type(tracer_registry_type), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfa/structmom_1_1mom__control__struct.html#aa93ae415aa3c314d8972efe135a703f8">tracer_reg</a> =&gt; NULL()</td></tr>
 <tr class="separator:aa93ae415aa3c314d8972efe135a703f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80073431d0fefcfdd02f4b3b027c2ccc"><td class="memItemLeft" align="right" valign="top">type(tracer_advect_cs), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfa/structmom_1_1mom__control__struct.html#a80073431d0fefcfdd02f4b3b027c2ccc">tracer_adv_csp</a> =&gt; NULL()</td></tr>
@@ -523,6 +528,8 @@ Public variables and constants</h2></td></tr>
 <tr class="separator:a2d5a6c9d7de318fba0b755ae35afc325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8bfca4726c8b3762f449bd3c01db8cb"><td class="memItemLeft" align="right" valign="top">type(ale_cs), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfa/structmom_1_1mom__control__struct.html#aa8bfca4726c8b3762f449bd3c01db8cb">ale_csp</a> =&gt; NULL()</td></tr>
 <tr class="separator:aa8bfca4726c8b3762f449bd3c01db8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87e8a4f63c309aef316b80272b9c75e1"><td class="memItemLeft" align="right" valign="top">type(offline_transport_cs), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfa/structmom_1_1mom__control__struct.html#a87e8a4f63c309aef316b80272b9c75e1">offline_csp</a> =&gt; NULL()</td></tr>
+<tr class="separator:a87e8a4f63c309aef316b80272b9c75e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec7ba051619e3bf352bc6570fde63dd3"><td class="memItemLeft" align="right" valign="top">type(group_pass_type)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfa/structmom_1_1mom__control__struct.html#aec7ba051619e3bf352bc6570fde63dd3">pass_tau_ustar_psurf</a></td></tr>
 <tr class="separator:aec7ba051619e3bf352bc6570fde63dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fa41c43732be2d7aa1137610897024c"><td class="memItemLeft" align="right" valign="top">type(group_pass_type)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfa/structmom_1_1mom__control__struct.html#a8fa41c43732be2d7aa1137610897024c">pass_h</a></td></tr>
@@ -545,7 +552,7 @@ Public variables and constants</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Control structure for this module. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00132">132</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00143">143</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 </div><h2 class="groupheader">Variables and constants</h2>
 <a id="acbd630d2c637e8a9b1c589ffd8a21a4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acbd630d2c637e8a9b1c589ffd8a21a4c">&sect;&nbsp;</a></span>adiabatic</h2>
@@ -561,8 +568,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, then no diapycnal mass fluxes, with no calls to routines to calculate or apply diapycnal fluxes. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00172">172</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordtype">logical</span> :: adiabatic<span class="comment">               !&lt; If true, then no diapycnal mass fluxes, with no calls</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00183">183</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordtype">logical</span> :: adiabatic<span class="comment">               !&lt; If true, then no diapycnal mass fluxes, with no calls</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="aedfeaf76e50745e9c9b2b83123a23f82"></a>
@@ -579,8 +586,8 @@ Public variables and constants</h2></td></tr>
 
 <p>structure containing pointers to accelerations, for derived diagnostics (e.g., energy budgets) </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00161">161</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordtype">type</span>(accel_diag_ptrs) :: adp<span class="comment">     !&lt; structure containing pointers to accelerations,</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00172">172</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordtype">type</span>(accel_diag_ptrs) :: adp<span class="comment">     !&lt; structure containing pointers to accelerations,</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="aa8bfca4726c8b3762f449bd3c01db8cb"></a>
@@ -595,8 +602,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00370">370</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  <span class="keywordtype">type</span>(ale_cs),                  <span class="keywordtype">pointer</span> :: ale_csp                =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00386">386</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  <span class="keywordtype">type</span>(ale_cs),                  <span class="keywordtype">pointer</span> :: ale_csp                =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a2d5a6c9d7de318fba0b755ae35afc325"></a>
@@ -611,8 +618,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00369">369</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  <span class="keywordtype">type</span>(ale_sponge_cs),           <span class="keywordtype">pointer</span> :: ale_sponge_csp         =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00385">385</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  <span class="keywordtype">type</span>(ale_sponge_cs),           <span class="keywordtype">pointer</span> :: ale_sponge_csp         =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a9649170319846f06ba7eb7609bfd39df"></a>
@@ -629,8 +636,8 @@ Public variables and constants</h2></td></tr>
 
 <p>time-averaged (ave over baroclinic time steps) sea surface height (meter) </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00145">145</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordtype">real</span> allocable_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: &amp;</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    ave_ssh<span class="comment">   !&lt; time-averaged (ave over baroclinic time steps) sea surface height (meter)</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00156">156</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">real</span> allocable_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: &amp;</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    ave_ssh<span class="comment">   !&lt; time-averaged (ave over baroclinic time steps) sea surface height (meter)</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ade2ba755a077383c8ac76291fb34113c"></a>
@@ -647,8 +654,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Maximum SSH before triggering bad value message. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00233">233</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordtype">real</span>    :: bad_val_ssh_max<span class="comment">         !&lt; Maximum SSH before triggering bad value message</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00246">246</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="keywordtype">real</span>    :: bad_val_ssh_max<span class="comment">         !&lt; Maximum SSH before triggering bad value message</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a014435f3d7febde23643937f8c854a20"></a>
@@ -665,8 +672,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Maximum SSS before triggering bad value message. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00236">236</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keywordtype">real</span>    :: bad_val_sss_max<span class="comment">         !&lt; Maximum SSS before triggering bad value message</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00249">249</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keywordtype">real</span>    :: bad_val_sss_max<span class="comment">         !&lt; Maximum SSS before triggering bad value message</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a679e6c1a7d2c6a618440980d26ce8dce"></a>
@@ -683,8 +690,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Maximum SST before triggering bad value message. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00234">234</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <span class="keywordtype">real</span>    :: bad_val_sst_max<span class="comment">         !&lt; Maximum SST before triggering bad value message</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00247">247</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keywordtype">real</span>    :: bad_val_sst_max<span class="comment">         !&lt; Maximum SST before triggering bad value message</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a7492ac306c080e3233cc155e7d3f905b"></a>
@@ -701,8 +708,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Minimum SST before triggering bad value message. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00235">235</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordtype">real</span>    :: bad_val_sst_min<span class="comment">         !&lt; Minimum SST before triggering bad value message</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00248">248</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keywordtype">real</span>    :: bad_val_sst_min<span class="comment">         !&lt; Minimum SST before triggering bad value message</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="aac4a90b39bc83321e104ad139063a1fe"></a>
@@ -719,8 +726,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, salt is added to keep salinity above a minimum value, and the deficit is reported. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00177">177</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordtype">logical</span> :: bound_salinity<span class="comment">          !&lt; If true, salt is added to keep salinity above</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00188">188</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordtype">logical</span> :: bound_salinity<span class="comment">          !&lt; If true, salt is added to keep salinity above</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ae3d7be467fdac90f8c4ed54bf5c00d5d"></a>
@@ -737,8 +744,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, a refined bulk mixed layer scheme is used with nkml sublayers and nkbl buffer layer. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00179">179</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordtype">logical</span> :: bulkmixedlayer<span class="comment">          !&lt; If true, a refined bulk mixed layer scheme is used</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00190">190</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordtype">logical</span> :: bulkmixedlayer<span class="comment">          !&lt; If true, a refined bulk mixed layer scheme is used</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a4afeec8c4b37a043d92aade401ff9f9c"></a>
@@ -755,8 +762,8 @@ Public variables and constants</h2></td></tr>
 
 <p>structure containing pointers continuity equation terms, for derived diagnostics (e.g., energy budgets) </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00163">163</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordtype">type</span>(cont_diag_ptrs)  :: cdp<span class="comment">     !&lt; structure containing pointers continuity equation</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00174">174</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keywordtype">type</span>(cont_diag_ptrs)  :: cdp<span class="comment">     !&lt; structure containing pointers continuity equation</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ab92479be5632f08df92ee28cc0d89904"></a>
@@ -773,8 +780,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, scan surface state for ridiculous values. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00232">232</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keywordtype">logical</span> :: check_bad_surface_vals<span class="comment">  !&lt; If true, scan surface state for ridiculous values.</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00245">245</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keywordtype">logical</span> :: check_bad_surface_vals<span class="comment">  !&lt; If true, scan surface state for ridiculous values.</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a2546b5ef81e24446eedaab7471775cc5"></a>
@@ -791,8 +798,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, write verbose checksums for debugging purposes. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00187">187</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordtype">logical</span> :: debug<span class="comment">                   !&lt; If true, write verbose checksums for debugging purposes.</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00198">198</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordtype">logical</span> :: debug<span class="comment">                   !&lt; If true, write verbose checksums for debugging purposes.</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a30b133d4e1163798e0a68bba72d9c78f"></a>
@@ -809,8 +816,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, turn on diagnostics useful for debugging truncations. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00188">188</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordtype">logical</span> :: debug_truncations<span class="comment">       !&lt; If true, turn on diagnostics useful for debugging truncations.</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00199">199</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordtype">logical</span> :: debug_truncations<span class="comment">       !&lt; If true, turn on diagnostics useful for debugging truncations.</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="abe48a9cf3ef6e92d4ee2088ea680a165"></a>
@@ -825,8 +832,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00353">353</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  <span class="keywordtype">type</span>(diabatic_cs),             <span class="keywordtype">pointer</span> :: diabatic_csp           =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00370">370</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  <span class="keywordtype">type</span>(diabatic_cs),             <span class="keywordtype">pointer</span> :: diabatic_csp           =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ab946757ec7ac61cc5e8b86db28f75b71"></a>
@@ -843,8 +850,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, apply diabatic and thermodynamic processes before time stepping the dynamics. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00181">181</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keywordtype">logical</span> :: diabatic_first<span class="comment">          !&lt; If true, apply diabatic and thermodynamic</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00192">192</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keywordtype">logical</span> :: diabatic_first<span class="comment">          !&lt; If true, apply diabatic and thermodynamic</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="aec5da80b0ebe462abb2f46072077a677"></a>
@@ -861,8 +868,8 @@ Public variables and constants</h2></td></tr>
 
 <p>structure to regulate diagnostic output timing </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00156">156</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl)       :: diag<span class="comment">    !&lt; structure to regulate diagnostic output timing</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00167">167</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl)       :: diag<span class="comment">    !&lt; structure to regulate diagnostic output timing</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a31b104f718046217c2d389ed6cc1a4f0"></a>
@@ -877,8 +884,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00365">365</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  <span class="keywordtype">type</span>(diag_to_z_cs),            <span class="keywordtype">pointer</span> :: diag_to_z_csp          =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00381">381</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <span class="keywordtype">type</span>(diag_to_z_cs),            <span class="keywordtype">pointer</span> :: diag_to_z_csp          =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a8bd90c3a06349959f8cae27a450ae434"></a>
@@ -893,8 +900,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00364">364</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  <span class="keywordtype">type</span>(diagnostics_cs),          <span class="keywordtype">pointer</span> :: diagnostics_csp        =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00380">380</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  <span class="keywordtype">type</span>(diagnostics_cs),          <span class="keywordtype">pointer</span> :: diagnostics_csp        =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a8b78ad039d8accc587e1632db96f8c50"></a>
@@ -911,8 +918,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If false, does not call step_MOM_dyn_*. This is an undocumented run-time flag that is fragile. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00193">193</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keywordtype">logical</span> :: do_dynamics<span class="comment">             !&lt; If false, does not call step_MOM_dyn_*. This is an</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00204">204</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordtype">logical</span> :: do_dynamics<span class="comment">             !&lt; If false, does not call step_MOM_dyn_*. This is an</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="aa0ffc40dfa1896668a7f6a4ef184d23b"></a>
@@ -929,8 +936,8 @@ Public variables and constants</h2></td></tr>
 
 <p>(baroclinic) dynamics time step (seconds) </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00196">196</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordtype">real</span>    :: dt<span class="comment">                      !&lt; (baroclinic) dynamics time step (seconds)</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00209">209</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="keywordtype">real</span>    :: dt<span class="comment">                      !&lt; (baroclinic) dynamics time step (seconds)</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a2ab46a5df0a650fd8f06f46a3d6245a5"></a>
@@ -947,8 +954,8 @@ Public variables and constants</h2></td></tr>
 
 <p>thermodynamics time step (seconds) </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00197">197</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordtype">real</span>    :: dt_therm<span class="comment">                !&lt; thermodynamics time step (seconds)</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00210">210</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keywordtype">real</span>    :: dt_therm<span class="comment">                !&lt; thermodynamics time step (seconds)</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a443ab4fea339590be6fadb8069cd0f33"></a>
@@ -965,8 +972,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The elapsed time since updating the tracers and applying diabatic processes (sec); may span multiple timesteps. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00200">200</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordtype">real</span>    :: dt_trans<span class="comment">                !&lt; The elapsed time since updating the tracers and</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00213">213</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keywordtype">real</span>    :: dt_trans<span class="comment">                !&lt; The elapsed time since updating the tracers and</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ae6167f203a12605da528d11efee9d884"></a>
@@ -983,8 +990,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The time interval in seconds between dynamic recalculation of the barotropic time step. If this is negative, it is never calculated, and if it is 0, it is calculated every step. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00207">207</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keywordtype">real</span> :: dtbt_reset_period<span class="comment">          !&lt; The time interval in seconds between dynamic</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00220">220</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordtype">real</span> :: dtbt_reset_period<span class="comment">          !&lt; The time interval in seconds between dynamic</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="aa19971be06a0a6315eaf1587942edaa9"></a>
@@ -999,8 +1006,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00350">350</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  <span class="keywordtype">type</span>(mom_dyn_legacy_split_cs), <span class="keywordtype">pointer</span> :: dyn_legacy_split_csp =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00367">367</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  <span class="keywordtype">type</span>(mom_dyn_legacy_split_cs), <span class="keywordtype">pointer</span> :: dyn_legacy_split_csp =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ac43561daef3db4d43ec7799647072094"></a>
@@ -1015,8 +1022,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00349">349</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  <span class="keywordtype">type</span>(mom_dyn_split_rk2_cs),    <span class="keywordtype">pointer</span> :: dyn_split_rk2_csp    =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00366">366</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  <span class="keywordtype">type</span>(mom_dyn_split_rk2_cs),    <span class="keywordtype">pointer</span> :: dyn_split_rk2_csp    =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a3d0af6a54d5556053172230c22d3a3a9"></a>
@@ -1031,8 +1038,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00347">347</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  <span class="keywordtype">type</span>(mom_dyn_unsplit_cs),      <span class="keywordtype">pointer</span> :: dyn_unsplit_csp      =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00364">364</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  <span class="keywordtype">type</span>(mom_dyn_unsplit_cs),      <span class="keywordtype">pointer</span> :: dyn_unsplit_csp      =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="aeca38d3d757e76a33e3fc24eeaa9e912"></a>
@@ -1047,8 +1054,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00348">348</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordtype">type</span>(mom_dyn_unsplit_rk2_cs),  <span class="keywordtype">pointer</span> :: dyn_unsplit_rk2_csp  =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00365">365</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  <span class="keywordtype">type</span>(mom_dyn_unsplit_rk2_cs),  <span class="keywordtype">pointer</span> :: dyn_unsplit_rk2_csp  =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ae53622b9110ca53e50562ee6fd8b51e4"></a>
@@ -1065,8 +1072,8 @@ Public variables and constants</h2></td></tr>
 
 <p>structure containing metrics and grid info </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00152">152</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">type</span>(ocean_grid_type) :: g<span class="comment">       !&lt; structure containing metrics and grid info</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00163">163</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordtype">type</span>(ocean_grid_type) :: g<span class="comment">       !&lt; structure containing metrics and grid info</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ab205c7b3f059710df49901a13d297d92"></a>
@@ -1083,8 +1090,8 @@ Public variables and constants</h2></td></tr>
 
 <p>structure containing vertical grid info </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00153">153</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordtype">type</span>(verticalgrid_type), <span class="keywordtype">pointer</span> :: gv =&gt; null() <span class="comment">!&lt; structure containing vertical grid info</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00164">164</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordtype">type</span>(verticalgrid_type), <span class="keywordtype">pointer</span> :: gv =&gt; null() <span class="comment">!&lt; structure containing vertical grid info</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a4955d6563a71b65749145656d7194674"></a>
@@ -1101,8 +1108,8 @@ Public variables and constants</h2></td></tr>
 
 <p>layer thickness (m or kg/m2 (H)) </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00133">133</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordtype">real</span> allocable_, <span class="keywordtype">dimension(NIMEM_,NJMEM_,NKMEM_)</span> :: &amp;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    h, &amp;      !&lt; layer thickness (m or kg/m2 (H))</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    t, &amp;      !&lt; potential temperature (degrees C)</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    s<span class="comment">         !&lt; salinity (ppt)</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00144">144</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">real</span> allocable_, <span class="keywordtype">dimension(NIMEM_,NJMEM_,NKMEM_)</span> :: &amp;</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    h, &amp;      !&lt; layer thickness (m or kg/m2 (H))</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    t, &amp;      !&lt; potential temperature (degrees C)</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    s<span class="comment">         !&lt; salinity (ppt)</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a89cc8335447212d841f70adb6d053ed7"></a>
@@ -1119,8 +1126,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic mixed layer thickness (meter) when bulk mixed layer is not used. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00219">219</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keywordtype">real</span> :: hmix<span class="comment">                       !&lt; Diagnostic mixed layer thickness (meter) when</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00232">232</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keywordtype">real</span> :: hmix<span class="comment">                       !&lt; Diagnostic mixed layer thickness (meter) when</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ae5a4f1d3c24bfe971530a1dc5db89a0d"></a>
@@ -1137,8 +1144,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Depth scale over which to average surface flow to feedback to the coupler/driver (m). bulk mixed layer is not used. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00221">221</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordtype">real</span> :: hmix_uv<span class="comment">                    !&lt; Depth scale over which to average surface flow to</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00234">234</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <span class="keywordtype">real</span> :: hmix_uv<span class="comment">                    !&lt; Depth scale over which to average surface flow to</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ad5fbeeb6e0ba13c72125bd1a3c0fc7e1"></a>
@@ -1155,8 +1162,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A file into which the initial conditions are written in a new run if SAVE_INITIAL_CONDS is true. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00228">228</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keywordtype">character(len=120)</span> :: ic_file<span class="comment">      !&lt; A file into which the initial conditions are</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00241">241</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keywordtype">character(len=120)</span> :: ic_file<span class="comment">      !&lt; A file into which the initial conditions are</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a55f25816ae25747f053612e5c9807e6f"></a>
@@ -1171,8 +1178,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00344">344</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  <span class="keywordtype">integer</span> :: id_e_preale = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00357">357</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  <span class="keywordtype">integer</span> :: id_e_preale = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a3babfe26eacb863c86fa63c37ffccb30"></a>
@@ -1187,8 +1194,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00338">338</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  <span class="keywordtype">integer</span> :: id_e_predia = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00351">351</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  <span class="keywordtype">integer</span> :: id_e_predia = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="aaeb0bc703b310969053bb88ee35c029e"></a>
@@ -1203,8 +1210,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00293">293</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  <span class="keywordtype">integer</span> :: id_fraz         = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00306">306</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  <span class="keywordtype">integer</span> :: id_fraz         = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="af08521d42984daa2df8f13feed58e457"></a>
@@ -1219,8 +1226,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00271">271</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="keywordtype">integer</span> :: id_h  = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00284">284</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <span class="keywordtype">integer</span> :: id_h  = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="adc36f4b4192c0895e676896370ea8e1c"></a>
@@ -1235,8 +1242,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00341">341</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  <span class="keywordtype">integer</span> :: id_h_preale = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00354">354</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  <span class="keywordtype">integer</span> :: id_h_preale = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a99fb9d9d6064c66908fe0ab31333be55"></a>
@@ -1251,8 +1258,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00335">335</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  <span class="keywordtype">integer</span> :: id_h_predia = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00348">348</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordtype">integer</span> :: id_h_predia = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="af4a7f7b04b1a17cdf18ea3646951859e"></a>
@@ -1267,8 +1274,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00295">295</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  <span class="keywordtype">integer</span> :: id_heat_pme     = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00308">308</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <span class="keywordtype">integer</span> :: id_heat_pme     = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a8e896f4c95d5b32e6a6dc482b9db7004"></a>
@@ -1283,8 +1290,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00296">296</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  <span class="keywordtype">integer</span> :: id_intern_heat  = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00309">309</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  <span class="keywordtype">integer</span> :: id_intern_heat  = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a4334934f19fe67f456c02903a89f0c33"></a>
@@ -1299,8 +1306,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00273">273</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="keywordtype">integer</span> :: id_s  = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00286">286</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="keywordtype">integer</span> :: id_s  = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a47336a8b27679f81ea9aef45c0f6bc9e"></a>
@@ -1315,8 +1322,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00322">322</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  <span class="keywordtype">integer</span> :: id_s_advection_xy    = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00335">335</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  <span class="keywordtype">integer</span> :: id_s_advection_xy    = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a1599658d86c89853801557e0e502db8f"></a>
@@ -1331,8 +1338,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00323">323</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  <span class="keywordtype">integer</span> :: id_s_advection_xy_2d = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00336">336</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  <span class="keywordtype">integer</span> :: id_s_advection_xy_2d = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a4e2e591fd5dc78834077b0eb79fc705d"></a>
@@ -1347,8 +1354,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00343">343</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  <span class="keywordtype">integer</span> :: id_s_preale = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00356">356</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  <span class="keywordtype">integer</span> :: id_s_preale = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a5b9240f2a81ed08c4a39a1727f804491"></a>
@@ -1363,8 +1370,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00337">337</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  <span class="keywordtype">integer</span> :: id_s_predia = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00350">350</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  <span class="keywordtype">integer</span> :: id_s_predia = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a514544bb3dca8fe9af013b49a4cc5fa3"></a>
@@ -1379,8 +1386,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00324">324</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  <span class="keywordtype">integer</span> :: id_s_tendency        = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00337">337</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  <span class="keywordtype">integer</span> :: id_s_tendency        = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a27451160da97e79ec54c2a377db4af5b"></a>
@@ -1395,8 +1402,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00330">330</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keywordtype">integer</span> :: id_s_vardec = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00343">343</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  <span class="keywordtype">integer</span> :: id_s_vardec = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a18527f0d3c5a25bf5fe0b53a0cd8893d"></a>
@@ -1411,8 +1418,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00303">303</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keywordtype">integer</span> :: id_sadx      = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00316">316</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  <span class="keywordtype">integer</span> :: id_sadx      = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a9614be9b4b44cf87b015a2264fdd9bf0"></a>
@@ -1427,8 +1434,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00311">311</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  <span class="keywordtype">integer</span> :: id_sadx_2d   = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00324">324</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  <span class="keywordtype">integer</span> :: id_sadx_2d   = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="adb3eb0aeeca3951f6a557e72fb1ba70f"></a>
@@ -1443,8 +1450,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00304">304</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  <span class="keywordtype">integer</span> :: id_sady      = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00317">317</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  <span class="keywordtype">integer</span> :: id_sady      = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="aea40b36c26b8a7ee7af11211d826e006"></a>
@@ -1459,8 +1466,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00312">312</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  <span class="keywordtype">integer</span> :: id_sady_2d   = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00325">325</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  <span class="keywordtype">integer</span> :: id_sady_2d   = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ab1ebc3e061f1fc45479507feebecbda0"></a>
@@ -1475,8 +1482,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00294">294</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  <span class="keywordtype">integer</span> :: id_salt_deficit = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00307">307</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <span class="keywordtype">integer</span> :: id_salt_deficit = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a818401a059b841a4f7eb7a18a397809c"></a>
@@ -1491,8 +1498,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00305">305</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keywordtype">integer</span> :: id_sdiffx    = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00318">318</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  <span class="keywordtype">integer</span> :: id_sdiffx    = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a0d6c0c8ca034cc629e14122ccefa704e"></a>
@@ -1507,8 +1514,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00313">313</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  <span class="keywordtype">integer</span> :: id_sdiffx_2d = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00326">326</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  <span class="keywordtype">integer</span> :: id_sdiffx_2d = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a8dd8308ac5b89cb3c03fec837d0ff773"></a>
@@ -1523,8 +1530,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00306">306</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  <span class="keywordtype">integer</span> :: id_sdiffy    = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00319">319</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  <span class="keywordtype">integer</span> :: id_sdiffy    = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a21b9343725f93654cb8eb09185bb156e"></a>
@@ -1539,8 +1546,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00314">314</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  <span class="keywordtype">integer</span> :: id_sdiffy_2d = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00327">327</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  <span class="keywordtype">integer</span> :: id_sdiffy_2d = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a3497a4c651079f7eccd8e8bde6ae2757"></a>
@@ -1555,8 +1562,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00325">325</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  <span class="keywordtype">integer</span> :: id_sh_tendency       = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00338">338</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  <span class="keywordtype">integer</span> :: id_sh_tendency       = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a65c4efc39509808712c572c68cfd4025"></a>
@@ -1571,8 +1578,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00326">326</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  <span class="keywordtype">integer</span> :: id_sh_tendency_2d    = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00339">339</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  <span class="keywordtype">integer</span> :: id_sh_tendency_2d    = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a89741d3d98b97489e4647958d8a56b40"></a>
@@ -1587,8 +1594,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00290">290</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="keywordtype">integer</span> :: id_sob      = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00303">303</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keywordtype">integer</span> :: id_sob      = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ae4497cbfc48ee63869646586ec8b012b"></a>
@@ -1603,8 +1610,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00287">287</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <span class="keywordtype">integer</span> :: id_speed    = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00300">300</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  <span class="keywordtype">integer</span> :: id_speed    = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a44e1a20170007d993d8dc615a2384573"></a>
@@ -1619,8 +1626,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00279">279</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="keywordtype">integer</span> :: id_ssh      = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00292">292</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keywordtype">integer</span> :: id_ssh      = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a528e7469b85e9799819c2e14a3b0772e"></a>
@@ -1635,8 +1642,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00280">280</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="keywordtype">integer</span> :: id_ssh_ga   = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00293">293</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  <span class="keywordtype">integer</span> :: id_ssh_ga   = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a430edc856635b70b85a25eb72da5789c"></a>
@@ -1651,8 +1658,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00288">288</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  <span class="keywordtype">integer</span> :: id_ssh_inst = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00301">301</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  <span class="keywordtype">integer</span> :: id_ssh_inst = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a3af4401c829bdb8c38cb89091d75ef57"></a>
@@ -1667,8 +1674,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00283">283</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="keywordtype">integer</span> :: id_sss      = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00296">296</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  <span class="keywordtype">integer</span> :: id_sss      = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ae2aa3bb83a55b982384b7795ce78dd62"></a>
@@ -1683,8 +1690,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00284">284</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <span class="keywordtype">integer</span> :: id_sss_sq   = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00297">297</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="keywordtype">integer</span> :: id_sss_sq   = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="acb45ebbde8308121bc2030986ce5da85"></a>
@@ -1699,8 +1706,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00281">281</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  <span class="keywordtype">integer</span> :: id_sst      = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00294">294</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  <span class="keywordtype">integer</span> :: id_sst      = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a1b0541fadb4fb9236ff0fa16424c45e9"></a>
@@ -1715,8 +1722,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00282">282</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  <span class="keywordtype">integer</span> :: id_sst_sq   = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00295">295</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  <span class="keywordtype">integer</span> :: id_sst_sq   = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ae2a97b3622414bc9583b0ff62fac88dc"></a>
@@ -1731,8 +1738,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00285">285</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <span class="keywordtype">integer</span> :: id_ssu      = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00298">298</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <span class="keywordtype">integer</span> :: id_ssu      = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a0aff00166ac35ed9f730bb8a51851d3a"></a>
@@ -1747,8 +1754,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00286">286</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="keywordtype">integer</span> :: id_ssv      = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00299">299</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  <span class="keywordtype">integer</span> :: id_ssv      = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="af730b11b4870ba62bfca7a88fa9c24f2"></a>
@@ -1763,8 +1770,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00272">272</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="keywordtype">integer</span> :: id_t  = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00285">285</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <span class="keywordtype">integer</span> :: id_t  = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a14e5d7ba9ed559af028645345f4b10ab"></a>
@@ -1779,8 +1786,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00317">317</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  <span class="keywordtype">integer</span> :: id_t_advection_xy    = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00330">330</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keywordtype">integer</span> :: id_t_advection_xy    = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a85483e61efba24f68aa7123f6c4d501d"></a>
@@ -1795,8 +1802,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00318">318</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  <span class="keywordtype">integer</span> :: id_t_advection_xy_2d = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00331">331</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="keywordtype">integer</span> :: id_t_advection_xy_2d = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a2eb87aaef6aa084c463cb8ab938ac76c"></a>
@@ -1811,8 +1818,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00342">342</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  <span class="keywordtype">integer</span> :: id_t_preale = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00355">355</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  <span class="keywordtype">integer</span> :: id_t_preale = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ab67a70b61cd01c470866bfb8fae1202b"></a>
@@ -1827,8 +1834,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00336">336</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  <span class="keywordtype">integer</span> :: id_t_predia = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00349">349</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  <span class="keywordtype">integer</span> :: id_t_predia = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="af061283abebd9a860b0fca21756ebce0"></a>
@@ -1843,8 +1850,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00319">319</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  <span class="keywordtype">integer</span> :: id_t_tendency        = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00332">332</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordtype">integer</span> :: id_t_tendency        = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="af3b7ece10a158a3eac624a1eb4778eed"></a>
@@ -1859,8 +1866,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00329">329</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="keywordtype">integer</span> :: id_t_vardec = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00342">342</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  <span class="keywordtype">integer</span> :: id_t_vardec = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ac361581489e2f46e05a7a4dd86f6574e"></a>
@@ -1875,8 +1882,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00299">299</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  <span class="keywordtype">integer</span> :: id_tadx      = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00312">312</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  <span class="keywordtype">integer</span> :: id_tadx      = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ad877e3b5d34fe3cde75e9b97e3ef3c27"></a>
@@ -1891,8 +1898,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00307">307</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <span class="keywordtype">integer</span> :: id_tadx_2d   = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00320">320</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  <span class="keywordtype">integer</span> :: id_tadx_2d   = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a1e7d676198f35f1a6fa3fb70b3d504f5"></a>
@@ -1907,8 +1914,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00300">300</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  <span class="keywordtype">integer</span> :: id_tady      = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00313">313</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  <span class="keywordtype">integer</span> :: id_tady      = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="af1cf2f5a962cad5245b2cd7aaac5d949"></a>
@@ -1923,8 +1930,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00308">308</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <span class="keywordtype">integer</span> :: id_tady_2d   = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00321">321</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  <span class="keywordtype">integer</span> :: id_tady_2d   = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a6e082fd2b5997ce5bd18ab8be54e0b6d"></a>
@@ -1939,8 +1946,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00301">301</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  <span class="keywordtype">integer</span> :: id_tdiffx    = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00314">314</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  <span class="keywordtype">integer</span> :: id_tdiffx    = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="aafc518eceb738384780642d62b364e0f"></a>
@@ -1955,8 +1962,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00309">309</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  <span class="keywordtype">integer</span> :: id_tdiffx_2d = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00322">322</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  <span class="keywordtype">integer</span> :: id_tdiffx_2d = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a67bae62072cad1abcd72c20268b6a1d7"></a>
@@ -1971,8 +1978,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00302">302</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <span class="keywordtype">integer</span> :: id_tdiffy    = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00315">315</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  <span class="keywordtype">integer</span> :: id_tdiffy    = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a85cc8acb012758363f779de911645cc2"></a>
@@ -1987,8 +1994,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00310">310</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  <span class="keywordtype">integer</span> :: id_tdiffy_2d = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00323">323</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  <span class="keywordtype">integer</span> :: id_tdiffy_2d = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a6de5447e3c16ba90c1dae6bee7bc12ae"></a>
@@ -2003,8 +2010,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00320">320</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  <span class="keywordtype">integer</span> :: id_th_tendency       = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00333">333</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <span class="keywordtype">integer</span> :: id_th_tendency       = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ad047cfcf0490e2132be9dbe15b448ec5"></a>
@@ -2019,8 +2026,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00321">321</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  <span class="keywordtype">integer</span> :: id_th_tendency_2d    = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00334">334</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  <span class="keywordtype">integer</span> :: id_th_tendency_2d    = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a4ae2437fce730d9ba68767f7958ee1ea"></a>
@@ -2035,8 +2042,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00289">289</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <span class="keywordtype">integer</span> :: id_tob      = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00302">302</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <span class="keywordtype">integer</span> :: id_tob      = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a33750b0fa0bcd2a2492c8f220741eff5"></a>
@@ -2051,8 +2058,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00269">269</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="keywordtype">integer</span> :: id_u  = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00282">282</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  <span class="keywordtype">integer</span> :: id_u  = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="acb5d070ae3069f3c16e775b853daf857"></a>
@@ -2067,8 +2074,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00339">339</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  <span class="keywordtype">integer</span> :: id_u_preale = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00352">352</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;  <span class="keywordtype">integer</span> :: id_u_preale = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ac40eb0f8cae8e142351a4ca35d78813f"></a>
@@ -2083,8 +2090,24 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00333">333</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <span class="keywordtype">integer</span> :: id_u_predia = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00346">346</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  <span class="keywordtype">integer</span> :: id_u_predia = -1</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a18ab6113993c9b2f3471de8f58a718c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18ab6113993c9b2f3471de8f58a718c9">&sect;&nbsp;</a></span>id_uhtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer mom::mom_control_struct::id_uhtr = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00360">360</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  <span class="keywordtype">integer</span> :: id_uhtr = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a60a7db0210bcb3fe05b9a610c40c6670"></a>
@@ -2099,8 +2122,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00270">270</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <span class="keywordtype">integer</span> :: id_v  = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00283">283</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="keywordtype">integer</span> :: id_v  = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a549a3dfa477aeccff6d38b3502a18ee0"></a>
@@ -2115,8 +2138,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00340">340</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  <span class="keywordtype">integer</span> :: id_v_preale = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00353">353</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  <span class="keywordtype">integer</span> :: id_v_preale = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a04dc78d977168157dc436dd819adc616"></a>
@@ -2131,8 +2154,24 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00334">334</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  <span class="keywordtype">integer</span> :: id_v_predia = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00347">347</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  <span class="keywordtype">integer</span> :: id_v_predia = -1</div></div><!-- fragment -->
+</div>
+</div>
+<a id="abbded6b9e5d2f2c6bb881ee19211d43b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbded6b9e5d2f2c6bb881ee19211d43b">&sect;&nbsp;</a></span>id_vhtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer mom::mom_control_struct::id_vhtr = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00361">361</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  <span class="keywordtype">integer</span> :: id_vhtr = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a3091324283abcded41bb87f06b2e7e4a"></a>
@@ -2147,8 +2186,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00278">278</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <span class="keywordtype">integer</span> :: id_volo     = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00291">291</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="keywordtype">integer</span> :: id_volo     = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a2420076dc385cdf0eefc93e5d18ab1e3"></a>
@@ -2163,8 +2202,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00276">276</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="keywordtype">integer</span> :: id_zos      = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00289">289</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <span class="keywordtype">integer</span> :: id_zos      = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a3cbbdf0831c308c66b886c72e35b84fb"></a>
@@ -2179,8 +2218,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00277">277</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="keywordtype">integer</span> :: id_zossq    = -1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00290">290</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="keywordtype">integer</span> :: id_zossq    = -1</div></div><!-- fragment -->
 </div>
 </div>
 <a id="aa846ef099ea4520d282c70ece10e2ac8"></a>
@@ -2197,8 +2236,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, linearly interpolate surface pressure over the coupling time step, using specified value at the end of the coupling step. False by default. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00212">212</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keywordtype">logical</span> :: interp_p_surf<span class="comment">           !&lt; If true, linearly interpolate surface pressure</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00225">225</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordtype">logical</span> :: interp_p_surf<span class="comment">           !&lt; If true, linearly interpolate surface pressure</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a8f6576d05d8aec6debb9271a9ce5c9dd"></a>
@@ -2215,8 +2254,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the legacy split time stepping code with all the options that were available in the predecessor isopycnal model "GOLD". </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00167">167</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordtype">logical</span> :: legacy_split<span class="comment">            !&lt; If true, use the legacy split time stepping</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00178">178</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordtype">logical</span> :: legacy_split<span class="comment">            !&lt; If true, use the legacy split time stepping</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a1cf898780b418f2f6e8c1e020df13101"></a>
@@ -2233,8 +2272,8 @@ Public variables and constants</h2></td></tr>
 
 <p>structure containing fields related to the Mesoscale Eddy Kinetic Energy </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00159">159</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">type</span>(meke_type), <span class="keywordtype">pointer</span> :: meke =&gt; null()  <span class="comment">!&lt;  structure containing fields</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00170">170</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordtype">type</span>(meke_type), <span class="keywordtype">pointer</span> :: meke =&gt; null()  <span class="comment">!&lt;  structure containing fields</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ab40d39a5b4446372246cb055514db969"></a>
@@ -2249,8 +2288,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00356">356</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  <span class="keywordtype">type</span>(meke_cs),                 <span class="keywordtype">pointer</span> :: meke_csp               =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00373">373</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  <span class="keywordtype">type</span>(meke_cs),                 <span class="keywordtype">pointer</span> :: meke_csp               =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a30995d111bd1d2f3b773b0d9946d2c00"></a>
@@ -2267,8 +2306,8 @@ Public variables and constants</h2></td></tr>
 
 <p>missing data value for masked fields </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00224">224</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordtype">real</span> :: missing=-1.0e34            <span class="comment">!&lt; missing data value for masked fields</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00237">237</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keywordtype">real</span> :: missing=-1.0e34            <span class="comment">!&lt; missing data value for masked fields</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a32562ff6712350e219ce59fdb54f635d"></a>
@@ -2285,8 +2324,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use submesoscale mixed layer restratifying scheme. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00185">185</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordtype">logical</span> :: mixedlayer_restrat<span class="comment">      !&lt; If true, use submesoscale mixed layer restratifying scheme.</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00196">196</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordtype">logical</span> :: mixedlayer_restrat<span class="comment">      !&lt; If true, use submesoscale mixed layer restratifying scheme.</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="abad22a3f431bfb96a1e3826a080c4543"></a>
@@ -2301,8 +2340,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00355">355</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  <span class="keywordtype">type</span>(mixedlayer_restrat_cs),   <span class="keywordtype">pointer</span> :: mixedlayer_restrat_csp =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00372">372</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <span class="keywordtype">type</span>(mixedlayer_restrat_cs),   <span class="keywordtype">pointer</span> :: mixedlayer_restrat_csp =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ae409786ac548ccb2620a37b3249b2d60"></a>
@@ -2317,8 +2356,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00362">362</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  <span class="keywordtype">type</span>(<a class="code" href="../../d6/d3e/structmom__neutral__diffusion_1_1neutral__diffusion__cs.html">neutral_diffusion_cs</a>),    <span class="keywordtype">pointer</span> :: neutral_diffusion_csp  =&gt; null()</div><div class="ttc" id="structmom__neutral__diffusion_1_1neutral__diffusion__cs_html"><div class="ttname"><a href="../../d6/d3e/structmom__neutral__diffusion_1_1neutral__diffusion__cs.html">mom_neutral_diffusion::neutral_diffusion_cs</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/da4/MOM__neutral__diffusion_8F90_source.html#l00030">MOM_neutral_diffusion.F90:30</a></div></div>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00378">378</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  <span class="keywordtype">type</span>(<a class="code" href="../../d6/d3e/structmom__neutral__diffusion_1_1neutral__diffusion__cs.html">neutral_diffusion_cs</a>),    <span class="keywordtype">pointer</span> :: neutral_diffusion_csp  =&gt; null()</div><div class="ttc" id="structmom__neutral__diffusion_1_1neutral__diffusion__cs_html"><div class="ttname"><a href="../../d6/d3e/structmom__neutral__diffusion_1_1neutral__diffusion__cs.html">mom_neutral_diffusion::neutral_diffusion_cs</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/da4/MOM__neutral__diffusion_8F90_source.html#l00030">MOM_neutral_diffusion.F90:30</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2336,8 +2375,8 @@ Public variables and constants</h2></td></tr>
 
 <p>number u,v truncations since last call to write_energy </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00231">231</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="keywordtype">integer</span> :: ntrunc<span class="comment">                  !&lt; number u,v truncations since last call to write_energy</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00244">244</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="keywordtype">integer</span> :: ntrunc<span class="comment">                  !&lt; number u,v truncations since last call to write_energy</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a1b73745290b8a8ce3fa292da754f2ddf"></a>
@@ -2352,8 +2391,42 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00367">367</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  <span class="keywordtype">type</span>(ocean_obc_type),          <span class="keywordtype">pointer</span> :: obc                    =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00383">383</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  <span class="keywordtype">type</span>(ocean_obc_type),          <span class="keywordtype">pointer</span> :: obc                    =&gt; null()</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a87e8a4f63c309aef316b80272b9c75e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87e8a4f63c309aef316b80272b9c75e1">&sect;&nbsp;</a></span>offline_csp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">type(offline_transport_cs), pointer mom::mom_control_struct::offline_csp =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00387">387</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  <span class="keywordtype">type</span>(offline_transport_cs),    <span class="keywordtype">pointer</span> :: offline_csp             =&gt; null()</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ac4d6f003dee79f4aae0bcf3559fed974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4d6f003dee79f4aae0bcf3559fed974">&sect;&nbsp;</a></span>offline_tracer_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">logical mom::mom_control_struct::offline_tracer_mode = .false.</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true, <a class="el" href="../../da/d01/namespacemom.html#ada859fe9e7e841ea281dae323cc4f6ac" title="step_tracers is the main driver for running tracers offline in MOM6. This has been primarily develope...">step_tracers()</a> is called instead of step_MOM(). This is intended for running MOM6 in offline tracer mode. </p>
+
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00206">206</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordtype">logical</span> :: offline_tracer_mode = .false.</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a2aa77f9fcb52d3e619ecd053c8f45d0a"></a>
@@ -2370,7 +2443,7 @@ Public variables and constants</h2></td></tr>
 
 <p>surface pressure (Pa) at start of step_MOM_dyn_... </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00238">238</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00251">251</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -2388,7 +2461,7 @@ Public variables and constants</h2></td></tr>
 
 <p>surface pressure (Pa) at end of step_MOM_dyn_... </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00238">238</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00251">251</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -2406,8 +2479,8 @@ Public variables and constants</h2></td></tr>
 
 <p>surface pressure (Pa) at end previous call to step_MOM </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00238">238</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    p_surf_prev  =&gt; null(), &amp; <span class="comment">!&lt; surface pressure (Pa) at end  previous call to step_MOM</span></div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    p_surf_begin =&gt; null(), &amp; <span class="comment">!&lt; surface pressure (Pa) at start of step_MOM_dyn_...</span></div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    p_surf_end   =&gt; null()    <span class="comment">!&lt; surface pressure (Pa) at end   of step_MOM_dyn_...</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00251">251</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    p_surf_prev  =&gt; null(), &amp; <span class="comment">!&lt; surface pressure (Pa) at end  previous call to step_MOM</span></div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    p_surf_begin =&gt; null(), &amp; <span class="comment">!&lt; surface pressure (Pa) at start of step_MOM_dyn_...</span></div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    p_surf_end   =&gt; null()    <span class="comment">!&lt; surface pressure (Pa) at end   of step_MOM_dyn_...</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a8ae9343f18bba2d1e5c67762cc7ae21e"></a>
@@ -2424,8 +2497,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, p_surf_prev has been properly set from a previous time-step or the ocean restart file. This is only valid when interp_p_surf is true. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00215">215</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <span class="keywordtype">logical</span> :: p_surf_prev_set<span class="comment">         !&lt; If true, p_surf_prev has been properly set from</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00228">228</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keywordtype">logical</span> :: p_surf_prev_set<span class="comment">         !&lt; If true, p_surf_prev has been properly set from</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a9d2b21a7242bb38f34c0748b4690a2d2"></a>
@@ -2440,8 +2513,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00376">376</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_bbl_thick_kv_bbl</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00393">393</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_bbl_thick_kv_bbl</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a8fa41c43732be2d7aa1137610897024c"></a>
@@ -2456,8 +2529,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00374">374</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_h</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00391">391</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_h</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ad0dcbade4be2764e14b59fc755515587"></a>
@@ -2472,8 +2545,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00379">379</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_kd_kv_turb</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00396">396</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_kd_kv_turb</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a4ee5e62b822f4bde909dc62863e188a5"></a>
@@ -2488,8 +2561,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00375">375</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_ray</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00392">392</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_ray</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a629cf51811d120687e369ce7531b68f0"></a>
@@ -2504,8 +2577,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00381">381</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_ssh</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00398">398</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_ssh</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ac872d8e0b0a0a4c711168374a91e8d7d"></a>
@@ -2520,8 +2593,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00378">378</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_t_s</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00395">395</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_t_s</div></div><!-- fragment -->
 </div>
 </div>
 <a id="abe10a3edf39e56d63220e7b692f42c26"></a>
@@ -2536,8 +2609,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00377">377</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_t_s_h</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00394">394</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_t_s_h</div></div><!-- fragment -->
 </div>
 </div>
 <a id="aec7ba051619e3bf352bc6570fde63dd3"></a>
@@ -2552,8 +2625,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00373">373</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_tau_ustar_psurf</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00390">390</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_tau_ustar_psurf</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a687195fc70a54cb221455b2a6a181146"></a>
@@ -2568,8 +2641,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00380">380</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_uv_t_s_h</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00397">397</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_uv_t_s_h</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a0f179d8c29757e7fc6e532b581821c1c"></a>
@@ -2586,8 +2659,8 @@ Public variables and constants</h2></td></tr>
 
 <p>relative time (sec) since start of current execution </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00206">206</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordtype">real</span> :: rel_time = 0.0<span class="comment">             !&lt; relative time (sec) since start of current execution</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00219">219</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keywordtype">real</span> :: rel_time = 0.0<span class="comment">             !&lt; relative time (sec) since start of current execution</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a528b4a0582ec84748965cb97d1b97559"></a>
@@ -2602,8 +2675,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00366">366</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  <span class="keywordtype">type</span>(mom_restart_cs),          <span class="keywordtype">pointer</span> :: restart_csp            =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00382">382</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  <span class="keywordtype">type</span>(mom_restart_cs),          <span class="keywordtype">pointer</span> :: restart_csp            =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="abc18dd67e93bd4af0387ba8ab6dab456"></a>
@@ -2620,7 +2693,7 @@ Public variables and constants</h2></td></tr>
 
 <p>salinity (ppt) </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00133">133</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00144">144</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -2636,7 +2709,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00256">256</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00269">269</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -2652,7 +2725,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00247">247</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00260">260</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -2668,7 +2741,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00251">251</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00264">264</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -2684,7 +2757,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00247">247</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00260">260</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -2700,7 +2773,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00251">251</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00264">264</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -2716,7 +2789,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00247">247</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00260">260</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -2732,7 +2805,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00251">251</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00264">264</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -2748,7 +2821,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00247">247</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00260">260</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -2764,7 +2837,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00251">251</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00264">264</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -2780,7 +2853,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00256">256</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00269">269</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -2796,7 +2869,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00261">261</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00274">274</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -2812,8 +2885,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00352">352</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;  <span class="keywordtype">type</span>(set_visc_cs),             <span class="keywordtype">pointer</span> :: set_visc_csp           =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00369">369</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  <span class="keywordtype">type</span>(set_visc_cs),             <span class="keywordtype">pointer</span> :: set_visc_csp           =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="adc0ab36f15aa3225e2b3140138ac5fc1"></a>
@@ -2828,7 +2901,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00256">256</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00269">269</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -2846,8 +2919,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the split time stepping scheme. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00166">166</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keywordtype">logical</span> :: split<span class="comment">                   !&lt; If true, use the split time stepping scheme.</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00177">177</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordtype">logical</span> :: split<span class="comment">                   !&lt; If true, use the split time stepping scheme.</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a621d3e8a368d22ce4f8f154d8cc39dda"></a>
@@ -2862,8 +2935,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00368">368</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  <span class="keywordtype">type</span>(sponge_cs),               <span class="keywordtype">pointer</span> :: sponge_csp             =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00384">384</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  <span class="keywordtype">type</span>(sponge_cs),               <span class="keywordtype">pointer</span> :: sponge_csp             =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a029086e5be2a267aea43deb2e988a086"></a>
@@ -2878,7 +2951,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00251">251</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00264">264</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -2894,7 +2967,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00251">251</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00264">264</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -2912,7 +2985,7 @@ Public variables and constants</h2></td></tr>
 
 <p>potential temperature (degrees C) </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00133">133</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00144">144</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -2928,8 +3001,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00256">256</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: &amp;  !&lt; diagnostic arrays for advection tendencies and total tendencies</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    t_advection_xy =&gt; null(), s_advection_xy =&gt; null(),  &amp;</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    t_prev         =&gt; null(), s_prev         =&gt; null(),  &amp;</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    th_prev        =&gt; null(), sh_prev        =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00269">269</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: &amp;  !&lt; diagnostic arrays for advection tendencies and total tendencies</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    t_advection_xy =&gt; null(), s_advection_xy =&gt; null(),  &amp;</div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    t_prev         =&gt; null(), s_prev         =&gt; null(),  &amp;</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    th_prev        =&gt; null(), sh_prev        =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ab7edf78590279682c395bc78f5e849b0"></a>
@@ -2944,8 +3017,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00247">247</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: &amp;  !&lt; diagnostic arrays of advective/diffusive tracer fluxes</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    t_adx =&gt; null(), t_ady =&gt; null(), t_diffx =&gt; null(), t_diffy =&gt; null(), &amp;</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    s_adx =&gt; null(), s_ady =&gt; null(), s_diffx =&gt; null(), s_diffy =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00260">260</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: &amp;  !&lt; diagnostic arrays of advective/diffusive tracer fluxes</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    t_adx =&gt; null(), t_ady =&gt; null(), t_diffx =&gt; null(), t_diffy =&gt; null(), &amp;</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    s_adx =&gt; null(), s_ady =&gt; null(), s_diffx =&gt; null(), s_diffy =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a2ee25cfa2a6d74b972091d12c6cd6e5a"></a>
@@ -2960,8 +3033,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00251">251</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp; !&lt; diagnostic arrays of vertically integrated advective/diffusive fluxes</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    t_adx_2d =&gt; null(), t_ady_2d =&gt; null(), t_diffx_2d =&gt; null(), t_diffy_2d =&gt; null(), &amp;</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    s_adx_2d =&gt; null(), s_ady_2d =&gt; null(), s_diffx_2d =&gt; null(), s_diffy_2d =&gt; null(), &amp;</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    sst_sq   =&gt; null(), sss_sq   =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00264">264</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp; !&lt; diagnostic arrays of vertically integrated advective/diffusive fluxes</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    t_adx_2d =&gt; null(), t_ady_2d =&gt; null(), t_diffx_2d =&gt; null(), t_diffy_2d =&gt; null(), &amp;</div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    s_adx_2d =&gt; null(), s_ady_2d =&gt; null(), s_diffx_2d =&gt; null(), s_diffy_2d =&gt; null(), &amp;</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    sst_sq   =&gt; null(), sss_sq   =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a0d7cae020f17f3a522f7a9c3566e193d"></a>
@@ -2976,7 +3049,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00247">247</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00260">260</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -2992,7 +3065,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00251">251</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00264">264</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -3008,7 +3081,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00247">247</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00260">260</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -3024,7 +3097,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00251">251</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00264">264</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -3040,7 +3113,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00247">247</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00260">260</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -3056,7 +3129,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00251">251</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00264">264</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -3072,7 +3145,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00256">256</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00269">269</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -3088,8 +3161,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00261">261</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: &amp; !&lt; diagnostic arrays for variance decay through ALE</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    t_squared =&gt; null(), s_squared =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00274">274</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: &amp; !&lt; diagnostic arrays for variance decay through ALE</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    t_squared =&gt; null(), s_squared =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a340fe45bf4b7e596e9048d6457d8343e"></a>
@@ -3104,8 +3177,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00264">264</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keywordtype">logical</span> :: tendency_diagnostics = .false.</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00277">277</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="keywordtype">logical</span> :: tendency_diagnostics = .false.</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a16352553fdd4dbee75e5f3bbab1be67e"></a>
@@ -3120,7 +3193,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00256">256</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00269">269</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -3138,8 +3211,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, thermodynamic and tracer time steps can span multiple coupled time steps. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00198">198</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordtype">logical</span> :: thermo_spans_coupling<span class="comment">   !&lt; If true, thermodynamic and tracer time</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00211">211</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keywordtype">logical</span> :: thermo_spans_coupling<span class="comment">   !&lt; If true, thermodynamic and tracer time</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a4ea3807b7193541b13fb9e698a375991"></a>
@@ -3156,8 +3229,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, diffuse interface height w/ a diffusivity KHTH. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00183">183</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordtype">logical</span> :: thickness_diffuse<span class="comment">       !&lt; If true, diffuse interface height w/ a diffusivity KHTH.</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00194">194</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordtype">logical</span> :: thickness_diffuse<span class="comment">       !&lt; If true, diffuse interface height w/ a diffusivity KHTH.</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="aa3c5973e28710cc4db2e90f192651752"></a>
@@ -3172,8 +3245,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00354">354</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  <span class="keywordtype">type</span>(thickness_diffuse_cs),    <span class="keywordtype">pointer</span> :: thickness_diffuse_csp  =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00371">371</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  <span class="keywordtype">type</span>(thickness_diffuse_cs),    <span class="keywordtype">pointer</span> :: thickness_diffuse_csp  =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ae656df189815ae80df88b5c3bd9af903"></a>
@@ -3190,8 +3263,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, diffuse thickness before dynamics. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00184">184</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordtype">logical</span> :: thickness_diffuse_first<span class="comment"> !&lt; If true, diffuse thickness before dynamics.</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00195">195</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordtype">logical</span> :: thickness_diffuse_first<span class="comment"> !&lt; If true, diffuse thickness before dynamics.</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="abbd22c4b35df9fa53a98803a5e9733e4"></a>
@@ -3208,8 +3281,8 @@ Public variables and constants</h2></td></tr>
 
 <p>pointer to ocean clock </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00205">205</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: time<span class="comment">   !&lt; pointer to ocean clock</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00218">218</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: time<span class="comment">   !&lt; pointer to ocean clock</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a80073431d0fefcfdd02f4b3b027c2ccc"></a>
@@ -3224,8 +3297,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00360">360</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  <span class="keywordtype">type</span>(tracer_advect_cs),        <span class="keywordtype">pointer</span> :: tracer_adv_csp         =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00376">376</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  <span class="keywordtype">type</span>(tracer_advect_cs),        <span class="keywordtype">pointer</span> :: tracer_adv_csp         =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ab96ad70ebf5b49f04ccbe838250fd5a9"></a>
@@ -3240,8 +3313,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00361">361</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  <span class="keywordtype">type</span>(tracer_hor_diff_cs),      <span class="keywordtype">pointer</span> :: tracer_diff_csp        =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00377">377</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  <span class="keywordtype">type</span>(tracer_hor_diff_cs),      <span class="keywordtype">pointer</span> :: tracer_diff_csp        =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ac54468719fa025b11defe09a4d4aadaa"></a>
@@ -3256,8 +3329,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00363">363</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  <span class="keywordtype">type</span>(tracer_flow_control_cs),  <span class="keywordtype">pointer</span> :: tracer_flow_csp        =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00379">379</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  <span class="keywordtype">type</span>(tracer_flow_control_cs),  <span class="keywordtype">pointer</span> :: tracer_flow_csp        =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="aa93ae415aa3c314d8972efe135a703f8"></a>
@@ -3272,8 +3345,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00359">359</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  <span class="keywordtype">type</span>(tracer_registry_type),    <span class="keywordtype">pointer</span> :: tracer_reg             =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00375">375</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  <span class="keywordtype">type</span>(tracer_registry_type),    <span class="keywordtype">pointer</span> :: tracer_reg             =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ab3fc3759e2063c33100069eae737b0a0"></a>
@@ -3290,8 +3363,8 @@ Public variables and constants</h2></td></tr>
 
 <p>structure containing pointers to available thermodynamic fields </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00154">154</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordtype">type</span>(thermo_var_ptrs) :: tv<span class="comment">      !&lt; structure containing pointers to available</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00165">165</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordtype">type</span>(thermo_var_ptrs) :: tv<span class="comment">      !&lt; structure containing pointers to available</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="aad4cc6f3563eab2c0d2f8dada865cf7d"></a>
@@ -3308,8 +3381,8 @@ Public variables and constants</h2></td></tr>
 
 <p>zonal velocity component (m/s) </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00137">137</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">real</span> allocable_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEM_,NKMEM_)</span> :: &amp;</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    u,  &amp;     !&lt; zonal velocity component (m/s)</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    uh, &amp;     !&lt; uh = u * h * dy at u grid points (m3/s or kg/s)</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    uhtr<span class="comment">      !&lt; accumulated zonal thickness fluxes to advect tracers (m3 or kg)</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00148">148</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordtype">real</span> allocable_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEM_,NKMEM_)</span> :: &amp;</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    u,  &amp;     !&lt; zonal velocity component (m/s)</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    uh, &amp;     !&lt; uh = u * h * dy at u grid points (m3/s or kg/s)</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    uhtr<span class="comment">      !&lt; accumulated zonal thickness fluxes to advect tracers (m3 or kg)</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a4ff33f6bd282d38f932ee28d3f304d38"></a>
@@ -3326,8 +3399,8 @@ Public variables and constants</h2></td></tr>
 
 <p>previous value of u stored for diagnostics </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00148">148</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: &amp;</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    u_prev =&gt; null(), &amp;  <span class="comment">!&lt; previous value of u stored for diagnostics</span></div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    v_prev =&gt; null()     <span class="comment">!&lt; previous value of v stored for diagnostics</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00159">159</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: &amp;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    u_prev =&gt; null(), &amp;  <span class="comment">!&lt; previous value of u stored for diagnostics</span></div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    v_prev =&gt; null()     <span class="comment">!&lt; previous value of v stored for diagnostics</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a910ddc64e685306135b16fb7fb2c13fd"></a>
@@ -3344,7 +3417,7 @@ Public variables and constants</h2></td></tr>
 
 <p>uh = u * h * dy at u grid points (m3/s or kg/s) </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00137">137</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00148">148</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -3362,7 +3435,7 @@ Public variables and constants</h2></td></tr>
 
 <p>accumulated zonal thickness fluxes to advect tracers (m3 or kg) </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00137">137</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00148">148</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -3380,8 +3453,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the ALE algorithm rather than layered isopycnal/stacked shallow water mode. This logical is set by calling the function useRegridding() from the MOM_regridding module. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00189">189</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keywordtype">logical</span> :: use_ale_algorithm<span class="comment">       !&lt; If true, use the ALE algorithm rather than layered</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00200">200</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordtype">logical</span> :: use_ale_algorithm<span class="comment">       !&lt; If true, use the ALE algorithm rather than layered</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ab46d632441ccd77f6c87f2aec41e4ad8"></a>
@@ -3398,8 +3471,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, liquid seawater freezes if temp below freezing, with accumulated heat deficit returned to surface ocean. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00175">175</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordtype">logical</span> :: use_frazil<span class="comment">              !&lt; If true, liquid seawater freezes if temp below freezing,</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00186">186</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordtype">logical</span> :: use_frazil<span class="comment">              !&lt; If true, liquid seawater freezes if temp below freezing,</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a73e0ffc2be4b504f7126a2e256140b79"></a>
@@ -3416,8 +3489,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use RK2 instead of RK3 in unsplit mode (i.e., no split between barotropic and baroclinic). </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00170">170</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordtype">logical</span> :: use_rk2<span class="comment">                 !&lt; If true, use RK2 instead of RK3 in unsplit mode</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00181">181</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keywordtype">logical</span> :: use_rk2<span class="comment">                 !&lt; If true, use RK2 instead of RK3 in unsplit mode</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a4db5b5b8aa40518862c67638e5bff09f"></a>
@@ -3434,8 +3507,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, temp and saln used as state variables. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00174">174</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keywordtype">logical</span> :: use_temperature<span class="comment">         !&lt; If true, temp and saln used as state variables.</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00185">185</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordtype">logical</span> :: use_temperature<span class="comment">         !&lt; If true, temp and saln used as state variables.</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a7a5574f401322901f56a30f01c9a659e"></a>
@@ -3452,8 +3525,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, call the MEKE parameterization. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00186">186</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordtype">logical</span> :: usemeke<span class="comment">                 !&lt; If true, call the MEKE parameterization.</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00197">197</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordtype">logical</span> :: usemeke<span class="comment">                 !&lt; If true, call the MEKE parameterization.</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ac112a5291ce3df72d6f01e75f06a024e"></a>
@@ -3470,8 +3543,8 @@ Public variables and constants</h2></td></tr>
 
 <p>meridional velocity (m/s) </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00141">141</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordtype">real</span> allocable_, <span class="keywordtype">dimension(NIMEM_,NJMEMB_PTR_,NKMEM_)</span> :: &amp;</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    v,  &amp;     !&lt; meridional velocity (m/s)</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    vh, &amp;     !&lt; vh = v * h * dx at v grid points (m3/s or kg/s)</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    vhtr<span class="comment">      !&lt; accumulated meridional thickness fluxes to advect tracers (m3 or kg)</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00152">152</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">real</span> allocable_, <span class="keywordtype">dimension(NIMEM_,NJMEMB_PTR_,NKMEM_)</span> :: &amp;</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    v,  &amp;     !&lt; meridional velocity (m/s)</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    vh, &amp;     !&lt; vh = v * h * dx at v grid points (m3/s or kg/s)</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    vhtr<span class="comment">      !&lt; accumulated meridional thickness fluxes to advect tracers (m3 or kg)</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="abbfa0c8349eb72d4dddfb316a451acbf"></a>
@@ -3488,7 +3561,7 @@ Public variables and constants</h2></td></tr>
 
 <p>previous value of v stored for diagnostics </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00148">148</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00159">159</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -3504,8 +3577,8 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00357">357</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  <span class="keywordtype">type</span>(varmix_cs),               <span class="keywordtype">pointer</span> :: varmix                 =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00374">374</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  <span class="keywordtype">type</span>(varmix_cs),               <span class="keywordtype">pointer</span> :: varmix                 =&gt; null()</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ac4b005fce1670704a7a2d6c5390b6fb8"></a>
@@ -3522,7 +3595,7 @@ Public variables and constants</h2></td></tr>
 
 <p>vardesc array describing salinity </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00243">243</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00256">256</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -3540,8 +3613,8 @@ Public variables and constants</h2></td></tr>
 
 <p>vardesc array describing potential temperature </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00243">243</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="keywordtype">type</span>(vardesc) :: &amp;</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    vd_t, &amp;   !&lt; vardesc array describing potential temperature</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    vd_s<span class="comment">      !&lt; vardesc array describing salinity</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00256">256</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordtype">type</span>(vardesc) :: &amp;</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    vd_t, &amp;   !&lt; vardesc array describing potential temperature</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    vd_s<span class="comment">      !&lt; vardesc array describing salinity</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ae11fe4cd1886dfda252895cfd207fd26"></a>
@@ -3558,7 +3631,7 @@ Public variables and constants</h2></td></tr>
 
 <p>vh = v * h * dx at v grid points (m3/s or kg/s) </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00141">141</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00152">152</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -3576,7 +3649,7 @@ Public variables and constants</h2></td></tr>
 
 <p>accumulated meridional thickness fluxes to advect tracers (m3 or kg) </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00141">141</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00152">152</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
 
 </div>
 </div>
@@ -3594,24 +3667,8 @@ Public variables and constants</h2></td></tr>
 
 <p>structure containing vertical viscosities, bottom drag viscosities, and related fields </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00157">157</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordtype">type</span>(vertvisc_type)   :: visc<span class="comment">    !&lt; structure containing vertical viscosities,</span></div></div><!-- fragment -->
-</div>
-</div>
-<a id="afa278667bf74cd0ed2491d0d7a564209"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa278667bf74cd0ed2491d0d7a564209">&sect;&nbsp;</a></span>wave_speed_csp</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">type(wave_speed_cs), pointer mom::mom_control_struct::wave_speed_csp =&gt; NULL()</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00358">358</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  <span class="keywordtype">type</span>(wave_speed_cs),           <span class="keywordtype">pointer</span> :: wave_speed_csp         =&gt; null()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00168">168</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordtype">type</span>(vertvisc_type)   :: visc<span class="comment">    !&lt; structure containing vertical viscosities,</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="ad499608d5706eeba8f48c7405e6da2a4"></a>
@@ -3628,8 +3685,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, then the initial conditions will be written to file. </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00227">227</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordtype">logical</span> :: write_ic<span class="comment">                !&lt; If true, then the initial conditions will be written to file</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00240">240</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keywordtype">logical</span> :: write_ic<span class="comment">                !&lt; If true, then the initial conditions will be written to file</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="aac05a560eefcd1b2cf3219190706d46a"></a>
@@ -3646,8 +3703,8 @@ Public variables and constants</h2></td></tr>
 
 <p>amount of time between calculating Z-space diagnostics </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00203">203</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordtype">type</span>(time_type) :: z_diag_interval<span class="comment"> !&lt; amount of time between calculating Z-space diagnostics</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00216">216</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keywordtype">type</span>(time_type) :: z_diag_interval<span class="comment"> !&lt; amount of time between calculating Z-space diagnostics</span></div></div><!-- fragment -->
 </div>
 </div>
 <a id="a151b47dc1c5bd0876510a52c5f039645"></a>
@@ -3664,8 +3721,8 @@ Public variables and constants</h2></td></tr>
 
 <p>next time to compute Z-space diagnostics </p>
 
-<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00204">204</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordtype">type</span>(time_type) :: z_diag_time<span class="comment">     !&lt; next time to compute Z-space diagnostics</span></div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../d8/da7/MOM_8F90_source.html#l00217">217</a> of file <a class="el" href="../../d8/da7/MOM_8F90_source.html">MOM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="keywordtype">type</span>(time_type) :: z_diag_time<span class="comment">     !&lt; next time to compute Z-space diagnostics</span></div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>

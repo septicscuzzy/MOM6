@@ -25,6 +25,8 @@ var MOM__barotropic_8F90 =
     [ "swap", "df/d57/MOM__barotropic_8F90.html#af1813744cf2034c2413ef904bf628263", null ],
     [ "uhbt_to_ubt", "df/d57/MOM__barotropic_8F90.html#a0311f0f3d4e27f4017582d6a8c01298c", null ],
     [ "vhbt_to_vbt", "df/d57/MOM__barotropic_8F90.html#aeed3e618781611b448105a122e1a358c", null ],
+    [ "apply_u_obcs", "df/d57/MOM__barotropic_8F90.html#ab356c6ad470822d8b4b793d35d4237ef", null ],
+    [ "apply_v_obcs", "df/d57/MOM__barotropic_8F90.html#ae112cd1ae890362952860fd560aa871e", null ],
     [ "arithmetic", "df/d57/MOM__barotropic_8F90.html#a735fe88440ec7db07f6640ae9f7b039a", null ],
     [ "arithmetic_string", "df/d57/MOM__barotropic_8F90.html#a9a0a9a3013efa01f7bf1f59f53d8405c", null ],
     [ "bt_cont_string", "df/d57/MOM__barotropic_8F90.html#aedbe3a001b7245a84315fb2a9c9ccde7", null ],

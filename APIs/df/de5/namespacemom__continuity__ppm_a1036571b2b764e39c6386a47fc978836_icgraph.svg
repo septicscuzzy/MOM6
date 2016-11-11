@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 626;
+var viewWidth = 718;
 var viewHeight = 95;
 var sectionId = 'dynsection-3';
 </script>
@@ -54,83 +54,83 @@ var sectionId = 'dynsection-3';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_continuity_ppm::merid_flux_layer</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-91.1451 622,-91.1451 622,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-91.4544 714,-91.4544 714,4 -4,4"/>
 <!-- Node29 -->
 <g id="node1" class="node"><title>Node29</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-12.6451 0,-42.6451 92,-42.6451 92,-12.6451 0,-12.6451"/>
-<text text-anchor="start" x="8" y="-30.6451" font-family="Helvetica,sans-Serif" font-size="10.00">mom_continuity_ppm</text>
-<text text-anchor="middle" x="46" y="-19.6451" font-family="Helvetica,sans-Serif" font-size="10.00">::merid_flux_layer</text>
+<polygon fill="#bfbfbf" stroke="black" points="0,-12.9544 0,-42.9544 110,-42.9544 110,-12.9544 0,-12.9544"/>
+<text text-anchor="start" x="8" y="-30.9544" font-family="Helvetica,sans-Serif" font-size="10.00">mom_continuity_ppm</text>
+<text text-anchor="middle" x="55" y="-19.9544" font-family="Helvetica,sans-Serif" font-size="10.00">::merid_flux_layer</text>
 </g>
 <!-- Node30 -->
 <g id="node2" class="node"><title>Node30</title>
 <g id="a_node2"><a xlink:href="../../df/de5/namespacemom__continuity__ppm.html#a1a09c28286ea6568eb1a25e91d481f60" target="_top" xlink:title="Returns the barotropic velocity adjustment that gives the desired barotropic (layer&#45;summed) transport...">
-<polygon fill="white" stroke="black" points="128,-56.6451 128,-86.6451 228,-86.6451 228,-56.6451 128,-56.6451"/>
-<text text-anchor="start" x="136" y="-74.6451" font-family="Helvetica,sans-Serif" font-size="10.00">mom_continuity_ppm</text>
-<text text-anchor="middle" x="178" y="-63.6451" font-family="Helvetica,sans-Serif" font-size="10.00">::meridional_flux_adjust</text>
+<polygon fill="white" stroke="black" points="146,-56.9544 146,-86.9544 265,-86.9544 265,-56.9544 146,-56.9544"/>
+<text text-anchor="start" x="154" y="-74.9544" font-family="Helvetica,sans-Serif" font-size="10.00">mom_continuity_ppm</text>
+<text text-anchor="middle" x="205.5" y="-63.9544" font-family="Helvetica,sans-Serif" font-size="10.00">::meridional_flux_adjust</text>
 </a>
 </g>
 </g>
 <!-- Node29&#45;&gt;Node30 -->
 <g id="edge1" class="edge"><title>Node29&#45;&gt;Node30</title>
-<path fill="none" stroke="midnightblue" d="M100.862,-45.8752C111.349,-49.4248 122.235,-53.1093 132.384,-56.5442"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="101.969,-42.5551 91.375,-42.6644 99.7251,-49.1856 101.969,-42.5551"/>
+<path fill="none" stroke="midnightblue" d="M116.483,-45.8751C128.869,-49.5452 141.785,-53.3723 153.787,-56.9282"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="117.272,-42.4588 106.69,-42.9736 115.284,-49.1704 117.272,-42.4588"/>
 </g>
 <!-- Node31 -->
 <g id="node3" class="node"><title>Node31</title>
 <g id="a_node3"><a xlink:href="../../df/de5/namespacemom__continuity__ppm.html#ae326b8319da257f423f73a32a984b641" target="_top" xlink:title="Calculates the mass or volume fluxes through the meridional faces, and other related quantities...">
-<polygon fill="white" stroke="black" points="392,-15.6451 392,-45.6451 490,-45.6451 490,-15.6451 392,-15.6451"/>
-<text text-anchor="start" x="400" y="-33.6451" font-family="Helvetica,sans-Serif" font-size="10.00">mom_continuity_ppm</text>
-<text text-anchor="middle" x="441" y="-22.6451" font-family="Helvetica,sans-Serif" font-size="10.00">::meridional_mass_flux</text>
+<polygon fill="white" stroke="black" points="447,-15.9544 447,-45.9544 564,-45.9544 564,-15.9544 447,-15.9544"/>
+<text text-anchor="start" x="455" y="-33.9544" font-family="Helvetica,sans-Serif" font-size="10.00">mom_continuity_ppm</text>
+<text text-anchor="middle" x="505.5" y="-22.9544" font-family="Helvetica,sans-Serif" font-size="10.00">::meridional_mass_flux</text>
 </a>
 </g>
 </g>
 <!-- Node29&#45;&gt;Node31 -->
 <g id="edge6" class="edge"><title>Node29&#45;&gt;Node31</title>
-<path fill="none" stroke="midnightblue" d="M102.219,-16.5839C164.242,-5.81193 267.776,7.20489 356,-5.64511 370.003,-7.68464 384.917,-11.5417 398.233,-15.6265"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="101.488,-13.1589 92.2566,-18.3572 102.715,-20.0506 101.488,-13.1589"/>
+<path fill="none" stroke="midnightblue" d="M120.22,-16.5855C191.522,-5.67823 309.901,7.32817 411,-5.95438 426.494,-7.98996 443.07,-11.8459 457.897,-15.9309"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="119.388,-13.1729 110.049,-18.1761 120.47,-20.0889 119.388,-13.1729"/>
 </g>
 <!-- Node33 -->
 <g id="node5" class="node"><title>Node33</title>
 <g id="a_node5"><a xlink:href="../../df/de5/namespacemom__continuity__ppm.html#ac0a93898960aef838a55a8ef4f926aa1" target="_top" xlink:title="Sets of a structure that describes the meridional barotropic volume or mass fluxes as a function of b...">
-<polygon fill="white" stroke="black" points="264,-15.6451 264,-45.6451 356,-45.6451 356,-15.6451 264,-15.6451"/>
-<text text-anchor="start" x="272" y="-33.6451" font-family="Helvetica,sans-Serif" font-size="10.00">mom_continuity_ppm</text>
-<text text-anchor="middle" x="310" y="-22.6451" font-family="Helvetica,sans-Serif" font-size="10.00">::set_merid_bt_cont</text>
+<polygon fill="white" stroke="black" points="301,-15.9544 301,-45.9544 411,-45.9544 411,-15.9544 301,-15.9544"/>
+<text text-anchor="start" x="309" y="-33.9544" font-family="Helvetica,sans-Serif" font-size="10.00">mom_continuity_ppm</text>
+<text text-anchor="middle" x="356" y="-22.9544" font-family="Helvetica,sans-Serif" font-size="10.00">::set_merid_bt_cont</text>
 </a>
 </g>
 </g>
 <!-- Node29&#45;&gt;Node33 -->
 <g id="edge7" class="edge"><title>Node29&#45;&gt;Node33</title>
-<path fill="none" stroke="midnightblue" d="M102.25,-28.2777C150.228,-28.8271 218.86,-29.613 263.672,-30.1261"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="102.079,-24.7757 92.0394,-28.1608 101.999,-31.7752 102.079,-24.7757"/>
+<path fill="none" stroke="midnightblue" d="M120.26,-28.5991C174.056,-29.1389 249.969,-29.9006 300.752,-30.4101"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="120.181,-25.0983 110.147,-28.4977 120.111,-32.0979 120.181,-25.0983"/>
 </g>
 <!-- Node30&#45;&gt;Node31 -->
 <g id="edge2" class="edge"><title>Node30&#45;&gt;Node31</title>
-<path fill="none" stroke="midnightblue" d="M238.558,-68.6431C273.076,-66.2278 317.241,-61.9797 356,-54.6451 368.071,-52.3608 380.913,-49.1194 392.829,-45.7551"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="237.917,-65.178 228.172,-69.3353 238.383,-72.1625 237.917,-65.178"/>
+<path fill="none" stroke="midnightblue" d="M275.148,-69.1355C315.013,-66.7802 366.08,-62.5312 411,-54.9544 424.551,-52.6687 439.014,-49.3849 452.414,-45.9769"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="274.79,-65.6501 265.003,-69.7085 275.185,-72.639 274.79,-65.6501"/>
 </g>
 <!-- Node30&#45;&gt;Node33 -->
 <g id="edge4" class="edge"><title>Node30&#45;&gt;Node33</title>
-<path fill="none" stroke="midnightblue" d="M236.227,-53.5966C245.504,-50.6706 254.996,-47.6771 263.931,-44.8591"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="235.153,-50.2652 226.669,-56.611 237.259,-56.9411 235.153,-50.2652"/>
+<path fill="none" stroke="midnightblue" d="M270.772,-54.2092C280.7,-51.4683 290.869,-48.6605 300.554,-45.9866"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="269.661,-50.8851 260.953,-56.9203 271.524,-57.6326 269.661,-50.8851"/>
 </g>
 <!-- Node32 -->
 <g id="node4" class="node"><title>Node32</title>
 <g id="a_node4"><a xlink:href="../../df/de5/namespacemom__continuity__ppm.html#a59586aae1668f03f3a78d58f5712cc0f" target="_top" xlink:title="Time steps the layer thicknesses, using a monotonically limit, directionally split PPM scheme...">
-<polygon fill="white" stroke="black" points="526,-15.6451 526,-45.6451 618,-45.6451 618,-15.6451 526,-15.6451"/>
-<text text-anchor="start" x="534" y="-33.6451" font-family="Helvetica,sans-Serif" font-size="10.00">mom_continuity_ppm</text>
-<text text-anchor="middle" x="572" y="-22.6451" font-family="Helvetica,sans-Serif" font-size="10.00">::continuity_ppm</text>
+<polygon fill="white" stroke="black" points="600,-15.9544 600,-45.9544 710,-45.9544 710,-15.9544 600,-15.9544"/>
+<text text-anchor="start" x="608" y="-33.9544" font-family="Helvetica,sans-Serif" font-size="10.00">mom_continuity_ppm</text>
+<text text-anchor="middle" x="655" y="-22.9544" font-family="Helvetica,sans-Serif" font-size="10.00">::continuity_ppm</text>
 </a>
 </g>
 </g>
 <!-- Node31&#45;&gt;Node32 -->
 <g id="edge3" class="edge"><title>Node31&#45;&gt;Node32</title>
-<path fill="none" stroke="midnightblue" d="M500.095,-30.6451C508.757,-30.6451 517.575,-30.6451 525.916,-30.6451"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="500.035,-27.1452 490.035,-30.6451 500.035,-34.1452 500.035,-27.1452"/>
+<path fill="none" stroke="midnightblue" d="M574.56,-30.9544C582.976,-30.9544 591.492,-30.9544 599.666,-30.9544"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="574.373,-27.4545 564.373,-30.9544 574.373,-34.4545 574.373,-27.4545"/>
 </g>
 <!-- Node33&#45;&gt;Node31 -->
 <g id="edge5" class="edge"><title>Node33&#45;&gt;Node31</title>
-<path fill="none" stroke="midnightblue" d="M366.259,-30.6451C374.694,-30.6451 383.344,-30.6451 391.615,-30.6451"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="366.118,-27.1452 356.118,-30.6451 366.118,-34.1452 366.118,-27.1452"/>
+<path fill="none" stroke="midnightblue" d="M421.357,-30.9544C429.872,-30.9544 438.557,-30.9544 446.948,-30.9544"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="421.086,-27.4545 411.086,-30.9544 421.086,-34.4545 421.086,-27.4545"/>
 </g>
 </g>
 </svg>

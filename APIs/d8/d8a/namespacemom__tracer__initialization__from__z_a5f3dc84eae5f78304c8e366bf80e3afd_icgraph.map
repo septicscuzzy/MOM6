@@ -1,7 +1,5 @@
 <map id="mom_tracer_initialization_from_z::horiz_interp_and_extrap_tracer" name="mom_tracer_initialization_from_z::horiz_interp_and_extrap_tracer">
-<area shape="rect" id="node2" href="$d8/d8a/namespacemom__tracer__initialization__from__z.html#a5281cd3eaf835f799cff81a50c273c5e" title="mom_tracer_initialization\l_from_z::mom_initialize\l_tracer_from_z" alt="" coords="223,5,362,61"/>
-<area shape="rect" id="node3" href="$d6/d62/namespacemom__state__initialization.html#ae33403313da1b783a1ad980e10012f8e" title="mom_state_initialization\l::mom_temp_salt_initialize_from_z" alt="" coords="200,85,385,126"/>
-<area shape="rect" id="node4" href="$d6/d62/namespacemom__state__initialization.html#af4e854627c6572332ba3fd895f169321" title="mom_state_initialization\l::mom_initialize_state" alt="" coords="433,85,568,126"/>
-<area shape="rect" id="node5" href="$da/d01/namespacemom.html#afebdc0103ad9cbe0ed4a54e522dc4104" title="This subroutine initializes MOM. " alt="" coords="616,92,735,119"/>
-<area shape="rect" id="node6" href="$de/dbc/MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" title="mom_main" alt="" coords="783,92,857,119"/>
+<area shape="rect" id="node2" href="$d8/d8a/namespacemom__tracer__initialization__from__z.html#a5281cd3eaf835f799cff81a50c273c5e" title="mom_tracer_initialization\l_from_z::mom_initialize\l_tracer_from_z" alt="" coords="254,5,421,61"/>
+<area shape="rect" id="node3" href="$d6/d62/namespacemom__state__initialization.html#ae33403313da1b783a1ad980e10012f8e" title="mom_state_initialization\l::mom_temp_salt_initialize_from_z" alt="" coords="225,86,449,127"/>
+<area shape="rect" id="node4" href="$d6/d62/namespacemom__state__initialization.html#af4e854627c6572332ba3fd895f169321" title="mom_state_initialization\l::mom_initialize_state" alt="" coords="497,86,660,127"/>
 </map>

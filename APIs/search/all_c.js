@@ -61,6 +61,7 @@ var searchData=
   ['khth_5fmax',['khth_max',['../da/dce/structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a5f8b53d94896af5e2494a3561153dd75',1,'mom_thickness_diffuse::thickness_diffuse_cs']]],
   ['khth_5fmin',['khth_min',['../da/dce/structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a3ec2e8b5412b1d193c7729eac02a525e',1,'mom_thickness_diffuse::thickness_diffuse_cs']]],
   ['khth_5fslope_5fcff',['khth_slope_cff',['../da/dce/structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a2f536ed134b565501461ed7105ab7f77',1,'mom_thickness_diffuse::thickness_diffuse_cs']]],
+  ['khth_5fuse_5febt_5fstruct',['khth_use_ebt_struct',['../d0/d90/structmom__lateral__mixing__coeffs_1_1varmix__cs.html#a17cb588f2298aaac0638a2a48b204714',1,'mom_lateral_mixing_coeffs::varmix_cs']]],
   ['khtr',['khtr',['../d7/d4b/structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a553f35f40f92018e27141cc872cdb05f',1,'mom_tracer_hor_diff::tracer_hor_diff_cs']]],
   ['khtr_5ffac',['khtr_fac',['../d2/d94/structmom__meke__types_1_1meke__type.html#a906d38bc1a809af51faadc6e6d6291f9',1,'mom_meke_types::meke_type']]],
   ['khtr_5fmax',['khtr_max',['../d7/d4b/structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#aef7e8eeacd312db54d0aadc265d30397',1,'mom_tracer_hor_diff::tracer_hor_diff_cs']]],
@@ -95,6 +96,7 @@ var searchData=
   ['kv_5fbbl_5fu',['kv_bbl_u',['../d5/df0/structmom__variables_1_1vertvisc__type.html#ad870718bf270a872959db9b9d889a5a3',1,'mom_variables::vertvisc_type']]],
   ['kv_5fbbl_5fv',['kv_bbl_v',['../d5/df0/structmom__variables_1_1vertvisc__type.html#a49e3e82aaab0be219e0088c3fbb55859',1,'mom_variables::vertvisc_type']]],
   ['kv_5fice',['kv_ice',['../dd/d1f/structmom__ice__shelf_1_1ice__shelf__cs.html#abfb7a69267181d6c1b6bcd11d2f25d59',1,'mom_ice_shelf::ice_shelf_cs::kv_ice()'],['../d2/d8f/structshelf__triangular__festuff_1_1ice__shelf__cs.html#a2a82b2b908539af9049622358e2e468d',1,'shelf_triangular_festuff::ice_shelf_cs::kv_ice()']]],
+  ['kv_5ficeberg',['kv_iceberg',['../d6/d99/structocean__model__mod_1_1ocean__state__type.html#a9ec6d144239d3576406f1df1d54c78a2',1,'ocean_model_mod::ocean_state_type']]],
   ['kv_5fkpp',['kv_kpp',['../d5/dbd/structmom__kpp_1_1kpp__cs.html#aaee224852c113eae722c3b20aba3107b',1,'mom_kpp::kpp_cs']]],
   ['kv_5fmolec',['kv_molec',['../dd/d1f/structmom__ice__shelf_1_1ice__shelf__cs.html#a287174e0afaa4966a30ba768ef555617',1,'mom_ice_shelf::ice_shelf_cs::kv_molec()'],['../d2/d8f/structshelf__triangular__festuff_1_1ice__shelf__cs.html#aa057ece3ee4ce02b3e29aa848c3faf24',1,'shelf_triangular_festuff::ice_shelf_cs::kv_molec()']]],
   ['kv_5fmolecular',['kv_molecular',['../df/dba/structmom__set__diffusivity_1_1set__diffusivity__cs.html#a426b76d7cd2892cc75dd608303a6fc35',1,'mom_set_diffusivity::set_diffusivity_cs']]],
@@ -104,5 +106,6 @@ var searchData=
   ['kv_5ftbl_5fshelf_5fv',['kv_tbl_shelf_v',['../d5/df0/structmom__variables_1_1vertvisc__type.html#a2a585d2328f9019c86c2e19c882635b9',1,'mom_variables::vertvisc_type']]],
   ['kv_5fturb',['kv_turb',['../d5/df0/structmom__variables_1_1vertvisc__type.html#a23123d8762e439f18d15573a3874dae6',1,'mom_variables::vertvisc_type']]],
   ['kvbbl',['kvbbl',['../d8/de6/structmom__vert__friction_1_1vertvisc__cs.html#af626cfc954fccc73a71134be3c88ae21',1,'mom_vert_friction::vertvisc_cs']]],
-  ['kvml',['kvml',['../d8/de6/structmom__vert__friction_1_1vertvisc__cs.html#afb6fc988190066c772dbf050d7fb438f',1,'mom_vert_friction::vertvisc_cs']]]
+  ['kvml',['kvml',['../d8/de6/structmom__vert__friction_1_1vertvisc__cs.html#afb6fc988190066c772dbf050d7fb438f',1,'mom_vert_friction::vertvisc_cs']]],
+  ['kw_5feff',['kw_eff',['../d0/dc0/structboundary__impulse__tracer_1_1boundary__impulse__tracer__cs.html#abcc79d6eca2b257ca4e92a989637e63c',1,'boundary_impulse_tracer::boundary_impulse_tracer_cs']]]
 ];

@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('d9/d52/MOM__wave__speed_8F90.html','..
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM_wave_speed.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d81/MOM__wave__speed_8F90__incl.svg" width="246" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d81/MOM__wave__speed_8F90__incl.svg" width="280" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="../../d9/d52/MOM__wave__speed_8F90_source.html">Go to the source code of this file.</a></p>
@@ -117,18 +117,24 @@ Modules</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions/Subroutines</h2></td></tr>
-<tr class="memitem:a90775d734022991a9b49d5ee25210051"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d33/namespacemom__wave__speed.html#a90775d734022991a9b49d5ee25210051">mom_wave_speed::wave_speed</a> (h, tv, G, GV, cg1, CS, full_halos)</td></tr>
-<tr class="memdesc:a90775d734022991a9b49d5ee25210051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the wave speed of the first baroclinic mode.  <a href="../../dd/d33/namespacemom__wave__speed.html#a90775d734022991a9b49d5ee25210051">More...</a><br /></td></tr>
-<tr class="separator:a90775d734022991a9b49d5ee25210051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72302e356c47c5055ba0b1a8714c772a"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d33/namespacemom__wave__speed.html#a72302e356c47c5055ba0b1a8714c772a">mom_wave_speed::wave_speed</a> (h, tv, G, GV, cg1, CS, full_halos, use_ebt_mode, mono_N2_column_fraction, mono_N2_depth, modal_structure)</td></tr>
+<tr class="memdesc:a72302e356c47c5055ba0b1a8714c772a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the wave speed of the first baroclinic mode.  <a href="../../dd/d33/namespacemom__wave__speed.html#a72302e356c47c5055ba0b1a8714c772a">More...</a><br /></td></tr>
+<tr class="separator:a72302e356c47c5055ba0b1a8714c772a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57673d33027f1ef38330443123102301"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d33/namespacemom__wave__speed.html#a57673d33027f1ef38330443123102301">mom_wave_speed::tdma6</a> (n, a, b, c, lam, y)</td></tr>
+<tr class="memdesc:a57673d33027f1ef38330443123102301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve a non-symmetric tridiagonal problem with a scalar contribution to the leading diagonal. This uses the Thomas algorithm rather than the Hallberg algorithm since the matrix is not symmetric.  <a href="../../dd/d33/namespacemom__wave__speed.html#a57673d33027f1ef38330443123102301">More...</a><br /></td></tr>
+<tr class="separator:a57673d33027f1ef38330443123102301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0009abd8573168b780c95db2962982d6"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d33/namespacemom__wave__speed.html#a0009abd8573168b780c95db2962982d6">mom_wave_speed::wave_speeds</a> (h, tv, G, GV, nmodes, cn, CS, full_halos)</td></tr>
 <tr class="memdesc:a0009abd8573168b780c95db2962982d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the wave speeds for the first few barolinic modes.  <a href="../../dd/d33/namespacemom__wave__speed.html#a0009abd8573168b780c95db2962982d6">More...</a><br /></td></tr>
 <tr class="separator:a0009abd8573168b780c95db2962982d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d633de4db3e5c4e4a7d313c428c7a56"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d33/namespacemom__wave__speed.html#a1d633de4db3e5c4e4a7d313c428c7a56">mom_wave_speed::tridiag_det</a> (a, b, c, nrows, lam, det_out, ddet_out)</td></tr>
 <tr class="memdesc:a1d633de4db3e5c4e4a7d313c428c7a56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the determinant of a tridiagonal matrix with diagonals a,b-lam,c where lam is constant across rows.  <a href="../../dd/d33/namespacemom__wave__speed.html#a1d633de4db3e5c4e4a7d313c428c7a56">More...</a><br /></td></tr>
 <tr class="separator:a1d633de4db3e5c4e4a7d313c428c7a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a009e412d19187190145ca2184beec3af"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d33/namespacemom__wave__speed.html#a009e412d19187190145ca2184beec3af">mom_wave_speed::wave_speed_init</a> (Time, G, param_file, diag, CS)</td></tr>
-<tr class="memdesc:a009e412d19187190145ca2184beec3af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize control structure for MOM_wave_speed.  <a href="../../dd/d33/namespacemom__wave__speed.html#a009e412d19187190145ca2184beec3af">More...</a><br /></td></tr>
-<tr class="separator:a009e412d19187190145ca2184beec3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e21529ec8098b0b19053afa133b971"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d33/namespacemom__wave__speed.html#a46e21529ec8098b0b19053afa133b971">mom_wave_speed::wave_speed_init</a> (CS, use_ebt_mode, mono_N2_column_fraction, mono_N2_depth)</td></tr>
+<tr class="memdesc:a46e21529ec8098b0b19053afa133b971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize control structure for MOM_wave_speed.  <a href="../../dd/d33/namespacemom__wave__speed.html#a46e21529ec8098b0b19053afa133b971">More...</a><br /></td></tr>
+<tr class="separator:a46e21529ec8098b0b19053afa133b971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a035c9e3306d6b21809e240a5b24a2db0"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d33/namespacemom__wave__speed.html#a035c9e3306d6b21809e240a5b24a2db0">mom_wave_speed::wave_speed_set_param</a> (CS, use_ebt_mode, mono_N2_column_fraction, mono_N2_depth)</td></tr>
+<tr class="memdesc:a035c9e3306d6b21809e240a5b24a2db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets internal parameters for MOM_wave_speed.  <a href="../../dd/d33/namespacemom__wave__speed.html#a035c9e3306d6b21809e240a5b24a2db0">More...</a><br /></td></tr>
+<tr class="separator:a035c9e3306d6b21809e240a5b24a2db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
