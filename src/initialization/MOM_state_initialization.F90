@@ -32,7 +32,7 @@ use MOM_grid_initialize, only : initialize_masks, set_grid_metrics
 use MOM_restart, only : restore_state, determine_is_new_run, MOM_restart_CS
 use MOM_sponge, only : set_up_sponge_field, set_up_sponge_ML_density
 use MOM_sponge, only : initialize_sponge, sponge_CS
-use MOM_ALE_sponge, only : set_up_ALE_sponge_field, initialize_ALE_sponge
+use MOM_ALE_sponge, only : set_up_ALE_sponge_field, set_up_ALE_sponge_vel_field, initialize_ALE_sponge
 use MOM_ALE_sponge, only : ALE_sponge_CS
 use MOM_string_functions, only : uppercase, lowercase
 use MOM_time_manager, only : time_type
@@ -57,7 +57,7 @@ use RGC_initialization, only : RGC_initialize_sponges
 use baroclinic_zone_initialization, only : baroclinic_zone_init_temperature_salinity
 use benchmark_initialization, only : benchmark_initialize_thickness
 use benchmark_initialization, only : benchmark_init_temperature_salinity
-use Neverland_initialization, only : Neverland_initialize_thickness
+use Neverworld_initialization, only : Neverworld_initialize_thickness
 use circle_obcs_initialization, only : circle_obcs_initialize_thickness
 use lock_exchange_initialization, only : lock_exchange_initialize_thickness
 use external_gwave_initialization, only : external_gwave_initialize_thickness
@@ -257,7 +257,7 @@ subroutine MOM_initialize_state(u, v, h, tv, Time, G, GV, US, PF, dirs, &
              " \t ISOMIP - use a configuration for the \n"//&
              " \t\t ISOMIP test case. \n"//&
              " \t benchmark - use the benchmark test case thicknesses. \n"//&
-             " \t Neverland - use the Neverland test case thicknesses. \n"//&
+             " \t Neverworld - use the Neverworld test case thicknesses. \n"//&
              " \t search - search a density profile for the interface \n"//&
              " \t\t densities. This is not yet implemented. \n"//&
              " \t circle_obcs - the circle_obcs test case is used. \n"//&
@@ -269,7 +269,7 @@ subroutine MOM_initialize_state(u, v, h, tv, Time, G, GV, US, PF, dirs, &
              " \t soliton - Equatorial Rossby soliton. \n"//&
              " \t rossby_front - a mixed layer front in thermal wind balance.\n"//&
              " \t USER - call a user modified routine.", &
-             fail_if_missing=new_sim, do_not_log=just_read)
+             default="uniform", do_not_log=just_read)
     select case (trim(config))
        case ("file")
          call initialize_thickness_from_file(h, G, GV, US, PF, .false., just_read_params=just_read)
@@ -292,7 +292,7 @@ subroutine MOM_initialize_state(u, v, h, tv, Time, G, GV, US, PF, dirs, &
                                  just_read_params=just_read)
        case ("benchmark"); call benchmark_initialize_thickness(h, G, GV, US, PF, &
                                     tv%eqn_of_state, tv%P_Ref, just_read_params=just_read)
-       case ("Neverland"); call Neverland_initialize_thickness(h, G, GV, US, PF, &
+       case ("Neverwoorld","Neverland"); call Neverworld_initialize_thickness(h, G, GV, US, PF, &
                                  tv%eqn_of_state, tv%P_Ref)
        case ("search"); call initialize_thickness_search
        case ("circle_obcs"); call circle_obcs_initialize_thickness(h, G, GV, PF, &
@@ -550,7 +550,7 @@ subroutine MOM_initialize_state(u, v, h, tv, Time, G, GV, US, PF, dirs, &
       case ("phillips"); call Phillips_initialize_sponges(G, GV, US, tv, PF, sponge_CSp, h)
       case ("dense"); call dense_water_initialize_sponges(G, GV, US, tv, PF, useALE, &
                                                           sponge_CSp, ALE_sponge_CSp)
-      case ("file"); call initialize_sponges_file(G, GV, US, use_temperature, tv, PF, &
+      case ("file"); call initialize_sponges_file(G, GV, US, use_temperature, tv, u,v, PF, &
                                                   sponge_CSp, ALE_sponge_CSp, Time)
       case default ; call MOM_error(FATAL,  "MOM_initialize_state: "//&
              "Unrecognized sponge configuration "//trim(config))
@@ -1130,7 +1130,7 @@ subroutine trim_for_ice(PF, G, GV, US, ALE_CSp, tv, h, just_read_params)
   if (use_remapping) then
     call get_param(PF, mdl, "DEFAULT_2018_ANSWERS", default_2018_answers, &
                  "This sets the default value for the various _2018_ANSWERS parameters.", &
-                 default=.true.)
+                 default=.false.)
     call get_param(PF, mdl, "REMAPPING_2018_ANSWERS", remap_answers_2018, &
                  "If true, use the order of arithmetic and expressions that recover the "//&
                  "answers from the end of 2018.  Otherwise, use updated and more robust "//&
@@ -1368,10 +1368,10 @@ subroutine initialize_velocity_uniform(u, v, G, US, param_file, just_read_params
 
   call get_param(param_file, mdl, "INITIAL_U_CONST", initial_u_const, &
                  "A initial uniform value for the zonal flow.", &
-                 units="m s-1", scale=US%m_s_to_L_T, fail_if_missing=.not.just_read, do_not_log=just_read)
+                 default=0.0, units="m s-1", scale=US%m_s_to_L_T, do_not_log=just_read)
   call get_param(param_file, mdl, "INITIAL_V_CONST", initial_v_const, &
                  "A initial uniform value for the meridional flow.", &
-                 units="m s-1", scale=US%m_s_to_L_T, fail_if_missing=.not.just_read, do_not_log=just_read)
+                 default=0.0, units="m s-1", scale=US%m_s_to_L_T, do_not_log=just_read)
 
   if (just_read) return ! All run-time parameters have been read, so return.
 
@@ -1711,13 +1711,19 @@ end subroutine initialize_temp_salt_linear
 !! number of tracers should be restored within each sponge. The
 !! interface height is always subject to damping, and must always be
 !! the first registered field.
-subroutine initialize_sponges_file(G, GV, US, use_temperature, tv, param_file, CSp, ALE_CSp, Time)
+subroutine initialize_sponges_file(G, GV, US, use_temperature, tv, u, v, param_file, CSp, ALE_CSp, Time)
   type(ocean_grid_type),   intent(in) :: G    !< The ocean's grid structure.
   type(verticalGrid_type), intent(in) :: GV   !< The ocean's vertical grid structure.
   type(unit_scale_type),   intent(in) :: US  !< A dimensional unit scaling type
   logical,                 intent(in) :: use_temperature !< If true, T & S are state variables.
   type(thermo_var_ptrs),   intent(in) :: tv   !< A structure pointing to various thermodynamic
                                               !! variables.
+  real, dimension(SZIB_(G),SZJ_(G),SZK_(G)), &
+                              intent(out)   :: u    !< The zonal velocity that is being
+                                                    !! initialized [L T-1 ~> m s-1]
+  real, dimension(SZI_(G),SZJB_(G),SZK_(G)), &
+                              intent(out)   :: v    !< The meridional velocity that is being
+                                                    !! initialized [L T-1 ~> m s-1]
   type(param_file_type),   intent(in) :: param_file !< A structure to parse for run-time parameters.
   type(sponge_CS),         pointer    :: CSp  !< A pointer that is set to point to the control
                                               !! structure for this module (in layered mode).
@@ -1735,6 +1741,8 @@ subroutine initialize_sponges_file(G, GV, US, use_temperature, tv, param_file, C
     tmp_2d ! A temporary array for tracers.
 
   real :: Idamp(SZI_(G),SZJ_(G))    ! The inverse damping rate [T-1 ~> s-1].
+  real :: Idamp_u(SZIB_(G),SZJ_(G)) ! The inverse damping rate for velocity fields [T-1 ~> s-1].
+  real :: Idamp_v(SZI_(G),SZJB_(G)) ! The inverse damping rate for velocity fields [T-1 ~> s-1].
   real :: pres(SZI_(G))     ! An array of the reference pressure [R L2 T-2 ~> Pa].
 
   integer, dimension(2) :: EOSdom ! The i-computational domain for the equation of state
@@ -1742,9 +1750,10 @@ subroutine initialize_sponges_file(G, GV, US, use_temperature, tv, param_file, C
   integer :: isd, ied, jsd, jed
   integer, dimension(4) :: siz
   integer :: nz_data  ! The size of the sponge source grid
-  character(len=40) :: potemp_var, salin_var, Idamp_var, eta_var
+  logical :: sponge_uv ! Apply sponges in u and v, in addition to tracers.
+  character(len=40) :: potemp_var, salin_var, u_var, v_var, Idamp_var, Idamp_u_var, Idamp_v_var, eta_var
   character(len=40) :: mdl = "initialize_sponges_file"
-  character(len=200) :: damping_file, state_file  ! Strings for filenames
+  character(len=200) :: damping_file, uv_damping_file, state_file  ! Strings for filenames
   character(len=200) :: filename, inputdir ! Strings for file/path and path.
 
   logical :: use_ALE ! True if ALE is being used, False if in layered mode
@@ -1754,7 +1763,8 @@ subroutine initialize_sponges_file(G, GV, US, use_temperature, tv, param_file, C
   is = G%isc ; ie = G%iec ; js = G%jsc ; je = G%jec ; nz = G%ke
   isd = G%isd ; ied = G%ied ; jsd = G%jsd ; jed = G%jed
 
-  pres(:) = 0.0 ; tmp(:,:,:) = 0.0 ; Idamp(:,:) = 0.0
+  pres(:) = 0.0 ; tmp(:,:,:) = 0.0 ; Idamp(:,:) = 0.0 ; Idamp_u(:,:) = 0.0 ; Idamp_v(:,:) = 0.0
+!  pres(:) = 0.0 ; tmp(:,:,:) = 0.0 ; Idamp(:,:) = 0.0
 
   call get_param(param_file, mdl, "INPUTDIR", inputdir, default=".")
   inputdir = slasher(inputdir)
@@ -1770,34 +1780,75 @@ subroutine initialize_sponges_file(G, GV, US, use_temperature, tv, param_file, C
   call get_param(param_file, mdl, "SPONGE_SALT_VAR", salin_var, &
                  "The name of the salinity variable in "//&
                  "SPONGE_STATE_FILE.", default="SALT")
+  call get_param(param_file, mdl, "SPONGE_UV", sponge_uv, &
+                 "Apply sponges in u and v, in addition to tracers.", &
+                 default=.false.)
+  if (sponge_uv) then
+    call get_param(param_file, mdl, "SPONGE_U_VAR", u_var, &
+                 "The name of the zonal velocity variable in "//&
+                 "SPONGE_STATE_FILE.", default="UVEL")
+    call get_param(param_file, mdl, "SPONGE_V_VAR", v_var, &
+                 "The name of the vertical velocity variable in "//&
+                 "SPONGE_STATE_FILE.", default="VVEL")
+  endif
   call get_param(param_file, mdl, "SPONGE_ETA_VAR", eta_var, &
                  "The name of the interface height variable in "//&
                  "SPONGE_STATE_FILE.", default="ETA")
   call get_param(param_file, mdl, "SPONGE_IDAMP_VAR", Idamp_var, &
                  "The name of the inverse damping rate variable in "//&
                  "SPONGE_DAMPING_FILE.", default="IDAMP")
+  if (sponge_uv) then
+    call get_param(param_file, mdl, "SPONGE_UV_DAMPING_FILE", uv_damping_file, &
+                   "The name of the file with sponge damping rates for the velocity variables.", &
+                   default=damping_file)
+    call get_param(param_file, mdl, "SPONGE_IDAMP_U_var", Idamp_u_var, &
+                   "The name of the inverse damping rate variable in "//&
+                   "SPONGE_UV_DAMPING_FILE for the velocities.", default="IDAMP")
+    call get_param(param_file, mdl, "SPONGE_IDAMP_V_var", Idamp_v_var, &
+                   "The name of the inverse damping rate variable in "//&
+                   "SPONGE_UV_DAMPING_FILE for the velocities.", default="IDAMP")
+  endif
   call get_param(param_file, mdl, "USE_REGRIDDING", use_ALE, do_not_log = .true.)
 
   call get_param(param_file, mdl, "NEW_SPONGES", new_sponges, &
                  "Set True if using the newer sponging code which "//&
                  "performs on-the-fly regridding in lat-lon-time.",&
                  "of sponge restoring data.", default=.false.)
-
+!  if (new_sponges .and. .not. use_ALE) &
+!    call MOM_error(FATAL, " initialize_sponges: Newer sponges are currently unavailable in layered mode ")
 !  if (use_ALE) then
 !    call get_param(param_file, mdl, "SPONGE_RESTORE_ETA", restore_eta, &
 !                 "If true, then restore the interface positions towards "//&
 !                 "target values (in ALE mode)", default = .false.)
 !  endif
 
+  ! Read in inverse damping rate for tracers
   filename = trim(inputdir)//trim(damping_file)
   call log_param(param_file, mdl, "INPUTDIR/SPONGE_DAMPING_FILE", filename)
   if (.not.file_exists(filename, G%Domain)) &
     call MOM_error(FATAL, " initialize_sponges: Unable to open "//trim(filename))
 
-  if (new_sponges .and. .not. use_ALE) &
-    call MOM_error(FATAL, " initialize_sponges: Newer sponges are currently unavailable in layered mode ")
+!  if (new_sponges .and. .not. use_ALE) &
+!    call MOM_error(FATAL, " initialize_sponges: Newer sponges are currently unavailable in layered mode ")
 
   call MOM_read_data(filename, "Idamp", Idamp(:,:), G%Domain, scale=US%T_to_s)
+
+  ! Read in inverse damping rate for velocities
+  if (sponge_uv) then
+    if (separate_idamp_for_uv()) then
+      Idamp_u(:,:) = Idamp(:,:)
+      filename = trim(inputdir)//trim(uv_damping_file)
+      call log_param(param_file, mdl, "INPUTDIR/SPONGE_UV_DAMPING_FILE", filename)
+
+      if (.not.file_exists(filename, G%Domain)) &
+        call MOM_error(FATAL, " initialize_sponges: Unable to open "//trim(filename))
+
+       call MOM_read_vector(filename, "Idamp_u","Idamp_v",Idamp_u(:,:),Idamp_v(:,:), G%Domain, scale=US%T_to_s)      
+!      call MOM_read_data(filename, "Idamp_u", Idamp_u(:,:), G%Domain, scale=US%T_to_s)
+!      call MOM_read_data(filename, "Idamp_v", Idamp_v(:,:), G%Domain, scale=US%T_to_s)
+    endif
+  endif
+
 
   ! Now register all of the fields which are damped in the sponge.
   ! By default, momentum is advected vertically within the sponge, but
@@ -1850,12 +1901,22 @@ subroutine initialize_sponges_file(G, GV, US, use_temperature, tv, param_file, C
     do k=1,nz; do j=js,je ; do i=is,ie
       h(i,j,k) = GV%Z_to_H*(eta(i,j,k)-eta(i,j,k+1))
     enddo ; enddo ; enddo
-    call initialize_ALE_sponge(Idamp, G, param_file, ALE_CSp, h, nz_data)
+!    call initialize_ALE_sponge(Idamp, G, param_file, ALE_CSp, h, nz_data)
+    if (separate_idamp_for_uv()) then
+      call initialize_ALE_sponge(Idamp, G, param_file, ALE_CSp, h, nz_data, Idamp_u, Idamp_v)
+    else
+      call initialize_ALE_sponge(Idamp, G, param_file, ALE_CSp, h, nz_data)
+    endif
     deallocate(eta)
     deallocate(h)
   else
     ! Initialize sponges without supplying sponge grid
-    call initialize_ALE_sponge(Idamp, G, param_file, ALE_CSp)
+!    call initialize_ALE_sponge(Idamp, G, param_file, ALE_CSp)
+    if (separate_idamp_for_uv()) then
+      call initialize_ALE_sponge(Idamp, G, param_file, ALE_CSp, Idamp_u, Idamp_v)
+    else
+      call initialize_ALE_sponge(Idamp, G, param_file, ALE_CSp)
+    endif
   endif
 
   ! Now register all of the tracer fields which are damped in the
@@ -1888,7 +1949,17 @@ subroutine initialize_sponges_file(G, GV, US, use_temperature, tv, param_file, C
   elseif (use_temperature) then
     call set_up_ALE_sponge_field(filename, potemp_var, Time, G, GV, US, tv%T, ALE_CSp)
     call set_up_ALE_sponge_field(filename, salin_var, Time, G, GV, US, tv%S, ALE_CSp)
+    if (sponge_uv) &
+      call set_up_ALE_sponge_vel_field(filename, u_var, filename, v_var, Time, G, US, ALE_CSp, u, v)
   endif
+
+  contains
+
+  ! returns true if a separate idamp is provided for u and/or v
+  logical function separate_idamp_for_uv()
+    separate_idamp_for_uv = (damping_file/=uv_damping_file .or. &
+                              Idamp_var/=Idamp_u_var .or. Idamp_var/=Idamp_v_var)
+  end function separate_idamp_for_uv
 
 end subroutine initialize_sponges_file
 
@@ -1987,18 +2058,18 @@ subroutine MOM_temp_salt_initialize_from_Z(h, tv, G, GV, US, PF, just_read_param
   integer :: isd, ied, jsd, jed ! data domain indices
 
   integer :: i, j, k, ks, np, ni, nj
-  integer :: idbg, jdbg
-  integer :: nkml, nkbl         ! number of mixed and buffer layers
+  integer :: nkml     ! The number of layers in the mixed layer.
 
   integer :: kd, inconsistent
   integer :: nkd      ! number of levels to use for regridding input arrays
   real    :: eps_Z    ! A negligibly thin layer thickness [Z ~> m].
   real    :: eps_rho  ! A negligibly small density difference [R ~> kg m-3].
-  real    :: PI_180             ! for conversion from degrees to radians
+  real    :: PI_180   ! for conversion from degrees to radians
 
   real, dimension(:,:), pointer :: shelf_area => NULL()
-  real    :: min_depth ! The minimum depth [Z ~> m].
-  real    :: dilate
+  real    :: Hmix_default ! The default initial mixed layer depth [m].
+  real    :: Hmix_depth   ! The mixed layer depth in the initial condition [Z ~> m].
+  real    :: dilate       ! A dilation factor to match topography [nondim]
   real    :: missing_value_temp, missing_value_salt
   logical :: correct_thickness
   character(len=40) :: potemp_var, salin_var
@@ -2037,6 +2108,7 @@ subroutine MOM_temp_salt_initialize_from_Z(h, tv, G, GV, US, PF, just_read_param
   logical :: answers_2018, default_2018_answers, hor_regrid_answers_2018
   logical :: use_ice_shelf
   logical :: pre_gridded
+  logical :: separate_mixed_layer  ! If true, handle the mixed layers differently.
   character(len=10) :: remappingScheme
   real :: tempAvg, saltAvg
   integer :: nPoints, ans
@@ -2063,14 +2135,8 @@ subroutine MOM_temp_salt_initialize_from_Z(h, tv, G, GV, US, PF, just_read_param
 
   eos => tv%eqn_of_state
 
-! call mpp_get_compute_domain(G%domain%mpp_domain,isc,iec,jsc,jec)
-
   reentrant_x = .false. ; call get_param(PF, mdl, "REENTRANT_X", reentrant_x, default=.true.)
   tripolar_n = .false. ;  call get_param(PF, mdl, "TRIPOLAR_N", tripolar_n, default=.false.)
-  call get_param(PF, mdl, "MINIMUM_DEPTH", min_depth, default=0.0, scale=US%m_to_Z)
-
-  call get_param(PF, mdl, "NKML",nkml,default=0)
-  call get_param(PF, mdl, "NKBL",nkbl,default=0)
 
   call get_param(PF, mdl, "TEMP_SALT_Z_INIT_FILE",filename, &
                  "The name of the z-space input file used to initialize "//&
@@ -2112,10 +2178,10 @@ subroutine MOM_temp_salt_initialize_from_Z(h, tv, G, GV, US, PF, just_read_param
   call get_param(PF, mdl, "Z_INIT_REMAP_OLD_ALG", remap_old_alg, &
                  "If false, uses the preferred remapping algorithm for initialization. "//&
                  "If true, use an older, less robust algorithm for remapping.", &
-                 default=.true., do_not_log=just_read)
+                 default=.false., do_not_log=just_read)
   call get_param(PF, mdl, "DEFAULT_2018_ANSWERS", default_2018_answers, &
                  "This sets the default value for the various _2018_ANSWERS parameters.", &
-                 default=.true.)
+                 default=.false.)
   call get_param(PF, mdl, "TEMP_SALT_INIT_VERTICAL_REMAP_ONLY", pre_gridded, &
                  "If true, initial conditions are on the model horizontal grid. " //&
                  "Extrapolation over missing ocean values is done using an ICE-9 "//&
@@ -2153,6 +2219,19 @@ subroutine MOM_temp_salt_initialize_from_Z(h, tv, G, GV, US, PF, just_read_param
                  "their target densities using mostly temperature "//&
                  "This approach can be problematic, particularly in the "//&
                  "high latitudes.", default=.true., do_not_log=just_read)
+    call get_param(PF, mdl, "Z_INIT_SEPARATE_MIXED_LAYER", separate_mixed_layer, &
+                 "If true, distribute the topmost Z_INIT_HMIX_DEPTH of water over NKML layers, "//&
+                 "and do not correct the density of the topmost NKML+NKBL layers.  Otherwise "//&
+                 "all layers are initialized based on the depths of their target densities.", &
+                 default=.false., do_not_log=just_read.or.(GV%nkml==0))
+    if (GV%nkml == 0) separate_mixed_layer = .false.
+    call get_param(PF, mdl, "MINIMUM_DEPTH", Hmix_default, default=0.0)
+    call get_param(PF, mdl, "Z_INIT_HMIX_DEPTH", Hmix_depth, &
+                 "The mixed layer depth in the initial conditions when Z_INIT_SEPARATE_MIXED_LAYER "//&
+                 "is set to true.", default=Hmix_default, units="m", scale=US%m_to_Z, &
+                 do_not_log=(just_read .or. .not.separate_mixed_layer))
+    ! Reusing MINIMUM_DEPTH for the default mixed layer depth may be a strange choice, but
+    ! it reproduces previous answers.
   endif
   if (just_read) then
     call cpu_clock_end(id_clock_routine)
@@ -2232,11 +2311,7 @@ subroutine MOM_temp_salt_initialize_from_Z(h, tv, G, GV, US, PF, just_read_param
   if (useALEremapping) then
     call cpu_clock_begin(id_clock_ALE)
     nkd = max(GV%ke, kd)
-    ! The regridding tools (grid generation) are coded to work on model arrays of the same
-    ! vertical shape. We need to re-write the regridding if the model has fewer layers
-    ! than the data. -AJA
-!   if (kd>nz) call MOM_error(FATAL,"MOM_initialize_state, MOM_temp_salt_initialize_from_Z(): "//&
-!        "Data has more levels than the model - this has not been coded yet!")
+
     ! Build the source grid and copy data onto model-shaped arrays with vanished layers
     allocate( tmp_mask_in(isd:ied,jsd:jed,nkd) ) ; tmp_mask_in(:,:,:) = 0.
     allocate( h1(isd:ied,jsd:jed,nkd) ) ; h1(:,:,:) = 0.
@@ -2335,8 +2410,10 @@ subroutine MOM_temp_salt_initialize_from_Z(h, tv, G, GV, US, PF, just_read_param
     do k=2,nz ; Rb(k) = 0.5*(GV%Rlay(k-1)+GV%Rlay(k)) ; enddo
     Rb(1) = 0.0 ;  Rb(nz+1) = 2.0*GV%Rlay(nz) - GV%Rlay(nz-1)
 
+    nkml = 0 ; if (separate_mixed_layer) nkml = GV%nkml
+
     call find_interfaces(rho_z, z_in, kd, Rb, G%bathyT, zi, G, US, &
-                         nlevs, nkml, nkbl, min_depth, eps_z=eps_z, eps_rho=eps_rho)
+                         nlevs, nkml, hml=Hmix_depth, eps_z=eps_z, eps_rho=eps_rho)
 
     if (correct_thickness) then
       call adjustEtaToFitBathymetry(G, GV, US, zi, h)
@@ -2363,12 +2440,8 @@ subroutine MOM_temp_salt_initialize_from_Z(h, tv, G, GV, US, PF, just_read_param
       endif
     endif
 
-    call tracer_z_init_array(temp_z(is:ie,js:je,:), z_edges_in, zi(is:ie,js:je,:), &
-         nkml, nkbl, missing_value, G%mask2dT(is:ie,js:je), nz, &
-         nlevs(is:ie,js:je), eps_z, tv%T(is:ie,js:je,:))
-    call tracer_z_init_array(salt_z(is:ie,js:je,:), z_edges_in, zi(is:ie,js:je,:), &
-         nkml, nkbl, missing_value, G%mask2dT(is:ie,js:je), nz, &
-         nlevs(is:ie,js:je), eps_z, tv%S(is:ie,js:je,:))
+    call tracer_z_init_array(temp_z, z_edges_in, kd, zi, missing_value, G, nz, nlevs, eps_z, tv%T)
+    call tracer_z_init_array(salt_z, z_edges_in, kd, zi, missing_value, G, nz, nlevs, eps_z, tv%S)
 
     do k=1,nz
       nPoints = 0 ; tempAvg = 0. ; saltAvg = 0.
@@ -2402,12 +2475,12 @@ subroutine MOM_temp_salt_initialize_from_Z(h, tv, G, GV, US, PF, just_read_param
     endif
   enddo ; enddo ; enddo
 
-  ! Finally adjust to target density
-  ks = max(0,nkml)+max(0,nkbl)+1
 
   if (adjust_temperature .and. .not. useALEremapping) then
-    call determine_temperature(tv%T(is:ie,js:je,:), tv%S(is:ie,js:je,:), &
-            GV%Rlay(1:nz), tv%P_Ref, niter, missing_value, h(is:ie,js:je,:), ks, US, eos)
+    ! Finally adjust to target density
+    ks = 1 ; if (separate_mixed_layer) ks = GV%nk_rho_varies + 1
+    call determine_temperature(tv%T, tv%S, GV%Rlay(1:nz), tv%P_Ref, niter, &
+                               missing_value, h, ks, G, US, eos)
   endif
 
   deallocate(z_in, z_edges_in, temp_z, salt_z, mask_z)
