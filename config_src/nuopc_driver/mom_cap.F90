@@ -15,7 +15,6 @@ use mpp_io_mod,               only: mpp_open, MPP_RDONLY, MPP_ASCII, MPP_OVERWR,
 use mpp_mod,                  only: stdlog, stdout, mpp_root_pe, mpp_clock_id
 use mpp_mod,                  only: mpp_clock_begin, mpp_clock_end, MPP_CLOCK_SYNC
 use mpp_mod,                  only: MPP_CLOCK_DETAILED, CLOCK_COMPONENT, MAXPES
-use time_interp_external_mod, only: time_interp_external_init
 use time_manager_mod,         only: set_calendar_type, time_type, increment_date
 use time_manager_mod,         only: set_time, set_date, get_time, get_date, month_name
 use time_manager_mod,         only: GREGORIAN, JULIAN, NOLEAP, THIRTY_DAY_MONTHS, NO_CALENDAR
@@ -72,7 +71,7 @@ use ESMF,  only: ESMF_TimePrint, ESMF_AlarmSet, ESMF_FieldGet, ESMF_Array
 use ESMF,  only: ESMF_ArrayCreate
 use ESMF,  only: ESMF_RC_FILE_OPEN, ESMF_RC_FILE_READ, ESMF_RC_FILE_WRITE
 use ESMF,  only: ESMF_VMBroadcast
-use ESMF,  only: ESMF_AlarmCreate, ESMF_ClockGetAlarmList, ESMF_AlarmList_Flag 
+use ESMF,  only: ESMF_AlarmCreate, ESMF_ClockGetAlarmList, ESMF_AlarmList_Flag
 use ESMF,  only: ESMF_AlarmGet, ESMF_AlarmIsCreated, ESMF_ALARMLIST_ALL, ESMF_AlarmIsEnabled
 use ESMF,  only: ESMF_STATEITEM_NOTFOUND, ESMF_FieldWrite
 use ESMF,  only: operator(==), operator(/=), operator(+), operator(-)
@@ -2063,7 +2062,7 @@ subroutine ModelSetRunClock(gcomp, rc)
      call ESMF_LogWrite(subname//" Create Stop alarm", ESMF_LOGMSG_INFO, rc=rc)
      if (ESMF_LogFoundError(rcToCheck=rc, msg=ESMF_LOGERR_PASSTHRU, &
          line=__LINE__, file=__FILE__)) return
- 
+
      call ESMF_TimeGet(dstoptime, timestring=timestr, rc=rc)
      call ESMF_LogWrite("Stop Alarm will ring at : "//trim(timestr), ESMF_LOGMSG_INFO, rc=rc)
 
