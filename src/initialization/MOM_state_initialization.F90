@@ -32,7 +32,7 @@ use MOM_grid_initialize, only : initialize_masks, set_grid_metrics
 use MOM_restart, only : restore_state, determine_is_new_run, MOM_restart_CS
 use MOM_sponge, only : set_up_sponge_field, set_up_sponge_ML_density
 use MOM_sponge, only : initialize_sponge, sponge_CS
-use MOM_ALE_sponge, only : set_up_ALE_sponge_field, initialize_ALE_sponge
+use MOM_ALE_sponge, only : set_up_ALE_sponge_field, set_up_ALE_sponge_vel_field, initialize_ALE_sponge
 use MOM_ALE_sponge, only : ALE_sponge_CS
 use MOM_string_functions, only : uppercase, lowercase
 use MOM_time_manager, only : time_type
@@ -550,7 +550,7 @@ subroutine MOM_initialize_state(u, v, h, tv, Time, G, GV, US, PF, dirs, &
       case ("phillips"); call Phillips_initialize_sponges(G, GV, US, tv, PF, sponge_CSp, h)
       case ("dense"); call dense_water_initialize_sponges(G, GV, US, tv, PF, useALE, &
                                                           sponge_CSp, ALE_sponge_CSp)
-      case ("file"); call initialize_sponges_file(G, GV, US, use_temperature, tv, PF, &
+      case ("file"); call initialize_sponges_file(G, GV, US, use_temperature, tv, u,v, PF, &
                                                   sponge_CSp, ALE_sponge_CSp, Time)
       case default ; call MOM_error(FATAL,  "MOM_initialize_state: "//&
              "Unrecognized sponge configuration "//trim(config))
@@ -1711,13 +1711,19 @@ end subroutine initialize_temp_salt_linear
 !! number of tracers should be restored within each sponge. The
 !! interface height is always subject to damping, and must always be
 !! the first registered field.
-subroutine initialize_sponges_file(G, GV, US, use_temperature, tv, param_file, CSp, ALE_CSp, Time)
+subroutine initialize_sponges_file(G, GV, US, use_temperature, tv, u, v, param_file, CSp, ALE_CSp, Time)
   type(ocean_grid_type),   intent(in) :: G    !< The ocean's grid structure.
   type(verticalGrid_type), intent(in) :: GV   !< The ocean's vertical grid structure.
   type(unit_scale_type),   intent(in) :: US  !< A dimensional unit scaling type
   logical,                 intent(in) :: use_temperature !< If true, T & S are state variables.
   type(thermo_var_ptrs),   intent(in) :: tv   !< A structure pointing to various thermodynamic
                                               !! variables.
+  real, dimension(SZIB_(G),SZJ_(G),SZK_(G)), &
+                              intent(out)   :: u    !< The zonal velocity that is being
+                                                    !! initialized [L T-1 ~> m s-1]
+  real, dimension(SZI_(G),SZJB_(G),SZK_(G)), &
+                              intent(out)   :: v    !< The meridional velocity that is being
+                                                    !! initialized [L T-1 ~> m s-1]
   type(param_file_type),   intent(in) :: param_file !< A structure to parse for run-time parameters.
   type(sponge_CS),         pointer    :: CSp  !< A pointer that is set to point to the control
                                               !! structure for this module (in layered mode).
@@ -1735,6 +1741,8 @@ subroutine initialize_sponges_file(G, GV, US, use_temperature, tv, param_file, C
     tmp_2d ! A temporary array for tracers.
 
   real :: Idamp(SZI_(G),SZJ_(G))    ! The inverse damping rate [T-1 ~> s-1].
+  real :: Idamp_u(SZIB_(G),SZJ_(G)) ! The inverse damping rate for velocity fields [T-1 ~> s-1].
+  real :: Idamp_v(SZI_(G),SZJB_(G)) ! The inverse damping rate for velocity fields [T-1 ~> s-1].
   real :: pres(SZI_(G))     ! An array of the reference pressure [R L2 T-2 ~> Pa].
 
   integer, dimension(2) :: EOSdom ! The i-computational domain for the equation of state
@@ -1742,9 +1750,10 @@ subroutine initialize_sponges_file(G, GV, US, use_temperature, tv, param_file, C
   integer :: isd, ied, jsd, jed
   integer, dimension(4) :: siz
   integer :: nz_data  ! The size of the sponge source grid
-  character(len=40) :: potemp_var, salin_var, Idamp_var, eta_var
+  logical :: sponge_uv ! Apply sponges in u and v, in addition to tracers.
+  character(len=40) :: potemp_var, salin_var, u_var, v_var, Idamp_var, Idamp_u_var, Idamp_v_var, eta_var
   character(len=40) :: mdl = "initialize_sponges_file"
-  character(len=200) :: damping_file, state_file  ! Strings for filenames
+  character(len=200) :: damping_file, uv_damping_file, state_file  ! Strings for filenames
   character(len=200) :: filename, inputdir ! Strings for file/path and path.
 
   logical :: use_ALE ! True if ALE is being used, False if in layered mode
@@ -1754,7 +1763,8 @@ subroutine initialize_sponges_file(G, GV, US, use_temperature, tv, param_file, C
   is = G%isc ; ie = G%iec ; js = G%jsc ; je = G%jec ; nz = G%ke
   isd = G%isd ; ied = G%ied ; jsd = G%jsd ; jed = G%jed
 
-  pres(:) = 0.0 ; tmp(:,:,:) = 0.0 ; Idamp(:,:) = 0.0
+  pres(:) = 0.0 ; tmp(:,:,:) = 0.0 ; Idamp(:,:) = 0.0 ; Idamp_u(:,:) = 0.0 ; Idamp_v(:,:) = 0.0
+!  pres(:) = 0.0 ; tmp(:,:,:) = 0.0 ; Idamp(:,:) = 0.0
 
   call get_param(param_file, mdl, "INPUTDIR", inputdir, default=".")
   inputdir = slasher(inputdir)
@@ -1770,34 +1780,75 @@ subroutine initialize_sponges_file(G, GV, US, use_temperature, tv, param_file, C
   call get_param(param_file, mdl, "SPONGE_SALT_VAR", salin_var, &
                  "The name of the salinity variable in "//&
                  "SPONGE_STATE_FILE.", default="SALT")
+  call get_param(param_file, mdl, "SPONGE_UV", sponge_uv, &
+                 "Apply sponges in u and v, in addition to tracers.", &
+                 default=.false.)
+  if (sponge_uv) then
+    call get_param(param_file, mdl, "SPONGE_U_VAR", u_var, &
+                 "The name of the zonal velocity variable in "//&
+                 "SPONGE_STATE_FILE.", default="UVEL")
+    call get_param(param_file, mdl, "SPONGE_V_VAR", v_var, &
+                 "The name of the vertical velocity variable in "//&
+                 "SPONGE_STATE_FILE.", default="VVEL")
+  endif
   call get_param(param_file, mdl, "SPONGE_ETA_VAR", eta_var, &
                  "The name of the interface height variable in "//&
                  "SPONGE_STATE_FILE.", default="ETA")
   call get_param(param_file, mdl, "SPONGE_IDAMP_VAR", Idamp_var, &
                  "The name of the inverse damping rate variable in "//&
                  "SPONGE_DAMPING_FILE.", default="IDAMP")
+  if (sponge_uv) then
+    call get_param(param_file, mdl, "SPONGE_UV_DAMPING_FILE", uv_damping_file, &
+                   "The name of the file with sponge damping rates for the velocity variables.", &
+                   default=damping_file)
+    call get_param(param_file, mdl, "SPONGE_IDAMP_U_var", Idamp_u_var, &
+                   "The name of the inverse damping rate variable in "//&
+                   "SPONGE_UV_DAMPING_FILE for the velocities.", default="IDAMP")
+    call get_param(param_file, mdl, "SPONGE_IDAMP_V_var", Idamp_v_var, &
+                   "The name of the inverse damping rate variable in "//&
+                   "SPONGE_UV_DAMPING_FILE for the velocities.", default="IDAMP")
+  endif
   call get_param(param_file, mdl, "USE_REGRIDDING", use_ALE, do_not_log = .true.)
 
   call get_param(param_file, mdl, "NEW_SPONGES", new_sponges, &
                  "Set True if using the newer sponging code which "//&
                  "performs on-the-fly regridding in lat-lon-time.",&
                  "of sponge restoring data.", default=.false.)
-
+!  if (new_sponges .and. .not. use_ALE) &
+!    call MOM_error(FATAL, " initialize_sponges: Newer sponges are currently unavailable in layered mode ")
 !  if (use_ALE) then
 !    call get_param(param_file, mdl, "SPONGE_RESTORE_ETA", restore_eta, &
 !                 "If true, then restore the interface positions towards "//&
 !                 "target values (in ALE mode)", default = .false.)
 !  endif
 
+  ! Read in inverse damping rate for tracers
   filename = trim(inputdir)//trim(damping_file)
   call log_param(param_file, mdl, "INPUTDIR/SPONGE_DAMPING_FILE", filename)
   if (.not.file_exists(filename, G%Domain)) &
     call MOM_error(FATAL, " initialize_sponges: Unable to open "//trim(filename))
 
-  if (new_sponges .and. .not. use_ALE) &
-    call MOM_error(FATAL, " initialize_sponges: Newer sponges are currently unavailable in layered mode ")
+!  if (new_sponges .and. .not. use_ALE) &
+!    call MOM_error(FATAL, " initialize_sponges: Newer sponges are currently unavailable in layered mode ")
 
   call MOM_read_data(filename, "Idamp", Idamp(:,:), G%Domain, scale=US%T_to_s)
+
+  ! Read in inverse damping rate for velocities
+  if (sponge_uv) then
+    if (separate_idamp_for_uv()) then
+      Idamp_u(:,:) = Idamp(:,:)
+      filename = trim(inputdir)//trim(uv_damping_file)
+      call log_param(param_file, mdl, "INPUTDIR/SPONGE_UV_DAMPING_FILE", filename)
+
+      if (.not.file_exists(filename, G%Domain)) &
+        call MOM_error(FATAL, " initialize_sponges: Unable to open "//trim(filename))
+
+       call MOM_read_vector(filename, "Idamp_u","Idamp_v",Idamp_u(:,:),Idamp_v(:,:), G%Domain, scale=US%T_to_s)      
+!      call MOM_read_data(filename, "Idamp_u", Idamp_u(:,:), G%Domain, scale=US%T_to_s)
+!      call MOM_read_data(filename, "Idamp_v", Idamp_v(:,:), G%Domain, scale=US%T_to_s)
+    endif
+  endif
+
 
   ! Now register all of the fields which are damped in the sponge.
   ! By default, momentum is advected vertically within the sponge, but
@@ -1850,12 +1901,22 @@ subroutine initialize_sponges_file(G, GV, US, use_temperature, tv, param_file, C
     do k=1,nz; do j=js,je ; do i=is,ie
       h(i,j,k) = GV%Z_to_H*(eta(i,j,k)-eta(i,j,k+1))
     enddo ; enddo ; enddo
-    call initialize_ALE_sponge(Idamp, G, param_file, ALE_CSp, h, nz_data)
+!    call initialize_ALE_sponge(Idamp, G, param_file, ALE_CSp, h, nz_data)
+    if (separate_idamp_for_uv()) then
+      call initialize_ALE_sponge(Idamp, G, param_file, ALE_CSp, h, nz_data, Idamp_u, Idamp_v)
+    else
+      call initialize_ALE_sponge(Idamp, G, param_file, ALE_CSp, h, nz_data)
+    endif
     deallocate(eta)
     deallocate(h)
   else
     ! Initialize sponges without supplying sponge grid
-    call initialize_ALE_sponge(Idamp, G, param_file, ALE_CSp)
+!    call initialize_ALE_sponge(Idamp, G, param_file, ALE_CSp)
+    if (separate_idamp_for_uv()) then
+      call initialize_ALE_sponge(Idamp, G, param_file, ALE_CSp, Idamp_u, Idamp_v)
+    else
+      call initialize_ALE_sponge(Idamp, G, param_file, ALE_CSp)
+    endif
   endif
 
   ! Now register all of the tracer fields which are damped in the
@@ -1888,7 +1949,17 @@ subroutine initialize_sponges_file(G, GV, US, use_temperature, tv, param_file, C
   elseif (use_temperature) then
     call set_up_ALE_sponge_field(filename, potemp_var, Time, G, GV, US, tv%T, ALE_CSp)
     call set_up_ALE_sponge_field(filename, salin_var, Time, G, GV, US, tv%S, ALE_CSp)
+    if (sponge_uv) &
+      call set_up_ALE_sponge_vel_field(filename, u_var, filename, v_var, Time, G, US, ALE_CSp, u, v)
   endif
+
+  contains
+
+  ! returns true if a separate idamp is provided for u and/or v
+  logical function separate_idamp_for_uv()
+    separate_idamp_for_uv = (damping_file/=uv_damping_file .or. &
+                              Idamp_var/=Idamp_u_var .or. Idamp_var/=Idamp_v_var)
+  end function separate_idamp_for_uv
 
 end subroutine initialize_sponges_file
 
